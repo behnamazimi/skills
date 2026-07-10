@@ -1,0 +1,12 @@
+{
+  "name": "skills",
+  "version": "0.0.1",
+  "description": "Behnam's agent skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/behnamazimi/skills"
+  },
+  "keywords": [],
+  "author": "Behnam Azimi",
+  "license": "MIT"
+}

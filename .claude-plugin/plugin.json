@@ -1,0 +1,12 @@
+{
+  "name": "behnam-skills",
+  "description": "Behnam's collection of agent skills for Claude Code",
+  "author": {
+    "name": "Behnam"
+  },
+  "version": "0.0.1",
+  "skills": [
+    "./skills/zip",
+    "./skills/probe"
+  ]
+}
