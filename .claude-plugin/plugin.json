@@ -6,6 +6,7 @@
   },
   "version": "0.0.1",
   "skills": [
+    "./skills/gc",
     "./skills/zip",
     "./skills/probe",
     "./skills/skill-context-audit"
