@@ -7,6 +7,7 @@
   "version": "0.0.1",
   "skills": [
     "./skills/zip",
-    "./skills/probe"
+    "./skills/probe",
+    "./skills/skill-context-audit"
   ]
 }
