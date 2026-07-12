@@ -1,7 +1,6 @@
 ---
 name: skill-context-audit
 description: Audits an agentic SKILL for context quality. Use when auditing a skill.
-alwaysApply: false
 ---
 
 # Skill Context Audit
@@ -19,13 +18,15 @@ Interpret `$ARGUMENTS` as:
 
 If `$ARGUMENTS` is empty, ask: "Please share the skill — paste the text, give a file path, or drop a URL."
 
+PASS: skill content loaded as text, including one level of `modules:` entries (if applicable) and linked sub-files.
+
 ---
 
 ## Step 1 — Structural checks
 
-Run all sub-checks. Collect findings before reporting.
-
 ### 1a · Invocation
+
+Definition: whether the skill fires on its own (model-invoked) or only when a human explicitly calls it (manually-invoked), and whether the body's assumptions match that mode.
 
 **Model-invoked (has a `description` field):**
 Confirm an agent or another skill actually needs to reach it autonomously. If it only ever fires by hand, flag: add `disable-model-invocation: true` and trim the context load.
@@ -37,6 +38,8 @@ PASS: invocation mode is justified and the body's assumptions match it.
 
 ### 1b · Description quality (model-invoked only)
 
+Definition: the frontmatter `description` field carries reliable triggers only, with nothing the body already covers.
+
 - **Front-loaded trigger**: first word carries invocation weight; flag if it doesn't.
 - **Distinct branches only**: synonyms renaming one branch ("TDD… test-first development") are duplication; each branch must be a distinct trigger.
 - **No body restatement**: description holds triggers and a reach clause only; flag anything the body already covers.
@@ -44,6 +47,8 @@ PASS: invocation mode is justified and the body's assumptions match it.
 PASS: description triggers reliably and contains nothing the body already says.
 
 ### 1c · Completion criteria
+
+Definition: each step or branch ends on a checkable outcome state, not just a named action.
 
 For every step or branch:
 - Does it end on a checkable completion criterion? ("Every modified model listed" passes; "produce a change list" fails — it names the action, not the outcome state.)
@@ -53,13 +58,18 @@ PASS: every step names the outcome state, not just the action.
 
 ### 1d · Splitting
 
-For each split (by-invocation or by-sequence):
+Definition: any division of content across skills or sections carries an explicit justification, rather than existing by default.
+
+For each split (by-invocation, by-sequence, or by-concern):
 - **By-invocation**: justified only by a distinct leading word or external reach that pays the context load.
 - **By-sequence**: justified only when a visible later step would tempt the agent to rush the current one.
+- **By-concern**: justified only when the content has an independent lifecycle or owner (e.g. one part changes with a library upgrade, another with a product decision) — otherwise it stays one section under co-location (2c).
 
-PASS: every split has an explicit justification of one of the two kinds above.
+PASS: every split has an explicit justification of one of the three kinds above.
 
 ### 1e · Leading-word compression
+
+Definition: multi-word restatements collapsed into single tokens that match the vocabulary already used in prompts, docs, and code.
 
 - **Restatements collapsed**: a quality spread across a phrase ("fast, deterministic, low-overhead") should be one token ("tight"). Flag every such phrase.
 - **Shared vocabulary**: leading words in the skill appear in the user's prompts, docs, and code so invocation links reliably. Flag terms that diverge.
@@ -70,16 +80,9 @@ PASS: no multi-word restatements; vocabulary matches the project's language.
 
 ## Step 2 — Four failure mode checks
 
-Apply every detector. Collect all findings before reporting.
-
-### The four failure modes (reference)
-
-**Poisoning** — erroneous or drifting facts; every session inherits the error.  
-**Distraction** — too large or noisy; includes no-op sentences, negations, and sediment (stale/discarded content); the model paraphrases instead of doing the task.  
-**Confusion** — too many options or irrelevant sections; model picks the wrong path because signal is buried.  
-**Clash** — contradictory instructions; model mixes approaches because it cannot resolve which applies.
-
 ### Check 2a · Poisoning
+
+Definition: erroneous or drifting facts that every session compounds.
 
 Flag content that:
 - States tooling/library-specific facts likely to drift (version numbers, API URLs, config keys) with no source cited
@@ -93,19 +96,24 @@ PASS: no unverified drifting facts; all external references carry a validation i
 
 ### Check 2b · Distraction
 
-Estimate token count: lines × 8 tokens/line (prose-heavy) to 15 tokens/line (code/YAML-dense) as a rough proxy. Flag if likely > **3,500 tokens**.
+Definition: content so large or noisy — no-op sentences, negations, sediment, duplication — that the model paraphrases instead of doing the task.
+
+Estimate token count: lines × 8 tokens/line (prose-heavy) to 15 tokens/line (code/YAML-dense) as a rough proxy — recalibrate against an actual tokenizer if the estimate looks off. Flag if likely > **3,500 tokens**.
 
 Also flag:
-- `## History`, `## Changelog`, `## Previous approach` — retrospective content the model doesn't need
+- `## History`, `## Changelog`, `## Previous approach` — retrospective content the model doesn't need. If a past decision still matters, compress it to one outcome line; delete outright only when it carries no decision value.
 - Descriptions of discarded approaches instead of current guidance (sediment — stale layers left because removing felt risky)
 - Tables of Contents with HTML anchor links (model reads sequentially; ToC wastes tokens)
 - Preamble that restates what the skill name already conveys
+- **Duplication**: the same fact, rationale, or instruction stated in two or more places. Keep one canonical location; replace the rest with a pointer.
 - **No-op sentences**: does the sentence change behavior versus the model's default? If not, delete it — don't trim. Weak leading words ("be thorough") are no-ops; replace with a stronger word, not more prose.
 - **Negation**: prohibitions that name the unwanted behavior ("don't think of an elephant"). Rephrase as the positive target; keep a prohibition only as an unavoidable guardrail, paired with what to do instead.
 
-PASS: estimated tokens within limit; no retrospective content, sediment, no-ops, or negations present.
+PASS: estimated tokens within limit; no retrospective content, sediment, duplication, no-ops, or negations present.
 
 ### Check 2c · Confusion
+
+Definition: too many options or irrelevant sections bury the signal, so the model picks the wrong path.
 
 Flag:
 - Multiple tools/libraries for the same task with no declared default
@@ -120,6 +128,8 @@ PASS: one declared default per decision; no irrelevant sections; no sprawl; all 
 
 ### Check 2d · Clash
 
+Definition: contradictory instructions within the same context that the model cannot resolve, so it mixes approaches.
+
 Flag contradictory pairs within the skill:
 - "Use X" then later "Use Y" for the same decision, without a supersession marker.
 - Conflicting version pins (e.g. `node >= 18` vs `node >= 20`)
@@ -133,15 +143,19 @@ PASS: no contradictory instruction pairs; frontmatter and body agree.
 
 ## Step 3 — Score each finding
 
+Collect all findings from Steps 1 and 2 before reporting.
+
 - 🔴 **Critical** — will actively mislead the model in every session this skill runs in
 - 🟡 **Warning** — degrades output quality or wastes tokens noticeably
 - 🟢 **Advisory** — minor improvement opportunity
+
+PASS: every finding from Steps 1 and 2 is assigned exactly one severity.
 
 ---
 
 ## Step 4 — Report
 
-Audit is complete when every check has a PASS or at least one flagged finding, and the report covers all check categories.
+PASS: every check category is present with either a PASS or at least one flagged finding.
 
 ```
 ## <skill-name>  [🔴 N critical · 🟡 N warnings · 🟢 N advisories]
@@ -168,5 +182,4 @@ Audit is complete when every check has a PASS or at least one flagged finding, a
 
 If the skill is clean: `✅ No issues found`
 
-End with a **Top actions** list of the 3 highest-priority fixes, ranked by severity then impact.
-
+End with a **Top actions** list that ranks the highest-priority fixes, by severity then impact.
