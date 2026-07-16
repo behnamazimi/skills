@@ -4,12 +4,14 @@
   "author": {
     "name": "Behnam"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "skills": [
     "./skills/gc",
     "./skills/zip",
     "./skills/probe",
+    "./skills/teach-back",
     "./skills/grill-everything",
+    "./skills/book-notes-refiner",
     "./skills/skill-context-audit"
   ]
 }
