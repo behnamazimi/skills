@@ -12,7 +12,7 @@ Work in rounds instead of asking one question at a time:
 - Group each round around a single theme or branch of reasoning — the questions in a round should be closely related, not a grab-bag of everything you're curious about.
 - Keep a round small enough that answers won't blur together — a handful of tightly related questions, not a laundry list. If a topic needs more than that, split it into multiple rounds.
 - Order rounds so earlier answers inform later questions; don't ask about a downstream decision before its dependency is resolved.
-- Label each question in a round Q1:, Q2:, Q3:, etc., so answers can be matched back to their question unambiguously.
+- Number questions sequentially across all rounds — Q1:, Q2:, Q3:, … continuing through round n without resetting per round — so answers can be matched back to their question unambiguously.
 - For each question, state your recommended answer so I can just confirm or correct it.
 - Use the AskUserQuestion tool (or equivalent question tool available to you) to pose each round and collect my answers, rather than asking in plain text.
 
