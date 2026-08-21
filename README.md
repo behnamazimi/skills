@@ -7,6 +7,7 @@ Behnam Azimi's collection of [Agent Skills](https://docs.claude.com/en/docs/clau
 - **[`gc`](skills/gc):** Rewrite text for grammar, punctuation, and flow when a message starts with `gc:`.
 - **[`grill-everything`](skills/grill-everything):** Relentlessly interview the user about a plan, opinion, or claim to stress-test their thinking. A fork of [original grill-me by mattpocock](https://github.com/mattpocock/skills).
 - **[`probe`](skills/probe):** Teach a topic one layer at a time through guided, back-and-forth questions.
+- **[`reinvented-wheel-audit`](skills/reinvented-wheel-audit):** Find hand-rolled subsystems that duplicate a platform API or library, using stack packs (a JS/TS web pack ships today).
 - **[`skill-context-audit`](skills/skill-context-audit):** Audit a skill for context quality (poisoning, distraction, confusion, and clash).
 - **[`zip`](skills/zip):** Report information as concisely as possible, sacrificing grammar for concision. 
 

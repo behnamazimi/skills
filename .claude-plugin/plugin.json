@@ -4,7 +4,7 @@
   "author": {
     "name": "Behnam"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "skills": [
     "./skills/gc",
     "./skills/zip",
@@ -13,6 +13,7 @@
     "./skills/grill-everything",
     "./skills/book-notes-refiner",
     "./skills/skill-context-audit",
+    "./skills/reinvented-wheel-audit",
     "./skills/jargon-gym-review",
     "./skills/jargon-gym-generator"
   ]
