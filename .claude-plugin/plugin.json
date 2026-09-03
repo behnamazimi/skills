@@ -15,6 +15,7 @@
     "./skills/skill-context-audit",
     "./skills/reinvented-wheel-audit",
     "./skills/jargon-gym-review",
-    "./skills/jargon-gym-generator"
+    "./skills/jargon-gym-generator",
+    "./skills/language-gym-generator"
   ]
 }
