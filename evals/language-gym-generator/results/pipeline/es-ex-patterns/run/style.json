@@ -1,0 +1,13 @@
+{
+  "voice": "second person, present tense, plain; a tutor texting a friend",
+  "categories": ["Verb", "Pattern"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 18, "discussion": 22, "anti_example": 20, "controversy": 12 },
+  "opening_moves": ["action verb: 'Says…', 'Tells…', 'Points out…'", "plain English equivalent first: 'Have: …', 'Can: …', 'Go: …'", "scene: 'When you…'", "necessity or feeling first: 'Must or have to: …'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "in this word", "this word", "refers to", "is defined as", "commonly used"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["first day at a new job", "phone call from the bus", "asking a stranger for a pharmacy", "parent chat at the park", "café counter order", "work chat asking for a file", "leaving a party early", "weekend market routine", "inviting a friend to a party", "family lunch at grandma's"] },
+  "ceiling": "B1",
+  "ipa_format": "none (pronunciation=none)",
+  "notes": "Patterns with a slot are written 'X + infinitivo' in term; the example always fills the slot. Examples: one Spanish sentence, then ' — ' and a short English gloss; whole example ≤ 15 words. Quote Spanish inside English text with single quotes. Nouns in bare lemma. No IPA or stress hints anywhere. Present and simple past only in Spanish text."
+}

@@ -1,0 +1,14 @@
+{ "answers": [
+  { "term_id": "t01", "question": "Which Spanish verb gives someone's origin and profession?", "answer": "ser", "writer_claim": "ser", "agree": true, "unsure": false },
+  { "term_id": "t01", "question": "Back-translate 'Soy Ana, soy de Colombia y soy enfermera.'", "answer": "I'm Ana, I'm from Colombia and I'm a nurse.", "writer_claim": "I'm Ana, from Colombia, a nurse.", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "Does the location of a house take ser or estar?", "answer": "estar", "writer_claim": "estar", "agree": true, "unsure": false },
+  { "term_id": "t03", "question": "Does hay change for plural nouns?", "answer": "no", "writer_claim": "no", "agree": true, "unsure": false },
+  { "term_id": "t03", "question": "Is 'hay + el/la + noun' normal for 'there is the…'?", "answer": "no; hay takes indefinite or bare nouns", "writer_claim": "not el or la", "agree": true, "unsure": false },
+  { "term_id": "t04", "question": "How does Spanish say age and hunger?", "answer": "tener años, tener hambre", "writer_claim": "tener", "agree": true, "unsure": false },
+  { "term_id": "t05", "question": "Is 'Quiero un café, por favor' acceptable at a Latin American café counter? Is 'Me da un…' common?", "answer": "yes; yes", "writer_claim": "yes; yes", "agree": true, "unsure": false },
+  { "term_id": "t06", "question": "Meaning of poder?", "answer": "can / be able to / may", "writer_claim": "can: able, allowed, polite requests", "agree": true, "unsure": false },
+  { "term_id": "t07", "question": "Is 'tengo ir' or 'tengo a ir' grammatical for 'I have to go'?", "answer": "no; tengo que ir", "writer_claim": "no; tengo que ir", "agree": true, "unsure": false },
+  { "term_id": "t08", "question": "What does a + el contract to? What does '¡Vamos!' alone mean?", "answer": "al; let's go", "writer_claim": "al; Let's go!", "agree": true, "unsure": false },
+  { "term_id": "t09", "question": "In Latin American Spanish, what does 'Ya vengo' usually mean, and what do you say when called to the door?", "answer": "I'll be right back; Ya voy", "writer_claim": "I'll be right back; Ya voy", "agree": true, "unsure": false },
+  { "term_id": "t10", "question": "In 'Me gustan los tacos', what is the subject?", "answer": "los tacos", "writer_claim": "the thing you like", "agree": true, "unsure": false }
+] }

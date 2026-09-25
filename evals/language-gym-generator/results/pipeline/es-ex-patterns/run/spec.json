@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "domain": "Spanish",
+  "language": "Spanish",
+  "slice": null,
+  "slice_type": "bare",
+  "count": 10,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "A2–B1", "floor": "A2", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Latin American Spanish (broadly neutral, ustedes for plural 'you')",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": {
+    "locale": "es-419",
+    "scripts": ["Latn"],
+    "direction": "ltr",
+    "cased": true,
+    "word_separated": true,
+    "diacritics_meaningful": true,
+    "articles": ["el", "la", "los", "las", "un", "una"],
+    "noun_citation": "bare lemma",
+    "pronunciation_convention": "IPA (Latin American, seseo); spoken = stress hint",
+    "grammar_notes": "Two copulas: ser (identity, origin, time, traits) and estar (location, current state). Existence with hay. Subject pronouns usually dropped; verb endings mark person. Politeness marked grammatically with tú vs usted (ustedes for all plural 'you' in Latin America). Negation with no before the verb; double negatives (no … nada/nunca). Questions by intonation or question words. Core modals/verbs: querer, poder, tener que, ir, venir, tener. Gustar-type verbs reverse the English subject (me gusta). Reflexive se, object pronouns lo/la/le before the conjugated verb. Periphrastic constructions: ir a + infinitive, estar + gerund, acabar de + infinitive, tener que + infinitive, volver a + infinitive. Past: preterite vs imperfect. Closed sets: subject pronouns, object pronouns, articles, question words, days of the week."
+  },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "domain": "user", "count": "user", "exclude": "user", "learner": "default", "level": "default", "immersion": "default", "pronunciation": "default", "dialect": "default", "slice_type": "inferred" }
+}

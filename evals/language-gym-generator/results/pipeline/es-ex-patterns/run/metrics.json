@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "errors": 0,
+  "findings": [],
+  "batches": [
+    {
+      "batch": "1",
+      "terms": 10,
+      "def_words": 12.7,
+      "example_words": 11.7,
+      "def_sentence_words": 12.7,
+      "optional_fields": 2,
+      "plan_mismatches": 0
+    }
+  ],
+  "outliers": [],
+  "repeated_scenes": []
+}

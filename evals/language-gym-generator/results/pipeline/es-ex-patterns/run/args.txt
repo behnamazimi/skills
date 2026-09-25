@@ -1,0 +1,1 @@
+Spanish | 10 | exclude: estar + gerundio, ir a + infinitivo

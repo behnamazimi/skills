@@ -1,0 +1,5 @@
+{ "terms": [
+  { "id": "t02", "batch": 1, "term": "estar", "category": "Verb", "definition": "Tells where someone or something is, or how they feel right now.", "example": "Estoy en el bus y estoy cansada. — I'm on the bus, and tired.", "anti_example": "Not 'Mi casa es en el centro' for where your house is: say 'Mi casa está en el centro'." },
+  { "id": "t07", "batch": 1, "term": "tener que + infinitivo", "category": "Pattern", "definition": "Must or have to: says something is necessary for you to do.", "example": "Tengo que trabajar mañana temprano. — I have to work early tomorrow.", "anti_example": "Not 'Tengo ir' or 'Tengo a ir': the que is required. Say 'Tengo que ir'." },
+  { "id": "t05", "batch": 1, "term": "querer", "category": "Verb", "definition": "Want: asks for a thing, or says what you'd like to do.", "example": "Quiero un café con leche, por favor. — I'd like a latte, please.", "discussion": "At a counter, 'Quiero un…, por favor' sounds normal, not rude. 'Me da un…, por favor' is just as common." }
+] }

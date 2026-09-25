@@ -1,0 +1,9 @@
+{
+  "raw": ["estar + gerundio", "ir a + infinitivo"],
+  "items": [
+    { "raw": "estar + gerundio", "term": "estar + gerundio", "lemma": "estar", "job": "action in progress right now (I'm doing X)", "forms": ["estar + -ando", "estar + -iendo", "estar + -ando/-iendo", "estar + gerund", "estar + gerundio (-ando/-iendo)", "estoy + gerundio", "está + gerundio", "estar haciendo", "estoy haciendo"], "scope": "phrase" },
+    { "raw": "ir a + infinitivo", "term": "ir a + infinitivo", "lemma": "ir", "job": "near future / plans (I'm going to do X)", "forms": ["ir a + infinitive", "ir a + inf.", "ir a + infinitivo", "voy a + infinitivo", "va a + infinitivo", "vamos a + infinitivo", "ir a hacer", "voy a hacer"], "scope": "phrase" }
+  ],
+  "ignored": [],
+  "hints": { "notes": "Both items are periphrastic verb constructions (phrase scope). They block only these patterns, not the verbs estar or ir in their other jobs (R-EX-03). No dialect or noun-format markers." }
+}

@@ -1,0 +1,43 @@
+{
+  "main": [
+    { "id": "t01", "term": "ser", "job": "identity: what or who something is, origin, profession, lasting traits", "slot": "spine", "level": "A1", "why": "one of the two ways Spanish says 'be'; ser/estar is the #1 trap for English speakers" },
+    { "id": "t02", "term": "estar", "job": "location and current state (where something is, how someone is right now)", "slot": "spine", "level": "A1", "why": "the other 'be'; only the estar + gerundio pattern is known, not estar's own location/state job (R-EX-03)" },
+    { "id": "t03", "term": "hay", "job": "existence: there is / there are", "slot": "spine", "level": "A1", "why": "the existence building block; English speakers reach for 'está' instead" },
+    { "id": "t04", "term": "tener", "job": "have: possession, age, and states like hunger or cold (tener hambre)", "slot": "spine", "level": "A1", "why": "have-job building block; tener años / tener frío is a daily trap" },
+    { "id": "t05", "term": "querer", "job": "want (a thing or to do something)", "slot": "spine", "level": "A1", "why": "want-job building block" },
+    { "id": "t06", "term": "poder", "job": "can: ability, permission, polite requests", "slot": "spine", "level": "A1", "why": "can-job building block; ¿Puedo…? / ¿Me puedes…? requests" },
+    { "id": "t07", "term": "tener que + infinitivo", "job": "must / have to do something", "slot": "construction", "level": "A1", "why": "the everyday must-job in Latin America; a separate job from tener (R-TERM-05)" },
+    { "id": "t08", "term": "ir", "job": "go: movement to a place (ir a + place)", "slot": "spine", "level": "A1", "why": "go-job building block; only the ir a + infinitivo future pattern is known, not movement (R-EX-03)" },
+    { "id": "t09", "term": "venir", "job": "come: movement toward the speaker", "slot": "spine", "level": "A1", "why": "come-job building block; ir/venir perspective differs from English come/go" },
+    { "id": "t10", "term": "gustar", "job": "like: the thing liked is the subject (me gusta, te gustan)", "slot": "construction", "level": "A1", "why": "unlocking construction; the reversed structure blocks talking about likes until learned" }
+  ],
+  "spares": [
+    { "id": "s01", "term": "acabar de + infinitivo", "job": "have just done something", "slot": "construction", "level": "A2", "why": "the recent-past partner of the known ir a + infinitivo" },
+    { "id": "s02", "term": "deber", "job": "should / ought to (advice, duty)", "slot": "spine", "level": "A2", "why": "softer obligation next to tener que" },
+    { "id": "s03", "term": "saber", "job": "know a fact / know how to do something", "slot": "spine", "level": "A1", "why": "know-job; saber vs conocer trap" }
+  ],
+  "sets": [
+    { "name": "copulas (ways to say 'be')", "members": ["ser", "estar"] }
+  ],
+  "shape": {
+    "jobs_covered": {
+      "identity": "ser",
+      "location / state": "estar",
+      "existence": "hay",
+      "have": "tener",
+      "want": "querer",
+      "can": "poder",
+      "must": "tener que + infinitivo",
+      "go": "ir",
+      "come": "venir",
+      "liking": "gustar",
+      "ongoing action": "estar + gerundio (known)",
+      "near future": "ir a + infinitivo (known)",
+      "negation": "not claimed: no before the verb works like English 'not' and is assumed at A2",
+      "questions": "not claimed: intonation questions need no term; the question-word set (7+ members) is bigger than the remaining count, so it is not started (R-SEL-04)",
+      "politeness / referring to people": "not claimed: the tú / usted / ustedes set needs 3 slots and would push out spine verbs; not started (R-SEL-04)"
+    },
+    "concrete_nouns": 0,
+    "notes": "bare slice, A2–B1. Excluded items are phrase-scope patterns, so estar and ir are selected for their own jobs. Every item is a building block or unlocking construction; no nouns, no greetings."
+  }
+}
