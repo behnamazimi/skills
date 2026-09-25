@@ -8,7 +8,7 @@ import { dirname, join } from 'node:path';
 import {
   validateOutput, validateSpec, validateExclude, validateList, validateGlossary, validateFindings,
   candidates, normalize, metrics, tokens, project, parseJson, ruleIdsFrom,
-  requiredJobs, ipaCompare,
+  requiredJobs, ipaCompare, cost,
 } from '../../skills/language-gym-generator/scripts/gym.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -462,4 +462,15 @@ test('example length limit ignores the learner-language gloss', () => {
   assert.ok(!has(validateGlossary(d, esSpec, { style: { limits: { example: 5 } } }), 'R-FLD-06', 'terms[0]'));
   d.terms[0].example = 'Estoy en casa con mi madre y mi hermano esta tarde.';
   assert.ok(has(validateGlossary(d, esSpec, { style: { limits: { example: 5 } } }), 'R-FLD-06', 'terms[0]'));
+});
+
+test('cost sums time and tokens per step, slowest first', () => {
+  const c = cost(fx('state-cost.json'));
+  assert.equal(c.steps[0].step, '04-plan');
+  const write = c.steps.find((s) => s.step === '05-write');
+  assert.deepEqual([write.runs, write.seconds, write.tokens], [2, 75, 35000]);
+  assert.equal(c.steps.find((s) => s.step === '00-parse').tokens, null, 'unknown tokens stay null, not 0');
+  assert.equal(c.total_seconds, 213);
+  assert.equal(c.total_tokens, 95000);
+  assert.deepEqual(cost({}).steps, []);
 });

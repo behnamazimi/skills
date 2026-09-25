@@ -40,6 +40,7 @@ For each step, start a **new** subagent. Never continue an earlier one: fresh co
 
 After each step:
 - run the checks its file names, and update `state.json`;
+- append the step's cost to `state.steps`: start and end times, seconds, and the token usage the agent tool reported for that subagent (`null` inline). One entry per batch, per step 9 part and per retry (contract.md);
 - on errors, give the findings back to the same step as a **new** subagent, once;
 - after that, follow the step file's fallback (swap in spares, drop, or continue shorter).
 

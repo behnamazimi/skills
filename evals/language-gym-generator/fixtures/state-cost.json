@@ -1,0 +1,13 @@
+{
+  "step": "done",
+  "inline": false,
+  "node": true,
+  "steps": [
+    { "step": "00-parse", "agent": "orchestrator", "seconds": 10, "tokens": null, "retries": 0 },
+    { "step": "02-select", "agent": "select", "seconds": 28, "tokens": 21000, "retries": 0 },
+    { "step": "04-plan", "agent": "plan", "seconds": 80, "tokens": 30000, "retries": 0 },
+    { "step": "05-write", "agent": "write batch 1", "seconds": 40, "tokens": 18000, "retries": 0 },
+    { "step": "05-write", "agent": "write batch 2", "seconds": 35, "tokens": 17000, "retries": 1 },
+    { "step": "09-check", "agent": "level rater 1", "seconds": 20, "tokens": 9000, "retries": 0 }
+  ]
+}

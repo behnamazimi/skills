@@ -34,8 +34,11 @@ Every step reads and writes files in the run folder. It never passes data only t
 ## `state.json`
 
 ```json
-{ "step": "05-write", "done": ["00-parse", "01-exclude", "02-select", "03-review-list", "04-plan"], "retries": {"05-write:batch-3": 1}, "inline": false, "node": true, "warnings": [] }
+{ "step": "05-write", "done": ["00-parse", "01-exclude", "02-select", "03-review-list", "04-plan"], "retries": {"05-write:batch-3": 1}, "inline": false, "node": true, "warnings": [],
+  "steps": [ { "step": "04-plan", "agent": "plan", "started": "2026-09-25T18:01:10Z", "ended": "2026-09-25T18:02:30Z", "seconds": 80, "tokens": 30000, "retries": 0 } ] }
 ```
+
+`steps` gets one entry per unit of work: every step, every parallel batch, every part of step 9, every fix round and every retry. `tokens` is the subagent's total token usage as reported by the agent tool when the step finished. It is `null` when the step ran inline or wasn't a subagent, because an agent can't see its own usage; never estimate it. `GYM cost state.json` sums the entries per step.
 
 To resume a run, read `state.json` and continue from `step`. `inline: true` means the steps ran without subagents; `node: false` means the script checks were done by hand. Both go in the report.
 
@@ -208,4 +211,5 @@ This is for the user and for debugging; it's never printed in chat. It covers:
 - level exceptions;
 - rejected findings;
 - dropped and replaced terms;
-- anything that wasn't verified.
+- anything that wasn't verified;
+- a **Cost** table from `GYM cost state.json`: seconds and tokens per step with their share of the run, slowest first, then the totals. Tokens show as "not recorded" when they are `null`.

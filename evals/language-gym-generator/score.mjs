@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { validateOutput, validateGlossary, fold, words, stripMarks } from '../../skills/language-gym-generator/scripts/gym.mjs';
+import { validateOutput, validateGlossary, fold, words, stripMarks, cost } from '../../skills/language-gym-generator/scripts/gym.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -189,6 +189,22 @@ if (compareFile && existsSync(compareFile)) {
   const tally = {};
   for (const v of Object.values(cmp.results || {})) tally[v.winner] = (tally[v.winner] || 0) + 1;
   out.push('', `**Blind pairwise comparison (${cmp.a} vs ${cmp.b}):** ${Object.entries(tally).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
+}
+// Time and tokens per step, when the runs kept their state.json (contract.md: state.steps).
+const perStep = new Map();
+for (const c of cases) {
+  const f = join(runDir, c.id, 'run', 'state.json');
+  if (!existsSync(f)) continue;
+  for (const s of cost(JSON.parse(readFileSync(f, 'utf8'))).steps) {
+    if (!perStep.has(s.step)) perStep.set(s.step, { seconds: [], tokens: [] });
+    perStep.get(s.step).seconds.push(s.seconds);
+    if (s.tokens !== null) perStep.get(s.step).tokens.push(s.tokens);
+  }
+}
+if (perStep.size) {
+  const med = (a) => { if (!a.length) return null; const b = [...a].sort((x, y) => x - y); return b[Math.floor(b.length / 2)]; };
+  out.push('', '**Cost per step (median across cases):**', '', '| step | cases | seconds | tokens |', '| --- | --- | --- | --- |');
+  for (const [step, v] of [...perStep].sort((a, b) => med(b[1].seconds) - med(a[1].seconds))) out.push(`| ${step} | ${v.seconds.length} | ${med(v.seconds)} | ${med(v.tokens) ?? 'not recorded'} |`);
 }
 const text = out.join('\n') + '\n';
 writeFileSync(join(runDir, 'score.md'), text);

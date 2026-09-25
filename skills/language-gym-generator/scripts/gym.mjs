@@ -16,6 +16,7 @@
 //   candidates         <list.json>     --spec <spec.json> [--exclude <exclude.json>]
 //   tokens             <draft.json>    --spec <spec.json> [--exclude ..] [--levellist <file>]
 //   ipa                <draft.json>    [--against <ipa-check.json>]
+//   cost               <state.json>
 //   emit               <draft.json>    --spec <spec.json> [--out <file>]
 // Output: JSON on stdout. Exit 0 = ok, 1 = findings (errors), 2 = usage/IO error.
 
@@ -773,6 +774,32 @@ export function ipaCompare(draft, check) {
   return out;
 }
 
+// ---------- cost (time and tokens per step, from state.steps) ----------
+
+export function cost(state) {
+  const by = new Map();
+  for (const s of Array.isArray(state?.steps) ? state.steps : []) {
+    const k = String(s.step || 'unknown');
+    const e = by.get(k) || { step: k, runs: 0, seconds: 0, tokens: 0, tokens_known: 0 };
+    e.runs++;
+    e.seconds += Number(s.seconds) || 0;
+    if (Number.isFinite(s.tokens)) { e.tokens += s.tokens; e.tokens_known++; }
+    by.set(k, e);
+  }
+  const rows = [...by.values()];
+  const totalSeconds = rows.reduce((a, r) => a + r.seconds, 0);
+  const totalTokens = rows.reduce((a, r) => a + r.tokens, 0);
+  for (const r of rows) {
+    r.seconds = +r.seconds.toFixed(1);
+    r.share_seconds = totalSeconds ? +(r.seconds / totalSeconds).toFixed(3) : 0;
+    r.share_tokens = totalTokens ? +(r.tokens / totalTokens).toFixed(3) : null;
+    if (!r.tokens_known) r.tokens = null;
+    delete r.tokens_known;
+  }
+  rows.sort((a, b) => b.seconds - a.seconds);
+  return { steps: rows, total_seconds: +totalSeconds.toFixed(1), total_tokens: totalTokens || null };
+}
+
 // ---------- emit (projection to the import contract) ----------
 
 export function project(draft, spec = null) {
@@ -850,6 +877,7 @@ function main(argv) {
       const res = ipaCompare(draft, readJson(flags.against));
       return report(res.filter((r) => r.severity === 'must_fix').map((r) => finding('R-PRON-04', r.term_id, `IPA /${r.writer}/ vs independent /${r.checker}/`)), { comparisons: res });
     }
+    case 'cost': return report([], cost(readJson(a)));
     case 'tokens': return report([], tokens(readJson(a), need(flags, 'spec'), { ex: opt('exclude'), style: opt('style'), levellist: flags.levellist ? readFileSync(flags.levellist, 'utf8') : null }));
     case 'emit': {
       const spec = need(flags, 'spec');
@@ -861,7 +889,7 @@ function main(argv) {
       process.stdout.write(text);
       return;
     }
-    default: throw new UsageError('commands: validate <spec|exclude|list|batch|glossary|findings|output> | normalize | metrics | candidates | tokens | ipa | emit');
+    default: throw new UsageError('commands: validate <spec|exclude|list|batch|glossary|findings|output> | normalize | metrics | candidates | tokens | ipa | cost | emit');
   }
 }
 
