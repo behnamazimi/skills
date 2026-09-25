@@ -9,7 +9,8 @@ This step makes every decision that must be the same across the whole glossary, 
 - `job`: the one job this entry teaches (R-FLD-02).
 - `trap`: the most likely mistake *for a speaker of `spec.learner`* (their native language's habits, false friends, the famous other half of a pair). "None" is allowed.
 - `scene`: one concrete everyday scene for the example, told with known or at-level words (R-LVL-01). In beginner mode the scene must fit one short sentence with one clause (R-LVL-04, R-LVL-07); a two-line exchange (a question and its answer) is the most it can be. Vary scenes across the glossary; no scene more than twice.
-- `fields`: which optional fields this entry gets, and `why_fields`. Apply R-FLD-08 to R-FLD-12 the same way to the last term as to the first (R-FLD-15). Most terms get 1–2 optional fields; an `anti_example` only where `trap` is real. With beginner mode off, scan every term for `controversy` (R-FLD-12).
+- `fields`: only the optional fields that pass their test for *this* term (R-FLD-08 to R-FLD-12), `example` included. Start from none and add a field only when its test says yes. An empty list is normal: expect it for concrete nouns and obvious verbs whose definition already says everything. There is no target number (R-FLD-01, R-FLD-16). Apply the tests the same way to the last term as to the first (R-FLD-15). With beginner mode off, scan every term for `controversy` (R-FLD-12).
+- `why_fields`: one reason per listed field, naming the specific thing it adds for this learner. For example, "example: the verb takes a dative, which the definition can't show", or "anti_example: English speakers say *estoy de acuerdo a*". "Helps understanding" or "shows usage" is not a reason; a field without a specific reason is left out.
 - `level_exceptions`: any word one level above the ceiling this entry will need, and why no simpler word works (R-LVL-02). Usually empty.
 
 ## `style.json`
@@ -19,6 +20,7 @@ This step makes every decision that must be the same across the whole glossary, 
 - `voice`, `gloss_separator` (` — ` unless the learner language's punctuation calls for something else), `ipa_format`. For a tone language, `ipa_format` fixes one tone convention for every entry: citation tones or tones after sandhi, which tone letters, and how neutral tone is written.
 - `opening_moves`: 4–6 different ways to open a definition, in the learner language, so that no opening word is used more than 3 times (R-FLD-04).
 - `banned_phrases`: AI-cliché filler in the learner language (R-TONE-02).
+- `example_markers`: the learner language's words and phrases that introduce an example (e.g. "e.g.", "for example", "such as"; "bijvoorbeeld", "zoals" in Dutch). The R-FLD-18 check uses them to spot examples hidden in definitions.
 - `confusion_types`: the relationship type(s) meaning "often confused with", in the language used for relationships.
 - `scenes_by_batch`: split the planned scenes so each batch of about 12 has its own set.
 - `ceiling`, and `notes` on anything else every writer must do the same way (how to write patterns with slots, how to show politeness levels, the script and marks convention).

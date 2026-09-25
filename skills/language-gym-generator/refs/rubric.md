@@ -2,6 +2,8 @@
 
 Used in step 7. Score each **present** field from 1 to 4, judged against the spec: this learner's language, this level, this slice. Missing optional fields aren't scored; the plan already decided they add nothing. A score of 3 or 4 means keep. A score of 1 or 2 means write a rewrite suggestion, or `drop_field` if the field shouldn't exist.
 
+**A present field that adds nothing scores 1, however well it's written.** For example, an `example` for "la mesa" that just shows a table, or a `discussion` that restates the definition. The action is `drop_field`, not a rewrite. The same goes for a `definition` that carries an example inside it (R-FLD-18): the example part is removed, and it becomes an `example` only if that field passes its own test.
+
 The example answers use Spanish for an English speaker at A2–B1. Apply the same standard in any language pair.
 
 ## definition

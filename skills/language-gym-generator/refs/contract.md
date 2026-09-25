@@ -114,6 +114,7 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
   "limits": { "definition": 22, "example": 14, "sentence": 10, "mental_model": 22, "discussion": 30, "anti_example": 24, "controversy": 20 },
   "opening_moves": ["action verb: 'Says…', 'Marks…'", "scene: 'When you…'", "contrast-free plain meaning"],
   "banned_phrases": ["…learner-language list…"],
+  "example_markers": ["e.g.", "for example", "such as"],
   "confusion_types": ["often confused with"],
   "scenes_by_batch": { "1": ["café order", "bus stop", "family dinner"], "2": ["…"] },
   "ceiling": "B1",
@@ -134,7 +135,7 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
   "trap": "English speakers use ser for everything 'be'",
   "scene": "phone call: where are you?",
   "fields": ["example", "anti_example"],
-  "why_fields": "anti_example: the ser/estar mix-up is the #1 trap",
+  "why_fields": { "example": "location vs state needs a sentence to show", "anti_example": "English speakers use ser for every 'be'" },
   "level_exceptions": [ { "word": "…", "level": "B2", "reason": "no simpler word for …" } ]
 } ] }
 ```

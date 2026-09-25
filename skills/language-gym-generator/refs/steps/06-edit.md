@@ -9,6 +9,6 @@
    - **Example editor:** all `example`s. Same gloss format, no repeated scenes or sentence frames, every sentence natural and on-job.
    - **Optional-field editor:** `mental_model`, `discussion`, `anti_example`, `controversy`. Same voice and length, no restating the definition, and an anti-example must match the plan's `trap`.
 
-   An editor may not add or remove fields (that belongs to the plan and the coach) and may not raise the level. It returns the edited `draft.json` together with a list of what it changed.
+   An editor may not add or remove fields (that belongs to the plan and the coach). The definition editor also moves nothing into a definition: an illustration found there is reported for step 10 under R-FLD-18, not rewritten into the text and may not raise the level. It returns the edited `draft.json` together with a list of what it changed.
 4. **Measure** (script): `GYM metrics draft.json --spec spec.json --plan plan.json > metrics.json`. Any `outliers` entry (a batch well off the median, or fields that don't match the plan) → that batch's entries go back to step 5, with the model entries and the metric that drifted. Once.
 5. `GYM validate glossary draft.json --spec spec.json --style style.json --exclude exclude.json`. Errors here are fixed now; they are mechanical.

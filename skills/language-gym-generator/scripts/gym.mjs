@@ -30,6 +30,8 @@ export const TOP_FIELDS = ['domain', 'description', 'terms', 'relationships'];
 export const CEFR = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 export const MAX_TERMS = 100;
 export const MAX_RELATIONSHIPS = 100;
+const DEFAULT_EXAMPLE_MARKERS_EN = ['e.g.', 'for example', 'for instance', 'such as'];
+const QUOTED = /“([^”]+)”|"([^"]+)"|«([^»]+)»|„([^“”]+)[“”]|「([^」]+)」|『([^』]+)』|‘([^’]+)’|(?<!\p{L})'([^']+)'(?!\p{L})/gu;
 const DEFAULT_BANNED_EN = ["it's important to note", "in today's fast-paced world", 'leverage', 'utilize', 'robust', 'seamless', 'delve into', 'unlock', 'game-changer', 'cutting-edge'];
 const IPA_TAIL = /\s\/[^/\s][^/]*\/\.?$/u;
 const IPA_SPAN = /\/[^/\s][^/]*\//gu;
@@ -447,6 +449,22 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
   let prevOpener = null;
   const banned = [...(style?.banned_phrases || []), ...(String(lp.locale || '').toLowerCase().startsWith('en') ? DEFAULT_BANNED_EN : [])];
   const limits = style?.limits || {};
+  // Vocabularies for telling a quoted target phrase from a quoted learner-language gloss (R-FLD-18).
+  const sameScript = [...allowedScripts(profile)].some((sc) => allowedScripts(lp).has(sc));
+  const targetVocab = new Set(), learnerVocab = new Set();
+  for (const t of terms) {
+    for (const w of words(String(t.term || ''), profile.locale)) targetVocab.add(fold(w, profile));
+    if (typeof t.example === 'string') for (const w of words(targetPart('example', t.example, spec, style), profile.locale)) targetVocab.add(fold(w, profile));
+    if (typeof t.definition === 'string') for (const w of words(stripIpa(t.definition).replace(QUOTED, ' '), lp.locale)) learnerVocab.add(fold(w, lp));
+  }
+  const looksTarget = (span) => {
+    if (spec.immersion) return true;
+    if (!sameScript) return false; // different scripts: the script check above covers target text
+    const ws = words(span, profile.locale).map((w) => fold(w, profile));
+    const inTarget = ws.filter((w) => targetVocab.has(w)).length / ws.length;
+    const inLearner = ws.filter((w) => learnerVocab.has(w)).length / ws.length;
+    return inTarget >= 0.5 && inLearner < 0.5;
+  };
   terms.forEach((t, i) => {
     const p = `terms[${i}]`;
     if (typeof t.term !== 'string' || typeof t.definition !== 'string') return;
@@ -483,6 +501,33 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
       openers.set(op, [...(openers.get(op) || []), i]);
       if (op === prevOpener) out.push(finding('R-FLD-04', `${p}.definition`, `same opening word "${defWords[0]}" as the previous definition`));
       prevOpener = op;
+    }
+    // Optional field repeating the definition (R-FLD-17).
+    const defSet = new Set(words(def, lp.locale).map((w) => fold(w, lp)));
+    for (const f of ['mental_model', 'discussion', 'anti_example', 'controversy']) {
+      if (typeof t[f] !== 'string') continue;
+      const ws = new Set(words(t[f], lp.locale).map((w) => fold(w, lp)));
+      const small = Math.min(ws.size, defSet.size);
+      if (small < 4) continue;
+      const shared = [...ws].filter((w) => defSet.has(w)).length;
+      if (shared / small >= 0.7) out.push(finding('R-FLD-17', `${p}.${f}`, `shares ${shared} of ${small} words with the definition; it may just repeat it`, 'warning'));
+    }
+    // Examples inside the definition (R-FLD-18).
+    if (!spec.immersion) {
+      const learnerScripts = allowedScripts(lp);
+      const targetOnly = [...scriptsOf(def)].filter((sc) => !learnerScripts.has(sc) && allowedScripts(profile).has(sc));
+      if (targetOnly.length) out.push(finding('R-FLD-18', `${p}.definition`, `contains target-language text (${targetOnly.join(', ')}); examples belong in example`, 'warning'));
+    }
+    for (const m of def.matchAll(QUOTED)) {
+      const span = m.slice(1).find(Boolean) || '';
+      if (words(span, profile.locale).length >= 2 && looksTarget(span)) { out.push(finding('R-FLD-18', `${p}.definition`, `quoted phrase "${span}"; examples belong in example`, 'warning')); break; }
+    }
+    const markers = style?.example_markers || (String(lp.locale || '').toLowerCase().startsWith('en') ? DEFAULT_EXAMPLE_MARKERS_EN : []);
+    const lowDef = ` ${fold(def, lp)} `;
+    for (const mk of markers) {
+      const k = fold(mk, lp);
+      const re = new RegExp(`(^|[^\\p{L}])${k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?=$|[^\\p{L}])`, 'u');
+      if (re.test(lowDef)) { out.push(finding('R-FLD-18', `${p}.definition`, `uses the example marker "${mk}"; examples belong in example`, 'warning')); break; }
     }
     // Beginner mode shape.
     if (spec.beginner_mode) {
@@ -526,6 +571,16 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
     }
   });
   for (const [op, idx] of openers) if (idx.length > 3) out.push(finding('R-FLD-04', `terms[${idx[3]}].definition`, `opening word "${op}" used ${idx.length} times (max 3)`));
+  // Optional fields are a per-term judgment (R-FLD-16). Warnings: an agent decides which fields to drop.
+  if (!partial && terms.length >= 8) {
+    const counts = terms.map((t) => OPTIONAL_TERM_FIELDS.filter((f) => t[f]).length);
+    if (counts.every((c) => c === counts[0])) out.push(finding('R-FLD-16', 'terms', `every term has exactly ${counts[0]} optional field(s); fields should follow each term's needs`, 'warning'));
+    for (const f of OPTIONAL_TERM_FIELDS) {
+      const n = terms.filter((t) => t[f]).length;
+      if (n / terms.length > 0.8) out.push(finding('R-FLD-16', 'terms', `${f} is on ${n} of ${terms.length} terms (> 80%)`, 'warning'));
+    }
+    if (!counts.includes(0)) out.push(finding('R-FLD-16', 'terms', 'no term is definition-only', 'warning'));
+  }
   // Relationships.
   const rels = Array.isArray(draft.relationships) ? draft.relationships : [];
   if (rels.length >= 3) {
@@ -645,7 +700,11 @@ export function metrics(draft, spec, plan = null) {
   const scenes = new Map();
   for (const p of plan?.terms || []) if (p.scene) scenes.set(fold(p.scene, lp), [...(scenes.get(fold(p.scene, lp)) || []), p.id]);
   const repeatedScenes = [...scenes].filter(([, ids]) => ids.length > 2).map(([scene, ids]) => ({ scene, ids }));
-  return { batches: per, outliers, repeated_scenes: repeatedScenes };
+  const all = draftTerms(draft);
+  const fill = Object.fromEntries(OPTIONAL_TERM_FIELDS.map((f) => [f, all.length ? +(all.filter((t) => t[f]).length / all.length).toFixed(2) : 0]));
+  const distribution = {};
+  for (const t of all) { const n = OPTIONAL_TERM_FIELDS.filter((f) => t[f]).length; distribution[n] = (distribution[n] || 0) + 1; }
+  return { batches: per, outliers, repeated_scenes: repeatedScenes, fill_rates: fill, optional_field_counts: distribution };
 }
 
 // ---------- tokens (input for the level check) ----------

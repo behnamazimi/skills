@@ -399,3 +399,50 @@ test('B2+ skips required jobs; slot markers are not a script violation', () => {
   const romanized = { main: [{ id: 't1', term: 'bu liao', job: 'j', slot: 'construction', level: 'B1' }], spares: [], sets: [] };
   assert.ok(has(validateList(romanized, fx('spec-zh.json')), 'R-TERM-06'), 'real Latin words still fail');
 });
+
+const warn = (fs, rule, pathPart = '') => fs.some((f) => f.rule === rule && f.severity === 'warning' && f.path.includes(pathPart));
+
+test('R-FLD-16: uniform optional fields are flagged, varied ones are not', () => {
+  const mk = (n, fields) => ({ domain: 'Spanish', description: 'd', terms: Array.from({ length: n }, (_, i) => ({ id: `t${i}`, term: `palabra${i}`, category: 'Noun', definition: `Meaning number ${i} here.`, ...Object.fromEntries(fields(i).map((f) => [f, `Text ${f} ${i}.`])) })) });
+  const uniform = validateGlossary(mk(10, () => ['example', 'discussion']), esSpec);
+  assert.ok(warn(uniform, 'R-FLD-16') && uniform.some((f) => /exactly 2/.test(f.message)));
+  assert.ok(uniform.some((f) => f.rule === 'R-FLD-16' && /example is on 10 of 10/.test(f.message)));
+  assert.ok(uniform.some((f) => f.rule === 'R-FLD-16' && /definition-only/.test(f.message)));
+  const varied = validateGlossary(mk(10, (i) => [[], ['example'], ['example', 'anti_example'], ['example', 'discussion', 'anti_example']][i % 4]), esSpec);
+  assert.ok(!warn(varied, 'R-FLD-16'));
+  assert.ok(!warn(validateGlossary(esDraft, esSpec), 'R-FLD-16'), 'fewer than 8 terms are not judged');
+  assert.equal(rules(uniform).filter((r) => r === 'R-FLD-16').length, 0, 'warnings, not errors');
+});
+
+test('R-FLD-17: an optional field that repeats the definition is flagged', () => {
+  const d = structuredClone(esDraft);
+  d.terms[3].discussion = 'Talks about a plan for later, a plan.';
+  d.terms[3].definition = 'Talks about a plan for later.';
+  assert.ok(warn(validateGlossary(d, esSpec), 'R-FLD-17', 'terms[3].discussion'));
+  assert.ok(!warn(validateGlossary(esDraft, esSpec), 'R-FLD-17'));
+});
+
+test('R-FLD-18: examples inside the definition are flagged, in any script', () => {
+  const d = structuredClone(esDraft);
+  d.terms[0].definition = 'Says where something is, e.g. at home.';
+  d.terms[1].definition = 'Names identity, as in "soy de Lima".';
+  d.terms[2].definition = "Tells you something exists; don't use it for people.";
+  const fs = validateGlossary(d, esSpec);
+  assert.ok(warn(fs, 'R-FLD-18', 'terms[0]'), 'example marker');
+  assert.ok(warn(fs, 'R-FLD-18', 'terms[1]'), 'quoted target phrase');
+  assert.ok(!warn(fs, 'R-FLD-18', 'terms[2]'), 'a contraction is not a quote');
+  assert.ok(!warn(validateGlossary(esDraft, esSpec), 'R-FLD-18'), 'clean definitions pass when both languages are Latin script');
+  const zh = fx('glossary-zh.json');
+  zh.terms[0].definition = 'Moves the object before the verb, as in 我把门关上了. /pa˨˩˦/';
+  assert.ok(warn(validateGlossary(zh, fx('spec-zh.json')), 'R-FLD-18', 'terms[0]'), 'target script in an English definition');
+  assert.ok(!warn(validateGlossary(fx('glossary-zh.json'), fx('spec-zh.json')), 'R-FLD-18'));
+  const nl = structuredClone(esDraft);
+  nl.terms[0].definition = 'Zegt waar iets is, bijvoorbeeld thuis.';
+  assert.ok(warn(validateGlossary(nl, esSpec, { style: { example_markers: ['bijvoorbeeld', 'zoals'] } }), 'R-FLD-18', 'terms[0]'), 'style markers for other learner languages');
+});
+
+test('metrics report fill rates and the optional-field count distribution', () => {
+  const m = metrics(esDraft, esSpec);
+  assert.equal(m.fill_rates.example, 1);
+  assert.deepEqual(m.optional_field_counts, { 1: 3, 2: 1 });
+});

@@ -124,6 +124,18 @@ for (const c of cases) {
     const low = shares.filter((s) => s < 0.6).length;
     r.hard.push({ name: `${field} written in ${allowed.join('/')}`, pass: low === 0, value: `${low} of ${shares.length} below 60%` });
   }
+  // Optional fields only where they add value (R-FLD-16/18). Grammar slices legitimately give most terms an example.
+  const OPT = ['example', 'mental_model', 'discussion', 'anti_example', 'controversy'];
+  if (spec.slice_type !== 'grammar') for (const g of glossaries) {
+    const ts = g.terms || [];
+    if (ts.length < 8) continue;
+    const counts = ts.map((t) => OPT.filter((f) => t[f]).length);
+    r.hard.push({ name: 'optional fields vary by term', pass: !counts.every((x) => x === counts[0]) && counts.includes(0), value: counts.join(',') });
+    const ex = ts.filter((t) => t.example).length / ts.length;
+    r.hard.push({ name: 'example on ≤ 80% of terms', pass: ex <= 0.8, value: +ex.toFixed(2) });
+  }
+  const inDef = glossaries.flatMap((g) => validateGlossary(g, spec).filter((f) => f.rule === 'R-FLD-18').map((f) => `${f.path}: ${f.message}`));
+  r.hard.push({ name: 'no example inside a definition', pass: inDef.length === 0, value: inDef.slice(0, 3) });
   r.terms = n;
   r.optional_fields = +(allTerms.reduce((a, t) => a + ['example', 'mental_model', 'discussion', 'anti_example', 'controversy'].filter((f) => t[f]).length, 0) / Math.max(n, 1)).toFixed(2);
   r.categories = [...new Set(allTerms.map((t) => t.category))];

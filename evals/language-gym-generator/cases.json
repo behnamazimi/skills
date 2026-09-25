@@ -475,7 +475,8 @@
         },
         "beginner_mode": true,
         "immersion": false,
-        "pronunciation": "none"
+        "pronunciation": "none",
+        "slice_type": "grammar"
       },
       "judge": [
         "each particle framed to one job; no noun side list"

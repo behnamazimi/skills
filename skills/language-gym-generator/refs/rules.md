@@ -125,7 +125,7 @@ Words used below:
 
 ## R-FLD: Fields
 
-- **R-FLD-01** `term`, `category` and `definition` are required. `example`, `mental_model`, `discussion`, `anti_example` and `controversy` are optional. Each is added only when it adds real value; which ones is decided per term in `plan.json`. A term is complete when someone could use or recognize it correctly, not when every field is filled.
+- **R-FLD-01** `term`, `category` and `definition` are required. `example`, `mental_model`, `discussion`, `anti_example` and `controversy` are optional and **absent by default**. A field is added only when it passes its test (R-FLD-08 to R-FLD-12) *for this term*, and `plan.json` records the reason. There is no target number of fields: an obvious noun is often definition-only, while a tricky particle may need three fields. A term is complete when someone could use or recognize it correctly, not when every field is filled.
 - **R-FLD-02** Unit lock: every field teaches the same job named in `term`. The example shows that job, with every slot of a pattern filled. The discussion doesn't bring in a second lesson.
 - **R-FLD-03** `definition` = what the item means or does, in the learner language, then the pronunciation only if **R-PRON** requires it. Opens with the substance. Never:
   - restates the term as its own subject (including with an article in front);
@@ -134,18 +134,26 @@ Words used below:
   - names the part of speech, unless that is the point;
   - uses a classroom heading as the meaning.
 
-  No conjugation tables, usage guides, or "don't confuse with" (those go in other fields). A pattern: define what it lets you say. A framed function word: define only that job. Check: `script` (restating) + `agent`.
+  No conjugation tables, usage guides, "don't confuse with" (those go in other fields), or examples of any kind (**R-FLD-18**). A pattern: define what it lets you say. A framed function word: define only that job. Check: `script` (restating) + `agent`.
 - **R-FLD-04** No template per category. An opening word is used at most 3 times across the glossary and never twice in a row. Check: `script` (word splitting works for any language).
 - **R-FLD-05** `category` is a label for filtering only, in the learner language. Every label comes from `style.categories` and is reused verbatim (never both "Verb" and "Verbs"). Use "Grammar" only for a real construction on a grammar slice. Check: `script`.
 - **R-FLD-06** Field lengths stay within `style.limits` (words per field). Check: `script`.
 - **R-FLD-07** Beginner mode: `definition` is 1–2 short sentences. Check: `script` (sentence count) + `agent`.
-- **R-FLD-08** `example`: one natural sentence in the target (or a two-line exchange: a question and its answer), showing this term's job in one concrete, everyday scene. Outside immersion, a short gloss in the learner language after ` — ` is allowed when needed. No toy drill sentences, no side-by-side translation paragraphs. The scene comes from the plan, so scenes vary across the glossary.
-- **R-FLD-09** `mental_model`: a comparison that makes the item click faster than the definition does. Not a restatement, not a chapter name. Skip it for obvious items.
-- **R-FLD-10** `discussion`: register, collocation, regional default, or a common learner mistake that is useful to know. Short and actionable. Other jobs of a framed word go here briefly.
-- **R-FLD-11** `anti_example`: only a real near-miss (false friend, calque, the other half of a famous pair, the other job of the same spelling, what learners produce instead). Lookalike connectors and copula or auxiliary pairs usually get one. The traps chosen are the ones *this learner's language* causes.
-- **R-FLD-12** `controversy`: only when speakers, regions or reputable teachers really disagree about form, meaning, politeness or correctness. With beginner mode off, scan every term for it; zero results across a long list means the scan wasn't done. With beginner mode on, omit it or keep it to one flat sentence (**R-LVL-05**).
+- **R-FLD-08** `example`. **Test:** would a learner who read only the definition still be unsure how to *use* it? Usually yes for patterns, function words, particles and verbs with tricky arguments. Usually no for a concrete noun or an obvious verb whose meaning the definition already pins down. If it passes: one natural sentence in the target (or a two-line exchange: a question and its answer), showing this term's job in one concrete, everyday scene. Outside immersion, a short gloss in the learner language after ` — ` is allowed when needed. No toy drill sentences, no side-by-side translation paragraphs. The scene comes from the plan, so scenes vary across the glossary.
+- **R-FLD-09** `mental_model`. **Test:** is there a comparison that makes it click *faster* than the definition? If it passes: a comparison that makes the item click faster than the definition does. Not a restatement, not a chapter name. Skip it for obvious items.
+- **R-FLD-10** `discussion`. **Test:** is there a register, collocation or usage fact the learner will need that the definition and example don't already give? If it passes: collocation, regional default, or a common learner mistake that is useful to know. Short and actionable. Other jobs of a framed word go here briefly.
+- **R-FLD-11** `anti_example`. **Test:** is there a specific mistake *this learner* is likely to make? If it passes: a real near-miss (false friend, calque, the other half of a famous pair, the other job of the same spelling, what learners produce instead). Lookalike connectors and copula or auxiliary pairs usually get one. The traps chosen are the ones *this learner's language* causes.
+- **R-FLD-12** `controversy`. **Test:** do speakers, regions or reputable teachers really disagree? Only when speakers, regions or reputable teachers really disagree about form, meaning, politeness or correctness. With beginner mode off, scan every term for it; zero results across a long list means the scan wasn't done. With beginner mode on, omit it or keep it to one flat sentence (**R-LVL-05**).
 - **R-FLD-13** Don't lean on words you didn't teach. A word carrying the weight of a definition, anti-example or relationship description is either a known word or understandable without teaching. Check: `agent` (over the whole glossary).
 - **R-FLD-14** `terms[]` is interleaved, never grouped by category.
+- **R-FLD-16** Filling is a per-term judgment, so it isn't uniform. With 8 or more terms, each of these is an error:
+  - every term has the same number of optional fields;
+  - one optional field (`example` included) is on more than 80% of the terms;
+  - no term is definition-only.
+
+  The fix is to drop fields that fail their test, never to add fields to create variety. Check: `script` (flags) → `agent` (decides which fields to drop).
+- **R-FLD-17** An optional field that mostly repeats the definition adds nothing and is dropped. Check: `script` (flags high word overlap with the definition) → `agent`.
+- **R-FLD-18** No examples inside `definition`. The definition says what the item means or does and nothing else. It never contains usage sentences or quoted phrases in the target language, and never introduces instances with "e.g.", "for example", or "like a coffee or a trip home"-style lists. If an illustration is needed it goes in `example`, which then has to pass its own test, so it is dropped rather than moved when it isn't needed. Check: `script` (flags target-script text when the two languages use different scripts, quoted spans of 2+ words, and `style.example_markers`) → `agent`.
 - **R-FLD-15** Equal care throughout: the last term gets the same field decisions as the first. Check: `script` (`metrics` compares batches and plan vs actual) + `agent`.
 
 ## R-LVL: Level control

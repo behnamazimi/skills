@@ -4,7 +4,7 @@ This step runs **last**. After it, only step 10 fixes may change the draft, and 
 
 Run these in parallel (the IPA check only in `ipa` mode):
 
-1. **Script:** `GYM validate glossary draft.json --spec spec.json --style style.json --exclude exclude.json`. Each error becomes a finding with `source: "script"`, `severity: "must_fix"`, and `quote` = the offending text (or the term).
+1. **Script:** `GYM validate glossary draft.json --spec spec.json --style style.json --exclude exclude.json`. Each error becomes a finding with `source: "script"`, `severity: "must_fix"`, and `quote` = the offending text (or the term). Each **warning** (R-FLD-16/17/18 and other flag-only checks) goes to the rule check below, which turns it into a finding only if it holds up.
 2. **Level check** (R-LVL-06):
    1. `GYM tokens draft.json --spec spec.json --exclude exclude.json --style style.json [--levellist <file>] > tokens.json`.
    2. **Rater 1** (a fresh subagent) rates **every** token, plus the grammar structures in target-language text, with a CEFR level. It sees only the tokens, their fields, and the level scale. In beginner mode it also counts the clauses in every target-language sentence the script flagged under R-LVL-07 (and in every example): more than one clause, apart from a short tag, is a `must_fix` R-LVL-04 finding.
