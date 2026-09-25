@@ -1,0 +1,13 @@
+{
+  "voice": "second person, present tense, plain; a friend explaining over messages",
+  "categories": ["Verb", "Sentence builder"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 20, "discussion": 26, "anti_example": 22, "controversy": 14 },
+  "opening_moves": ["action verb: 'Says…', 'Makes…', 'Talks about…'", "the plain English meaning first: 'Want…', 'Go…', 'Because…'", "scene: 'When you…'", "result: 'Lets you…'", "modal meaning: 'Can…', 'Should…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "a variety of", "plays a crucial role", "essentially", "it is worth noting"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["street: looking for a pharmacy", "family dinner", "café order", "office favor", "doctor's advice", "bus commute", "party invitation call", "weekend plans", "talking about food", "late for work"] },
+  "ceiling": "B1",
+  "ipa_format": "none (pronunciation=none)",
+  "notes": "Patterns with a slot are written with the Spanish slot name (ir a + infinitivo, no + verbo) and the example fills the slot. Examples are Spanish, then ' — ' and a short English gloss. Anti-examples name the wrong form in quotes, then the right one. Spanish inside English text is written as is, with accents; no pronunciation anywhere. Neutral Latin American usage: ustedes, no vosotros."
+}

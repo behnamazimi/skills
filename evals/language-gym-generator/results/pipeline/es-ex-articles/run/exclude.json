@@ -1,0 +1,11 @@
+{
+  "raw": ["la cuenta", "el menú", "la mesa", "el camarero"],
+  "items": [
+    { "raw": "la cuenta", "term": "la cuenta", "lemma": "cuenta", "job": "the bill at a restaurant", "forms": ["cuenta", "las cuentas", "cuentas", "la nota", "la adición"], "scope": "phrase" },
+    { "raw": "el menú", "term": "el menú", "lemma": "menú", "job": null, "forms": ["menú", "los menús", "menús", "menu", "el menú del día", "menú del día", "la carta", "carta"], "scope": "lemma" },
+    { "raw": "la mesa", "term": "la mesa", "lemma": "mesa", "job": null, "forms": ["mesa", "las mesas", "mesas", "una mesa"], "scope": "lemma" },
+    { "raw": "el camarero", "term": "el camarero", "lemma": "camarero", "job": null, "forms": ["camarero", "la camarera", "camarera", "los camareros", "camareros", "las camareras", "camareras", "el mesero", "mesero", "la mesera", "mesera", "el mozo", "mozo", "el garzón", "garzón"], "scope": "lemma" }
+  ],
+  "ignored": [],
+  "hints": { "dialect": "Spain (camarero is the Peninsular default; Latin America says mesero or mozo)", "noun_citation": "lemma + article" }
+}

@@ -1,0 +1,28 @@
+{
+  "main": [
+    { "id": "t01", "term": "sein", "job": "identity, state and location (be)", "slot": "spine", "level": "A1", "why": "copula; every description, introduction and 'where is' sentence needs it" },
+    { "id": "t02", "term": "können", "job": "ability and possibility (can)", "slot": "spine", "level": "A1", "why": "modal set; can/may-I requests everywhere" },
+    { "id": "t03", "term": "nicht", "job": "negating a verb, adjective or whole statement", "slot": "spine", "level": "A1", "why": "negation block; pairs with kein" },
+    { "id": "t04", "term": "müssen", "job": "obligation and necessity (must, have to)", "slot": "spine", "level": "A1", "why": "modal set; must job" },
+    { "id": "t05", "term": "haben", "job": "possession (have); also the main helper for the spoken past", "slot": "spine", "level": "A1", "why": "have job; Perfekt auxiliary" },
+    { "id": "t06", "term": "möchten", "job": "polite wanting and ordering (would like)", "slot": "spine", "level": "A1", "why": "modal set; the polite way to ask for things" },
+    { "id": "t07", "term": "kein", "job": "negating a noun (no, not a, not any)", "slot": "spine", "level": "A1", "why": "second half of the negation pair" },
+    { "id": "t08", "term": "wollen", "job": "strong wish or plan (want, intend)", "slot": "spine", "level": "A1", "why": "modal set; want job" },
+    { "id": "t09", "term": "dürfen", "job": "permission (be allowed to, may)", "slot": "spine", "level": "A2", "why": "modal set; 'darf ich…?' requests and rules" },
+    { "id": "t10", "term": "sollen", "job": "what someone else wants you to do; advice (should, be supposed to)", "slot": "spine", "level": "A2", "why": "modal set; passing on instructions" }
+  ],
+  "spares": [
+    { "id": "s01", "term": "es gibt", "job": "existence (there is / there are)", "slot": "construction", "level": "A1", "why": "existence job" },
+    { "id": "s02", "term": "gehen", "job": "go on foot; how things are going", "slot": "verb_adj", "level": "A1", "why": "go job" },
+    { "id": "s03", "term": "weil + Verb am Ende", "job": "giving a reason, verb goes to the end", "slot": "glue", "level": "A2", "why": "most common reason connector; word-order unlock" }
+  ],
+  "sets": [
+    { "name": "modal verbs", "members": ["können", "müssen", "möchten", "wollen", "dürfen", "sollen"] },
+    { "name": "negation words", "members": ["nicht", "kein"] }
+  ],
+  "shape": {
+    "jobs_covered": { "identity/location": "sein", "have": "haben", "negation": "nicht + kein", "want": "wollen, möchten", "can": "können", "must": "müssen", "permission": "dürfen", "obligation from others": "sollen" },
+    "concrete_nouns": 0,
+    "notes": "Count 10 is taken by building blocks: sein, haben, the negation pair and the full modal set (all-or-nothing, R-SEL-04). Existence (es gibt), questions, go/come and du/Sie politeness don't fit this count; they are the next set's first slots. No content nouns."
+  }
+}

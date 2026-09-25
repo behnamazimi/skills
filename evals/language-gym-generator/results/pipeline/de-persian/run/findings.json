@@ -1,0 +1,4 @@
+{ "findings": [
+ { "term_id": "t05", "field": "anti_example", "rule": "R-FLD-11", "severity": "must_fix", "quote": "بگو «Ich gehe gerade»، نه «Ich habe gehen»", "problem": "'Ich gehe gerade' is an awkward rendering of Persian 'دارم می‌روم'; the correct form given should be clearly natural.", "fix": "Use a clearer progressive: «دارم غذا می‌خورم» → «Ich esse gerade»، نه «Ich habe essen».", "source": "facts" },
+ { "term_id": "t03", "field": "definition", "rule": "R-FLD-03", "severity": "should_fix", "quote": "کار، حالت یا کل جمله را منفی می‌کند", "problem": "«کار» is ambiguous (work vs action); the learner may not see that nicht negates verbs and adjectives.", "fix": "فعل، صفت یا کل جمله را منفی می‌کند", "source": "rules" }
+] }

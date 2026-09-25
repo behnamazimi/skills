@@ -1,0 +1,108 @@
+{
+  "answers": [
+    {
+      "term_id": "t01",
+      "question": "What does hay mean?",
+      "answer": "there is / there are",
+      "writer_claim": "there is / there are",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t01",
+      "question": "Is '¿Está un baño?' a correct way to ask 'Is there a bathroom?'",
+      "answer": "No, use ¿Hay un baño?",
+      "writer_claim": "No",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t03",
+      "question": "What does 'te quiero' mean between friends and family?",
+      "answer": "I love you (affectionate)",
+      "writer_claim": "love",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t02",
+      "question": "Is 'No hay nadie' correct standard Spanish?",
+      "answer": "Yes, double negation is required",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t04",
+      "question": "How do you say 'I can swim' meaning you know how?",
+      "answer": "Sé nadar",
+      "writer_claim": "Sé nadar",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t04",
+      "question": "Back-translate '¿Puedes cerrar la ventana? Hace frío.'",
+      "answer": "Can you close the window? It's cold.",
+      "writer_claim": "Can you close the window? It's cold.",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t08",
+      "question": "Back-translate 'Mañana voy a visitar a mi abuela.'",
+      "answer": "Tomorrow I'm going to visit my grandmother.",
+      "writer_claim": "Tomorrow I'm going to see Grandma.",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t06",
+      "question": "What is a + el contracted to?",
+      "answer": "al",
+      "writer_claim": "al",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t09",
+      "question": "Is 'Me gustan los tacos' correct agreement?",
+      "answer": "Yes, plural subject los tacos",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t10",
+      "question": "How is 'why?' written in a question?",
+      "answer": "¿por qué?",
+      "writer_claim": "¿por qué?",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t07",
+      "question": "When a friend calls you over, do you answer ¡Ya voy! or ¡Ya vengo!?",
+      "answer": "¡Ya voy! (vengo can mean 'I'll be back')",
+      "writer_claim": "¡Ya voy!",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t05",
+      "question": "Is deber softer than tener que for everyday obligation?",
+      "answer": "Yes, it sounds like advice or duty; tener que is the usual 'have to'",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t06",
+      "question": "Is 'bus' used in neutral Latin American Spanish?",
+      "answer": "Yes, widely understood; regional words include camión (Mexico) and colectivo (Argentina)",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    }
+  ]
+}

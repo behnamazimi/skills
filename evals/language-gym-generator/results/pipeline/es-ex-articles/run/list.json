@@ -1,0 +1,26 @@
+{
+  "main": [
+    { "id": "t01", "term": "¿me pone…?", "job": "order food or drink (Spain, bar and restaurant)", "slot": "construction", "level": "A2", "why": "the default way to order in Spain; unlocks every order" },
+    { "id": "t02", "term": "para mí", "job": "say which dish is yours when ordering in a group", "slot": "phrase", "level": "A2", "why": "heard and said at every table order" },
+    { "id": "t03", "term": "¿tienen sitio para…?", "job": "ask for a table for N people on arrival", "slot": "construction", "level": "A2", "why": "the arrival act; mesa is known, sitio is the natural word" },
+    { "id": "t04", "term": "¿qué me recomienda?", "job": "ask the waiter for a recommendation", "slot": "phrase", "level": "A2", "why": "core ordering act when you don't know the dishes" },
+    { "id": "t05", "term": "¡perdone!", "job": "get the waiter's attention politely", "slot": "glue", "level": "A2", "why": "needed to start any request mid-meal" },
+    { "id": "t06", "term": "sin + ingrediente", "job": "ask for a dish without something", "slot": "construction", "level": "A2", "why": "special requests, allergies, dislikes" },
+    { "id": "t07", "term": "estar rico", "job": "say food tastes good", "slot": "verb_adj", "level": "A2", "why": "the reaction to food; estar not ser" },
+    { "id": "t08", "term": "¿algo más?", "job": "understand the waiter asking if you want anything else", "slot": "phrase", "level": "A2", "why": "heard after every order; must be understood and answered" },
+    { "id": "t09", "term": "¿se puede + infinitivo?", "job": "ask whether something is possible or allowed here (pay by card, sit outside)", "slot": "construction", "level": "A2", "why": "unlocks paying by card and other requests" },
+    { "id": "t10", "term": "invitar", "job": "pay for someone else's food or drink (treat)", "slot": "verb_adj", "level": "A2", "why": "the paying act among friends; te invito / invito yo is everywhere in Spain" }
+  ],
+  "spares": [
+    { "id": "s01", "term": "la propina", "job": "tip for the waiter", "slot": "noun", "level": "A2", "why": "paying act" },
+    { "id": "s02", "term": "para llevar", "job": "order food to take away", "slot": "phrase", "level": "A2", "why": "takeaway orders" },
+    { "id": "s03", "term": "ser alérgico a", "job": "state a food allergy", "slot": "construction", "level": "A2", "why": "safety-critical request" },
+    { "id": "s04", "term": "quería + cosa", "job": "polite way to say what you want when ordering", "slot": "construction", "level": "A2", "why": "second most common ordering frame in Spain" }
+  ],
+  "sets": [],
+  "shape": {
+    "jobs_covered": { "arrive and get a table": "¿tienen sitio para…?", "get attention": "¡perdone!", "ask for advice": "¿qué me recomienda?", "order": "¿me pone…?, para mí", "special request": "sin + ingrediente", "answer the waiter": "¿algo más?", "react to food": "estar rico", "ask if possible (card)": "¿se puede + infinitivo?", "pay / treat": "invitar, la cuenta (known)" },
+    "concrete_nouns": 0,
+    "notes": "usage slice: noun limit off. menú, mesa, camarero and la cuenta are known and are used freely. No closed sets started; courses (de primero/de segundo/de postre) skipped as a set that would take 3 slots."
+  }
+}

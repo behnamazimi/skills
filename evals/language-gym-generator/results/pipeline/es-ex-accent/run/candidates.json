@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "errors": 0,
+  "findings": [],
+  "pairs": [
+    {
+      "id": "t07",
+      "from": "main",
+      "term": "tener que",
+      "excluded": "qué",
+      "form": "qué",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t09",
+      "from": "main",
+      "term": "que",
+      "excluded": "qué",
+      "form": "qué",
+      "reason": "equal after removing accents, marks, punctuation and articles"
+    },
+    {
+      "id": "t10",
+      "from": "main",
+      "term": "si",
+      "excluded": "sí",
+      "form": "sí",
+      "reason": "equal after removing accents, marks, punctuation and articles"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "term_id": "t04",
+      "field": "definition",
+      "rule": "R-FLD-03",
+      "severity": "should_fix",
+      "quote": "An infinitive follows it.",
+      "problem": "Usage guide in the definition; the example already shows the infinitive.",
+      "fix": "Cut the sentence.",
+      "source": "rules"
+    },
+    {
+      "term_id": "t05",
+      "field": "definition",
+      "rule": "R-FLD-03",
+      "severity": "should_fix",
+      "quote": "Put an infinitive after it: debes descansar.",
+      "problem": "Usage instruction in the definition instead of meaning.",
+      "fix": "Keep the meaning and the mini example: 'Should or must, as advice or duty: debes descansar.'",
+      "source": "rules"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{ "rater": 1, "ratings": [
+ {"token":"ich","level":"A1"},{"token":"bin","level":"A1"},{"token":"noch","level":"A1"},{"token":"im","level":"A1"},{"token":"bus","level":"A1"},{"token":"kannst","level":"A1"},{"token":"du","level":"A1"},{"token":"mir","level":"A1"},{"token":"kurz","level":"A1"},{"token":"helfen","level":"A1"},{"token":"komme","level":"A1"},{"token":"heute","level":"A1"},{"token":"muss","level":"A1"},{"token":"morgen","level":"A1"},{"token":"früh","level":"A1"},{"token":"arbeiten","level":"A1"},{"token":"hast","level":"A1"},{"token":"abend","level":"A1"},{"token":"zeit","level":"A1"},{"token":"möchte","level":"A1"},{"token":"einen","level":"A1"},{"token":"tee","level":"A1"},{"token":"bitte","level":"A1"},{"token":"wir","level":"A1"},{"token":"keine","level":"A1"},{"token":"milch","level":"A1"},{"token":"mehr","level":"A1"},{"token":"sommer","level":"A1"},{"token":"nach","level":"A1"},{"token":"spanien","level":"A1"},{"token":"fahren","level":"A1"},{"token":"darf","level":"A1"},{"token":"hier","level":"A1"},{"token":"sitzen","level":"A1"},{"token":"soll","level":"A1"},{"token":"brot","level":"A1"},{"token":"kaufen","level":"A1"}],
+ "structures": [
+  {"term_id":"t02","field":"example","structure":"yes/no question with modal + infinitive","level":"A1"},
+  {"term_id":"t08","field":"example","structure":"modal + infinitive at the end","level":"A1"},
+  {"term_id":"t10","field":"example","structure":"sollen question offering to do something","level":"A2"}],
+ "rater_2": "not needed: nothing rated above B1" }

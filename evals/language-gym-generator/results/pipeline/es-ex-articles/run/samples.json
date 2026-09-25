@@ -1,0 +1,31 @@
+{
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "¿me pone…?",
+      "category": "Pattern",
+      "definition": "Orders food or drink in Spain, like “Can I get…?” It sounds friendly, not rude.",
+      "example": "¿Me pone un café con leche, por favor? — A white coffee, please.",
+      "anti_example": "Not “¿Puedo tener un café?”: that copies English word for word. Say “¿Me pone un café?”"
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "estar rico",
+      "category": "Verb",
+      "definition": "Says the food in front of you tastes good: “it's delicious”.",
+      "example": "Mmm, la paella está muy rica. — The paella is really good.",
+      "anti_example": "Not “la paella es rica”: with ser, rico usually means rich, as in “mi tío es rico”."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "¿se puede + infinitivo?",
+      "category": "Pattern",
+      "definition": "Checks if something is possible or allowed here. Put the action right after puede.",
+      "example": "¿Se puede pagar con tarjeta? — Can I pay by card?",
+      "discussion": "Handy for house rules too: “¿Se puede fumar en la terraza?” The answer is “sí, se puede” or “no, no se puede”."
+    }
+  ]
+}

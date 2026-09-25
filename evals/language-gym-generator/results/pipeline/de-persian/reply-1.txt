@@ -1,0 +1,97 @@
+{
+  "domain": "German",
+  "description": "پایه‌های جمله‌سازی آلمانی برای فارسی‌زبان‌ها، سطح A2–B1، آلمانی معیار (آلمان)",
+  "terms": [
+    {
+      "term": "sein",
+      "category": "فعل",
+      "definition": "برای گفتن اینکه کسی یا چیزی چیست، چطور است یا کجاست؛ همان «بودن» و «است».",
+      "example": "Ich bin noch im Bus. — هنوز توی اتوبوسم.",
+      "anti_example": "فعل در جمله‌ی خبری جای دوم است، نه آخر: «Ich bin müde»، نه «Ich müde bin»."
+    },
+    {
+      "term": "können",
+      "category": "فعل وجهی",
+      "definition": "توانستن: وقتی کاری از دستت برمی‌آید، یا مؤدبانه از کسی کمک می‌خواهی.",
+      "example": "Kannst du mir kurz helfen? — یک لحظه کمکم می‌کنی؟",
+      "anti_example": "فعل دوم صرف نمی‌شود و آخر جمله می‌آید: «Ich kann morgen kommen»، نه «Ich kann komme morgen»."
+    },
+    {
+      "term": "nicht",
+      "category": "نفی",
+      "definition": "فعل، صفت یا کل جمله را منفی می‌کند؛ همان کاری که «نـ» در فارسی می‌کند.",
+      "example": "Ich komme heute nicht. — امروز نمی‌آیم.",
+      "anti_example": "در فارسی «نـ» قبل از فعل می‌آید، ولی nicht بعد از فعل: «Ich komme nicht»، نه «Ich nicht komme»."
+    },
+    {
+      "term": "müssen",
+      "category": "فعل وجهی",
+      "definition": "باید: وقتی کاری لازم است و چاره‌ای جز انجامش نداری.",
+      "example": "Ich muss morgen früh arbeiten. — فردا صبح زود باید کار کنم.",
+      "anti_example": "«Du musst nicht kommen» یعنی «لازم نیست بیایی»، نه «نباید بیایی»؛ «نباید» می‌شود «Du darfst nicht kommen»."
+    },
+    {
+      "term": "haben",
+      "category": "فعل",
+      "definition": "داشتن: برای چیزهایی که مال توست، و همین‌طور وقت، درد یا گرسنگی.",
+      "example": "Hast du heute Abend Zeit? — امشب وقت داری؟",
+      "anti_example": "«دارم غذا می‌خورم» را با haben نساز: بگو «Ich esse gerade»، نه «Ich habe essen»."
+    },
+    {
+      "term": "möchten",
+      "category": "فعل وجهی",
+      "definition": "خواستنِ مؤدبانه برای سفارش و درخواست؛ مثل «می‌خواستم» در فارسیِ مؤدبانه.",
+      "example": "Ich möchte einen Tee, bitte. — یک چای می‌خواستم، لطفاً.",
+      "discussion": "در کافه، مغازه و اداره همیشه «Ich möchte» بگو؛ «Ich will» آنجا تند و طلبکارانه شنیده می‌شود."
+    },
+    {
+      "term": "kein",
+      "category": "نفی",
+      "definition": "«هیچ» یا «نه یک» جلوی اسم: وقتی چیزی نیست یا نداری‌اش.",
+      "example": "Wir haben keine Milch mehr. — دیگر شیر نداریم.",
+      "mental_model": "kein را nicht + ein ببین: هر جا ein یا اسمِ بدون der/die/das بود، منفی‌اش kein است.",
+      "anti_example": "فارسی فعل را منفی می‌کند («پول ندارم»)، آلمانی اسم را: «Ich habe kein Geld»، نه «Ich habe nicht Geld»."
+    },
+    {
+      "term": "wollen",
+      "category": "فعل وجهی",
+      "definition": "خواستنِ محکم یا قصد داشتن؛ وقتی برنامه‌ای در سر داری.",
+      "example": "Wir wollen im Sommer nach Spanien fahren. — تابستان می‌خواهیم برویم اسپانیا.",
+      "anti_example": "wollen زمان آینده نیست: «Ich will morgen kommen» یعنی «می‌خواهم فردا بیایم»، نه «فردا خواهم آمد»."
+    },
+    {
+      "term": "dürfen",
+      "category": "فعل وجهی",
+      "definition": "اجازه داشتن؛ برای اجازه گرفتن و برای گفتن قانون‌ها.",
+      "example": "Darf ich hier sitzen? — اجازه هست اینجا بنشینم؟",
+      "discussion": "«Darf ich…?» مؤدبانه‌ترین راه اجازه گرفتن از غریبه‌هاست. «Hier darf man nicht rauchen» یعنی ممنوع است."
+    },
+    {
+      "term": "sollen",
+      "category": "فعل وجهی",
+      "definition": "وقتی کس دیگری از تو کاری خواسته، یا برای پیشنهاد و نصیحت.",
+      "example": "Soll ich Brot kaufen? — نان بخرم؟",
+      "anti_example": "فارسی برای هر دو «باید» دارد، آلمانی نه: «Ich muss» یعنی مجبورم، «Ich soll» یعنی کسی از من خواسته."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "nicht",
+      "target": "kein",
+      "relationship_type": "اغلب اشتباه گرفته می‌شود با",
+      "description": "nicht فعل و حالت را منفی می‌کند، kein اسم را."
+    },
+    {
+      "source": "müssen",
+      "target": "dürfen",
+      "relationship_type": "در منفی معنایش فرق می‌کند با",
+      "description": "«muss nicht» یعنی لازم نیست؛ «darf nicht» یعنی ممنوع است."
+    },
+    {
+      "source": "möchten",
+      "target": "wollen",
+      "relationship_type": "نسخه‌ی مؤدبانه‌ی",
+      "description": "هر دو خواستن‌اند؛ برای سفارش و درخواست möchte بگو."
+    }
+  ]
+}

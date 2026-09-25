@@ -1,0 +1,89 @@
+{
+  "domain": "Spanish",
+  "description": "Spanish core sentence builders (verbs and connectors), A2–B1, Latin American Spanish (broadly neutral).",
+  "terms": [
+    {
+      "term": "ser",
+      "category": "Verb",
+      "definition": "Says who or what someone is: name, job, where they're from, what they're like.",
+      "example": "Hola, soy Ana, soy de Lima. — Hi, I'm Ana, from Lima.",
+      "mental_model": "Think of ser as an ID card and estar as a status update."
+    },
+    {
+      "term": "estar",
+      "category": "Verb",
+      "definition": "Tells where someone or something is, or how they feel right now.",
+      "example": "Estoy en el bus, ya llego. — I'm on the bus, almost there.",
+      "anti_example": "Not 'soy cansado' for 'I'm tired': feelings right now take estar, so 'estoy cansado'."
+    },
+    {
+      "term": "que",
+      "category": "Connector",
+      "definition": "Joins a second sentence after verbs like think, say or know, like English 'that'.",
+      "example": "Mi mamá dice que la cena está lista. — My mom says dinner's ready.",
+      "discussion": "No accent here. With an accent, qué is the question word: ¿qué quieres?",
+      "anti_example": "Not 'creo es bueno': Spanish never drops que, so 'creo que es bueno'."
+    },
+    {
+      "term": "hay",
+      "category": "Verb",
+      "definition": "Points out that something exists: 'there is' or 'there are', for one thing or many.",
+      "example": "¿Hay un baño por aquí? — Is there a bathroom around here?",
+      "anti_example": "Not '¿dónde hay el banco?' for one specific place: ask '¿dónde está el banco?'."
+    },
+    {
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Says what you want: a thing, or querer + verb for something you want to do.",
+      "example": "Quiero un café con leche, por favor. — I'd like a coffee with milk, please.",
+      "discussion": "At a counter, quiero plus por favor is normal, not rude. Te quiero to a person means 'I love you'."
+    },
+    {
+      "term": "tener",
+      "category": "Verb",
+      "definition": "Covers 'have' for things and people in your life, and your age: tengo 30 años.",
+      "example": "Tengo dos hermanos y un perro. — I have two brothers and a dog.",
+      "anti_example": "Not 'soy 30' for 'I'm 30': age takes tener, so 'tengo 30 años'."
+    },
+    {
+      "term": "si",
+      "category": "Connector",
+      "definition": "Sets up a condition, like English 'if'.",
+      "example": "Si llueve, vamos en taxi. — If it rains, we'll take a taxi.",
+      "anti_example": "Not 'sí llueve' for 'if it rains': with an accent, sí means 'yes'."
+    },
+    {
+      "term": "tener que",
+      "category": "Verb",
+      "definition": "Says you have to do something: tener que + verb.",
+      "example": "Tengo que salir temprano, mañana trabajo. — I have to leave early, I work tomorrow."
+    },
+    {
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Lets you say you can do something, or ask if it's OK: poder + verb.",
+      "example": "¿Puedo pagar con tarjeta? — Can I pay by card?"
+    },
+    {
+      "term": "ir",
+      "category": "Verb",
+      "definition": "Covers going somewhere; put 'a' before the place: voy a Lima.",
+      "example": "Voy al mercado, ¿quieres algo? — I'm going to the market, want anything?",
+      "discussion": "a + el always becomes al: voy al banco, never 'voy a el banco'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ser",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Both mean \"be\": ser for what someone is, estar for where they are or how they feel now."
+    },
+    {
+      "source": "tener que",
+      "target": "tener",
+      "relationship_type": "builds on",
+      "description": "Add que + verb to tener and \"have\" becomes \"have to\"."
+    }
+  ]
+}

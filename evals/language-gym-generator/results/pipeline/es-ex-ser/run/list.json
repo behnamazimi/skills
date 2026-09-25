@@ -1,0 +1,29 @@
+{
+  "main": [
+    { "id": "t01", "term": "hay", "job": "existence: there is / there are", "slot": "spine", "level": "A1", "why": "existence job; ser/estar are known but neither says 'there is'" },
+    { "id": "t02", "term": "no + verbo", "job": "negation: no goes right before the verb", "slot": "spine", "level": "A1", "why": "negation job; framed as the pattern so it is not the yes/no answer" },
+    { "id": "t03", "term": "querer", "job": "want (a thing or to do something)", "slot": "spine", "level": "A1", "why": "want job" },
+    { "id": "t04", "term": "poder", "job": "can / be able to / be allowed to", "slot": "spine", "level": "A1", "why": "can job; also polite requests (¿puedes...?)" },
+    { "id": "t05", "term": "deber", "job": "should / must (duty, advice)", "slot": "spine", "level": "A2", "why": "must job; tener que is known, deber is the other everyday obligation verb" },
+    { "id": "t06", "term": "ir", "job": "go", "slot": "spine", "level": "A1", "why": "go job" },
+    { "id": "t07", "term": "venir", "job": "come (toward the speaker)", "slot": "spine", "level": "A1", "why": "come job; ir/venir direction trap for English speakers" },
+    { "id": "t08", "term": "ir a + infinitivo", "job": "near future / plans", "slot": "construction", "level": "A1", "why": "unlocks talking about the future without future tense" },
+    { "id": "t09", "term": "gustar", "job": "like (the liked thing is the subject: me gusta)", "slot": "construction", "level": "A1", "why": "unlocking construction; English 'like' pattern breaks here" },
+    { "id": "t10", "term": "porque", "job": "because (giving a reason)", "slot": "glue", "level": "A1", "why": "discourse glue; porque vs por qué spelling trap" }
+  ],
+  "spares": [
+    { "id": "s01", "term": "hay que + infinitivo", "job": "impersonal obligation: one has to", "slot": "construction", "level": "A2", "why": "general rules and advice without a person" },
+    { "id": "s02", "term": "pero", "job": "but", "slot": "glue", "level": "A1", "why": "most frequent contrast connector" },
+    { "id": "s03", "term": "saber", "job": "know a fact / know how to", "slot": "verb_adj", "level": "A1", "why": "very frequent verb" },
+    { "id": "s04", "term": "hacer", "job": "do / make", "slot": "verb_adj", "level": "A1", "why": "very frequent verb, also weather" }
+  ],
+  "sets": [
+    { "name": "core modal verbs (want, can, must)", "members": ["querer", "poder", "deber", "tener que"] },
+    { "name": "copulas", "members": ["ser", "estar"] }
+  ],
+  "shape": {
+    "jobs_covered": { "identity": "ser (known)", "location/state": "estar (known)", "existence": "hay", "possession": "tener (known)", "negation": "no + verbo", "want": "querer", "can": "poder", "must": "tener que (known), deber", "go": "ir", "come": "venir", "future": "ir a + infinitivo", "like": "gustar", "reason": "porque" },
+    "concrete_nouns": 0,
+    "notes": "Yes/no questions are made by intonation alone, so no term is needed. Question words and subject pronouns (tú/usted politeness) are closed sets of 7-9 members, too big for a 10-term list, so they are not started here."
+  }
+}

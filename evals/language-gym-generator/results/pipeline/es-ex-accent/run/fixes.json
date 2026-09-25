@@ -1,0 +1,2 @@
+{ "round": 1, "applied": [ { "finding": 0, "term_id": "t08", "field": "definition" } ], "rejected": [], "dropped": [],
+  "recheck": { "t08": { "learner_test": { "pass": true, "sentence": "Voy a la playa el sábado.", "question": "How do you say 'I'm going to Lima'?", "answer": "Voy a Lima", "unknown_words": [] }, "judge": { "winner": "rewrite", "reason": "Quoting 'a' and showing voy a Lima removes the English-article misreading." } } } }

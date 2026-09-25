@@ -1,0 +1,1 @@
+Spanish restaurants | 10 | exclude: la cuenta, el menú, la mesa, el camarero

@@ -1,0 +1,165 @@
+{
+  "results": [
+    {
+      "id": "t01",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Hay muchos perros en el parque.",
+        "question": "You want to ask about two bathrooms. Is it '¿Hay dos baños?' or '¿Han dos baños?'",
+        "answer": "¿Hay dos baños? (one form for one or many)",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t03",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Quiero comer pizza esta noche.",
+        "question": "What can come after quiero: a thing, an action, or both?",
+        "answer": "Both",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 3,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t02",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Mi hermano no come carne.",
+        "question": "Where does no go in 'Yo ___ bebo ___ café'?",
+        "answer": "Right before bebo: Yo no bebo café",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t04",
+      "learner_test": {
+        "pass": true,
+        "sentence": "¿Puedo abrir la puerta?",
+        "question": "What form of the verb comes after puedes in the example?",
+        "answer": "The infinitive: cerrar",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t08",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Esta noche voy a cocinar pasta.",
+        "question": "Does 'voy a comer' talk about now or later?",
+        "answer": "Later, a plan",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 3
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t06",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Mis padres van al parque los domingos.",
+        "question": "Does ir move toward the speaker or away to another place?",
+        "answer": "Away, to another place",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t09",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Me gusta la música de mi país.",
+        "question": "For 'los perros', is it 'me gusta' or 'me gustan'?",
+        "answer": "Me gustan",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "mental_model": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t10",
+      "learner_test": {
+        "pass": true,
+        "sentence": "No como carne porque no me gusta.",
+        "question": "What does porque add to 'Llego tarde porque el bus no vino'?",
+        "answer": "The reason for being late",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t07",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Mi madre viene a mi casa mañana.",
+        "question": "A friend at a café calls you and asks if you're coming there. Do they say '¿Vienes?' or '¿Vas?'",
+        "answer": "¿Vienes?",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 3,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t05",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Debes llamar a tu madre.",
+        "question": "Is 'Debes descansar' an order from the police, or advice?",
+        "answer": "Advice",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    }
+  ]
+}

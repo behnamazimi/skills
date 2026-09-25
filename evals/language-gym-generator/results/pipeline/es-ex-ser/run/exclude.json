@@ -1,0 +1,10 @@
+{
+  "raw": ["ser", "estar", "tener"],
+  "items": [
+    { "raw": "ser", "term": "ser", "lemma": "ser", "job": null, "forms": ["soy", "eres", "es", "somos", "son", "sos", "fui", "fue", "fueron", "era", "eran", "sido", "siendo", "sea", "sean"], "scope": "lemma" },
+    { "raw": "estar", "term": "estar", "lemma": "estar", "job": null, "forms": ["estoy", "estás", "está", "estamos", "están", "estuve", "estuvo", "estaba", "estaban", "estado", "estando", "esté", "estén", "estar + gerundio", "estar + -ando"], "scope": "lemma" },
+    { "raw": "tener", "term": "tener", "lemma": "tener", "job": null, "forms": ["tengo", "tienes", "tiene", "tenemos", "tienen", "tenés", "tuve", "tuvo", "tenía", "tenido", "teniendo", "tenga", "tener que", "tener que + infinitivo", "poseer"], "scope": "lemma" }
+  ],
+  "ignored": [],
+  "hints": { "dialect": null, "noun_citation": null, "categories": null }
+}
