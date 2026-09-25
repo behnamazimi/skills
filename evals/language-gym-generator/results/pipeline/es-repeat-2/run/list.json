@@ -1,0 +1,34 @@
+{
+  "main": [
+    { "id": "t01", "term": "ustedes", "job": "you, plural, for friends and strangers alike", "slot": "spine", "level": "A1", "why": "Finishes the 'you' set started by tú and usted; Latin America has no vosotros." },
+    { "id": "t02", "term": "ir", "job": "go: movement toward a place", "slot": "spine", "level": "A1", "why": "The go job is uncovered: only the ir a + infinitivo future pattern is known." },
+    { "id": "t03", "term": "deber", "job": "should: advice and duty", "slot": "spine", "level": "A2", "why": "Finishes the modal set (querer, poder, tener que known)." },
+    { "id": "t04", "term": "nadie", "job": "nobody / not anybody, with double negation", "slot": "spine", "level": "A2", "why": "Negative-word set started by no … nada." },
+    { "id": "t05", "term": "para + infinitivo", "job": "purpose: in order to", "slot": "construction", "level": "A2", "why": "Unlocks giving reasons and purposes in one clause." },
+    { "id": "t06", "term": "venir", "job": "come: movement toward the speaker", "slot": "spine", "level": "A1", "why": "The come job is uncovered; pairs with ir." },
+    { "id": "t07", "term": "nunca", "job": "never, with double negation", "slot": "spine", "level": "A2", "why": "Negative-word set started by no … nada." },
+    { "id": "t08", "term": "porque", "job": "because: giving a reason", "slot": "glue", "level": "A1", "why": "Core discourse glue for explaining yourself." },
+    { "id": "t09", "term": "saber", "job": "know a fact or know how to do something", "slot": "verb_adj", "level": "A1", "why": "Top-frequency verb; half of the saber/conocer pair." },
+    { "id": "t10", "term": "acabar de + infinitivo", "job": "just did something (recent past)", "slot": "construction", "level": "A2", "why": "Very frequent way to talk about the just-happened past without tense choices." },
+    { "id": "t11", "term": "ninguno", "job": "no / none (not one), with double negation", "slot": "spine", "level": "A2", "why": "Negative-word set started by no … nada; ningún problema is everyday." },
+    { "id": "t12", "term": "conocer", "job": "know a person or a place, be familiar with", "slot": "verb_adj", "level": "A2", "why": "Other half of the saber/conocer pair." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "necesitar", "job": "need", "slot": "verb_adj", "level": "A1", "why": "High-frequency need verb for requests." },
+    { "id": "s02", "term": "hace + tiempo", "job": "ago: how long since something happened", "slot": "construction", "level": "A2", "why": "Hace dos años: the everyday way to say 'ago'." },
+    { "id": "s03", "term": "entonces", "job": "so / then, moving the talk forward", "slot": "glue", "level": "A2", "why": "Very frequent spoken connector." },
+    { "id": "s04", "term": "decir", "job": "say / tell", "slot": "verb_adj", "level": "A1", "why": "Top-frequency verb for reporting speech." }
+  ],
+  "sets": [
+    { "name": "ways to say 'you' (Latin America)", "members": ["tú", "usted", "ustedes"] },
+    { "name": "modal verbs (want, can, must, should)", "members": ["querer", "poder", "tener que + infinitivo", "deber"] },
+    { "name": "negative words used with no", "members": ["no … nada", "nadie", "nunca", "ninguno"] },
+    { "name": "verbs of knowing", "members": ["saber", "conocer"] },
+    { "name": "go and come", "members": ["ir", "venir"] }
+  ],
+  "shape": {
+    "jobs_covered": { "identity": "ser (known)", "location and state": "estar (known)", "existence": "hay (known)", "people/you": "tú, usted (known) + ustedes", "politeness": "usted (known)", "negation": "no … nada (known) + nadie, nunca, ninguno", "want": "querer (known)", "can": "poder (known)", "must/should": "tener que (known) + deber", "go": "ir", "come": "venir", "have": "tener (known)", "reason/purpose": "porque, para + infinitivo", "recent past": "acabar de + infinitivo", "know": "saber, conocer" },
+    "concrete_nouns": 0,
+    "notes": "Repeat request: moves forward from the earlier glossary. Started sets finished (you, modals, negative words). Question words (qué, dónde, cuándo, cómo, quién, cuánto, cuál, por qué) are an 8-member A1 set treated as already mastered at A2–B1 and not started. estar + gerundio left out because excluded estar is lemma-scope."
+  }
+}

@@ -24,14 +24,15 @@
 | es-nothing-left | json | FAIL | 3/4 | 0 | — | 0 | 0 |
 | es-ex-pasted | json | ok | 4/4 | 0 | — | 10 | 2.4 |
 | es-repeat-1 | json | ok | 3/3 | 0 | — | 12 | 2.08 |
-| es-repeat-2 | not run |  |  |  |  |  |  |
+| es-repeat-2 | json | ok | 5/6 | R-FLD-07×1 | — | 12 | 2.33 |
 | reject-sentence | text | — | 1/1 | 0 | — |  |  |
 | ask-conflict | question | — | 1/1 | 0 | — |  |  |
 
-**Totals:** 26/27 cases ran · schema 22/24 · hard properties 85/89 · mechanical violations 12 · judged 0/0
+**Totals:** 27/27 cases ran · schema 23/25 · hard properties 90/95 · mechanical violations 13 · judged 0/0
 
 **Failed hard properties:**
 - pt-150: 2 parts → 1
 - pt-150: matches import schema → ["R-OUT-04 terms: has 148 terms; max 100 per glossary"]
 - pt-150: each part ≤ 100
 - es-nothing-left: matches import schema → ["R-OUT-04 terms: must contain at least one term"]
+- es-repeat-2: category labels consistent with es-repeat-1 → 0.4

@@ -24,11 +24,11 @@
 | es-nothing-left | text | — | 1/1 | 0 | — |  |  |
 | es-ex-pasted | json | ok | 4/4 | 0 | — | 10 | 2 |
 | es-repeat-1 | json | ok | 3/3 | 0 | — | 12 | 2 |
-| es-repeat-2 | not run |  |  |  |  |  |  |
+| es-repeat-2 | json | ok | 6/6 | 0 | — | 12 | 2 |
 | reject-sentence | text | — | 1/1 | 0 | — |  |  |
 | ask-conflict | question | — | 1/1 | 0 | — |  |  |
 
-**Totals:** 26/27 cases ran · schema 22/22 · hard properties 81/82 · mechanical violations 0 · judged 0/0
+**Totals:** 27/27 cases ran · schema 23/23 · hard properties 87/88 · mechanical violations 0 · judged 0/0
 
 **Failed hard properties:**
 - pt-150: 2 parts → 0

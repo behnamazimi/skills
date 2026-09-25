@@ -948,16 +948,55 @@
   },
   "es-repeat-2": {
     "id": "es-repeat-2",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 12 terms",
+        "pass": true,
+        "value": 12
+      },
+      {
+        "name": "≥ 10 terms",
+        "pass": true,
+        "value": 12
+      },
+      {
+        "name": "no overlap with es-repeat-1",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "category labels consistent with es-repeat-1",
+        "pass": true,
+        "value": 0.75
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
         "name": "moves forward (next most useful items), same dialect and noun format as run 1",
         "pass": null
       }
+    ],
+    "terms": 12,
+    "optional_fields": 2,
+    "categories": [
+      "Pronoun",
+      "Verb",
+      "Pattern",
+      "Function word"
     ]
   },
   "reject-sentence": {
