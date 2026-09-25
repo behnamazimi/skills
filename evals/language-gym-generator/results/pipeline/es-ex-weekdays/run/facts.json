@@ -1,0 +1,84 @@
+{
+ "answers": [
+  {
+   "term_id": "t01",
+   "question": "Does 'ser' express origin ('soy de…')?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t02",
+   "question": "'I'm tired' in Spanish: ser or estar?",
+   "answer": "estoy cansado",
+   "writer_claim": "estoy cansado",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t03",
+   "question": "Is 'hay' the same for singular and plural?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t04",
+   "question": "Is 'No tengo nada' correct standard Spanish?",
+   "answer": "yes, double negation is required",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t05",
+   "question": "Does 'te quiero' mean 'I love you'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t06",
+   "question": "Skill 'can you swim': poder or saber?",
+   "answer": "saber",
+   "writer_claim": "saber",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t07",
+   "question": "'On Thursday' in Spanish?",
+   "answer": "el jueves",
+   "writer_claim": "el jueves",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t08",
+   "question": "Are weekdays capitalized in Spanish?",
+   "answer": "no",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t09",
+   "question": "Plural of sábado?",
+   "answer": "sábados",
+   "writer_claim": "sábados",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t10",
+   "question": "Do Spanish-language calendars usually start on Monday?",
+   "answer": "yes, mostly (some Latin American calendars start on Sunday)",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  }
+ ]
+}

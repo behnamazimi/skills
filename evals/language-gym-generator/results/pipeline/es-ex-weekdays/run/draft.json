@@ -1,0 +1,110 @@
+{
+  "domain": "Spanish",
+  "description": "Spanish A2–B1 core building blocks and the rest of the weekdays, in broadly neutral Latin American Spanish.",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "ser",
+      "category": "Verb",
+      "definition": "Says what or who something is: name, job, where you're from, the time.",
+      "example": "Soy Ana, soy de Lima. — I'm Ana, I'm from Lima.",
+      "mental_model": "ser is the label on the box; estar is a photo of it right now."
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "jueves",
+      "category": "Day of the week",
+      "definition": "Thursday, the day between miércoles and viernes.",
+      "example": "Nos vemos el jueves. — See you Thursday.",
+      "anti_example": "Not 'en el jueves' for 'on Thursday': Spanish uses just 'el', so 'el jueves'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "estar",
+      "category": "Verb",
+      "definition": "Tells where something is or how someone feels right now.",
+      "example": "Estoy en el bus, ya llego. — I'm on the bus, almost there.",
+      "anti_example": "Not 'soy cansado' for 'I'm tired': a feeling right now takes estar, so 'estoy cansado'."
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "viernes",
+      "category": "Day of the week",
+      "definition": "Friday, the last workday of the week for most people.",
+      "example": "¿Vamos al cine el viernes? — Movies on Friday?",
+      "discussion": "Written in lowercase, like every weekday: 'el viernes', never 'el Viernes', unless it starts the sentence."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "hay",
+      "category": "Sentence builder",
+      "definition": "Means 'there is' or 'there are'. The same form works for one thing or many.",
+      "example": "¿Hay un cajero por aquí? — Is there an ATM around here?",
+      "anti_example": "Not '¿Dónde hay el baño?' for a place you know exists: ask '¿Dónde está el baño?'"
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "sábado",
+      "category": "Day of the week",
+      "definition": "Saturday, the first day of the weekend.",
+      "example": "El sábado vamos a la playa. — Saturday we're going to the beach.",
+      "discussion": "Unlike lunes to viernes, it adds -s in the plural: 'los sábados' means every Saturday."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Expresses wanting a thing, or wanting to do something.",
+      "example": "Quiero un café con leche, por favor.",
+      "discussion": "'Quiero…, por favor' is a normal, polite way to order in Latin America. With people, 'te quiero' means 'I love you'."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "domingo",
+      "category": "Day of the week",
+      "definition": "Sunday, the day most offices and schools are closed.",
+      "example": "El domingo no trabajo. — I don't work on Sunday.",
+      "discussion": "Many calendars in Spanish start the week on lunes, so look for domingo in the last column."
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "no + verbo",
+      "category": "Sentence builder",
+      "definition": "Makes a sentence negative: put 'no' right before the verb.",
+      "example": "No como carne. — I don't eat meat.",
+      "anti_example": "Not 'Tengo nada' for 'I have nothing': 'no' stays before the verb, so 'No tengo nada'."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Lets you say you can do something, or ask if you're allowed to.",
+      "example": "¿Puedo pagar con tarjeta? — Can I pay by card?",
+      "anti_example": "Not '¿Puedes nadar?' for a skill you learned: ask '¿Sabes nadar?' ('saber' = know how)."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ser",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Both translate 'be': ser for what something is, estar for where it is or how it feels now."
+    },
+    {
+      "source": "hay",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "hay asks if something exists; estar asks where a specific, known thing is."
+    }
+  ]
+}

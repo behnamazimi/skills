@@ -1,0 +1,10 @@
+{
+  "raw": ["lunes", "martes", "miércoles"],
+  "items": [
+    { "raw": "lunes", "term": "lunes", "lemma": "lunes", "job": "Monday (day of the week)", "forms": ["el lunes", "los lunes", "Lunes"], "scope": "lemma" },
+    { "raw": "martes", "term": "martes", "lemma": "martes", "job": "Tuesday (day of the week)", "forms": ["el martes", "los martes", "Martes"], "scope": "lemma" },
+    { "raw": "miércoles", "term": "miércoles", "lemma": "miércoles", "job": "Wednesday (day of the week)", "forms": ["el miércoles", "los miércoles", "Miércoles", "miercoles"], "scope": "lemma" }
+  ],
+  "ignored": [],
+  "hints": { "noun_citation": "bare lemma", "sets_started": ["weekdays: lunes, martes, miércoles known; jueves, viernes, sábado, domingo not yet"] }
+}

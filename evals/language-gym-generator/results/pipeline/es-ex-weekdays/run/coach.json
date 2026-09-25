@@ -1,0 +1,170 @@
+{
+ "results": [
+  {
+   "id": "t01",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Soy profesora.",
+    "question": "Say you're from Mexico: 'Soy de México' or 'Estoy de México'?",
+    "answer": "Soy de México.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "mental_model": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t07",
+   "learner_test": {
+    "pass": true,
+    "sentence": "El jueves voy al médico.",
+    "question": "How do you say 'I work on Thursday'?",
+    "answer": "Trabajo el jueves.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t02",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Mi mamá está en la cocina.",
+    "question": "You're at home now: 'Soy en casa' or 'Estoy en casa'?",
+    "answer": "Estoy en casa.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t08",
+   "learner_test": {
+    "pass": true,
+    "sentence": "El viernes trabajo en casa.",
+    "question": "Which is correct in writing: 'el Viernes' or 'el viernes'?",
+    "answer": "el viernes",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t03",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Hay dos bancos en mi calle.",
+    "question": "You want to know if there's a pharmacy nearby: what do you ask?",
+    "answer": "¿Hay una farmacia por aquí?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t09",
+   "learner_test": {
+    "pass": true,
+    "sentence": "El sábado veo a mis amigos.",
+    "question": "How do you say 'every Saturday'?",
+    "answer": "los sábados",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t05",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Quiero comer pizza.",
+    "question": "How do you order a tea in a café?",
+    "answer": "Quiero un té, por favor.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t10",
+   "learner_test": {
+    "pass": true,
+    "sentence": "El domingo como con mi familia.",
+    "question": "On a Spanish calendar, which column is domingo in?",
+    "answer": "the last one",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 4
+   },
+   "action": "keep",
+   "question": "Where is domingo on most Spanish calendars: first or last column?",
+   "answer": "last",
+   "judge": {
+    "winner": "rewrite",
+    "reason": "Definition and discussion now teach two different points instead of one repeated."
+   }
+  },
+  {
+   "id": "t04",
+   "learner_test": {
+    "pass": true,
+    "sentence": "No quiero ir hoy.",
+    "question": "Where does 'no' go in 'I don't have time'?",
+    "answer": "No tengo tiempo.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t06",
+   "learner_test": {
+    "pass": true,
+    "sentence": "¿Puedes abrir la ventana?",
+    "question": "Asking a waiter if you can sit here: which verb?",
+    "answer": "poder: ¿Puedo sentarme aquí?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  }
+ ]
+}

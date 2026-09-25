@@ -1,0 +1,1 @@
+Spanish | 10 | exclude: lunes, martes, miércoles

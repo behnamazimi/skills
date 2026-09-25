@@ -1,0 +1,17 @@
+{
+ "round": 1,
+ "applied": [
+  {
+   "finding": 0,
+   "term_id": "t10",
+   "field": "definition"
+  },
+  {
+   "finding": 1,
+   "term_id": "t10",
+   "field": "discussion"
+  }
+ ],
+ "rejected": [],
+ "dropped": []
+}
