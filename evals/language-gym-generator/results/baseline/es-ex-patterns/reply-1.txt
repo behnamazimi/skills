@@ -1,0 +1,105 @@
+{
+  "domain": "Spanish",
+  "description": "Core A2–B1 sentence gear for everyday conversation in broadly Latin American Spanish.",
+  "terms": [
+    {
+      "term": "ser",
+      "category": "Verb",
+      "definition": "Be, for who or what something is: name, job, where you come from, the time. It also says what a person or thing is like.",
+      "example": "Soy Marta. Soy enfermera y soy de Lima.",
+      "anti_example": "Not for where things are or how you feel right now. Say 'estoy cansada', not 'soy cansada'."
+    },
+    {
+      "term": "no + verbo",
+      "category": "Pattern",
+      "definition": "Put 'no' right before the verb to say 'not'. Spanish has no extra helper like English 'do'.",
+      "example": "No tengo tiempo hoy.",
+      "discussion": "Two negatives are normal. 'No quiero nada' means 'I don't want anything'.",
+      "anti_example": "'Tengo no tiempo' is wrong. The 'no' always goes before the verb."
+    },
+    {
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Want. A thing or another verb comes after it.",
+      "example": "Quiero un café con leche, por favor.",
+      "discussion": "'Quiero' is fine in a café. 'Quería' sounds a bit softer when you ask for something."
+    },
+    {
+      "term": "hay",
+      "category": "Verb",
+      "definition": "There is or there are. The same form works for one thing and for many things.",
+      "example": "Hay una farmacia en esta calle.",
+      "anti_example": "Not for one known thing. Say 'el banco está aquí', not 'hay el banco aquí'."
+    },
+    {
+      "term": "estar",
+      "category": "Verb",
+      "definition": "Be, for where someone or something is. It also says how someone feels right now.",
+      "example": "Estoy en casa. Estoy un poco cansado.",
+      "anti_example": "Not for jobs or origin. Say 'soy médico', not 'estoy médico'."
+    },
+    {
+      "term": "tener que + infinitivo",
+      "category": "Pattern",
+      "definition": "Have to do something. The basic form of a verb (the -ar, -er, -ir form) comes after 'que'.",
+      "example": "Tengo que trabajar el sábado.",
+      "mental_model": "Think of English 'I have to'. Spanish just adds 'que' in the middle.",
+      "anti_example": "'Tengo trabajar' is wrong. The 'que' must be there."
+    },
+    {
+      "term": "tener",
+      "category": "Verb",
+      "definition": "Own or hold something. It also gives your age.",
+      "example": "Tengo dos hermanos y tengo treinta años.",
+      "discussion": "Spanish also uses 'tener' for hunger and cold: 'tengo hambre', 'tengo frío'.",
+      "anti_example": "Not 'soy treinta años'. Age uses 'tener'."
+    },
+    {
+      "term": "¿dónde está + cosa?",
+      "category": "Phrase",
+      "definition": "Asks where one thing is. Put the thing at the end.",
+      "example": "Perdón, ¿dónde está el baño?",
+      "discussion": "For more than one thing, say '¿dónde están...?'. Start with 'perdón' when you ask a stranger."
+    },
+    {
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Can: be able to, or be allowed to. The basic form of a verb comes after it.",
+      "example": "¿Puedo pagar con tarjeta?",
+      "discussion": "'¿Puede repetir, por favor?' is a polite and very useful question."
+    },
+    {
+      "term": "ir",
+      "category": "Verb",
+      "definition": "Go somewhere. Put 'a' before the place.",
+      "example": "Voy al trabajo en autobús.",
+      "discussion": "The forms look very different from 'ir': voy, vas, va. Also, 'a' + 'el' becomes 'al'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ser",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Both mean 'be'. 'Ser' says what something is. 'Estar' says where it is or how it feels now."
+    },
+    {
+      "source": "hay",
+      "target": "estar",
+      "relationship_type": "contrasts with",
+      "description": "'Hay' is for things you mention for the first time. 'Está' is for a known thing."
+    },
+    {
+      "source": "tener",
+      "target": "tener que + infinitivo",
+      "relationship_type": "prerequisite of",
+      "description": "You need the forms of 'tener' (tengo, tienes, tiene) to use the pattern."
+    },
+    {
+      "source": "¿dónde está + cosa?",
+      "target": "estar",
+      "relationship_type": "builds on",
+      "description": "The question uses 'estar' because it asks about location."
+    }
+  ]
+}

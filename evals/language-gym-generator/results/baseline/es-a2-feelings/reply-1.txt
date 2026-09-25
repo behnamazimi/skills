@@ -1,0 +1,108 @@
+{
+  "domain": "Spanish A2 feelings",
+  "description": "Everyday words and patterns for saying how you feel and asking how others feel, at A2 level, in broadly Latin American Spanish.",
+  "terms": [
+    {
+      "term": "sentirse",
+      "category": "Verb",
+      "definition": "To feel a certain way, like good, bad, or tired. It always comes with a small pronoun: me siento, te sientes.",
+      "example": "Hoy no me siento bien. Me duele la cabeza.",
+      "discussion": "Put bien, mal, or a feeling word after it: me siento mal, me siento triste.",
+      "anti_example": "'Lo siento' is not a feeling. It means 'I'm sorry.' Without 'me', you lose the feeling sense: say 'me siento bien', not 'siento bien'."
+    },
+    {
+      "term": "triste",
+      "category": "Adjective",
+      "definition": "Sad. It is the same for a man and a woman.",
+      "example": "Ana está triste hoy. Su perro está enfermo."
+    },
+    {
+      "term": "estar + adjetivo",
+      "category": "Construction",
+      "definition": "Says how a person feels at this moment. Put a feeling word after a form of estar.",
+      "example": "Estoy cansado, y mi hermana está nerviosa.",
+      "mental_model": "Think of a photo of today. It shows how you are now, not who you are.",
+      "discussion": "The feeling word changes for a woman: él está cansado, ella está cansada.",
+      "anti_example": "'Soy cansado' is wrong. Tired is a state today, so say 'estoy cansado'."
+    },
+    {
+      "term": "¿Qué te pasa?",
+      "category": "Phrase",
+      "definition": "Asks a friend what is wrong. You say it when someone looks sad or upset.",
+      "example": "¿Qué te pasa? ¿Estás bien?",
+      "discussion": "Use it with friends and family. With an older person or a stranger, say '¿Qué le pasa?'",
+      "anti_example": "'¿Qué pasa?' without 'te' is different. It means 'what's up?' or 'what is happening?'"
+    },
+    {
+      "term": "preocupado",
+      "category": "Adjective",
+      "definition": "Worried. Something is on your mind, and you can't relax.",
+      "example": "Mi mamá está preocupada. Mi hermano no llama.",
+      "discussion": "Add 'por' for the reason: estoy preocupado por mi hijo."
+    },
+    {
+      "term": "tener miedo",
+      "category": "Phrase",
+      "definition": "To be afraid. Spanish says you 'have' fear, so the verb is tener.",
+      "example": "Mi hijo tiene miedo de los perros.",
+      "mental_model": "Think of fear as a thing in your hands. You have it.",
+      "anti_example": "'Estoy miedo' is wrong. Say 'tengo miedo'."
+    },
+    {
+      "term": "contento",
+      "category": "Adjective",
+      "definition": "Happy and pleased, often about one thing. It goes with estar.",
+      "example": "Estoy muy contento con mi nuevo trabajo.",
+      "anti_example": "'Feliz' also means happy. It is a bigger word, for a happy life or a birthday. For a good mood today, 'contento' is the normal choice."
+    },
+    {
+      "term": "ponerse + adjetivo",
+      "category": "Construction",
+      "definition": "Says that a feeling starts or changes. It works like English 'get' in 'I get nervous.'",
+      "example": "Me pongo nervioso antes de un examen.",
+      "mental_model": "Think of a light. It was off. Now it turns on.",
+      "anti_example": "'Estoy nervioso' is the state. 'Me pongo nervioso' is the moment it starts."
+    },
+    {
+      "term": "enojado",
+      "category": "Adjective",
+      "definition": "Angry. It goes with estar, like other feelings.",
+      "example": "Mi jefe está enojado conmigo.",
+      "discussion": "In Spain, people say 'enfadado' for the same feeling. Both are correct."
+    },
+    {
+      "term": "extrañar",
+      "category": "Verb",
+      "definition": "Feeling sad because a person or place is far away. English says 'to miss'.",
+      "example": "Vivo en Chicago y extraño a mi familia.",
+      "discussion": "In Spain, people often say 'echar de menos' instead.",
+      "anti_example": "The adjective 'extraño' means strange. But 'extraño a mi mamá' means 'I miss my mom.'"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "estar + adjetivo",
+      "target": "ponerse + adjetivo",
+      "relationship_type": "contrasts with",
+      "description": "Estar is the feeling now. Ponerse is the moment the feeling starts."
+    },
+    {
+      "source": "tener miedo",
+      "target": "estar + adjetivo",
+      "relationship_type": "often confused with",
+      "description": "Miedo is a thing you have, so it takes tener, not estar."
+    },
+    {
+      "source": "¿Qué te pasa?",
+      "target": "sentirse",
+      "relationship_type": "is often answered with",
+      "description": "A common answer is 'No me siento bien.'"
+    },
+    {
+      "source": "preocupado",
+      "target": "estar + adjetivo",
+      "relationship_type": "fills the slot in",
+      "description": "Estoy preocupado is this pattern with a feeling word."
+    }
+  ]
+}

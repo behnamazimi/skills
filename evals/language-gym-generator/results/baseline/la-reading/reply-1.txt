@@ -1,0 +1,98 @@
+{
+  "domain": "Latin",
+  "description": "Core sentence gear for reading simple Classical Latin at A2–B1, spelled with macrons as in most modern textbooks.",
+  "terms": [
+    {
+      "term": "sum, esse",
+      "category": "Verb",
+      "definition": "Be. It links a person or thing to a name, a place, or a quality.",
+      "example": "Marcus in hortō est. — Marcus is in the garden.",
+      "discussion": "Est alone at the start often means 'there is.' Sunt means 'there are.' Est vīlla in colle. — There is a house on the hill."
+    },
+    {
+      "term": "nōn",
+      "category": "Particle",
+      "definition": "Not. Put it right before the word you deny, usually the verb.",
+      "example": "Puella nōn dormit. — The girl is not sleeping.",
+      "anti_example": "Nōn is not a one-word answer like English 'no.' Latin repeats the verb instead: 'Vēnistī?' 'Nōn vēnī.' — 'Did you come?' 'I didn't.'"
+    },
+    {
+      "term": "-ō/-m, -s, -t, -mus, -tis, -nt",
+      "category": "Ending",
+      "definition": "Endings on a verb that show who acts: I, you, he/she/it, we, you all, they. Latin usually needs no separate word for 'I' or 'he.'",
+      "example": "Cantāmus, sed Marcus dormit. — We sing, but Marcus sleeps.",
+      "mental_model": "Think of the ending as a name tag on the verb. Read the tag to find the subject.",
+      "discussion": "Ego, tū, nōs, vōs do exist. Writers add them only for stress: Ego labōrō, tū dormīs!"
+    },
+    {
+      "term": "volō, velle",
+      "category": "Verb",
+      "definition": "Want. Put a second verb after it in its 'to' form, ending in -re.",
+      "example": "Volō dormīre. — I want to sleep.",
+      "discussion": "The forms are irregular: vīs 'you want,' vult 'he wants.' Nōlō means 'I don't want.'",
+      "anti_example": "Watch for volāre, 'to fly.' Its 'I' form is also volō. The other forms differ: volās, volat, not vīs, vult."
+    },
+    {
+      "term": "-ne",
+      "category": "Particle",
+      "definition": "Turns a statement into a yes/no question. Stick it onto the end of the first word.",
+      "example": "Estne Marcus domī? — Is Marcus at home?",
+      "mental_model": "Think of it as a question mark. Latin puts it at the front of the sentence, not the end."
+    },
+    {
+      "term": "possum, posse",
+      "category": "Verb",
+      "definition": "Can, be able. Like volō, it takes a second verb in its -re form.",
+      "example": "Hodiē venīre nōn possum. — I can't come today.",
+      "discussion": "It is pot- plus sum, so it looks like sum: potes, potest, possumus."
+    },
+    {
+      "term": "ubi?",
+      "category": "Question word",
+      "definition": "Where? It asks for a place.",
+      "example": "Ubi est Iūlia? — Where is Julia?",
+      "anti_example": "Without a question mark, ubi often means 'when': Ubi vēnit, dormīvit. — When he came, he slept."
+    },
+    {
+      "term": "eō, īre",
+      "category": "Verb",
+      "definition": "Go. The forms are very short, so they are easy to miss.",
+      "example": "Ad forum eō. — I'm going to the forum.",
+      "anti_example": "The Latin form it means 'he goes' or 'she goes.' It is not the English word 'it.'"
+    },
+    {
+      "term": "quis? quid?",
+      "category": "Question word",
+      "definition": "Who? (quis) and what? (quid). They usually open the question.",
+      "example": "Quis es? Quid vīs? — Who are you? What do you want?",
+      "discussion": "Quid agis? was the Roman 'How are you?' Word for word, it is 'What are you doing?'"
+    },
+    {
+      "term": "dēbeō, dēbēre",
+      "category": "Verb",
+      "definition": "Must, ought to. A second verb in its -re form follows it.",
+      "example": "Dēbeō labōrāre. — I have to work.",
+      "discussion": "With a thing instead of a verb, it means 'owe': Mihi pecūniam dēbēs. — You owe me money."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "sum, esse",
+      "target": "possum, posse",
+      "relationship_type": "builds on",
+      "description": "Possum is pot- plus sum, so if you know sum, you can read possum."
+    },
+    {
+      "source": "-ō/-m, -s, -t, -mus, -tis, -nt",
+      "target": "sum, esse",
+      "relationship_type": "shows up in",
+      "description": "Sum, es, est, sumus, estis, sunt carry the same person endings."
+    },
+    {
+      "source": "-ne",
+      "target": "quis? quid?",
+      "relationship_type": "contrasts with",
+      "description": "-ne asks for yes or no. Quis and quid ask for a person or a thing."
+    }
+  ]
+}

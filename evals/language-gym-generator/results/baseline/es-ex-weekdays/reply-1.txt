@@ -1,0 +1,105 @@
+{
+  "domain": "Spanish",
+  "description": "Core A2–B1 sentence gear for everyday conversation in broadly Latin American Spanish.",
+  "terms": [
+    {
+      "term": "ser",
+      "category": "Verb",
+      "definition": "The 'be' for who or what something is. Use it for names, jobs, origin, and the time.",
+      "example": "Soy Laura y soy profesora.",
+      "anti_example": "Not for how you feel right now: 'estoy cansada,' not 'soy cansada.'"
+    },
+    {
+      "term": "no",
+      "category": "Adverb",
+      "definition": "Makes a sentence negative. It goes right before the verb.",
+      "example": "No tengo coche.",
+      "discussion": "Spanish often uses two negatives: 'No quiero nada.' That is correct Spanish.",
+      "anti_example": "Don't put it after the verb: 'Yo no hablo francés,' not 'Yo hablo no francés.'"
+    },
+    {
+      "term": "estar",
+      "category": "Verb",
+      "definition": "Be, for places and for how someone is right now. Use it for mood, health, and location.",
+      "example": "Estoy en la oficina y estoy muy cansada.",
+      "mental_model": "Think of 'estar' as a photo of this moment. 'Ser' is more like an ID card.",
+      "anti_example": "Not for jobs: 'soy médico,' not 'estoy médico.'"
+    },
+    {
+      "term": "hay",
+      "category": "Phrase",
+      "definition": "There is, or there are. It says that something exists in a place.",
+      "example": "Hay un café cerca del metro.",
+      "discussion": "It never changes. One thing or ten things, it is always 'hay.'",
+      "anti_example": "For a specific thing you already know about, use 'está': '¿Dónde está el baño?' not '¿Dónde hay el baño?'"
+    },
+    {
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Want. Put a thing or another verb after it.",
+      "example": "Quiero un café con leche, por favor.",
+      "discussion": "The stem changes in most forms: quiero, quieres, quiere. 'Queremos' keeps the 'e'."
+    },
+    {
+      "term": "¿dónde?",
+      "category": "Question word",
+      "definition": "Where. You ask it to find a place or a person.",
+      "example": "¿Dónde está la estación de tren?",
+      "anti_example": "For 'where to,' people say '¿adónde?': '¿Adónde vas?'"
+    },
+    {
+      "term": "tener",
+      "category": "Verb",
+      "definition": "Have. It covers things you own, your family, and your age.",
+      "example": "Tengo dos hermanos y tengo treinta años.",
+      "anti_example": "Age uses 'tener': 'tengo 30 años,' not 'soy 30.'"
+    },
+    {
+      "term": "tener que + infinitivo",
+      "category": "Construction",
+      "definition": "Says you have to do something. After 'que', the next verb stays in its -ar, -er, or -ir form.",
+      "example": "Tengo que llamar a mi madre hoy.",
+      "anti_example": "Don't drop 'que': 'tengo trabajar' is wrong. Say 'tengo que trabajar.'"
+    },
+    {
+      "term": "ir",
+      "category": "Verb",
+      "definition": "Go. Put 'a' before the place.",
+      "example": "Voy al trabajo en autobús.",
+      "discussion": "'Ir a' plus a verb talks about the future: 'Voy a comer.' People say this all the time."
+    },
+    {
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Can. It shows you are able to do something, or you are allowed to.",
+      "example": "¿Puedo pagar con tarjeta?",
+      "discussion": "'¿Puede ayudarme?' is a polite way to ask a stranger for help."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ser",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Both mean 'be.' 'Ser' is for what something is; 'estar' is for where it is and how it is now."
+    },
+    {
+      "source": "tener",
+      "target": "tener que + infinitivo",
+      "relationship_type": "builds on",
+      "description": "Add 'que' and a verb to 'tener' to say what you must do."
+    },
+    {
+      "source": "¿dónde?",
+      "target": "estar",
+      "relationship_type": "usually pairs with",
+      "description": "'¿Dónde está...?' is the normal way to ask where something is."
+    },
+    {
+      "source": "hay",
+      "target": "estar",
+      "relationship_type": "contrasts with",
+      "description": "'Hay' says something exists. 'Está' says where a known thing is."
+    }
+  ]
+}

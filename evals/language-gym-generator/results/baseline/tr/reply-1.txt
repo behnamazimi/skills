@@ -1,0 +1,110 @@
+{
+  "domain": "Turkish",
+  "description": "Core sentence gear for everyday A2–B1 conversation in standard Istanbul Turkish.",
+  "terms": [
+    {
+      "term": "var",
+      "category": "Core word",
+      "definition": "There is, there are. It goes at the end of the sentence.",
+      "example": "Mutfakta çay var. — There is tea in the kitchen.",
+      "discussion": "It also gives you 'I have': Arabam var — I have a car.",
+      "anti_example": "Don't use var for where a person is. Say 'Ali evde,' not 'Ali evde var.'"
+    },
+    {
+      "term": "-(y)im",
+      "category": "Ending",
+      "definition": "Adds 'I am' to the end of a noun or adjective. Öğrenci + y + im = öğrenciyim, 'I am a student.'",
+      "example": "Merhaba, ben Tom. Öğrenciyim.",
+      "mental_model": "Think of it as 'am' glued onto the word.",
+      "discussion": "The vowel changes to match the word: yorgunum, Türküm, hastayım. Add y after a vowel."
+    },
+    {
+      "term": "istemek",
+      "category": "Verb",
+      "definition": "To want. In speech you mostly hear it as istiyorum, 'I want.'",
+      "example": "Bir çay istiyorum, lütfen. — One tea, please.",
+      "discussion": "To want to do something, put the full verb first: Gitmek istiyorum — I want to go."
+    },
+    {
+      "term": "mi",
+      "category": "Particle",
+      "definition": "Turns a sentence into a yes/no question. Put it right after the word you ask about.",
+      "example": "Burada su var mı? — Is there water here?",
+      "mental_model": "Think of it as a spoken question mark.",
+      "discussion": "Write it as a separate word. Its vowel matches the word before it: var mı, bu mu, Türk mü.",
+      "anti_example": "Don't add it to a question with a question word. Say 'Nerede?', not 'Nerede mi?'"
+    },
+    {
+      "term": "-iyor",
+      "category": "Ending",
+      "definition": "Marks an action happening now. People also use it for everyday habits.",
+      "example": "Şu an eve gidiyorum. — I'm going home now.",
+      "discussion": "Person endings come after it: geliyorum, geliyorsun, geliyor. The i can change to ı, u or ü: yapıyorum, okuyorum."
+    },
+    {
+      "term": "yok",
+      "category": "Core word",
+      "definition": "No, there isn't any. It is the opposite of var and also goes at the end.",
+      "example": "Buzdolabında süt yok. — There's no milk in the fridge.",
+      "discussion": "It also gives you 'I don't have': Param yok — I have no money.",
+      "anti_example": "Don't say 'var değil.' Just say yok."
+    },
+    {
+      "term": "lazım",
+      "category": "Core word",
+      "definition": "Needed. Put it after a thing or an action you need.",
+      "example": "Yarın erken kalkmam lazım. — I need to get up early tomorrow.",
+      "discussion": "For a thing, it is simple: Su lazım — we need water. For an action, use the verb with -mem or -mam: gitmem lazım, 'I must go.'",
+      "anti_example": "Don't say 'Ben gitmek lazım.' Say 'Gitmem lazım.'"
+    },
+    {
+      "term": "değil",
+      "category": "Core word",
+      "definition": "Means 'not' in sentences with a noun or adjective. It comes after that word.",
+      "example": "Alman değilim, Avusturyalıyım. — I'm not German, I'm Austrian.",
+      "discussion": "Person endings go on değil: değilim, değilsin, değiliz.",
+      "anti_example": "Not for action verbs. 'I'm not coming' is 'gelmiyorum', not 'geliyor değilim.'"
+    },
+    {
+      "term": "-ebil",
+      "category": "Ending",
+      "definition": "Adds 'can' to a verb. Gel + ebil + ir = gelebilir, 'he can come.'",
+      "example": "Bana yardım edebilir misiniz? — Can you help me?",
+      "discussion": "After a, ı, o, u it becomes -abil: yapabilirim. For 'can't' the form is short: gelemem, yapamam."
+    },
+    {
+      "term": "-me",
+      "category": "Ending",
+      "definition": "Puts 'not' inside a verb, right after the root. Gel + me = 'not come.'",
+      "example": "Bugün işe gitmiyorum. — I'm not going to work today.",
+      "discussion": "Before -iyor, the e or a changes to i, ı, u or ü: gelmiyorum, yapmıyorum.",
+      "anti_example": "Nouns and adjectives take değil, not -me: 'Yorgun değilim.'"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "değil",
+      "target": "-me",
+      "relationship_type": "often confused with",
+      "description": "Both mean 'not'. Değil goes with nouns and adjectives; -me goes inside verbs."
+    },
+    {
+      "source": "-iyor",
+      "target": "istemek",
+      "relationship_type": "is usually heard on",
+      "description": "Istemek almost always shows up as istiyorum, istiyor musun, and so on."
+    },
+    {
+      "source": "-(y)im",
+      "target": "değil",
+      "relationship_type": "attaches to",
+      "description": "The 'I am' ending sits on değil to make değilim, 'I am not.'"
+    },
+    {
+      "source": "mi",
+      "target": "var",
+      "relationship_type": "pairs with",
+      "description": "Var mı? is the everyday way to ask if something is there."
+    }
+  ]
+}

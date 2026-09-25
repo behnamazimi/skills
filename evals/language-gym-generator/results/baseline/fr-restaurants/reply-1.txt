@@ -1,0 +1,117 @@
+{
+  "domain": "French restaurants",
+  "description": "Must-know phrases and words for eating out in a restaurant in standard France French, at A2–B1 level: getting a table, ordering, and paying.",
+  "terms": [
+    {
+      "term": "une table pour + nombre",
+      "category": "Phrase",
+      "definition": "Ask for seats when you walk in. Add the number of people after it.",
+      "example": "Bonjour, une table pour deux, s'il vous plaît.",
+      "discussion": "Say bonjour first. In France, a request without bonjour sounds cold."
+    },
+    {
+      "term": "la carte",
+      "category": "Noun",
+      "definition": "Full list of dishes in the restaurant. Each dish has its own price.",
+      "example": "Vous pouvez nous apporter la carte, s'il vous plaît ?",
+      "anti_example": "Le menu is not the list. Le menu is a set meal for one price, for example starter and main dish for 18 euros."
+    },
+    {
+      "term": "Vous avez choisi ?",
+      "category": "Phrase",
+      "definition": "Waiter's question: are you ready to order? You need to recognize it more than say it.",
+      "example": "— Vous avez choisi ? — Oui, je voudrais le poulet.",
+      "discussion": "Not ready yet? Say: « Pas encore, merci. » The waiter comes back later."
+    },
+    {
+      "term": "je voudrais + nom",
+      "category": "Phrase",
+      "definition": "Polite way to ask for something: \"I would like\". It works for food, drinks, and a table.",
+      "example": "Je voudrais un café, s'il vous plaît.",
+      "mental_model": "Think of it as the soft button. You press it for every request in the restaurant.",
+      "anti_example": "Je veux un café sounds like \"I want a coffee\" from a child. It is too direct for a waiter."
+    },
+    {
+      "term": "l'entrée",
+      "category": "Noun",
+      "definition": "First course of the meal. It is a small dish before the main dish.",
+      "example": "En entrée, je voudrais la soupe.",
+      "anti_example": "In American English, \"entrée\" is the main dish. In France, l'entrée is the starter."
+    },
+    {
+      "term": "Qu'est-ce que vous me conseillez ?",
+      "category": "Phrase",
+      "definition": "Asks the waiter for a good choice. It means \"What do you recommend?\"",
+      "example": "Je ne sais pas. Qu'est-ce que vous me conseillez ?",
+      "discussion": "Waiters like this question. Often they tell you the dish of the day."
+    },
+    {
+      "term": "le plat",
+      "category": "Noun",
+      "definition": "Main course of the meal. It comes after the starter.",
+      "example": "Comme plat, je prends le steak-frites.",
+      "discussion": "On a board you often see « le plat du jour ». That is the dish of the day, usually a good price."
+    },
+    {
+      "term": "prendre",
+      "category": "Verb",
+      "definition": "Take. At the table, it means \"to have\" or \"to order\" a dish or a drink.",
+      "example": "Pour moi, je vais prendre le poisson.",
+      "mental_model": "Think of taking the dish from the list and putting it on your table."
+    },
+    {
+      "term": "le dessert",
+      "category": "Noun",
+      "definition": "Sweet course at the end of the meal, like cake or ice cream.",
+      "example": "Vous prenez un dessert ? — Oui, la tarte aux pommes.",
+      "discussion": "Many people drink a small coffee after the dessert, not with it."
+    },
+    {
+      "term": "la carafe d'eau",
+      "category": "Noun",
+      "definition": "Jug of tap water for the table. In France it is free.",
+      "example": "Une carafe d'eau, s'il vous plaît.",
+      "anti_example": "Une bouteille d'eau is a bottle of water. You pay for the bottle."
+    },
+    {
+      "term": "l'addition",
+      "category": "Noun",
+      "definition": "Bill for your meal. In France, the waiter brings it only when you ask.",
+      "example": "L'addition, s'il vous plaît.",
+      "discussion": "The waiter is not slow. Bringing the bill early is rude in France, so you must ask."
+    },
+    {
+      "term": "payer par carte",
+      "category": "Phrase",
+      "definition": "Pay with a bank card, not with cash.",
+      "example": "Je peux payer par carte ?",
+      "discussion": "The waiter often brings a small card machine to your table. Service is in the price. A tip is small and optional."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "l'entrée",
+      "target": "le plat",
+      "relationship_type": "comes before",
+      "description": "A French meal goes: entrée, then plat, then dessert."
+    },
+    {
+      "source": "Vous avez choisi ?",
+      "target": "je voudrais + nom",
+      "relationship_type": "is answered with",
+      "description": "The waiter asks. You order with je voudrais."
+    },
+    {
+      "source": "prendre",
+      "target": "je voudrais + nom",
+      "relationship_type": "is another way to order, like",
+      "description": "« Je vais prendre… » and « Je voudrais… » both order food."
+    },
+    {
+      "source": "l'addition",
+      "target": "payer par carte",
+      "relationship_type": "leads to",
+      "description": "First you ask for the bill. Then you say how you pay."
+    }
+  ]
+}

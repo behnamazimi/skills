@@ -1,0 +1,91 @@
+{
+  "domain": "German",
+  "description": "ابزارهای پایه برای حرف زدن روزمره به آلمانی معیار (آلمان)، سطح A2–B1، برای فارسی‌زبان‌ها.",
+  "terms": [
+    {
+      "term": "sein",
+      "category": "Verb",
+      "definition": "«بودن». با آن می‌گویید کی هستید، اهل کجایید و حالتان چطور است.",
+      "example": "Ich bin Sara. Ich bin aus Teheran. — من سارا هستم. من اهل تهرانم.",
+      "discussion": "صرفش بی‌قاعده است و باید حفظش کنید: ich bin, du bist, er ist, wir sind, ihr seid, sie sind."
+    },
+    {
+      "term": "nicht",
+      "category": "Negation",
+      "definition": "فعل یا صفت را منفی می‌کند. معمولاً نزدیک آخر جمله می‌آید.",
+      "example": "Ich komme heute nicht. — امروز نمی‌آیم.",
+      "anti_example": "اسم بدون «the» را با nicht منفی نکنید. درست: «Ich habe kein Auto». غلط: «Ich habe nicht ein Auto»."
+    },
+    {
+      "term": "es gibt",
+      "category": "Phrase",
+      "definition": "«هست» یا «وجود دارد». با آن می‌گویید در یک جا چیزی هست.",
+      "example": "In meiner Straße gibt es einen Supermarkt. — توی خیابان ما یک سوپرمارکت هست.",
+      "mental_model": "مثل «داریم» در فارسی: «این‌جا یک نانوایی داریم».",
+      "anti_example": "برای جای یک چیز مشخص از sein استفاده کنید: «Der Bahnhof ist dort»، نه «Es gibt der Bahnhof dort»."
+    },
+    {
+      "term": "können",
+      "category": "Modal",
+      "definition": "«توانستن». هم برای توانایی است، هم برای اجازه.",
+      "example": "Kannst du mir helfen? — می‌توانی کمکم کنی؟",
+      "discussion": "فعل دوم به شکل ساده به آخر جمله می‌رود: «Ich kann heute nicht kommen»."
+    },
+    {
+      "term": "haben",
+      "category": "Verb",
+      "definition": "داشتن: خانواده، وسیله، وقت یا درد.",
+      "example": "Wir haben zwei Kinder. — ما دو تا بچه داریم.",
+      "anti_example": "سن را با sein می‌گویند. درست: «Ich bin 30». غلط: «Ich habe 30 Jahre»."
+    },
+    {
+      "term": "wo",
+      "category": "Question word",
+      "definition": "کجا؟ برای پرسیدن جای یک آدم یا یک چیز.",
+      "example": "Entschuldigung, wo ist die Toilette? — ببخشید، دستشویی کجاست؟",
+      "anti_example": "برای مقصد، wohin می‌پرسند: «Wohin gehst du?» یعنی «کجا می‌روی؟»."
+    },
+    {
+      "term": "müssen",
+      "category": "Modal",
+      "definition": "«باید». وقتی چاره‌ای نیست.",
+      "example": "Ich muss morgen früh arbeiten. — فردا صبح زود باید کار کنم.",
+      "anti_example": "«nicht müssen» یعنی «لازم نیست»، نه «نباید». «Du musst nicht kommen» یعنی «لازم نیست بیایی»."
+    },
+    {
+      "term": "kein",
+      "category": "Negation",
+      "definition": "جلوی اسم می‌آید و آن را منفی می‌کند. مثل «هیچ» در فارسی.",
+      "example": "Ich habe heute keine Zeit. — امروز وقت ندارم.",
+      "discussion": "آخرش با اسم عوض می‌شود: kein Auto، keine Zeit، keinen Hunger."
+    },
+    {
+      "term": "möchten",
+      "category": "Modal",
+      "definition": "«می‌خواهم»، ولی مؤدبانه. در کافه، مغازه و اداره.",
+      "example": "Ich möchte einen Kaffee, bitte. — یک قهوه می‌خواهم، لطفاً.",
+      "discussion": "«Ich will» هم «می‌خواهم» است. در مغازه کمی تند به نظر می‌رسد."
+    },
+    {
+      "term": "gehen",
+      "category": "Verb",
+      "definition": "رفتن، بیشتر پیاده یا به یک جای نزدیک.",
+      "example": "Ich gehe jetzt nach Hause. — الان می‌روم خانه.",
+      "anti_example": "برای سفر با ماشین یا قطار معمولاً fahren می‌گویند: «Ich fahre nach Berlin»."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "nicht",
+      "target": "kein",
+      "relationship_type": "often confused with",
+      "description": "nicht فعل و صفت را منفی می‌کند. kein اسم را منفی می‌کند."
+    },
+    {
+      "source": "es gibt",
+      "target": "sein",
+      "relationship_type": "contrasts with",
+      "description": "es gibt می‌گوید چیزی هست. sein می‌گوید یک چیز مشخص کجاست."
+    }
+  ]
+}

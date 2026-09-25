@@ -1,0 +1,121 @@
+{
+  "domain": "Swahili A2",
+  "description": "Core A2 gear for everyday conversation in standard Swahili (Kiswahili sanifu, as taught in Tanzania and Kenya).",
+  "terms": [
+    {
+      "term": "ni",
+      "category": "Verb",
+      "definition": "Links two things: 'is', 'am', or 'are'. It stays the same for every person.",
+      "example": "Jina langu ni Juma. — My name is Juma.",
+      "discussion": "For 'is not', say 'si': 'Juma si daktari.' — Juma is not a doctor.",
+      "anti_example": "Don't use 'ni' for a place. Say 'Juma yuko nyumbani' (Juma is at home), not 'Juma ni nyumbani'."
+    },
+    {
+      "term": "ni-/u-/a-/tu-/m-/wa- + verb",
+      "category": "Pattern",
+      "definition": "Shows who does the action. ni = I, u = you, a = he or she, tu = we, m = you all, wa = they.",
+      "example": "Ninafanya kazi. Anasoma. — I work. She studies.",
+      "mental_model": "Think of the start of the verb as a name tag. You don't need a separate word for 'I' or 'she'.",
+      "discussion": "Words like 'mimi' (I) and 'yeye' (he or she) exist. People add them only for extra stress."
+    },
+    {
+      "term": "kutaka",
+      "category": "Verb",
+      "definition": "Want. Put a ku- verb after it for 'want to do': 'ninataka kula' is 'I want to eat'.",
+      "example": "Ninataka chai, tafadhali. — I want tea, please.",
+      "discussion": "In speech, 'ninataka' often gets shorter: 'nataka'."
+    },
+    {
+      "term": "kuna",
+      "category": "Phrase",
+      "definition": "Says that something exists: 'there is' or 'there are'. The 'not' form is 'hakuna'.",
+      "example": "Kuna duka karibu na hoteli. — There is a shop near the hotel.",
+      "mental_model": "Think of it as 'the place has': ku (place) + na (have)."
+    },
+    {
+      "term": "a-na- / a-li- / a-ta- + verb",
+      "category": "Pattern",
+      "definition": "Shows the time of the action. -na- is now, -li- is the past, and -ta- is later.",
+      "example": "Jana alipika wali. Kesho atapika samaki. — Yesterday she cooked rice. Tomorrow she will cook fish.",
+      "mental_model": "Think of three boxes in a row: who, when, what. a + li + pika = she + past + cook.",
+      "anti_example": "Short verbs like kula (eat) keep their ku-: 'nilikula' (I ate), not 'nilila'."
+    },
+    {
+      "term": "je",
+      "category": "Particle",
+      "definition": "Marks a yes-or-no question at the start of a sentence. The rest of the sentence stays the same.",
+      "example": "Je, unazungumza Kiingereza? — Do you speak English?",
+      "discussion": "In daily talk, people often skip 'je'. They just raise their voice at the end."
+    },
+    {
+      "term": "kwenda",
+      "category": "Verb",
+      "definition": "Go. It works for any trip: to the shop, to work, or home.",
+      "example": "Ninaenda sokoni sasa. — I'm going to the market now.",
+      "discussion": "The ku- is optional with a time slot. 'Ninaenda' and 'ninakwenda' are both fine."
+    },
+    {
+      "term": "si-/hu-/ha-/hatu-/ham-/hawa- + verb ending in -i",
+      "category": "Pattern",
+      "definition": "Says 'not' for an action now. Swap the person prefix, drop -na-, and end the verb in -i.",
+      "example": "Sitaki sukari. — I don't want sugar.",
+      "mental_model": "Think of a second set of name tags for 'not': ni → si, u → hu, a → ha, tu → hatu, m → ham, wa → hawa.",
+      "discussion": "For the past, use -ku-: 'sikula' — I didn't eat.",
+      "anti_example": "Don't put 'hapana' (no) before a normal verb. 'Hapana ninataka' is wrong. Say 'sitaki'."
+    },
+    {
+      "term": "niko / uko / yuko / tuko / mko / wako",
+      "category": "Phrase",
+      "definition": "Tells where a person is: 'I am at', 'she is at', and so on.",
+      "example": "Mama yuko sokoni. — Mom is at the market.",
+      "discussion": "For things, you often hear 'iko': 'Simu iko wapi?' — Where is the phone?",
+      "anti_example": "Not 'Mimi ni nyumbani' for 'I am at home'. Say 'Niko nyumbani'."
+    },
+    {
+      "term": "kuweza",
+      "category": "Verb",
+      "definition": "Can, or be able to. Put a ku- verb after it.",
+      "example": "Siwezi kuja leo. — I can't come today."
+    },
+    {
+      "term": "lazima",
+      "category": "Phrase",
+      "definition": "Must, or have to. After it, the verb ends in -e: 'lazima niende' is 'I have to go'.",
+      "example": "Lazima niende kazini sasa. — I have to go to work now.",
+      "anti_example": "Not 'lazima ninaenda'. Drop -na- and use the -e ending: 'lazima niende'."
+    },
+    {
+      "term": "kuwa na",
+      "category": "Verb",
+      "definition": "Have. Add the person prefix to -na: 'nina' is 'I have', 'ana' is 'she has'.",
+      "example": "Nina watoto wawili. — I have two children.",
+      "anti_example": "The 'not' form is 'sina', 'huna', 'hana'. It does not end in -i, so no 'sini'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ni",
+      "target": "niko / uko / yuko / tuko / mko / wako",
+      "relationship_type": "often confused with",
+      "description": "Use 'ni' for what someone is. Use the -ko form for where someone is."
+    },
+    {
+      "source": "ni-/u-/a-/tu-/m-/wa- + verb",
+      "target": "a-na- / a-li- / a-ta- + verb",
+      "relationship_type": "prerequisite of",
+      "description": "The person prefix comes first, then the time slot: a-na-soma."
+    },
+    {
+      "source": "kuwa na",
+      "target": "kuna",
+      "relationship_type": "shares a root with",
+      "description": "Both use -na for 'have'. 'Kuna' is like 'the place has'."
+    },
+    {
+      "source": "kuweza",
+      "target": "lazima",
+      "relationship_type": "contrasts with",
+      "description": "Kuweza is what you are able to do. Lazima is what you have to do."
+    }
+  ]
+}

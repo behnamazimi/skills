@@ -1,0 +1,1 @@
+["I need a language (optionally plus a slice) to build a glossary for — \"something so I learn stuff faster\" doesn't name one.\n\nExpected shape: `[language or slice] | [count=10] | [exclude: term, ...] | [learner=English] | [level] | [immersion] | [pronunciation=ipa|spoken|none]`\n\nExamples:\n- `Spanish A2 | 15`\n- `French restaurants | 10 | exclude: l'addition, le menu`\n"]

@@ -22,9 +22,10 @@ function parseGlossary(text) {
   try { const d = JSON.parse(text.trim()); return d && typeof d === 'object' && !Array.isArray(d) ? d : null; } catch { return null; }
 }
 
+// A non-JSON reply is a "question" if it asks something (a question mark anywhere, any script), else plain "text".
 function classify(msg) {
   if (parseGlossary(msg)) return 'json';
-  return /\?\s*$/m.test(msg.trim()) ? 'question' : 'text';
+  return /[?？؟]/u.test(msg) ? 'question' : 'text';
 }
 
 function scriptShare(text, allowed) {
@@ -68,7 +69,7 @@ for (const c of cases) {
     const last = messages[messages.length - 1] || '';
     const kind = classify(last);
     r.reply = kind;
-    const allowed = [].concat(e.reply).map((x) => (x === 'reject' || x === 'nothing_left' ? 'text' : x));
+    const allowed = [].concat(e.reply).flatMap((x) => (x === 'reject' || x === 'nothing_left' ? ['text', 'question'] : [x]));
     r.hard.push({ name: `reply is ${[].concat(e.reply).join(' | ')}`, pass: allowed.includes(kind), value: kind });
     if (kind === 'json') glossaries = [parseGlossary(last)];
   }

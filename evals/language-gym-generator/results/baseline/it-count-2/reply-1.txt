@@ -1,0 +1,31 @@
+{
+  "domain": "Italian",
+  "description": "Two spine items for everyday conversation in standard Italian, at A2–B1 level.",
+  "terms": [
+    {
+      "term": "essere",
+      "category": "Verb",
+      "definition": "The main 'to be' in Italian. You use it to say who someone is, where they are from, and what something is like.",
+      "example": "Sono Marco, sono di Torino. Il caffè è buono.",
+      "mental_model": "Think of 'I am', 'you are', 'it is' in English. Most of them are essere in Italian.",
+      "discussion": "Italians usually drop the subject pronoun. Say 'sono stanco', not 'io sono stanco'. The verb ending already tells you who.",
+      "anti_example": "Age uses avere, not essere: 'ho venti anni', not 'sono venti anni'."
+    },
+    {
+      "term": "c'è",
+      "category": "Phrase",
+      "definition": "Says that something exists or is present somewhere: 'there is'. For more than one thing, it becomes 'ci sono'.",
+      "example": "C'è un bar vicino alla stazione? Sì, e ci sono due farmacie.",
+      "mental_model": "Think of English 'there is' and 'there are'. C'è is one thing. Ci sono is many things.",
+      "anti_example": "Don't use it for where a known thing is. Say 'Il bar è lì', not 'Il bar c'è lì'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "essere",
+      "target": "c'è",
+      "relationship_type": "builds on",
+      "description": "C'è is 'ci' plus 'è', a form of essere. Ci sono uses 'sono', another form of essere."
+    }
+  ]
+}

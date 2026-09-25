@@ -1,0 +1,103 @@
+{
+  "domain": "Dutch",
+  "description": "Kernwoorden en zinspatronen voor gewone gesprekken in het Nederlands van Nederland, niveau A2–B1.",
+  "terms": [
+    {
+      "term": "zijn",
+      "category": "Werkwoord",
+      "definition": "Vertelt je naam, je werk of je land. Ook voor een gevoel: 'Ik ben moe.'",
+      "example": "Ik ben Sara en ik ben lerares.",
+      "anti_example": "Voor honger en dorst gebruik je hebben. Zeg 'Ik heb honger', niet 'Ik ben honger'."
+    },
+    {
+      "term": "niet",
+      "category": "Ontkenning",
+      "definition": "Maakt van een ja-zin een nee-zin. Het staat vaak aan het eind van de zin.",
+      "example": "Het café is vandaag niet open.",
+      "anti_example": "Niet: 'Ik heb niet een fiets.' Bij 'een' gebruik je geen: 'Ik heb geen fiets.'"
+    },
+    {
+      "term": "gaan",
+      "category": "Werkwoord",
+      "definition": "Van hier naar een andere plek. Lopend, met de fiets of met de trein.",
+      "example": "Morgen gaan we met de trein naar Amsterdam.",
+      "discussion": "Met een tweede werkwoord vertelt gaan over een plan: 'Ik ga vanavond koken.'"
+    },
+    {
+      "term": "werkwoord + je … ?",
+      "category": "Vraag",
+      "definition": "Stelt een vraag met als antwoord ja of nee. Het werkwoord komt eerst, dan de persoon.",
+      "example": "Woon je in Utrecht?",
+      "mental_model": "Denk aan omdraaien. 'Je woont in Utrecht.' wordt 'Woon je in Utrecht?'",
+      "anti_example": "Niet: 'Woont je in Utrecht?' Voor je valt de -t weg: 'Woon je in Utrecht?'"
+    },
+    {
+      "term": "hebben",
+      "category": "Werkwoord",
+      "definition": "Iets bezitten: een auto, een kind, tijd. Ook voor honger, dorst en pijn.",
+      "example": "We hebben twee kinderen en een hond."
+    },
+    {
+      "term": "er is / er zijn",
+      "category": "Vaste combinatie",
+      "definition": "Zegt dat iets ergens aanwezig is. 'Er is' gaat met één ding, 'er zijn' met meer dingen.",
+      "example": "Er is een bakker in onze straat.",
+      "mental_model": "Denk aan een kamer. Je kijkt rond: er is een tafel, er zijn twee stoelen.",
+      "anti_example": "Niet: 'Het is een bakker in onze straat.' Zeg: 'Er is een bakker in onze straat.'"
+    },
+    {
+      "term": "willen",
+      "category": "Werkwoord",
+      "definition": "Iets graag hebben of graag doen. Een tweede werkwoord staat dan aan het eind.",
+      "example": "Ik wil vanavond pizza eten.",
+      "discussion": "In een winkel klinkt 'Ik wil een koffie' te direct. Zeg: 'Ik wil graag een koffie.'"
+    },
+    {
+      "term": "geen",
+      "category": "Ontkenning",
+      "definition": "Nul van iets: geen geld, geen tijd, geen auto. Het staat op de plek van 'een'.",
+      "example": "Sorry, ik heb vandaag geen tijd.",
+      "anti_example": "Niet bij moe, groot of leuk. Zeg 'Ik ben niet moe', niet 'Ik ben geen moe'."
+    },
+    {
+      "term": "kunnen",
+      "category": "Werkwoord",
+      "definition": "Iets is mogelijk. Of iemand doet iets goed, zoals zwemmen of koken.",
+      "example": "Kun je morgen om negen uur komen?",
+      "discussion": "'Kun je…?' is een vriendelijke vraag om hulp. 'Kan je…?' hoor je ook veel."
+    },
+    {
+      "term": "moeten",
+      "category": "Werkwoord",
+      "definition": "Nodig of verplicht. Je hebt geen keus.",
+      "example": "Ik moet om acht uur op mijn werk zijn.",
+      "anti_example": "Let op: 'Je moet niet komen' betekent 'Kom niet!' Is het alleen niet nodig? Zeg dan: 'Je hoeft niet te komen.'"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "niet",
+      "target": "geen",
+      "relationship_type": "wordt vaak verward met",
+      "description": "Geen gaat met 'een' of met meer dingen. Niet gaat met de rest."
+    },
+    {
+      "source": "zijn",
+      "target": "hebben",
+      "relationship_type": "wordt vaak verward met",
+      "description": "Honger en dorst gaan met hebben, niet met zijn."
+    },
+    {
+      "source": "zijn",
+      "target": "er is / er zijn",
+      "relationship_type": "is de basis van",
+      "description": "Er is en er zijn gebruiken dezelfde vormen van zijn."
+    },
+    {
+      "source": "kunnen",
+      "target": "werkwoord + je … ?",
+      "relationship_type": "komt vaak voor in",
+      "description": "'Kun je…?' is de meest gewone vraag om hulp."
+    }
+  ]
+}
