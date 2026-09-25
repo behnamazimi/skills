@@ -379,3 +379,10 @@ test('ipa: independent transcriptions are compared, tones count, stress is softe
   assert.equal(stress[0].status, 'stress_or_length');
   assert.equal(ipaCompare(es, { answers: [] })[0].status, 'unchecked');
 });
+
+test('findings can target a relationship by index', () => {
+  const ok = { findings: [{ term_id: 'relationships[0]', field: 'description', rule: 'R-REL-01', severity: 'must_fix', quote: "translate English 'be'", problem: 'p' }] };
+  assert.deepEqual(rules(validateFindings(ok, esDraft, ruleIdsFrom(rulesMd))), []);
+  const bad = { findings: [{ term_id: 'relationships[5]', field: 'description', rule: 'R-REL-01', severity: 'must_fix', quote: 'x', problem: 'p' }] };
+  assert.ok(has(validateFindings(bad, esDraft), 'R-FIND-01'));
+});

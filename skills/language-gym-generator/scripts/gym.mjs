@@ -552,8 +552,9 @@ export function validateFindings(fnd, draft, ruleIds = null) {
     if (typeof f.rule === 'string' && !/^R-[A-Z]+-\d{2}$/.test(f.rule)) out.push(finding('R-FIND-02', `${p}.rule`, `"${f.rule}" is not a rule ID`));
     if (ruleIds && typeof f.rule === 'string' && !ruleIds.has(f.rule)) out.push(finding('R-FIND-02', `${p}.rule`, `"${f.rule}" is not defined in rules.md`));
     if (!['must_fix', 'should_fix'].includes(f.severity)) out.push(finding('R-FIND-02', `${p}.severity`, 'must be must_fix | should_fix'));
-    const t = byId.get(f.term_id);
-    if (!t) { out.push(finding('R-FIND-01', `${p}.term_id`, `no draft entry with id "${f.term_id}"`)); return; }
+    const rel = /^relationships\[(\d+)\]$/.exec(f.term_id || '');
+    const t = rel ? draft?.relationships?.[Number(rel[1])] : byId.get(f.term_id);
+    if (!t) { out.push(finding('R-FIND-01', `${p}.term_id`, `no draft entry or relationship "${f.term_id}"`)); return; }
     const text = t[f.field];
     if (typeof text !== 'string') out.push(finding('R-FIND-01', `${p}.field`, `entry "${f.term_id}" has no field "${f.field}"`));
     else if (typeof f.quote === 'string' && !nfc(text).includes(nfc(f.quote))) out.push(finding('R-FIND-01', `${p}.quote`, 'quote does not appear in that field'));

@@ -186,6 +186,8 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
 { "findings": [ { "term_id": "t01", "field": "definition", "rule": "R-FLD-03", "severity": "must_fix", "quote": "exact text from the field", "problem": "…", "fix": "…", "source": "script | facts | level | rules" } ] }
 ```
 
+For a relationship, `term_id` is `relationships[N]` (its index in `draft.json`) and `field` is `relationship_type` or `description`.
+
 ## `fixes.json`
 
 ```json
