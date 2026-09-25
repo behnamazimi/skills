@@ -698,7 +698,8 @@ export function metrics(draft, spec, plan = null) {
   }
   for (const x of per) if (x.plan_mismatches > 0) outliers.push({ batch: x.batch, metric: 'plan_mismatches', value: x.plan_mismatches, median: 0 });
   const scenes = new Map();
-  for (const p of plan?.terms || []) if (p.scene) scenes.set(fold(p.scene, lp), [...(scenes.get(fold(p.scene, lp)) || []), p.id]);
+  // Only entries that get an example have a real scene; others may carry a placeholder like "none".
+  for (const p of plan?.terms || []) if (p.scene && (!Array.isArray(p.fields) || p.fields.includes('example'))) scenes.set(fold(p.scene, lp), [...(scenes.get(fold(p.scene, lp)) || []), p.id]);
   const repeatedScenes = [...scenes].filter(([, ids]) => ids.length > 2).map(([scene, ids]) => ({ scene, ids }));
   const all = draftTerms(draft);
   const fill = Object.fromEntries(OPTIONAL_TERM_FIELDS.map((f) => [f, all.length ? +(all.filter((t) => t[f]).length / all.length).toFixed(2) : 0]));

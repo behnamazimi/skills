@@ -446,3 +446,10 @@ test('metrics report fill rates and the optional-field count distribution', () =
   assert.equal(m.fill_rates.example, 1);
   assert.deepEqual(m.optional_field_counts, { 1: 3, 2: 1 });
 });
+
+test('metrics ignore scenes on entries that get no example', () => {
+  const plan = { terms: ['t01', 't02', 't03', 't04'].map((id) => ({ id, scene: 'none', fields: [] })) };
+  assert.deepEqual(metrics(esDraft, esSpec, plan).repeated_scenes, []);
+  const real = { terms: ['t01', 't02', 't03'].map((id) => ({ id, scene: 'café order', fields: ['example'] })) };
+  assert.equal(metrics(esDraft, esSpec, real).repeated_scenes.length, 1);
+});
