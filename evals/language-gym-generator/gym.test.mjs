@@ -326,7 +326,7 @@ test('findings can target list.json, and candidates work without an exclude file
 });
 
 test('required jobs depend on the ceiling and on grammatical politeness', () => {
-  assert.deepEqual(requiredJobs({ level: { ceiling: 'A1' }, profile: {} }), ['identity', 'existence', 'location', 'negation', 'questions', 'want', 'can', 'go', 'must']);
+  assert.deepEqual(requiredJobs({ level: { ceiling: 'A1' }, profile: {} }), ['identity', 'person', 'existence', 'location', 'have', 'negation', 'questions', 'want', 'can', 'go', 'must']);
   assert.ok(requiredJobs({ level: { ceiling: 'A2' }, profile: {} }).includes('past'));
   assert.equal(requiredJobs({ level: { ceiling: 'B1' }, profile: {} }).at(-1), 'future');
   assert.ok(requiredJobs({ level: { ceiling: 'A2' }, profile: { politeness_marked: true } }).includes('politeness'));
@@ -334,22 +334,24 @@ test('required jobs depend on the ceiling and on grammatical politeness', () => 
 
 test('list: every required job is mapped, deferred only from the end when full', () => {
   const mk = (terms) => terms.map((t, i) => ({ id: `t${i}`, term: t, job: 'j', slot: 'spine', level: 'A1' }));
-  const main = mk(['ser', 'hay', 'estar', 'no', '¿qué?', 'pretérito: -é/-ó', 'querer', 'poder', 'ir', 'tener que + infinitivo']);
-  const jobs = { identity: 'ser', existence: 'hay', location: 'estar', negation: 'no', questions: '¿qué?', past: 'pretérito: -é/-ó', want: 'querer', can: 'poder', go: 'ir', must: 'tener que + infinitivo', future: 'deferred' };
+  const main = mk(['ser', 'tú / usted', 'hay', 'estar', 'tener', 'no', '¿qué?', 'pretérito: -é/-ó', 'querer', 'poder']);
+  const jobs = { identity: 'ser', person: 'tú / usted', existence: 'hay', location: 'estar', have: 'tener', negation: 'no', questions: '¿qué?', past: 'pretérito: -é/-ó', want: 'querer', can: 'poder', go: 'deferred', must: 'deferred', future: 'deferred' };
   const list = { main, spares: [], sets: [], shape: { jobs } };
   assert.ok(!has(validateList(list, esSpec), 'R-SEL-12'), 'future deferred last with every slot used');
   const missing = structuredClone(list); delete missing.shape.jobs.questions;
   assert.ok(has(validateList(missing, esSpec), 'R-SEL-12', 'questions'));
-  const wrongTerm = structuredClone(list); wrongTerm.shape.jobs.go = 'irse';
-  assert.ok(has(validateList(wrongTerm, esSpec), 'R-SEL-12', 'go'));
+  const wrongTerm = structuredClone(list); wrongTerm.shape.jobs.can = 'poderse';
+  assert.ok(has(validateList(wrongTerm, esSpec), 'R-SEL-12', 'can'));
   const earlyDefer = structuredClone(list); earlyDefer.shape.jobs.questions = 'deferred'; earlyDefer.shape.jobs.future = 'n/a: no separate future in this list';
   assert.ok(has(validateList(earlyDefer, esSpec), 'R-SEL-12', 'shape.jobs'), 'deferring a high-priority job while covering lower ones');
-  const known = structuredClone(list); known.shape.jobs.want = 'known: tener';
+  const known = structuredClone(list); known.main = known.main.filter((t) => t.term !== 'tener'); known.main.push({ id: 'tx', term: 'ir', job: 'j', slot: 'spine', level: 'A1' }); known.shape.jobs.have = 'known: tener'; known.shape.jobs.go = 'ir';
   assert.ok(!has(validateList(known, esSpec, fx('exclude-es.json')), 'R-SEL-12'), 'known: resolves against the exclude list');
   const notKnown = structuredClone(list); notKnown.shape.jobs.want = 'known: comer';
   assert.ok(has(validateList(notKnown, esSpec, fx('exclude-es.json')), 'R-SEL-12', 'want'));
-  const freeSlots = structuredClone(list); freeSlots.main.pop(); freeSlots.shape.jobs.must = 'deferred';
-  assert.ok(has(validateList(freeSlots, esSpec), 'R-SEL-12', 'must'), 'cannot defer while slots are free');
+  const freeSlots = structuredClone(list); freeSlots.main.pop(); freeSlots.shape.jobs.can = 'deferred';
+  assert.ok(has(validateList(freeSlots, esSpec), 'R-SEL-12', 'can'), 'cannot defer while slots are free');
+  const naSet = structuredClone(list); naSet.shape.jobs.person = "n/a: the 9-pronoun set doesn't fit in 10 terms";
+  assert.ok(!has(validateList(naSet, esSpec), 'R-SEL-12', 'person'), 'n/a with a reason is accepted');
   assert.ok(!has(validateList({ ...list, shape: {} }, { ...esSpec, slice_type: 'usage' }), 'R-SEL-12'), 'usage slices skip the job check');
 });
 
@@ -402,16 +404,9 @@ test('B2+ skips required jobs; slot markers are not a script violation', () => {
 
 const warn = (fs, rule, pathPart = '') => fs.some((f) => f.rule === rule && f.severity === 'warning' && f.path.includes(pathPart));
 
-test('R-FLD-16: uniform optional fields are flagged, varied ones are not', () => {
-  const mk = (n, fields) => ({ domain: 'Spanish', description: 'd', terms: Array.from({ length: n }, (_, i) => ({ id: `t${i}`, term: `palabra${i}`, category: 'Noun', definition: `Meaning number ${i} here.`, ...Object.fromEntries(fields(i).map((f) => [f, `Text ${f} ${i}.`])) })) });
-  const uniform = validateGlossary(mk(10, () => ['example', 'discussion']), esSpec);
-  assert.ok(warn(uniform, 'R-FLD-16') && uniform.some((f) => /exactly 2/.test(f.message)));
-  assert.ok(uniform.some((f) => f.rule === 'R-FLD-16' && /example is on 10 of 10/.test(f.message)));
-  assert.ok(uniform.some((f) => f.rule === 'R-FLD-16' && /definition-only/.test(f.message)));
-  const varied = validateGlossary(mk(10, (i) => [[], ['example'], ['example', 'anti_example'], ['example', 'discussion', 'anti_example']][i % 4]), esSpec);
-  assert.ok(!warn(varied, 'R-FLD-16'));
-  assert.ok(!warn(validateGlossary(esDraft, esSpec), 'R-FLD-16'), 'fewer than 8 terms are not judged');
-  assert.equal(rules(uniform).filter((r) => r === 'R-FLD-16').length, 0, 'warnings, not errors');
+test('R-FLD-16 has no numeric check: uniform or example-heavy glossaries are not flagged', () => {
+  const mk = (n) => ({ domain: 'German', description: 'd', terms: Array.from({ length: n }, (_, i) => ({ id: `t${i}`, term: `wort${i}`, category: 'Particle', definition: `Meaning number ${i} here.`, example: `Satz ${i}.` })) });
+  assert.ok(!validateGlossary(mk(10), esSpec).some((f) => f.rule === 'R-FLD-16'));
 });
 
 test('R-FLD-17: an optional field that repeats the definition is flagged', () => {

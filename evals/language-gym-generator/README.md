@@ -23,7 +23,7 @@ To compare against the previous single-pass skill, take `skills/language-gym-gen
 
 ## Scoring
 
-**Hard properties** are computed by the script and must pass: reply type, the import schema, term counts, excluded items and their forms, closed sets, scripts, overlap between runs, and series parts. With 8 or more terms (grammar slices excepted), optional fields must also vary by term: not every term gets the same number of optional fields, at least one term is definition-only, and `example` is on at most 80% of terms. And no definition may carry an example inside it (R-FLD-18). The reply must be *only* JSON: code fences or text around it fail the "reply is json" check, because the user pastes the reply straight into Jargon Gym.
+**Hard properties** are computed by the script and must pass: reply type, the import schema, term counts, excluded items and their forms, closed sets, scripts, overlap between runs, and series parts. No definition may carry an example inside it (R-FLD-18). Optional fields are judged by the blind judges (earned vs padded vs missing), not by a count: any numeric target turned into a quota in testing. The reply must be *only* JSON: code fences or text around it fail the "reply is json" check, because the user pastes the reply straight into Jargon Gym.
 
 **Mechanical violations** are the `gym.mjs validate glossary` rules that need no style sheet: opening words, restated terms, pronunciation mode, beginner-mode shape, banned phrases, relationships, immersion scripts. Lower is better.
 

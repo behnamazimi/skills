@@ -281,7 +281,7 @@ function excludeKeys(ex, profile) {
 
 export function requiredJobs(spec) {
   const ceiling = levelIndex(spec?.level?.ceiling);
-  const jobs = ['identity', 'existence', 'location', 'negation', 'questions'];
+  const jobs = ['identity', 'person', 'existence', 'location', 'have', 'negation', 'questions'];
   if (spec?.profile?.politeness_marked) jobs.push('politeness');
   if (ceiling >= levelIndex('A2')) jobs.push('past');
   jobs.push('want', 'can', 'go', 'must');
@@ -572,16 +572,6 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
     }
   });
   for (const [op, idx] of openers) if (idx.length > 3) out.push(finding('R-FLD-04', `terms[${idx[3]}].definition`, `opening word "${op}" used ${idx.length} times (max 3)`));
-  // Optional fields are a per-term judgment (R-FLD-16). Warnings: an agent decides which fields to drop.
-  if (!partial && terms.length >= 8) {
-    const counts = terms.map((t) => OPTIONAL_TERM_FIELDS.filter((f) => t[f]).length);
-    if (counts.every((c) => c === counts[0])) out.push(finding('R-FLD-16', 'terms', `every term has exactly ${counts[0]} optional field(s); fields should follow each term's needs`, 'warning'));
-    for (const f of OPTIONAL_TERM_FIELDS) {
-      const n = terms.filter((t) => t[f]).length;
-      if (n / terms.length > 0.8) out.push(finding('R-FLD-16', 'terms', `${f} is on ${n} of ${terms.length} terms (> 80%)`, 'warning'));
-    }
-    if (!counts.includes(0)) out.push(finding('R-FLD-16', 'terms', 'no term is definition-only', 'warning'));
-  }
   // Relationships.
   const rels = Array.isArray(draft.relationships) ? draft.relationships : [];
   if (rels.length >= 3) {

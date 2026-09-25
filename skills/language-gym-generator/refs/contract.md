@@ -96,7 +96,7 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
   "main":   [ { "id": "t01", "term": "estar", "job": "location and temporary state", "slot": "spine", "level": "A1", "why": "..." } ],
   "spares": [ { "id": "s01", "term": "querer", "job": "want", "slot": "spine", "level": "A1", "why": "..." } ],
   "sets":   [ { "name": "subject pronouns", "members": ["yo", "tú", "usted", "él", "ella", "nosotros", "ustedes", "ellos", "ellas"] } ],
-  "shape":  { "jobs": { "identity": "ser", "existence": "hay", "location": "estar", "negation": "known: no", "questions": "¿dónde?", "past": "pretérito: -é / -ó", "want": "querer", "can": "poder", "go": "ir", "must": "tener que + infinitivo", "future": "deferred" }, "concrete_nouns": 1, "notes": "..." }
+  "shape":  { "jobs": { "identity": "ser", "person": "tú / usted", "existence": "hay", "location": "estar", "have": "tener", "negation": "known: no", "questions": "¿dónde?", "past": "pretérito: -é / -ó", "want": "querer", "can": "poder", "go": "ir", "must": "deferred", "future": "deferred" }, "concrete_nouns": 1, "notes": "..." }
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 name: language-gym-generator
-description: Generate a language-learning glossary as Jargon Gym import JSON for any language or slice the user names, through a checked multi-step pipeline. Use when the user asks for vocabulary, phrases, grammar constructions, or a term list to learn a language (e.g. "make me a Spanish glossary", "French A2 restaurant vocab", "German modal particles"), including follow-up sets where earlier glossaries are passed as exclude. Not a conversational tutor, and not for reviewing existing glossary JSON.
+description: Generate a language-learning glossary as Jargon Gym import JSON for any language or slice the user names, through a checked multi-step pipeline. Use when the user asks for vocabulary, phrases, grammar constructions, or a term list to learn a language (e.g. "make me a Spanish glossary", "French A2 restaurant vocab", "German modal particles"), including follow-up sets where earlier glossaries are passed as exclude. Not a conversational tutor.
 argument-hint: "[language or slice] | [count=10] | [exclude: term, ... | path | pasted JSON] | [learner=English] | [level] | [immersion] | [pronunciation=ipa|spoken|none]"
 ---
 

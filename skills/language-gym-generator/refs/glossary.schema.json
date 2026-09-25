@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "jargon-gym-glossary",
+  "$id": "language-gym-glossary",
   "title": "Jargon Gym glossary import",
-  "description": "Import contract shared with jargon-gym-generator and jargon-gym-review. scripts/gym.mjs `validate output` enforces this plus the text rules in refs/rules.md (R-OUT).",
+  "description": "Jargon Gym import format produced by this skill. scripts/gym.mjs `validate output` enforces this plus the text rules in refs/rules.md (R-OUT).",
   "type": "object",
   "additionalProperties": false,
   "required": ["domain", "description", "terms"],
