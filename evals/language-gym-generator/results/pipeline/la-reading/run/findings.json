@@ -1,3 +1,0 @@
-{ "findings": [
- { "term_id": "t07", "field": "definition", "rule": "R-FLD-13", "severity": "should_fix", "quote": "Tells you where something is: 'in' or 'on', with no movement.", "problem": "The term hinges on the ablative, but nothing on the card shows what an ablative noun looks like, so a reader can't tell in + ablative from in + accusative in a text.", "fix": "Name the ending cue with the example nouns: 'Tells you where something is, with no movement; the noun takes an ablative ending, like viā or agrō.'", "source": "rules" }
-] }

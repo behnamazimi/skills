@@ -1,1 +1,0 @@
-{ "round": 1, "applied": [ { "finding": null, "term_id": "rel:ser-estar", "field": "description", "note": "orchestrator-found in emit review: quote marks around 'be' were lost when the relationship was written; restored as \"Both translate as 'be'\"" } ], "rejected": [], "dropped": [] }

@@ -1,5 +1,0 @@
-{ "terms": [
-  { "id": "t01", "batch": 1, "term": "ustedes", "category": "Pronoun", "definition": "Means 'you' for two or more people, friends and strangers alike, all over Latin America.", "example": "¿Ustedes quieren algo de tomar? — Do you guys want something to drink?", "discussion": "It takes the same verb form as ellos: ustedes tienen, ustedes van. Vosotros is Spain only, so you can skip it." },
-  { "id": "t09", "batch": 1, "term": "saber", "category": "Verb", "definition": "Covers knowing a fact, like a name or a time, and knowing how to do something.", "example": "¿Sabes cómo se llama el mesero? — Do you know the waiter's name?", "anti_example": "Not 'sé a María' for 'I know María': for people and places, say 'conozco a María'." },
-  { "id": "t10", "batch": 1, "term": "acabar de + infinitivo", "category": "Pattern", "definition": "Says something happened a moment ago: acabo de llegar means 'I just got here'.", "example": "No, gracias, acabo de comer. — No thanks, I just ate.", "anti_example": "Not 'solo comí' for 'I just ate': that means 'I only ate'. Say 'acabo de comer'." }
-] }

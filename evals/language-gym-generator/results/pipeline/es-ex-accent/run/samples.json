@@ -1,5 +1,0 @@
-{ "terms": [
-  { "id": "t02", "batch": 1, "term": "estar", "category": "Verb", "definition": "Tells where someone or something is, or how they feel right now.", "example": "Estoy en el bus, ya llego. — I'm on the bus, almost there.", "anti_example": "Not 'soy cansado' for 'I'm tired': feelings right now take estar, so 'estoy cansado'." },
-  { "id": "t09", "batch": 1, "term": "que", "category": "Connector", "definition": "Joins a second sentence after verbs like think, say or know, like English 'that'.", "example": "Mi mamá dice que la cena está lista. — My mom says dinner's ready.", "anti_example": "Not 'creo es bueno': Spanish never drops que, so 'creo que es bueno'.", "discussion": "No accent here. With an accent, qué is the question word: ¿qué quieres?" },
-  { "id": "t05", "batch": 1, "term": "poder", "category": "Verb", "definition": "Lets you say you can do something, or ask if it's OK: poder + verb.", "example": "¿Puedo pagar con tarjeta? — Can I pay by card?" }
-] }

@@ -1,1 +1,0 @@
-{ "step": "done", "done": ["00-parse", "01-exclude", "02-select", "03-review-list"], "retries": {}, "inline": true, "node": true, "warnings": ["R-EX-06: nothing left to select; stopped after step 3 with the short reply, no glossary emitted"] }

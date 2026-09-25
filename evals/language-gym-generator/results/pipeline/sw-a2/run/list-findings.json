@@ -1,3 +1,0 @@
-{ "findings": [
-  { "term_id": "t12", "field": "term", "rule": "R-SEL-05", "severity": "should_fix", "quote": "-me-", "problem": "Go and come are building-block jobs and are not covered by main or known items; they sit in spares while the fourth tense marker takes a slot.", "fix": "Keep: -me- completes the declared tense set (R-SEL-04) and is needed for everyday states (nimechoka, nimefika); go/come are first in line for the next set (spares s01, s02). Note the gap in the report." }
-] }

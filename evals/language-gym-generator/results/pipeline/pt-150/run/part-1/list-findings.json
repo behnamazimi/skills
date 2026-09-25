@@ -1,4 +1,0 @@
-{ "findings": [
- { "term_id": "t08", "field": "term", "rule": "R-SEL-04", "severity": "must_fix", "quote": "poder", "problem": "The modal set (poder, querer, precisar de, ter que, dever) is started but not declared in sets[], and dever ('should', advice and probability) is missing although it is an A2 building block.", "fix": "Declare the modal set and add dever to main; cut the lowest-priority phrase to stay at 75.", "source": "rules" },
- { "term_id": "t01", "field": "term", "rule": "R-SEL-04", "severity": "should_fix", "quote": "ser", "problem": "The copula pair ser/estar is a closed set but is not declared in sets[].", "fix": "Declare the copula set {ser, estar}.", "source": "rules" }
-] }

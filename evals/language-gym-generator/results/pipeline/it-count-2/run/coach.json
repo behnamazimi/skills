@@ -1,4 +1,0 @@
-{ "results": [
-  { "id": "t01", "learner_test": { "pass": true, "sentence": "Sono Anna, sono insegnante.", "question": "How would you tell someone 'I'm from Rome'?", "answer": "Sono di Roma.", "unknown_words": [] }, "scores": { "definition": 4, "example": 4, "anti_example": 4 }, "action": "keep" },
-  { "id": "t02", "learner_test": { "pass": true, "sentence": "C'è un bar qui?", "question": "Which is right for 'there's a problem': 'c'è un problema' or 'è un problema'?", "answer": "c'è un problema", "unknown_words": [] }, "scores": { "definition": 3, "example": 4, "anti_example": 4 }, "action": "keep" }
-] }

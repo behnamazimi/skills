@@ -1,1 +1,0 @@
-{ "round": 1, "applied": [ { "finding": 0, "term_id": "t05", "field": "anti_example" }, { "finding": 1, "term_id": "t03", "field": "definition" } ], "rejected": [], "dropped": [] }

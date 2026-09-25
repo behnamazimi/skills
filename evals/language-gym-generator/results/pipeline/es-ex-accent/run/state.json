@@ -1,1 +1,0 @@
-{ "step": "done", "done": ["00-parse", "01-exclude", "02-select", "03-review-list", "04-plan", "05-write", "06-edit", "07-coach", "08-links", "09-check", "10-fix", "assemble"], "retries": {}, "inline": true, "node": true, "warnings": ["inline mode: independent reviews done by the same agent", "question-word set started by excluded qué deferred to the next run"] }

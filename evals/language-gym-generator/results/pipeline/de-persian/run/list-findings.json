@@ -1,3 +1,0 @@
-{ "findings": [
-  { "term_id": "s03", "field": "term", "rule": "R-TERM-01", "severity": "should_fix", "quote": "weil + Verb am Ende", "problem": "Half of the term is a grammar description ('Verb am Ende') rather than a slot the learner fills; reads like a chapter heading.", "fix": "Write it as a pattern with a slot, e.g. 'weil … + Verb am Satzende' → better 'weil … (Verb zuletzt)' or simply 'weil' framed as the reason connector." }
-] }

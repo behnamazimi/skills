@@ -1,1 +1,0 @@
-150 Portuguese terms becomes 2 separate imports of at most 100 terms each (75 + 75); narrow topics may run out before that, though general Portuguese at A2–B1 won't. Go ahead with 150, or cut to 100?

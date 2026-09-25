@@ -1,5 +1,0 @@
-{ "terms": [
- { "id": "t03", "batch": 1, "term": "usted", "category": "Function word", "definition": "Polite 'you' for one stranger, older person or boss. Its verb takes the 'he/she' form.", "example": "¿Usted es la doctora García? — Are you Doctor García?", "anti_example": "Not 'usted eres' or 'usted tienes': say 'usted es', 'usted tiene'." },
- { "id": "t05", "batch": 1, "term": "querer", "category": "Verb", "definition": "Says what you want: a thing, or something you'd like to do.", "example": "Quiero dormir un poco más. — I want to sleep a bit more.", "discussion": "With people it also means love: 'te quiero' is what you say to family and close friends." },
- { "id": "t09", "batch": 1, "term": "ir", "category": "Verb", "definition": "Moves you to a place. Put 'a' before where you're going.", "example": "Voy al mercado con mi abuela. — I'm going to the market with my grandma.", "discussion": "'a' + 'el' always becomes 'al': 'voy al banco', never 'voy a el banco'." }
-] }

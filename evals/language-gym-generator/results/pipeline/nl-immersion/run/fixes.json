@@ -1,2 +1,0 @@
-{ "round": 1, "applied": [ { "finding": 0, "term_id": "t03", "field": "definition" } ], "rejected": [], "dropped": [],
-  "recheck": { "learner_test": { "id": "t03", "pass": true, "sentence": "Mijn oma kan heel goed koken.", "unknown_words": [] }, "blind_judge": { "winner": "rewrite", "reason": "Two short main clauses and a concrete skill read more easily at A2 than two dat-clauses." }, "step9": "validate glossary + tokens re-run; new tokens zwemmen, koken rated A1; no findings" } }

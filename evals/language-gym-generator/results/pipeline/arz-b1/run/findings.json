@@ -1,3 +1,0 @@
-{ "findings": [
-  { "term_id": "t03", "field": "definition", "rule": "R-FLD-03", "severity": "should_fix", "quote": "Negates everything except a conjugated verb: adjectives, nouns, عايز, and the future.", "problem": "Says conjugated verbs are excluded, then lists the future, which is a conjugated verb with حـ; the learner gets a contradiction.", "fix": "Negates words that aren't verbs, like adjectives, nouns and عايز. The future with حـ takes it too.", "source": "rules" }
-] }

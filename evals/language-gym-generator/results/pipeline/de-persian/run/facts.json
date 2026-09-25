@@ -1,8 +1,0 @@
-{ "answers": [
- {"term_id":"t01","question":"Is 'Ich bin noch im Bus' natural for 'I'm still on the bus'?","answer":"yes","writer_claim":"yes","agree":true,"unsure":false},
- {"term_id":"t04","question":"Does 'Du musst nicht kommen' mean 'you don't have to come'?","answer":"yes","writer_claim":"yes","agree":true,"unsure":false},
- {"term_id":"t05","question":"Is 'Ich gehe gerade' the natural German for Persian 'دارم می‌روم' (I'm leaving)?","answer":"not really; 'Ich gehe jetzt' or a verb with gerade like 'Ich esse gerade' is clearer","writer_claim":"Ich gehe gerade","agree":false,"unsure":false},
- {"term_id":"t07","question":"Gender of Milch (keine Milch)?","answer":"feminine","writer_claim":"keine Milch","agree":true,"unsure":false},
- {"term_id":"t08","question":"Is 'Ich will morgen kommen' future or intention?","answer":"intention","writer_claim":"intention","agree":true,"unsure":false},
- {"term_id":"t09","question":"'Hier darf man nicht rauchen' meaning?","answer":"smoking is forbidden here","writer_claim":"forbidden","agree":true,"unsure":false}
-] }

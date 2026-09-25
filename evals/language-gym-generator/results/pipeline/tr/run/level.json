@@ -1,7 +1,0 @@
-{ "rater": 1, "ratings": [
- {"token":"köşede","level":"A2"},{"token":"bir","level":"A1"},{"token":"eczane","level":"A2"},{"token":"otobüs","level":"A1"},{"token":"kadıköy'e","level":"A1"},{"token":"gider","level":"A2"},{"token":"akşam","level":"A1"},{"token":"sinemaya","level":"A1"},{"token":"gitmek","level":"A1"},{"token":"istiyorum","level":"A1"},{"token":"çok","level":"A1"},{"token":"yorgunum","level":"A1"},{"token":"gelmiyorum","level":"A1"},{"token":"bu","level":"A1"},{"token":"çorba","level":"A1"},{"token":"sıcak","level":"A1"},{"token":"kardeşim","level":"A1"},{"token":"kedi","level":"A1"},{"token":"uyuyor","level":"A1"},{"token":"pencereyi","level":"A1"},{"token":"açabilir","level":"A2"},{"token":"misin","level":"A1"},{"token":"maalesef","level":"A2"},{"token":"bugün","level":"A1"},{"token":"simit","level":"A2"},{"token":"elbise","level":"A2"},{"token":"güzel","level":"A1"},{"token":"artık","level":"A2"},{"token":"gitmem","level":"A2"}
-], "structures": [
- {"term_id":"t04","field":"example","structure":"aorist yes/no question (gider mi)","level":"A2"},
- {"term_id":"t06","field":"example","structure":"aorist + ability, polite request (açabilir misin)","level":"A2"},
- {"term_id":"t07","field":"example","structure":"verbal noun + possessive + lazım","level":"A2"}
-], "rater2": "not needed: rater 1 put nothing above B1" }

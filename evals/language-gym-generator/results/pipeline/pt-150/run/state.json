@@ -1,1 +1,0 @@
-{ "series": { "parts": 2, "current": 2 }, "step": "done", "done": ["00-parse", "part-1", "part-2"], "inline": true, "node": true, "warnings": ["see part-1/state.json and part-2/state.json"] }

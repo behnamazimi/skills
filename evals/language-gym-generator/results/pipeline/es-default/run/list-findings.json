@@ -1,3 +1,0 @@
-{ "findings": [
-  { "term_id": "t02", "field": "term", "rule": "R-SEL-04", "severity": "should_fix", "quote": "estar", "problem": "ser and estar form the copula closed set, which is complete in main but not declared in sets[].", "fix": "Declare {name: 'copulas', members: ['ser', 'estar']} in sets[]; no change to main.", "source": "rules" }
-] }

@@ -1,6 +1,0 @@
-{
-  "domain": "Spanish yes/no words",
-  "description": "The Spanish yes/no pair (sí / no) in broadly Latin American Spanish — both members are on the exclude list, and every remaining reply word (claro, vale, para nada, ¿verdad?) is a synonym or near-duplicate of them, so no terms are left to add.",
-  "terms": [],
-  "relationships": []
-}

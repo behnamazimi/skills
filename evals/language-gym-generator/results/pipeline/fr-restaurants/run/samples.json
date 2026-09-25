@@ -1,5 +1,0 @@
-{ "terms": [
-  { "id": "t06", "batch": 1, "term": "le menu", "category": "Word", "definition": "A fixed-price set meal: usually two or three courses for one price.", "example": "Je prends le menu à quinze euros.", "anti_example": "Asking for 'le menu' can get you the set meal. For the full list of dishes, ask for 'la carte'." },
-  { "id": "t03", "batch": 1, "term": "une table pour deux", "category": "Phrase", "definition": "Asks for a table for two when you walk in. Swap in any number.", "example": "Bonsoir, vous avez une table pour deux ?", "discussion": "Say 'bonjour' or 'bonsoir' first. Skipping the greeting sounds rude in France, even when the place is busy." },
-  { "id": "t02", "batch": 1, "term": "je vais prendre…", "category": "Pattern", "definition": "Tells the waiter what you're ordering: 'I'll have…'.", "example": "Pour moi, je vais prendre le poulet.", "discussion": "'Je prends…' works just as well. Both answer the waiter's 'Vous avez choisi ?'" }
-] }

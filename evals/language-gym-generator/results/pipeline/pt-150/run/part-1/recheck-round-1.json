@@ -1,5 +1,0 @@
-{ "entries": ["t34", "t65"],
-  "learner_test": [ {"id": "t34", "pass": true, "unknown_words": []}, {"id": "t65", "pass": true, "unknown_words": []} ],
-  "judge": [ {"id": "t34", "field": "anti_example", "winner": "rewrite", "reason": "a trap of its own instead of repeating nada's"},
-             {"id": "t65", "field": "anti_example", "winner": "rewrite", "reason": "accurate about what 'não posso' means"} ],
-  "step9": { "script_errors": 0, "level_findings": 0, "fact_disagreements": 0, "rule_findings": 0 } }

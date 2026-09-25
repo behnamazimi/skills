@@ -1,4 +1,0 @@
-{ "findings": [
-  { "term_id": "t03", "field": "term", "rule": "R-SEL-07", "severity": "should_fix", "quote": "değil", "problem": "Identity is covered only in the negative and in 3rd person; 'I am / you are' (personal be-endings) has no entry, so a learner cannot say 'I'm a teacher' from this list.", "fix": "Acceptable at count 10 since the endings form a 6-member set; note it in the report as the first item for a follow-up set." },
-  { "term_id": "t09", "field": "term", "rule": "R-SEL-05", "severity": "should_fix", "quote": "bence", "problem": "Turkish marks politeness grammatically (sen vs siz) and that job is not covered; glue items were claimed before it.", "fix": "sen/siz belong to the pronoun set, which does not fit in 10 slots; flag for a follow-up set rather than half-starting the set." }
-] }

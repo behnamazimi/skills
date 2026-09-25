@@ -1,6 +1,0 @@
-{
-  "main": [],
-  "spares": [],
-  "sets": [ { "name": "yes/no", "members": ["sí", "no"] } ],
-  "shape": { "jobs_covered": { "yes": "sí (known)", "no": "no (known)" }, "concrete_nouns": 0, "notes": "The slice is the Spanish yes/no set, a two-member closed set (R-SEL-04), and both members are excluded and therefore known (R-EX-05). Nearby items were considered and left out as a different slice, not yes/no words: claro, vale, de acuerdo, por supuesto (agreement/assent), para nada (emphatic denial idiom), también/tampoco (agreeing with a statement), ¿verdad?/¿no? (tag questions). Padding with them would break R-SEL-02 and R-EX-06, so nothing is left to select." }
-}

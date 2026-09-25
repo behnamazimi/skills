@@ -1,4 +1,0 @@
-{ "round": 1, "applied": [ { "finding": 0, "term_id": "t07", "field": "definition" } ], "rejected": [], "dropped": [],
-  "recheck": { "learner_test": { "id": "t07", "pass": true, "sentence": "Çalışmam lazım.", "question": "What does 'Artık gitmem lazım' tell your host?", "answer": "That you have to leave now.", "unknown_words": [] },
-               "judge": { "id": "t07", "field": "definition", "winner": "rewrite", "reason": "Names the ending the learner actually needs, so they won't write 'gidiyorum lazım'." },
-               "step9": "script validate clean; no new tokens; fact answer for t07 agrees; rule check: no findings" } }

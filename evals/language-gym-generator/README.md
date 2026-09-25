@@ -6,16 +6,20 @@ These live outside the skill folder, so they aren't installed along with the ski
 |---|---|
 | `gym.test.mjs` + `fixtures/` | unit tests for `skills/language-gym-generator/scripts/gym.mjs`: `node --test evals/language-gym-generator/gym.test.mjs` |
 | `cases.json` | the test set: arguments, required properties (`expect`), judged criteria (`judge`) and a minimal `spec` used for scoring |
-| `score.mjs` | scores one run: `node evals/language-gym-generator/score.mjs results/<run>` → prints and writes `score.md` and `score.json` |
-| `baseline/SKILL.md` | a snapshot of the single-pass skill the pipeline replaced, kept for comparison |
-| `results/` | one folder per run |
+| `score.mjs` | scores one run: `node score.mjs results/<run>` → prints and writes `score.md` and `score.json` |
+| `collect.mjs` | builds each case's `messages.json` from its `reply-N.txt` files: `node collect.mjs results/<run>` |
+| `prepare-judge.mjs`, `unblind.mjs` | blind pairwise comparison of two runs (see below) |
+
+Run the scripts from this folder. Run output goes in `results/`, which isn't committed.
 
 ## Running a case
 
-Run each case in a **fresh** agent session with the skill loaded, passing `args` as the skill's arguments. Save every assistant reply, in order, as a JSON array of strings in `results/<run>/<case-id>/messages.json`.
+Run each case in a **fresh** agent session with the skill loaded, passing `args` as the skill's arguments. Save every assistant reply, in order, as `results/<run>/<case-id>/reply-N.txt`, then run `collect.mjs`.
 
 - `answer` (e.g. `pt-150`): the user's reply to the skill's question.
 - `{output:<case-id>}` in `args` (e.g. `es-repeat-2`): replace it with that case's final JSON reply from the same run, pasted as the exclude list. Run that case after the one it depends on.
+
+To compare against the previous single-pass skill, take `skills/language-gym-generator/SKILL.md` from the commit before the pipeline rebuild (`git show 61daf93^:skills/language-gym-generator/SKILL.md`).
 
 ## Scoring
 
@@ -23,6 +27,15 @@ Run each case in a **fresh** agent session with the skill loaded, passing `args`
 
 **Mechanical violations** are the `gym.mjs validate glossary` rules that need no style sheet: opening words, restated terms, pronunciation mode, beginner-mode shape, banned phrases, relationships, immersion scripts. Lower is better.
 
-**Judged criteria** are recorded by a judge agent in `results/<run>/judgments.json` as `{ "<case-id>": { "<criterion>": { "pass": bool, "note": "…" } } }`. The judge must not be the agent that produced the output.
+**Blind pairwise comparison:**
+1. `node prepare-judge.mjs results/<a> results/<b> <judgeDir>` writes each case's two outputs as `X.txt` / `Y.txt` in random order, plus a `brief.md` with the case criteria. It keeps the key in `mapping.json`.
+2. Judge agents read only the case folders (never `mapping.json`) and write `verdict.json`: criteria pass/fail, words above the level ceiling, field scores, consistency, errors, winner.
+3. `node unblind.mjs <judgeDir> results/compare-<a>-vs-<b>.json` maps the verdicts back to the runs and prints the summary table.
 
-**Blind pairwise comparison:** `results/compare-<a>-vs-<b>.json` = `{ "a": "<run>", "b": "<run>", "results": { "<case-id>": { "winner": "<run> | tie", "reason": "…" } } }`. The judge sees the two outputs as X and Y in random order. Show the tally with `score.mjs <run> --compare <file>`.
+## Last result (pipeline vs the single-pass skill, 27 cases, 15 languages)
+
+- **Hard properties:** 92/92 vs 90/95.
+- **Import-schema passes:** 24/24 vs 23/25.
+- **Mechanical violations:** 0 vs 13.
+- **Blind wins:** 16 of 23 for the pipeline, with fewer errors (15 vs 21) and fewer above-level words (4 vs 6).
+- **Caveats:** the pipeline ran in its inline fallback (no nested subagents were available), one run per case, and the judges were the same model family as the generator.

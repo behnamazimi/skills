@@ -1,5 +1,0 @@
-{ "terms": [
-  { "id": "t02", "batch": 1, "term": "niet", "category": "Ontkenning", "definition": "Maakt een werkwoord, een eigenschap of een woord met 'de' of 'het' negatief.", "example": "Sorry, ik kom morgen niet, ik ben ziek.", "anti_example": "Niet 'ik niet kom', maar 'ik kom niet': het werkwoord komt eerst." },
-  { "id": "t10", "batch": 1, "term": "gaan + infinitief", "category": "Zinspatroon", "definition": "Zegt wat je van plan bent, vaak voor straks of binnenkort.", "example": "Straks ga ik boodschappen doen, heb je nog iets nodig?", "discussion": "In gesprekken hoor je dit veel vaker dan 'zullen' voor de toekomst." },
-  { "id": "t05", "batch": 1, "term": "moeten", "category": "Werkwoord", "definition": "Betekent: iets is nodig of verplicht, je hebt geen keus.", "example": "Ik moet om negen uur op mijn werk zijn.", "anti_example": "Niet nodig? Zeg niet 'je moet niet komen', maar 'je hoeft niet te komen'." }
-] }

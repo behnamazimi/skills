@@ -1,3 +1,0 @@
-{ "findings": [
-  { "term_id": "t10", "field": "term", "rule": "R-SEL-07", "severity": "should_fix", "quote": "gustar", "problem": "The politeness / addressing-people job (tú vs usted vs ustedes) is not covered by the list or by known items. The list notes it was skipped because the set needs 3 slots.", "fix": "Acceptable at count 10 because R-SEL-04 forbids starting a set that doesn't fit; keep as is and name the gap in the report so a follow-up set can start with it." }
-] }
