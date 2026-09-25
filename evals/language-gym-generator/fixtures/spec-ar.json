@@ -1,0 +1,8 @@
+{
+  "version": 1, "domain": "Arabic", "language": "Arabic", "slice": null, "slice_type": "bare", "count": 10, "series": null,
+  "learner": "Arabic", "level": { "label": "A2", "floor": "A2", "ceiling": "A2" }, "beginner_mode": true, "immersion": true,
+  "pronunciation": "none", "dialect": "Modern Standard Arabic", "fields": null, "levellist": null, "path": "lite",
+  "profile": { "locale": "ar", "scripts": ["Arab"], "direction": "rtl", "cased": false, "word_separated": true, "diacritics_meaningful": false, "articles": ["ال"], "noun_citation": "bare singular", "pronunciation_convention": "IPA" },
+  "learner_profile": { "locale": "ar", "scripts": ["Arab"], "direction": "rtl", "cased": false, "word_separated": true },
+  "sources": { "count": "default", "learner": "inferred", "level": "user", "immersion": "user", "pronunciation": "user", "dialect": "default" }
+}

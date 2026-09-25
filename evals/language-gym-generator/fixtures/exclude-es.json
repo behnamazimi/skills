@@ -1,0 +1,9 @@
+{
+  "raw": ["tener", "la cuenta", "sí", "???"],
+  "items": [
+    { "raw": "tener", "term": "tener", "lemma": "tener", "job": null, "forms": ["tengo", "tienes", "tiene"], "scope": "lemma" },
+    { "raw": "la cuenta", "term": "la cuenta", "lemma": "cuenta", "job": "the bill at a restaurant", "forms": [], "scope": "phrase" },
+    { "raw": "sí", "term": "sí", "lemma": "sí", "job": "yes", "forms": [], "scope": "lemma" }
+  ],
+  "ignored": [ { "raw": "???", "reason": "not a word" } ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": 1, "domain": "Mandarin Chinese", "language": "Mandarin Chinese", "slice": null, "slice_type": "bare", "count": 20, "series": null,
+  "learner": "English", "level": { "label": "B2", "floor": "B2", "ceiling": "B2" }, "beginner_mode": false, "immersion": false,
+  "pronunciation": "ipa", "dialect": "Standard Mandarin (Putonghua), simplified characters", "fields": null, "levellist": null, "path": "full",
+  "profile": { "locale": "zh-Hans", "scripts": ["Hans"], "direction": "ltr", "cased": false, "word_separated": false, "diacritics_meaningful": true, "articles": [], "noun_citation": "bare noun", "pronunciation_convention": "IPA with Chao tone letters" },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "count": "user", "learner": "default", "level": "user", "immersion": "default", "pronunciation": "user", "dialect": "default" }
+}

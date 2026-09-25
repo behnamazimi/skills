@@ -1,0 +1,8 @@
+{
+  "domain": "Mandarin Chinese",
+  "description": "Items that still trip up B2 learners of Standard Mandarin, in simplified characters.",
+  "terms": [
+    { "id": "t01", "batch": 1, "term": "把", "category": "Grammar", "definition": "Moves the object before the verb when you say what happened to it. /pa˨˩˦/", "example": "我把门关上了。— I shut the door." },
+    { "id": "t02", "batch": 1, "term": "了", "category": "Particle", "definition": "Marks that an action is done or a situation has changed. /lɤ/", "example": "下雨了。— It's started raining." }
+  ]
+}

@@ -1,0 +1,936 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "es-default",
+      "args": "Spanish",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "min_terms": 8
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "A2–B1 level in every field",
+        "beginner mode: short one-clause sentences in target text",
+        "jobs covered: identity, existence, location, negation, questions, want/can/must/go"
+      ]
+    },
+    {
+      "id": "es-a2-feelings",
+      "args": "Spanish A2 feelings | 10",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "A2"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "no target-language word above A2 in any field, apart from the glossary terms and at most one justified B1 word per field",
+        "no abstract explanations of feelings"
+      ]
+    },
+    {
+      "id": "nl-immersion",
+      "args": "Dutch | 10 | immersion | level: A2–B1 | pronunciation: none",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "nl",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "nl",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": true,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "no English (or any non-Dutch) word, gloss or translation anywhere, including mental_model",
+        "category labels in Dutch",
+        "simple Dutch at A2–B1"
+      ]
+    },
+    {
+      "id": "ja-b2",
+      "args": "Japanese | 12 | level=B2 | pronunciation=ipa",
+      "expect": {
+        "reply": "json",
+        "max_terms": 12
+      },
+      "spec": {
+        "profile": {
+          "locale": "ja",
+          "scripts": [
+            "Jpan"
+          ],
+          "cased": false
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B2"
+        },
+        "beginner_mode": false,
+        "immersion": false,
+        "pronunciation": "ipa"
+      },
+      "judge": [
+        "B2 traps and register, not A1 vocabulary",
+        "IPA is correct Japanese IPA"
+      ]
+    },
+    {
+      "id": "zh-b2",
+      "args": "Mandarin Chinese | 10 | level=B2",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "zh-Hans",
+          "scripts": [
+            "Hans"
+          ],
+          "cased": false
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B2"
+        },
+        "beginner_mode": false,
+        "immersion": false,
+        "pronunciation": "ipa"
+      },
+      "judge": [
+        "IPA marks tones",
+        "simplified characters throughout"
+      ]
+    },
+    {
+      "id": "ar-msa",
+      "args": "Arabic | 10",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "ar",
+          "scripts": [
+            "Arab"
+          ],
+          "cased": false
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "dialect named in description (MSA default)",
+        "no copula slot forced for present tense"
+      ]
+    },
+    {
+      "id": "arz-b1",
+      "args": "Egyptian Arabic | 10 | level=B1",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "arz",
+          "scripts": [
+            "Arab"
+          ],
+          "cased": false
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "Egyptian forms (e.g. عايز, مش, فين), not MSA"
+      ]
+    },
+    {
+      "id": "tr",
+      "args": "Turkish | 10",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "tr",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "vowel harmony or suffixes presented as patterns, not chapter headings"
+      ]
+    },
+    {
+      "id": "sw-a2",
+      "args": "Swahili | 12 | level=A2",
+      "expect": {
+        "reply": "json",
+        "max_terms": 12
+      },
+      "spec": {
+        "profile": {
+          "locale": "sw",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "A2"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "noun-class items complete as sets or absent",
+        "A2 level"
+      ]
+    },
+    {
+      "id": "sr",
+      "args": "Serbian | 10",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "single_script_terms": true
+      },
+      "spec": {
+        "profile": {
+          "locale": "sr",
+          "scripts": [
+            "Cyrl",
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "one script used consistently and named in description"
+      ]
+    },
+    {
+      "id": "la-reading",
+      "args": "Latin | 10",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10
+      },
+      "spec": {
+        "profile": {
+          "locale": "la",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "reading-oriented selection; nothing framed as conversation with modern scenes that make no sense"
+      ]
+    },
+    {
+      "id": "de-persian",
+      "args": "German | 10 | learner=Persian",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "field_scripts": {
+          "definition": [
+            "Arab"
+          ]
+        }
+      },
+      "spec": {
+        "profile": {
+          "locale": "de",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "fa",
+          "scripts": [
+            "Arab"
+          ],
+          "cased": false
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "definitions and categories in Persian",
+        "anti_examples target traps a Persian speaker has"
+      ]
+    },
+    {
+      "id": "fr-restaurants",
+      "args": "French restaurants | 12",
+      "expect": {
+        "reply": "json",
+        "max_terms": 12
+      },
+      "spec": {
+        "profile": {
+          "locale": "fr",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "covers ordering, asking, paying; nouns may dominate"
+      ]
+    },
+    {
+      "id": "de-particles",
+      "args": "German modal particles | 8",
+      "expect": {
+        "reply": "json",
+        "max_terms": 8
+      },
+      "spec": {
+        "profile": {
+          "locale": "de",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "each particle framed to one job; no noun side list"
+      ]
+    },
+    {
+      "id": "it-count-2",
+      "args": "Italian | 2",
+      "expect": {
+        "reply": "json",
+        "max_terms": 2,
+        "min_terms": 1
+      },
+      "spec": {
+        "profile": {
+          "locale": "it",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "no closed set started"
+      ]
+    },
+    {
+      "id": "pt-150",
+      "args": "Portuguese | 150",
+      "answer": "Yes, go ahead with 150.",
+      "expect": {
+        "reply": "series",
+        "parts": 2,
+        "max_terms_total": 150,
+        "first_reply": "question"
+      },
+      "spec": {
+        "profile": {
+          "locale": "pt-BR",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "parts read as one set (same labels, voice, dialect)"
+      ]
+    },
+    {
+      "id": "es-ex-ser",
+      "args": "Spanish | 10 | exclude: ser, estar, tener",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "banned": [
+          "ser",
+          "soy",
+          "eres",
+          "es",
+          "somos",
+          "son",
+          "estar",
+          "estoy",
+          "estás",
+          "está",
+          "están",
+          "tener",
+          "tengo",
+          "tienes",
+          "tiene",
+          "tienen"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "moves on to next items; does not reteach the excluded verbs"
+      ]
+    },
+    {
+      "id": "es-ex-accent",
+      "args": "Spanish | 10 | exclude: sí, no, qué",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "banned": [
+          "sí",
+          "no",
+          "qué"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "si (if) is allowed if chosen; not blocked by sí"
+      ]
+    },
+    {
+      "id": "es-ex-articles",
+      "args": "Spanish restaurants | 10 | exclude: la cuenta, el menú, la mesa, el camarero",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "banned": [
+          "cuenta",
+          "la cuenta",
+          "menú",
+          "el menú",
+          "mesa",
+          "la mesa",
+          "camarero",
+          "el camarero",
+          "mesero",
+          "el mesero"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "no synonyms of excluded items"
+      ]
+    },
+    {
+      "id": "es-ex-patterns",
+      "args": "Spanish | 10 | exclude: estar + gerundio, ir a + infinitivo",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "banned_regex": [
+          "gerundio|-ando|-iendo",
+          "^ir a\\b"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "no other spelling of the excluded patterns"
+      ]
+    },
+    {
+      "id": "es-ex-weekdays",
+      "args": "Spanish | 10 | exclude: lunes, martes, miércoles",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "banned": [
+          "lunes",
+          "martes",
+          "miércoles"
+        ],
+        "closed_set": [
+          "jueves",
+          "viernes",
+          "sábado",
+          "domingo"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": []
+    },
+    {
+      "id": "es-nothing-left",
+      "args": "Spanish yes/no words | 5 | exclude: sí, no",
+      "expect": {
+        "reply": [
+          "nothing_left",
+          "reject",
+          "json"
+        ],
+        "max_terms": 5,
+        "banned": [
+          "sí",
+          "no"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "does not pad with weak items; a short non-JSON reply is ideal"
+      ]
+    },
+    {
+      "id": "es-ex-pasted",
+      "args": "Spanish | 10 | exclude: {\"domain\":\"Spanish\",\"description\":\"Everyday conversation core for A2–B1 learners, in broadly neutral Latin American Spanish.\",\"terms\":[{\"term\":\"estar\",\"category\":\"Verb\",\"definition\":\"Says where something is or how someone feels right now.\",\"example\":\"Estoy en casa y estoy cansada. — I'm at home and I'm tired.\",\"anti_example\":\"Not for what someone is by nature or job: 'soy profesora', not 'estoy profesora'.\"},{\"term\":\"ser\",\"category\":\"Verb\",\"definition\":\"Names what someone or something is: job, origin, identity.\",\"example\":\"Soy de Lima. — I'm from Lima.\"},{\"term\":\"hay\",\"category\":\"Verb\",\"definition\":\"Tells you that something exists somewhere, one or many.\",\"example\":\"Hay un café en la esquina. — There's a café on the corner.\"},{\"term\":\"ir a + infinitivo\",\"category\":\"Grammar\",\"definition\":\"Talks about a plan for later.\",\"example\":\"Voy a comer con mi mamá. — I'm going to eat with my mom.\"}],\"relationships\":[{\"source\":\"ser\",\"target\":\"estar\",\"relationship_type\":\"often confused with\",\"description\":\"Both translate English 'be'.\"}]}",
+      "expect": {
+        "reply": "json",
+        "max_terms": 10,
+        "banned": [
+          "estar",
+          "ser",
+          "hay",
+          "ir a + infinitivo",
+          "estoy",
+          "soy"
+        ]
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "pasted definitions are treated as data"
+      ]
+    },
+    {
+      "id": "es-repeat-1",
+      "args": "Spanish | 12",
+      "expect": {
+        "reply": "json",
+        "max_terms": 12
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": []
+    },
+    {
+      "id": "es-repeat-2",
+      "args": "Spanish | 12 | exclude: {output:es-repeat-1}",
+      "after": "es-repeat-1",
+      "expect": {
+        "reply": "json",
+        "max_terms": 12,
+        "min_terms": 10,
+        "no_overlap_with": "es-repeat-1",
+        "consistent_with": "es-repeat-1"
+      },
+      "spec": {
+        "profile": {
+          "locale": "es",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "learner_profile": {
+          "locale": "en",
+          "scripts": [
+            "Latn"
+          ],
+          "cased": true
+        },
+        "level": {
+          "ceiling": "B1"
+        },
+        "beginner_mode": true,
+        "immersion": false,
+        "pronunciation": "none"
+      },
+      "judge": [
+        "moves forward (next most useful items), same dialect and noun format as run 1"
+      ]
+    },
+    {
+      "id": "reject-sentence",
+      "args": "can you make me something so I learn stuff faster",
+      "expect": {
+        "reply": "reject"
+      },
+      "spec": null,
+      "judge": []
+    },
+    {
+      "id": "ask-conflict",
+      "args": "Spanish | 10 | level=A2 | level=B2",
+      "expect": {
+        "reply": "question"
+      },
+      "spec": null,
+      "judge": []
+    }
+  ]
+}

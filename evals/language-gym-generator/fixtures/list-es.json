@@ -1,0 +1,15 @@
+{
+  "main": [
+    { "id": "t01", "term": "estar", "job": "location and temporary state", "slot": "spine", "level": "A1" },
+    { "id": "t02", "term": "ser", "job": "identity and origin", "slot": "spine", "level": "A1" },
+    { "id": "t03", "term": "cuenta", "job": "the bill", "slot": "noun", "level": "A1" },
+    { "id": "t04", "term": "si", "job": "if (condition)", "slot": "glue", "level": "A2" },
+    { "id": "t05", "term": "lunes", "job": "Monday", "slot": "noun", "level": "A1" }
+  ],
+  "spares": [
+    { "id": "s01", "term": "querer", "job": "want", "slot": "spine", "level": "A1" }
+  ],
+  "sets": [
+    { "name": "weekdays", "members": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"] }
+  ]
+}
