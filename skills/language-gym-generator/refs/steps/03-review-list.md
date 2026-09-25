@@ -6,7 +6,7 @@ Review `main` **and** `spares`. Spares approved now can later replace terms with
 
 1. **Every pair in `candidates.json`:** is it the same item as the excluded one (same lemma for a `lemma` scope, same phrase or pattern for a `phrase` scope)? Accents or marks that make a different word are *not* the same (R-EX-04). Same → a `must_fix` finding (R-EX-01). Different → no finding.
 2. **Undeclared closed sets:** does any item belong to a small set that isn't in `sets[]`? → R-SEL-04.
-3. **Jobs:** for `bare`, can a learner at this level do every R-SEL-05 job with these terms plus known items? For `usage` and `grammar`, the equivalents (R-SEL-07). If a job is missing, name it.
+3. **Jobs:** for `bare`, the script has already checked that `shape.jobs` maps every R-SEL-12 job. Check that each mapped term really does that job in this language: e.g. a future construction mapped to `go` doesn't cover plain "go", and a politeness formula doesn't cover `questions`. For `usage` and `grammar`, check the equivalents (R-SEL-07). A job that is wrongly mapped → `must_fix` R-SEL-12, naming the job.
 4. **Level:** is each `level` honest? Anything above the ceiling → R-SEL-08.
 5. **Spoken-form test and noun format:** R-TERM-01 to R-TERM-05.
 6. **Frequency:** anything rare, trivia, or nice-to-know → R-SEL-02.

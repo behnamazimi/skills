@@ -2,9 +2,10 @@
 
 **Who:** subagent. **Reads:** `spec.json`, `style.json`, `plan.json`, `draft.json`, `findings.json`, [rules.md](../rules.md). **Writes:** updated `draft.json`, `fixes.json`.
 
-1. For each finding: apply its fix, or a better fix for the same problem. Or reject it with a one-line reason if it's wrong (the quote misread, the rule doesn't apply). Rejecting is allowed only for judgment findings. Script findings (`source: "script"`) are always fixed.
-2. Keep each fix minimal and within the plan's job, `style.limits`, the level ceiling and the pronunciation mode.
-3. Record `applied`, `rejected` and `dropped` in `fixes.json`.
+1. For an R-PRON-04 finding, decide which transcription is right for this dialect and `style.ipa_format`. Keep the original if it's right, and give the reason as a rejection. Otherwise use the correct one; it may differ from both.
+2. For each other finding: apply its fix, or a better fix for the same problem. Or reject it with a one-line reason if it's wrong (the quote misread, the rule doesn't apply). Rejecting is allowed only for judgment findings. Script findings (`source: "script"`) are always fixed.
+3. Keep each fix minimal and within the plan's job, `style.limits`, the level ceiling and the pronunciation mode.
+4. Record `applied`, `rejected` and `dropped` in `fixes.json`.
 
 **Round loop (orchestrator):**
 - Every changed entry goes back through step 7's learner test and blind judge (new vs pre-fix text), then all of step 9. Entries that didn't change aren't checked again.

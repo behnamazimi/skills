@@ -46,7 +46,7 @@ Words used below:
 - **R-EX-03** Scope. Excluding a single word (`scope: lemma`) blocks every job it does. Excluding a phrase or pattern (`scope: phrase`) blocks only that phrase or pattern. So excluding `la cuenta` still allows `contar`, and excluding `quedar` blocks `quedarse` only if they are the same lemma in this language's dictionaries.
 - **R-EX-04** Accents or marks that make a different word do not match: excluded `sí` (yes) does not block `si` (if). Only an agent may decide that two spellings are the same item; the script never does.
 - **R-EX-05** Excluded items are **known**, not just banned:
-  - required jobs they cover count as covered (**R-SEL-05**);
+  - required jobs they cover count as covered (**R-SEL-12**, as `known:`);
   - they may be used freely in explanations (**R-LVL**);
   - sets they started get finished (**R-SEL-04**).
 - **R-EX-06** Return fewer terms only when the must-know items for this topic and level have really run out. Never fill with weak or banned items. If nothing worthwhile is left, reply in one or two sentences (not JSON) suggesting the next level or a narrower topic.
@@ -70,13 +70,30 @@ Words used below:
   5. load-bearing frozen phrases;
   6. content nouns last.
 
-  Building blocks are described as **jobs, not English grammar**: how this language states identity, existence and location; how it refers to people; negation; questions; want, can, must, go, come, have (or this language's real equivalents); politeness if the language marks it grammatically. Languages without a copula, articles or tenses are not forced into those slots. Already-known items (**R-EX-05**) cover their jobs.
+  Building blocks are described as **jobs, not English grammar**. Languages without a copula, articles or tenses are not forced into those slots: a job is covered by whatever this language uses for it (a word, a particle, an affix pattern such as Turkish `-di`, or a construction). One term may cover several jobs. Already-known items (**R-EX-05**) cover their jobs.
+- **R-SEL-12** Required jobs on a `bare` glossary, in priority order. The list depends on the ceiling:
+
+  | Ceiling | Jobs, highest priority first |
+  |---|---|
+  | A1 | `identity`, `existence`, `location`, `negation`, `questions`, `want`, `can`, `go`, `must` |
+  | A2 | `identity`, `existence`, `location`, `negation`, `questions`, `past`, `want`, `can`, `go`, `must` |
+  | B1 and above | the A2 list, then `future` |
+
+  Meanings: `identity` = say what or who something is; `existence` = say something exists or is there; `location` = say where something is; `negation`; `questions` = ask a basic question (a question word or the language's question marker); `past` = talk about a finished event; `want`, `can`, `go`, `must` = those meanings; `future` = talk about plans. A language that marks politeness grammatically (Japanese, Korean) adds `politeness` right after `questions`.
+
+  `list.shape.jobs` maps **every** required job to one of:
+  - a term in `main`, written exactly;
+  - `known: <excluded item>`, covered by the exclude list;
+  - `n/a: <reason>`, when the language has no separate means for it;
+  - `deferred`, only when every slot is already used by a higher-priority job, i.e. deferred jobs must come after all covered ones in the priority order.
+
+  At B2 and above the jobs still have to be mapped, but they are usually `known` or `n/a`: B2 lists spend their slots on traps and register. Check: `script` (mapping) + `agent` (whether the term really does that job).
 - **R-SEL-06** Level is a filter:
   - A1: the basics from zero; greetings only if load-bearing.
   - A2–B1: no A1-only content nouns or phrasebook greetings unless the topic needs them. Building blocks still come first.
   - B2+: traps, register, and constructions that still block fluent understanding.
 - **R-SEL-07** Shape check, once, on the full name list (never per batch). On a `bare` glossary:
-  - (a) the jobs are covered, using these terms plus known items;
+  - (a) every required job is mapped (**R-SEL-12**), using these terms plus known items;
   - (b) concrete nouns stay under a quarter of the list; a pile of greetings counts as content.
 
   On `usage`: the situation's acts are covered and the noun limit is off. On `grammar`: different jobs of the pattern, not a side list of nouns.
@@ -122,7 +139,7 @@ Words used below:
 - **R-FLD-05** `category` is a label for filtering only, in the learner language. Every label comes from `style.categories` and is reused verbatim (never both "Verb" and "Verbs"). Use "Grammar" only for a real construction on a grammar slice. Check: `script`.
 - **R-FLD-06** Field lengths stay within `style.limits` (words per field). Check: `script`.
 - **R-FLD-07** Beginner mode: `definition` is 1–2 short sentences. Check: `script` (sentence count) + `agent`.
-- **R-FLD-08** `example`: one natural sentence in the target, showing this term's job in one concrete, everyday scene. Outside immersion, a short gloss in the learner language after ` — ` is allowed when needed. No toy drill sentences, no side-by-side translation paragraphs. The scene comes from the plan, so scenes vary across the glossary.
+- **R-FLD-08** `example`: one natural sentence in the target (or a two-line exchange: a question and its answer), showing this term's job in one concrete, everyday scene. Outside immersion, a short gloss in the learner language after ` — ` is allowed when needed. No toy drill sentences, no side-by-side translation paragraphs. The scene comes from the plan, so scenes vary across the glossary.
 - **R-FLD-09** `mental_model`: a comparison that makes the item click faster than the definition does. Not a restatement, not a chapter name. Skip it for obvious items.
 - **R-FLD-10** `discussion`: register, collocation, regional default, or a common learner mistake that is useful to know. Short and actionable. Other jobs of a framed word go here briefly.
 - **R-FLD-11** `anti_example`: only a real near-miss (false friend, calque, the other half of a famous pair, the other job of the same spelling, what learners produce instead). Lookalike connectors and copula or auxiliary pairs usually get one. The traps chosen are the ones *this learner's language* causes.
@@ -137,12 +154,14 @@ Words used below:
 - **R-LVL-02** Exception: one level above, only when no simpler word works. At most 1 per field, justified in `plan.json` `level_exceptions`, and listed in the report. Two or more levels above is never allowed: rewrite the entry or drop the field.
 - **R-LVL-03** Grammar follows the same ceiling: tenses, moods and clause types in target text. Grammar concepts named in the learner language must not be above the level either (no "subjunctive" in an A2 definition).
 - **R-LVL-04** Beginner mode (ceiling ≤ B1) on target text, and on all text under immersion:
-  - simple sentences, one clause each where possible;
+  - simple sentences, one clause each: one verb phrase per sentence, apart from a short tag such as "please", "thanks" or a name;
+  - an `example` is at most 2 sentences (a question and its answer counts as 2), each within `style.limits.sentence` words;
   - present and simple past;
   - no chains of subordinate clauses, concessive clauses ("even though…"), idioms, rare or abstract vocabulary used to explain something else, or separable or compound verbs hidden inside other explanations.
 
   Learner-language text outside immersion stays plain but isn't forced down to A2 wording.
 - **R-LVL-05** Beginner mode: `controversy` is omitted or one flat sentence with no hedging. Check: `script` (sentence count).
+- **R-LVL-07** Beginner mode: in target-language text, each sentence has at most one clause separator (`,` `;` `:` or the script's equivalent: `、` `，` `،` `؛`), an `example` has at most 2 sentences, and no sentence is longer than `style.limits.sentence` words (default 10). Check: `script` (it flags; the level rater then checks the clause count in step 9).
 - **R-LVL-06** The level check (step 9): `gym.mjs tokens` lists every unknown target-language word. A rater gives each one a level. Words rated above the ceiling go to a second, independent rater. Only words both raters put above the ceiling become findings. If a `levellist` was given, it decides instead of the raters. Check: `script→agent`.
 
 ## R-IMM: Immersion
@@ -153,9 +172,10 @@ Words used below:
 
 ## R-PRON: Pronunciation
 
-- **R-PRON-01** `ipa`: every `definition` ends with a space and `/…/` for the whole term as written, matching the dialect. A pattern with a slot gets one filled form, or none. Tone languages use the convention in `profile.pronunciation_convention`. Check: `script`.
+- **R-PRON-01** `ipa`: every `definition` ends with a space and `/…/` for the whole term as written, matching the dialect. A pattern with a slot gets one filled form, or none. That filled form must be **the one used in the entry's `example`**. Tone languages use the convention fixed in `style.ipa_format` (e.g. citation tones or tones after sandhi, how neutral tone is marked), the same way in every entry. Check: `script`.
 - **R-PRON-02** `none`: nothing phonetic anywhere. `spoken`: a simple spoken-style hint (e.g. `zeg: ge-ZEL-lig`, or the language's standard romanization) at the end of `definition`, only when useful, and never IPA. Check: `script`.
 - **R-PRON-03** Pronunciation never appears in `term`, `example` or any other field. Check: `script`.
+- **R-PRON-04** Every IPA transcription is checked independently: a fresh agent transcribes each term from scratch without seeing the entry's IPA, and `gym.mjs ipa --against` compares the two. A mismatch in sounds or tones is a `must_fix` finding. A mismatch only in stress or length is `should_fix`. The fixer decides which is right and may keep the original with a reason. Check: `script→agent`.
 
 ## R-TONE: Tone
 

@@ -15,6 +15,7 @@
 //   metrics            <draft.json>    --spec <spec.json> [--plan <plan.json>]
 //   candidates         <list.json>     --spec <spec.json> [--exclude <exclude.json>]
 //   tokens             <draft.json>    --spec <spec.json> [--exclude ..] [--levellist <file>]
+//   ipa                <draft.json>    [--against <ipa-check.json>]
 //   emit               <draft.json>    --spec <spec.json> [--out <file>]
 // Output: JSON on stdout. Exit 0 = ok, 1 = findings (errors), 2 = usage/IO error.
 
@@ -270,6 +271,45 @@ function excludeKeys(ex, profile) {
   return keys;
 }
 
+// ---------- required jobs (R-SEL-12) ----------
+
+export function requiredJobs(spec) {
+  const ceiling = levelIndex(spec?.level?.ceiling);
+  const jobs = ['identity', 'existence', 'location', 'negation', 'questions'];
+  if (spec?.profile?.politeness_marked) jobs.push('politeness');
+  if (ceiling >= levelIndex('A2')) jobs.push('past');
+  jobs.push('want', 'can', 'go', 'must');
+  if (ceiling >= levelIndex('B1')) jobs.push('future');
+  return jobs;
+}
+
+function checkJobs(list, spec, exKeys, out) {
+  if (spec?.slice_type !== 'bare') return;
+  const profile = spec.profile || {};
+  const jobs = list.shape?.jobs;
+  const required = requiredJobs(spec);
+  if (!isObj(jobs)) { out.push(finding('R-SEL-12', 'shape.jobs', `a bare glossary must map every required job: ${required.join(', ')}`)); return; }
+  const mainTerms = new Set(list.main.map((t) => t.term));
+  const count = spec.series ? spec.series.part_count : spec.count;
+  const full = list.main.length >= count;
+  let lastCovered = -1, firstDeferred = Infinity;
+  required.forEach((job, i) => {
+    const v = jobs[job];
+    const p = `shape.jobs.${job}`;
+    if (typeof v !== 'string' || !v.trim()) { out.push(finding('R-SEL-12', p, `required job "${job}" is not mapped`)); return; }
+    if (v === 'deferred') { firstDeferred = Math.min(firstDeferred, i); if (!full) out.push(finding('R-SEL-12', p, `"${job}" deferred while the list has free slots`)); return; }
+    if (v.startsWith('n/a:')) { if (v.length < 8) out.push(finding('R-SEL-12', p, 'n/a needs a reason')); lastCovered = i; return; }
+    if (v.startsWith('known:')) {
+      const item = v.slice(6).trim();
+      if (!exKeys.has(fold(item, profile))) out.push(finding('R-SEL-12', p, `"${item}" is not an excluded item`));
+      lastCovered = i; return;
+    }
+    if (!mainTerms.has(v)) out.push(finding('R-SEL-12', p, `"${v}" is not a term in main (write it exactly, or use known: / n/a: / deferred)`));
+    lastCovered = i;
+  });
+  if (firstDeferred < lastCovered) out.push(finding('R-SEL-12', 'shape.jobs', `"${required[firstDeferred]}" is deferred but lower-priority "${required[lastCovered]}" is covered; defer from the end of the list`));
+}
+
 // ---------- validate list ----------
 
 export function validateList(list, spec, ex = null) {
@@ -303,6 +343,7 @@ export function validateList(list, spec, ex = null) {
     const missing = status.filter((s) => !s.inMain && !s.known).map((s) => s.m);
     if (used > 0 && missing.length) out.push(finding('R-SEL-04', `sets[${i}]`, `closed set "${set.name}" is incomplete; missing: ${missing.join(', ')}`));
   }
+  if (list.main.length) checkJobs(list, spec, exKeys, out);
   return out;
 }
 
@@ -443,6 +484,18 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
       const n = sentences(def, lp.locale).length;
       if (n > 2) out.push(finding('R-FLD-07', `${p}.definition`, `${n} sentences; beginner mode allows 1–2`));
       if (typeof t.controversy === 'string' && sentences(t.controversy, lp.locale).length > 1) out.push(finding('R-LVL-05', `${p}.controversy`, 'beginner mode: controversy must be omitted or one short sentence'));
+      const maxWords = style?.limits?.sentence || 10;
+      for (const f of targetLangFields(spec)) {
+        if (typeof t[f] !== 'string') continue;
+        const sents = sentences(targetPart(f, t[f], spec, style), profile.locale);
+        if (f === 'example' && sents.length > 2) out.push(finding('R-LVL-07', `${p}.${f}`, `${sents.length} sentences; beginner examples have at most 2`));
+        for (const snt of sents) {
+          const seps = (snt.match(/[,;:、，،؛]/gu) || []).length;
+          const n = words(snt, profile.locale).length;
+          if (seps > 1) out.push(finding('R-LVL-07', `${p}.${f}`, `"${snt}" has ${seps} clause separators; beginner sentences have one clause`));
+          else if (n > maxWords) out.push(finding('R-LVL-07', `${p}.${f}`, `"${snt}" has ${n} words; beginner limit is ${maxWords}`));
+        }
+      }
     }
     // Style-sheet length limits (words per field).
     for (const [f, max] of Object.entries(limits)) {
@@ -634,6 +687,34 @@ export function tokens(draft, spec, { ex = null, levellist = null, style = null 
   return { ceiling: spec.level?.ceiling, fields, count: list.length, tokens: list };
 }
 
+// ---------- ipa (independent transcription check, R-PRON-04) ----------
+
+function ipaOf(def) {
+  const m = typeof def === 'string' ? def.match(/\/([^/\s][^/]*)\/\.?$/u) : null;
+  return m ? m[1] : null;
+}
+
+const strictIpa = (s) => nfc(s).replace(/[\s.‿]/gu, '');
+const looseIpa = (s) => strictIpa(s).replace(/[ˈˌːˑ]/gu, '');
+
+export function ipaList(draft) {
+  return draftTerms(draft).map((t) => ({ term_id: t.id, term: t.term, ipa: ipaOf(t.definition) }));
+}
+
+export function ipaCompare(draft, check) {
+  const out = [];
+  const theirs = new Map((check?.answers || []).map((a) => [a.term_id, a]));
+  for (const { term_id, term, ipa } of ipaList(draft)) {
+    const a = theirs.get(term_id);
+    if (!ipa) continue;
+    if (!a || typeof a.ipa !== 'string' || !a.ipa.trim()) { out.push({ term_id, term, status: 'unchecked' }); continue; }
+    const other = a.ipa.replace(/^\/|\/$/gu, '');
+    if (looseIpa(ipa) !== looseIpa(other)) out.push({ term_id, term, status: 'mismatch', rule: 'R-PRON-04', severity: 'must_fix', writer: ipa, checker: other });
+    else if (strictIpa(ipa) !== strictIpa(other)) out.push({ term_id, term, status: 'stress_or_length', rule: 'R-PRON-04', severity: 'should_fix', writer: ipa, checker: other });
+  }
+  return out;
+}
+
 // ---------- emit (projection to the import contract) ----------
 
 export function project(draft, spec = null) {
@@ -705,6 +786,12 @@ function main(argv) {
     }
     case 'metrics': return report([], metrics(readJson(a), need(flags, 'spec'), opt('plan')));
     case 'candidates': return report([], { pairs: candidates(readJson(a), opt('exclude') || { items: [] }, need(flags, 'spec')) });
+    case 'ipa': {
+      const draft = readJson(a);
+      if (!flags.against) return report([], { terms: ipaList(draft) });
+      const res = ipaCompare(draft, readJson(flags.against));
+      return report(res.filter((r) => r.severity === 'must_fix').map((r) => finding('R-PRON-04', r.term_id, `IPA /${r.writer}/ vs independent /${r.checker}/`)), { comparisons: res });
+    }
     case 'tokens': return report([], tokens(readJson(a), need(flags, 'spec'), { ex: opt('exclude'), style: opt('style'), levellist: flags.levellist ? readFileSync(flags.levellist, 'utf8') : null }));
     case 'emit': {
       const spec = need(flags, 'spec');
@@ -716,7 +803,7 @@ function main(argv) {
       process.stdout.write(text);
       return;
     }
-    default: throw new UsageError('commands: validate <spec|exclude|list|batch|glossary|findings|output> | normalize | metrics | candidates | tokens | emit');
+    default: throw new UsageError('commands: validate <spec|exclude|list|batch|glossary|findings|output> | normalize | metrics | candidates | tokens | ipa | emit');
   }
 }
 

@@ -8,6 +8,7 @@ import { dirname, join } from 'node:path';
 import {
   validateOutput, validateSpec, validateExclude, validateList, validateGlossary, validateFindings,
   candidates, normalize, metrics, tokens, project, parseJson, ruleIdsFrom,
+  requiredJobs, ipaCompare,
 } from '../../skills/language-gym-generator/scripts/gym.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -322,4 +323,59 @@ test('findings can target list.json, and candidates work without an exclude file
   assert.deepEqual(rules(validateFindings(ok, list, ruleIdsFrom(rulesMd))), []);
   const out = execFileSync('node', [gym, 'candidates', join(here, 'fixtures/list-es.json'), '--spec', join(here, 'fixtures/spec-es.json')], { encoding: 'utf8' });
   assert.ok(Array.isArray(JSON.parse(out).pairs));
+});
+
+test('required jobs depend on the ceiling and on grammatical politeness', () => {
+  assert.deepEqual(requiredJobs({ level: { ceiling: 'A1' }, profile: {} }), ['identity', 'existence', 'location', 'negation', 'questions', 'want', 'can', 'go', 'must']);
+  assert.ok(requiredJobs({ level: { ceiling: 'A2' }, profile: {} }).includes('past'));
+  assert.equal(requiredJobs({ level: { ceiling: 'B1' }, profile: {} }).at(-1), 'future');
+  assert.ok(requiredJobs({ level: { ceiling: 'A2' }, profile: { politeness_marked: true } }).includes('politeness'));
+});
+
+test('list: every required job is mapped, deferred only from the end when full', () => {
+  const mk = (terms) => terms.map((t, i) => ({ id: `t${i}`, term: t, job: 'j', slot: 'spine', level: 'A1' }));
+  const main = mk(['ser', 'hay', 'estar', 'no', '¿qué?', 'pretérito: -é/-ó', 'querer', 'poder', 'ir', 'tener que + infinitivo']);
+  const jobs = { identity: 'ser', existence: 'hay', location: 'estar', negation: 'no', questions: '¿qué?', past: 'pretérito: -é/-ó', want: 'querer', can: 'poder', go: 'ir', must: 'tener que + infinitivo', future: 'deferred' };
+  const list = { main, spares: [], sets: [], shape: { jobs } };
+  assert.ok(!has(validateList(list, esSpec), 'R-SEL-12'), 'future deferred last with every slot used');
+  const missing = structuredClone(list); delete missing.shape.jobs.questions;
+  assert.ok(has(validateList(missing, esSpec), 'R-SEL-12', 'questions'));
+  const wrongTerm = structuredClone(list); wrongTerm.shape.jobs.go = 'irse';
+  assert.ok(has(validateList(wrongTerm, esSpec), 'R-SEL-12', 'go'));
+  const earlyDefer = structuredClone(list); earlyDefer.shape.jobs.questions = 'deferred'; earlyDefer.shape.jobs.future = 'n/a: no separate future in this list';
+  assert.ok(has(validateList(earlyDefer, esSpec), 'R-SEL-12', 'shape.jobs'), 'deferring a high-priority job while covering lower ones');
+  const known = structuredClone(list); known.shape.jobs.want = 'known: tener';
+  assert.ok(!has(validateList(known, esSpec, fx('exclude-es.json')), 'R-SEL-12'), 'known: resolves against the exclude list');
+  const notKnown = structuredClone(list); notKnown.shape.jobs.want = 'known: comer';
+  assert.ok(has(validateList(notKnown, esSpec, fx('exclude-es.json')), 'R-SEL-12', 'want'));
+  const freeSlots = structuredClone(list); freeSlots.main.pop(); freeSlots.shape.jobs.must = 'deferred';
+  assert.ok(has(validateList(freeSlots, esSpec), 'R-SEL-12', 'must'), 'cannot defer while slots are free');
+  assert.ok(!has(validateList({ ...list, shape: {} }, { ...esSpec, slice_type: 'usage' }), 'R-SEL-12'), 'usage slices skip the job check');
+});
+
+test('beginner mode: one clause per sentence, short sentences, at most 2 in an example', () => {
+  const d = structuredClone(esDraft);
+  d.terms[0].example = 'No quiero nada más, gracias, ya comí mucho. — No more for me.';
+  d.terms[1].example = 'Hoy mi hermana y yo vamos a comer en un restaurante nuevo del centro.';
+  d.terms[2].example = 'Hola. Soy Ana. Soy de Lima.';
+  const fs = validateGlossary(d, esSpec);
+  assert.ok(has(fs, 'R-LVL-07', 'terms[0]'), 'two clause separators');
+  assert.ok(has(fs, 'R-LVL-07', 'terms[1]'), 'over the word limit');
+  assert.ok(has(fs, 'R-LVL-07', 'terms[2]'), 'three sentences');
+  assert.ok(!has(validateGlossary(esDraft, esSpec), 'R-LVL-07'), 'the English gloss after — is not counted');
+  const b2 = { ...esSpec, level: { label: 'B2', floor: 'B2', ceiling: 'B2' }, beginner_mode: false };
+  assert.ok(!has(validateGlossary(d, b2), 'R-LVL-07'), 'only in beginner mode');
+});
+
+test('ipa: independent transcriptions are compared, tones count, stress is softer', () => {
+  const zh = fx('glossary-zh.json');
+  const same = ipaCompare(zh, { answers: [{ term_id: 't01', ipa: '/pa˨˩˦/' }, { term_id: 't02', ipa: 'lɤ' }] });
+  assert.deepEqual(same, []);
+  const tone = ipaCompare(zh, { answers: [{ term_id: 't01', ipa: 'pa˧˥' }, { term_id: 't02', ipa: 'lɤ' }] });
+  assert.equal(tone[0].status, 'mismatch');
+  const es = structuredClone(esDraft);
+  es.terms[0].definition = 'Says where something is. /esˈtaɾ/';
+  const stress = ipaCompare(es, { answers: [{ term_id: 't01', ipa: 'ˈestaɾ' }] });
+  assert.equal(stress[0].status, 'stress_or_length');
+  assert.equal(ipaCompare(es, { answers: [] })[0].status, 'unchecked');
 });

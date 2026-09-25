@@ -49,7 +49,7 @@ Never fix a subagent's output by hand. The only exception is inline mode (§6).
 - step 5 batches after batch 1;
 - the step 6 field editors;
 - step 7 learner tests and judges, split into chunks;
-- the four parts of step 9.
+- the parts of step 9 (script, level check, fact questions, IPA check, rule check).
 
 **Loop limits:**
 - step 3 → step 2: once;

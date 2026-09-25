@@ -25,6 +25,7 @@ Every step reads and writes files in the run folder. It never passes data only t
 | `coach.json` | 7 | shape below |
 | `tokens.json` | orchestrator | output of `GYM tokens` |
 | `level.json`, `facts.json` | 9 | shape below |
+| `ipa-check.json` | 9 | compared by `GYM ipa draft.json --against ipa-check.json` |
 | `findings.json` | 9 | `GYM validate findings --draft --rules refs/rules.md` |
 | `fixes.json` | 10 | shape below |
 | `glossary.json` / `glossary-part-N.json` | orchestrator | output of `GYM emit` (runs `validate output` itself) |
@@ -95,12 +96,13 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
   "main":   [ { "id": "t01", "term": "estar", "job": "location and temporary state", "slot": "spine", "level": "A1", "why": "..." } ],
   "spares": [ { "id": "s01", "term": "querer", "job": "want", "slot": "spine", "level": "A1", "why": "..." } ],
   "sets":   [ { "name": "subject pronouns", "members": ["yo", "tú", "usted", "él", "ella", "nosotros", "ustedes", "ellos", "ellas"] } ],
-  "shape":  { "jobs_covered": { "identity": "ser", "existence": "hay", "negation": "no (known)" }, "concrete_nouns": 1, "notes": "..." }
+  "shape":  { "jobs": { "identity": "ser", "existence": "hay", "location": "estar", "negation": "known: no", "questions": "¿dónde?", "past": "pretérito: -é / -ó", "want": "querer", "can": "poder", "go": "ir", "must": "tener que + infinitivo", "future": "deferred" }, "concrete_nouns": 1, "notes": "..." }
 }
 ```
 
 - `slot` is one of `spine | construction | glue | verb_adj | phrase | noun`.
 - Ids are `t01…` for main items and `s01…` for spares. A promoted spare keeps its id.
+- `shape.jobs` is required on a `bare` glossary: every job from R-SEL-12 maps to an exact `main` term, `known: <excluded item>`, `n/a: <reason>`, or `deferred`.
 
 ## `style.json`
 
@@ -109,13 +111,13 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
   "voice": "second person, present tense, plain",
   "categories": ["Verb", "Pronoun", "Connector", "Phrase", "Grammar", "Noun", "Adjective", "Adverb", "Particle"],
   "gloss_separator": " — ",
-  "limits": { "definition": 22, "example": 14, "mental_model": 22, "discussion": 30, "anti_example": 24, "controversy": 20 },
+  "limits": { "definition": 22, "example": 14, "sentence": 10, "mental_model": 22, "discussion": 30, "anti_example": 24, "controversy": 20 },
   "opening_moves": ["action verb: 'Says…', 'Marks…'", "scene: 'When you…'", "contrast-free plain meaning"],
   "banned_phrases": ["…learner-language list…"],
   "confusion_types": ["often confused with"],
   "scenes_by_batch": { "1": ["café order", "bus stop", "family dinner"], "2": ["…"] },
   "ceiling": "B1",
-  "ipa_format": "space + /…/ at the end of definition",
+  "ipa_format": "space + /…/ at the end of definition; tones: citation tones with Chao letters, neutral tone unmarked",
   "notes": "…anything a writer must do the same way every time…"
 }
 ```
@@ -170,6 +172,12 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
 
 ```json
 { "answers": [ { "term_id": "t01", "question": "Gender of 'mapa'?", "answer": "masculine", "writer_claim": "feminine", "agree": false, "unsure": false } ] }
+```
+
+`ipa-check.json` (only when `pronunciation` is `ipa`): the fact agent's own transcription of each term, made without seeing the entry's IPA.
+
+```json
+{ "answers": [ { "term_id": "t01", "ipa": "pa˨˩˦", "form": "the filled form transcribed, for patterns" } ] }
 ```
 
 ## `findings.json`

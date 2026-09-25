@@ -13,7 +13,8 @@ Step 0 fills in `spec.profile` (the target language) and `spec.learner_profile` 
 7. **`articles`**: separate words that come before a noun in its citation form and that exclude matching should ignore (`el, la, los, las, un, una`; `der, die, das`; `ال` is attached to the word in Arabic, so list it only if the dictionary form includes it). Leave it empty when there are none.
 8. **`noun_citation`**: the one noun format used for the whole glossary (**R-TERM-04**): "bare lemma", "lemma + article" (`de tafel`, when gender isn't predictable and learners study it that way), "singular + class prefix" (Swahili), "noun + counter noted in discussion" (Japanese).
 9. **`pronunciation_convention`**: what `ipa` means for this language, e.g. "IPA", "IPA with Chao tone letters", "IPA, broad transcription, Tehrani standard". What `spoken` means: an informal stress hint, or the standard learner romanization (pinyin with tone marks, Hepburn, Revised Romanization).
-10. **Grammar notes for selection** (free text, `profile.grammar_notes`): which **R-SEL-05** jobs this language marks, and how (a copula or a zero copula, existence verb, politeness levels, noun classes, counters, cases, aspect rather than tense, evidentials…). Also the closed sets it has. Selection turns these into jobs.
+10. **`politeness_marked`**: does the grammar itself mark politeness (verb endings or levels, as in Japanese or Korean), rather than only word choice? If yes, R-SEL-12 adds a `politeness` job.
+11. **Grammar notes for selection** (free text, `profile.grammar_notes`): how this language does each **R-SEL-12** job (a copula or a zero copula, existence verb, politeness levels, noun classes, counters, cases, aspect rather than tense, evidentials…). Also the closed sets it has. Selection turns these into jobs.
 
 `learner_profile` needs only `locale`, `scripts`, `direction`, `cased` and `word_separated`. Under immersion it equals `profile`.
 
