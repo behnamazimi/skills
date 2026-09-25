@@ -1,6 +1,8 @@
 # Step 2: Select the term list
 
-**Who:** subagent. **Reads:** `spec.json`, `exclude.json`, [rules.md](../rules.md) R-SEL, R-TERM and R-EX-05/06, and `spec.profile.grammar_notes`. **Writes:** `list.json` (names only, no content fields).
+**Who:** subagent. **Reads:** `spec.json`, `exclude.json`, `spec.profile.grammar_notes`, `GYM rules --step 02`, `GYM contract list.json`. **Writes:** `list.json` (names only, no content fields).
+
+**Rules:** R-SEL-01 R-SEL-02 R-SEL-03 R-SEL-04 R-SEL-05 R-SEL-06 R-SEL-07 R-SEL-08 R-SEL-09 R-SEL-10 R-SEL-11 R-SEL-12 R-TERM-01 R-TERM-02 R-TERM-03 R-TERM-04 R-TERM-05 R-TERM-06 R-TERM-07 R-TERM-08 R-EX-05 R-EX-06
 
 1. **Settle the job** of the glossary from `slice_type` (R-SEL-03).
 2. **Work out what's already known.** Every excluded item counts as known. Mark which required jobs (R-SEL-12) it already covers, and which closed sets it has started.
@@ -21,6 +23,6 @@ Nothing useful left at all (R-EX-06)? Write `{"main": [], "spares": [], "sets": 
 
 **Checks (the orchestrator runs these):**
 - `GYM validate list list.json --spec spec.json --exclude exclude.json`
-- `GYM candidates list.json --exclude exclude.json --spec spec.json > candidates.json`
+- `GYM candidates list.json --spec spec.json --exclude exclude.json` (writes `candidates.json`)
 
 On `validate` errors, send them back to this step once.

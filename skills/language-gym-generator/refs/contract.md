@@ -13,19 +13,19 @@ Every step reads and writes files in the run folder. It never passes data only t
 | `args.txt` | 0 | — (the raw request, verbatim) |
 | `state.json` | orchestrator | — |
 | `spec.json` | 0 | `GYM validate spec` |
-| `exclude.json` | 1 | `GYM validate exclude` |
+| `exclude.json` | 0 (empty) or 1 | `GYM validate exclude` |
 | `list.json` | 2 | `GYM validate list --spec --exclude` |
 | `candidates.json` | orchestrator | output of `GYM candidates` |
 | `list-findings.json` | 3 | `GYM validate findings list-findings.json --draft list.json --rules refs/rules.md` |
 | `style.json`, `plan.json` | 4 | shape below |
 | `samples.json` | 4 | `GYM validate batch --spec --style` |
 | `batch-N.json` | 5 | `GYM validate batch --spec --style --exclude` |
-| `draft.json` | 6, 7, 8, 10 | `GYM validate glossary --spec --style --exclude` |
+| `draft.json` | 6, 7, 10 | `GYM validate glossary --spec --style --exclude` |
 | `metrics.json` | orchestrator | output of `GYM metrics --plan` |
 | `coach.json` | 7 | shape below |
 | `tokens.json` | orchestrator | output of `GYM tokens` |
-| `level.json`, `facts.json` | 9 | shape below |
-| `ipa-check.json` | 9 | compared by `GYM ipa draft.json --against ipa-check.json` |
+| `level.json`, `questions.json`, `facts.json` | 9 (checker, blind checker) | shape below |
+| `ipa-check.json` | 9 (blind checker) | compared by `GYM ipa draft.json --against ipa-check.json` |
 | `findings.json` | 9 | `GYM validate findings --draft --rules refs/rules.md` |
 | `fixes.json` | 10 | shape below |
 | `glossary.json` / `glossary-part-N.json` | orchestrator | output of `GYM emit` (runs `validate output` itself) |
@@ -168,17 +168,23 @@ To resume a run, read `state.json` and continue from `step`. `inline: true` mean
 } ] }
 ```
 
-## `level.json` and `facts.json`
+## `level.json`, `questions.json` and `facts.json`
 
 ```json
 { "rater": 1, "ratings": [ { "token": "esquina", "level": "A2", "occurrences": [ { "term_id": "t03", "field": "example" } ] } ], "structures": [ { "term_id": "t04", "field": "example", "structure": "future with ir a", "level": "A2" } ] }
 ```
 
 ```json
+{ "questions": [ { "term_id": "t01", "question": "Gender of 'mapa'?", "writer_claim": "feminine" } ] }
+```
+
+The checker writes `questions.json`; the blind checker answers without seeing `writer_claim` or the definitions. The orchestrator fills `agree` in `facts.json`:
+
+```json
 { "answers": [ { "term_id": "t01", "question": "Gender of 'mapa'?", "answer": "masculine", "writer_claim": "feminine", "agree": false, "unsure": false } ] }
 ```
 
-`ipa-check.json` (only when `pronunciation` is `ipa`): the fact agent's own transcription of each term, made without seeing the entry's IPA.
+`ipa-check.json` (only when `pronunciation` is `ipa`): the blind checker's own transcription of each term, made without seeing the entry's IPA.
 
 ```json
 { "answers": [ { "term_id": "t01", "ipa": "pa˨˩˦", "form": "the filled form transcribed, for patterns" } ] }

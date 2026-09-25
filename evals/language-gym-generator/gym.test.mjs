@@ -1,14 +1,15 @@
 // Run: node --test evals/language-gym-generator/
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
+const require_fs = () => ({ readdirSync });
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import {
   validateOutput, validateSpec, validateExclude, validateList, validateGlossary, validateFindings,
   candidates, normalize, metrics, tokens, project, parseJson, ruleIdsFrom,
-  requiredJobs, ipaCompare, cost,
+  requiredJobs, ipaCompare, cost, ruleBlocks, stepRuleIds, sliceRules, contractSections,
 } from '../../skills/language-gym-generator/scripts/gym.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -321,7 +322,7 @@ test('findings can target list.json, and candidates work without an exclude file
   const list = fx('list-es.json');
   const ok = { findings: [{ term_id: 't03', field: 'term', rule: 'R-EX-01', severity: 'must_fix', quote: 'cuenta', problem: 'p' }] };
   assert.deepEqual(rules(validateFindings(ok, list, ruleIdsFrom(rulesMd))), []);
-  const out = execFileSync('node', [gym, 'candidates', join(here, 'fixtures/list-es.json'), '--spec', join(here, 'fixtures/spec-es.json')], { encoding: 'utf8' });
+  const out = execFileSync('node', [gym, 'candidates', join(here, 'fixtures/list-es.json'), '--spec', join(here, 'fixtures/spec-es.json'), '--json'], { encoding: 'utf8' });
   assert.ok(Array.isArray(JSON.parse(out).pairs));
 });
 
@@ -473,4 +474,59 @@ test('cost sums time and tokens per step, slowest first', () => {
   assert.equal(c.total_seconds, 213);
   assert.equal(c.total_tokens, 95000);
   assert.deepEqual(cost({}).steps, []);
+});
+
+const skillDir = join(here, '../../skills/language-gym-generator');
+const run = (...args) => { try { return { out: execFileSync('node', [gym, ...args], { encoding: 'utf8' }), code: 0 }; } catch (e) { return { out: e.stdout, err: e.stderr, code: e.status }; } };
+
+test('rules: every step lists its rules, and every listed or cited rule exists', () => {
+  const blocks = ruleBlocks(rulesMd);
+  const { readdirSync } = require_fs();
+  for (const f of readdirSync(join(skillDir, 'refs/steps'))) {
+    const text = readFileSync(join(skillDir, 'refs/steps', f), 'utf8');
+    const listed = stepRuleIds(text);
+    assert.ok(listed.length > 0, `${f} has no **Rules:** line`);
+    for (const id of listed) assert.ok(blocks.has(id), `${f} lists unknown ${id}`);
+    const cited = [...text.matchAll(/R-[A-Z]+-\d{2}/g)].map((m) => m[0]);
+    for (const id of cited) assert.ok(listed.includes(id) || id.startsWith('R-FIND'), `${f} cites ${id} but its **Rules:** line doesn't load it`);
+  }
+});
+
+test('rules: slices are verbatim blocks, including sub-bullets and tables', () => {
+  const { text, missing } = sliceRules(rulesMd, ['R-SEL-12', 'R-FLD-08']);
+  assert.deepEqual(missing, []);
+  assert.ok(text.includes('| Ceiling | Jobs, highest priority first |'), 'table kept');
+  assert.ok(text.includes('R-FLD-08') && !text.includes('R-FLD-09'));
+  for (const [id, block] of ruleBlocks(rulesMd)) assert.ok(rulesMd.includes(block), `${id} block is not verbatim`);
+  const all = [...ruleBlocks(rulesMd).values()].join('\n');
+  for (const id of ruleIdsFrom(rulesMd)) assert.ok(all.includes(`**${id}**`) || !rulesMd.includes(`**${id}**`), `${id} lost by the parser`);
+  const r = run('rules', '--step', '04');
+  assert.equal(r.code, 0);
+  assert.ok(r.out.includes('R-FLD-08'));
+  assert.equal(run('rules', 'R-ZZZ-99').code, 2);
+});
+
+test('contract: prints only the named sections', () => {
+  const md = readFileSync(join(skillDir, 'refs/contract.md'), 'utf8');
+  const [list, missing] = contractSections(md, ['list.json', 'nope.json']);
+  assert.ok(list.startsWith('## `list.json`') && !list.includes('## `style.json`'));
+  assert.equal(missing, null);
+  assert.equal(run('contract', 'plan.json').code, 0);
+});
+
+test('compact output: one ok line, findings one per line, --json keeps the old shape', () => {
+  const ok = run('validate', 'spec', join(here, 'fixtures/spec-es.json'));
+  assert.equal(ok.out.trim(), 'ok validate spec');
+  const bad = run('validate', 'list', join(here, 'fixtures/list-es.json'), '--spec', join(here, 'fixtures/spec-es.json'));
+  assert.equal(bad.code, 1);
+  assert.match(bad.out, /^ERROR R-SEL-04 /m);
+  assert.match(bad.out, /^FAIL validate list/m);
+  const js = JSON.parse(run('validate', 'spec', join(here, 'fixtures/spec-es.json'), '--json').out);
+  assert.equal(js.ok, true);
+  assert.ok(run('help').out.includes('rules --step'));
+});
+
+test('a missing --exclude file means no exclusions', () => {
+  const r = run('validate', 'glossary', join(here, 'fixtures/glossary-es.json'), '--spec', join(here, 'fixtures/spec-es.json'), '--exclude', '/nonexistent/exclude.json');
+  assert.equal(r.code, 0, r.err);
 });

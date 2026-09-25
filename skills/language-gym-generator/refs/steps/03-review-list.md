@@ -1,8 +1,10 @@
 # Step 3: Review the list
 
-**Who:** a **fresh** subagent that didn't write the list. **Reads:** `spec.json`, `exclude.json`, `list.json`, `candidates.json`, [rules.md](../rules.md) R-SEL, R-TERM and R-EX. **Writes:** `list-findings.json` (the `findings.json` format, with `term_id` = list id and `field` = `"term"`, `quote` = the term).
+**Who:** a **fresh** subagent that didn't write the list. **Reads:** `spec.json`, `exclude.json`, `list.json`, `candidates.json`, `GYM rules --step 03`, `GYM contract findings.json`. **Writes:** `list-findings.json` (the `findings.json` format, with `term_id` = list id, `field` = `"term"`, `quote` = the term).
 
-Review `main` **and** `spares`. Spares approved now can later replace terms without another review.
+**Rules:** R-EX-01 R-EX-03 R-EX-04 R-SEL-02 R-SEL-04 R-SEL-07 R-SEL-08 R-SEL-12 R-TERM-01 R-TERM-02 R-TERM-03 R-TERM-04 R-TERM-05 R-FIND-01 R-FIND-02
+
+Review `main` **and** `spares` together, in one pass. Spares approved now can later replace terms without another review.
 
 1. **Every pair in `candidates.json`:** is it the same item as the excluded one (same lemma for a `lemma` scope, same phrase or pattern for a `phrase` scope)? Accents or marks that make a different word are *not* the same (R-EX-04). Same → a `must_fix` finding (R-EX-01). Different → no finding.
 2. **Undeclared closed sets:** does any item belong to a small set that isn't in `sets[]`? → R-SEL-04.
@@ -12,5 +14,7 @@ Review `main` **and** `spares`. Spares approved now can later replace terms with
 6. **Frequency:** anything rare, trivia, or nice-to-know → R-SEL-02.
 
 Return `{"findings": []}` if nothing is wrong. Never praise, never pad.
+
+**Check:** `GYM validate findings list-findings.json --draft list.json --rules SKILL_DIR/refs/rules.md`.
 
 **Loop:** if there are `must_fix` findings, the orchestrator sends list + findings back to step 2 **once**. After that, remaining findings are settled by cutting the item and promoting an approved spare.

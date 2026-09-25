@@ -18,9 +18,15 @@
 //   ipa                <draft.json>    [--against <ipa-check.json>]
 //   cost               <state.json>
 //   emit               <draft.json>    --spec <spec.json> [--out <file>]
-// Output: JSON on stdout. Exit 0 = ok, 1 = findings (errors), 2 = usage/IO error.
+//   rules              --step <NN> | <R-ID>…      (only those rule blocks)
+//   contract           <file name>…                (only those contract sections)
+//   help               [command]
+// Output: compact lines ("ok …" / findings / "FAIL …"); --json for full JSON. Data commands
+// (metrics, candidates, tokens, ipa, cost) write <name>.json next to their input unless --out is given.
+// Exit 0 = ok, 1 = errors, 2 = usage/IO error.
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const TERM_FIELDS = ['term', 'category', 'definition', 'example', 'mental_model', 'discussion', 'anti_example', 'controversy'];
@@ -825,9 +831,14 @@ export function project(draft, spec = null) {
 
 function parseArgs(argv) {
   const pos = []; const flags = {};
+  const BOOL = new Set(['json']);
   for (let i = 0; i < argv.length; i++) {
-    if (argv[i].startsWith('--')) { flags[argv[i].slice(2)] = argv[i + 1]; i++; }
-    else pos.push(argv[i]);
+    if (argv[i].startsWith('--')) {
+      const k = argv[i].slice(2);
+      if (BOOL.has(k)) flags[k] = true;
+      else if (k === 'step') { flags.step = argv[i + 1]; i++; }
+      else { flags[k] = argv[i + 1]; i++; }
+    } else pos.push(argv[i]);
   }
   return { pos, flags };
 }
@@ -837,66 +848,167 @@ function need(flags, k) {
   return readJson(flags[k], `--${k}`);
 }
 
-function report(findings, extra = {}) {
-  const errors = findings.filter((f) => f.severity === 'error');
-  process.stdout.write(JSON.stringify({ ok: errors.length === 0, errors: errors.length, findings, ...extra }, null, 2) + '\n');
-  process.exitCode = errors.length ? 1 : 0;
+// ---------- rules / contract slices (so a step reads only what it needs) ----------
+
+const SKILL_DIR = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+export function ruleBlocks(markdown) {
+  const blocks = new Map();
+  let id = null; let buf = [];
+  const flush = () => { if (id) blocks.set(id, buf.join('\n').trimEnd()); id = null; buf = []; };
+  for (const line of markdown.split('\n')) {
+    const m = /^- \*\*(R-[A-Z]+-\d{2})\*\*/.exec(line);
+    if (m) { flush(); id = m[1]; buf = [line]; continue; }
+    if (/^#{1,6} /.test(line)) { flush(); continue; }
+    if (id) buf.push(line);
+  }
+  flush();
+  return blocks;
 }
+
+export function stepRuleIds(stepText) {
+  const m = /^\*\*Rules:\*\*(.*)$/m.exec(stepText);
+  return m ? [...m[1].matchAll(/R-[A-Z]+-\d{2}/g)].map((x) => x[0]) : [];
+}
+
+export function sliceRules(markdown, ids) {
+  const blocks = ruleBlocks(markdown);
+  const header = (/## R-IN/.test(markdown) ? markdown.slice(markdown.indexOf('Words used below'), markdown.indexOf('## R-IN')).trim() : '');
+  const missing = ids.filter((i) => !blocks.has(i));
+  const body = ids.filter((i) => blocks.has(i)).map((i) => blocks.get(i)).join('\n');
+  return { text: [header, body].filter(Boolean).join('\n\n'), missing };
+}
+
+export function contractSections(markdown, names) {
+  const parts = markdown.split(/^(?=## )/m);
+  return names.map((n) => parts.find((p) => p.split('\n')[0].includes(n)) || null);
+}
+
+function stepFile(step) {
+  const dir = join(SKILL_DIR, 'refs', 'steps');
+  const f = readdirSync(dir).find((x) => x.startsWith(String(step).padStart(2, '0') + '-'));
+  if (!f) throw new UsageError(`no step file for "${step}"`);
+  return join(dir, f);
+}
+
+// ---------- output ----------
+
+let JSON_OUT = false;
+
+function report(findings, extra = {}, label = '') {
+  const errors = findings.filter((f) => f.severity === 'error');
+  const warns = findings.filter((f) => f.severity !== 'error');
+  process.exitCode = errors.length ? 1 : 0;
+  if (JSON_OUT) { process.stdout.write(JSON.stringify({ ok: errors.length === 0, errors: errors.length, findings, ...extra }, null, 2) + '\n'); return; }
+  const lines = findings.map((f) => `${f.severity === 'error' ? 'ERROR' : 'warn '} ${f.rule} ${f.path}: ${f.message}`);
+  lines.push(errors.length ? `FAIL ${label}: ${errors.length} error(s), ${warns.length} warning(s)` : `ok ${label}${warns.length ? `: ${warns.length} warning(s)` : ''}`);
+  process.stdout.write(lines.join('\n') + '\n');
+}
+
+// Data commands write their JSON to a file (default next to the input) and print one summary line.
+function writeData(flags, input, name, data, summary, findings = []) {
+  if (JSON_OUT && !flags.out) return report(findings, data, name);
+  const out = flags.out || join(dirname(input), `${name}.json`);
+  writeFileSync(out, JSON.stringify(data, null, 2) + '\n');
+  return report(findings, {}, `${name} → ${out}: ${summary}`);
+}
+
+const HELP = {
+  validate: 'validate spec <spec.json> | exclude <exclude.json> | list <list.json> --spec S [--exclude E] | batch <batch.json> --spec S [--style T] [--exclude E] | glossary <draft.json> --spec S [--style T] [--exclude E] | findings <findings.json> --draft <draft.json|list.json> [--rules refs/rules.md] | output <glossary.json> [--spec S]. Prints findings one per line, then "ok …" or "FAIL …"; exit 1 on errors. Warnings (warn) never fail.',
+  normalize: 'normalize <draft.json> --spec S [--style T] [--out <file>] — mechanical cleanup (whitespace, Markdown, gloss dashes, IPA spacing, category spelling). Without --out prints the JSON.',
+  metrics: 'metrics <draft.json> --spec S [--plan P] [--out F] — per-batch numbers, outliers, fill rates. Writes metrics.json next to the draft.',
+  candidates: 'candidates <list.json> --spec S [--exclude E] [--out F] — possible exclude matches for an agent to judge. Writes candidates.json next to the list.',
+  tokens: 'tokens <draft.json> --spec S [--exclude E] [--style T] [--levellist L] [--out F] — unknown target-language words for the level check. Writes tokens.json next to the draft.',
+  ipa: 'ipa <draft.json> [--against <ipa-check.json>] [--out F] — lists each entry\'s IPA, or compares it with an independent transcription (mismatch = R-PRON-04 error).',
+  cost: 'cost <state.json> [--out F] — seconds and tokens per step from state.steps, slowest first. Writes cost.json next to the state.',
+  emit: 'emit <draft.json> --spec S [--out <glossary.json>] — keeps only import fields, validates the output, prints the final JSON.',
+  rules: 'rules --step <NN> | rules <R-ID> [R-ID…] — prints only those rule blocks from refs/rules.md, in full.',
+  contract: 'contract <file name> [more…] — prints only those sections of refs/contract.md (e.g. contract list.json plan.json).',
+  help: 'help [command] — this text. Never read the script source; everything you need is here.',
+};
 
 function main(argv) {
   const { pos, flags } = parseArgs(argv);
+  JSON_OUT = !!flags.json;
   const [cmd, a, b] = pos;
-  const opt = (k) => (flags[k] ? readJson(flags[k], `--${k}`) : null);
+  // A missing --exclude file means "no exclusions" rather than an error.
+  const opt = (k) => (flags[k] && (k !== 'exclude' || existsSync(flags[k])) ? readJson(flags[k], `--${k}`) : null);
   switch (cmd) {
     case 'validate': {
       if (!b) throw new UsageError('validate <kind> <file>');
       let doc;
-      try { doc = readJson(b); } catch (e) { if (e instanceof ContractError) return report(e.findings); throw e; }
+      try { doc = readJson(b); } catch (e) { if (e instanceof ContractError) return report(e.findings, {}, `validate ${a}`); throw e; }
+      const label = `validate ${a}`;
       switch (a) {
-        case 'spec': return report(validateSpec(doc));
-        case 'exclude': return report(validateExclude(doc));
-        case 'list': return report(validateList(doc, need(flags, 'spec'), opt('exclude')));
-        case 'batch': return report(validateGlossary(doc, need(flags, 'spec'), { style: opt('style'), ex: opt('exclude'), partial: true }));
-        case 'glossary': return report(validateGlossary(doc, need(flags, 'spec'), { ex: opt('exclude'), style: opt('style') }));
-        case 'findings': return report(validateFindings(doc, need(flags, 'draft'), flags.rules ? ruleIdsFrom(readFileSync(flags.rules, 'utf8')) : null));
-        case 'output': return report(validateOutput(doc, opt('spec')));
+        case 'spec': return report(validateSpec(doc), {}, label);
+        case 'exclude': return report(validateExclude(doc), {}, label);
+        case 'list': return report(validateList(doc, need(flags, 'spec'), opt('exclude')), {}, `${label} (${(doc.main || []).length} main, ${(doc.spares || []).length} spares)`);
+        case 'batch': return report(validateGlossary(doc, need(flags, 'spec'), { style: opt('style'), ex: opt('exclude'), partial: true }), {}, `${label} (${(doc.terms || []).length} terms)`);
+        case 'glossary': return report(validateGlossary(doc, need(flags, 'spec'), { ex: opt('exclude'), style: opt('style') }), {}, `${label} (${(doc.terms || []).length} terms)`);
+        case 'findings': return report(validateFindings(doc, need(flags, 'draft'), flags.rules ? ruleIdsFrom(readFileSync(flags.rules, 'utf8')) : null), {}, `${label} (${(doc.findings || []).length} findings)`);
+        case 'output': return report(validateOutput(doc, opt('spec')), {}, label);
         default: throw new UsageError(`unknown kind "${a}"`);
       }
     }
     case 'normalize': {
       const res = normalize(readJson(a), need(flags, 'spec'), opt('style'));
       const text = JSON.stringify(res, null, 2) + '\n';
-      if (flags.out) writeFileSync(flags.out, text); else process.stdout.write(text);
+      if (flags.out) { writeFileSync(flags.out, text); return report([], {}, `normalize → ${flags.out}`); }
+      process.stdout.write(text);
       return;
     }
-    case 'metrics': return report([], metrics(readJson(a), need(flags, 'spec'), opt('plan')));
-    case 'candidates': return report([], { pairs: candidates(readJson(a), opt('exclude') || { items: [] }, need(flags, 'spec')) });
+    case 'metrics': { const m = metrics(readJson(a), need(flags, 'spec'), opt('plan')); return writeData(flags, a, 'metrics', m, `${m.batches.length} batch(es), ${m.outliers.length} outlier(s)`); }
+    case 'candidates': { const pairs = candidates(readJson(a), opt('exclude') || { items: [] }, need(flags, 'spec')); return writeData(flags, a, 'candidates', { pairs }, `${pairs.length} pair(s) to judge`); }
     case 'ipa': {
       const draft = readJson(a);
-      if (!flags.against) return report([], { terms: ipaList(draft) });
+      if (!flags.against) { const terms = ipaList(draft); return writeData(flags, a, 'ipa-list', { terms }, `${terms.length} term(s)`); }
       const res = ipaCompare(draft, readJson(flags.against));
-      return report(res.filter((r) => r.severity === 'must_fix').map((r) => finding('R-PRON-04', r.term_id, `IPA /${r.writer}/ vs independent /${r.checker}/`)), { comparisons: res });
+      const fs = res.filter((r) => r.severity === 'must_fix').map((r) => finding('R-PRON-04', r.term_id, `IPA /${r.writer}/ vs independent /${r.checker}/`));
+      return writeData(flags, a, 'ipa-compare', { comparisons: res }, `${res.length} difference(s)`, fs);
     }
-    case 'cost': return report([], cost(readJson(a)));
-    case 'tokens': return report([], tokens(readJson(a), need(flags, 'spec'), { ex: opt('exclude'), style: opt('style'), levellist: flags.levellist ? readFileSync(flags.levellist, 'utf8') : null }));
+    case 'cost': { const c = cost(readJson(a)); return writeData(flags, a, 'cost', c, `${c.steps.length} step(s), ${c.total_seconds}s, ${c.total_tokens ?? 'tokens not recorded'}`); }
+    case 'tokens': { const t = tokens(readJson(a), need(flags, 'spec'), { ex: opt('exclude'), style: opt('style'), levellist: flags.levellist ? readFileSync(flags.levellist, 'utf8') : null }); return writeData(flags, a, 'tokens', t, `${t.count} word(s) to rate`); }
     case 'emit': {
       const spec = need(flags, 'spec');
       const res = project(readJson(a), spec);
       const problems = validateOutput(res, spec);
-      if (problems.length) return report(problems);
+      if (problems.length) return report(problems, {}, 'emit');
       const text = JSON.stringify(res, null, 2) + '\n';
       if (flags.out) writeFileSync(flags.out, text);
       process.stdout.write(text);
       return;
     }
-    default: throw new UsageError('commands: validate <spec|exclude|list|batch|glossary|findings|output> | normalize | metrics | candidates | tokens | ipa | cost | emit');
+    case 'rules': {
+      const md = readFileSync(join(SKILL_DIR, 'refs', 'rules.md'), 'utf8');
+      const ids = flags.step ? stepRuleIds(readFileSync(stepFile(flags.step), 'utf8')) : pos.slice(1);
+      if (!ids.length) throw new UsageError('rules --step <NN> | rules <R-ID>…');
+      const { text, missing } = sliceRules(md, ids);
+      if (missing.length) throw new UsageError(`unknown rule id(s): ${missing.join(', ')}`);
+      process.stdout.write(text + '\n');
+      return;
+    }
+    case 'contract': {
+      const names = pos.slice(1);
+      if (!names.length) throw new UsageError('contract <file name>…');
+      const secs = contractSections(readFileSync(join(SKILL_DIR, 'refs', 'contract.md'), 'utf8'), names);
+      const missing = names.filter((n, i) => !secs[i]);
+      if (missing.length) throw new UsageError(`no contract section for: ${missing.join(', ')}`);
+      process.stdout.write(secs.join('\n').trimEnd() + '\n');
+      return;
+    }
+    case 'help': case undefined: {
+      const k = a && HELP[a] ? [a] : Object.keys(HELP);
+      process.stdout.write(k.map((x) => `${x}: ${HELP[x]}`).join('\n') + '\nGlobal: --json prints full JSON instead of the compact lines.\n');
+      return;
+    }
+    default: throw new UsageError(`unknown command "${cmd}". Run: node gym.mjs help`);
   }
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   try { main(process.argv.slice(2)); }
   catch (e) {
-    if (e instanceof ContractError) report(e.findings);
+    if (e instanceof ContractError) report(e.findings, {}, 'input');
     else { process.stderr.write(`gym: ${e.message}\n`); process.exitCode = 2; }
   }
 }

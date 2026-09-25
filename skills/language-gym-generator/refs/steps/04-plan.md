@@ -1,6 +1,8 @@
 # Step 4: Plan every entry and fix the style
 
-**Who:** subagent (on the lite path, the same agent then writes all entries: see step 5). **Reads:** `spec.json`, `exclude.json`, `list.json` (main only), [rules.md](../rules.md) R-FLD, R-LVL, R-IMM, R-PRON and R-TONE, and [rubric.md](../rubric.md). **Writes:** `plan.json`, `style.json`, `samples.json` (formats in [contract.md](../contract.md)).
+**Who:** subagent (on the lite path, the same agent then writes the whole batch: see step 5). **Reads:** `spec.json`, `exclude.json`, `list.json` (main only), `GYM rules --step 04`, `GYM contract plan.json style.json draft.json`. **Writes:** `plan.json`, `style.json`, `samples.json`.
+
+**Rules:** R-FLD-01 R-FLD-02 R-FLD-03 R-FLD-04 R-FLD-05 R-FLD-06 R-FLD-07 R-FLD-08 R-FLD-09 R-FLD-10 R-FLD-11 R-FLD-12 R-FLD-13 R-FLD-14 R-FLD-15 R-FLD-16 R-FLD-17 R-FLD-18 R-LVL-01 R-LVL-02 R-LVL-03 R-LVL-04 R-LVL-05 R-LVL-07 R-IMM-01 R-IMM-02 R-IMM-03 R-PRON-01 R-PRON-02 R-PRON-03 R-TONE-01 R-TONE-02 R-TONE-03
 
 This step makes every decision that must be the same across the whole glossary, so writers don't make them separately.
 
@@ -31,4 +33,4 @@ Write three full entries from `main`: pick different slots, with at least one th
 
 **Checks (the orchestrator runs these):**
 - `GYM validate batch samples.json --spec spec.json --style style.json --exclude exclude.json`
-- a fresh subagent reviews the samples against R-FLD, R-LVL and R-TONE using [rubric.md](../rubric.md). Any score ≤ 2 → fix the samples before step 5.
+- **Full path only:** a fresh subagent reviews the three samples together against their rules (`GYM rules --step 04`) using [rubric.md](../rubric.md). Any score ≤ 2 → fix the samples before step 5. On the lite path the samples are part of the one batch, and step 7's coach reviews them with the rest.
