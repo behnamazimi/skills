@@ -1,0 +1,895 @@
+{
+ "terms": [
+  {
+   "id": "t01",
+   "job": "identity, origin, what something is",
+   "trap": "English 'be' maps to ser every time, including for feelings and locations",
+   "scene": "meeting a new coworker",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'be' maps to ser every time, including for feelings and locations",
+   "level_exceptions": []
+  },
+  {
+   "id": "t13",
+   "job": "you (default, one person)",
+   "trap": "none",
+   "scene": "office kitchen, offering coffee",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t21",
+   "job": "what? (question)",
+   "trap": "none",
+   "scene": "reading a menu with a friend",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t45",
+   "job": "but",
+   "trap": "mas and mais sound almost the same in Brazil",
+   "scene": "turning down a night out",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - mas and mais sound almost the same in Brazil",
+   "level_exceptions": []
+  },
+  {
+   "id": "t54",
+   "job": "do, make",
+   "trap": "none",
+   "scene": "family dinner at home",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t70",
+   "job": "how are you? / it's fine",
+   "trap": "none",
+   "scene": "meeting a neighbor in the elevator",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t02",
+   "job": "state or location right now",
+   "trap": "English speakers use ser for every 'be'",
+   "scene": "phone call on the bus",
+   "fields": [
+    "example",
+    "mental_model",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English speakers use ser for every 'be'; mental_model: the ser/estar split clicks faster as an image",
+   "level_exceptions": []
+  },
+  {
+   "id": "t37",
+   "job": "my",
+   "trap": "English speakers match the possessive to the owner",
+   "scene": "introducing family at a party",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English speakers match the possessive to the owner",
+   "level_exceptions": []
+  },
+  {
+   "id": "t33",
+   "job": "nothing (with não)",
+   "trap": "English allows a single negative ('I ate nothing')",
+   "scene": "empty fridge at home",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English allows a single negative ('I ate nothing')",
+   "level_exceptions": []
+  },
+  {
+   "id": "t46",
+   "job": "because",
+   "trap": "porque and por que sound the same",
+   "scene": "arriving late to work",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - porque and por que sound the same",
+   "level_exceptions": []
+  },
+  {
+   "id": "t30",
+   "job": "near future: going to",
+   "trap": "none",
+   "scene": "weekend plans",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t09",
+   "job": "want",
+   "trap": "none",
+   "scene": "bakery counter",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t74",
+   "job": "time (occasion): uma vez, duas vezes",
+   "trap": "English 'time' covers both occasions and duration",
+   "scene": "travel talk",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'time' covers both occasions and duration",
+   "level_exceptions": []
+  },
+  {
+   "id": "t03",
+   "job": "have, own",
+   "trap": "English uses 'be' for age",
+   "scene": "first date chat",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English uses 'be' for age",
+   "level_exceptions": []
+  },
+  {
+   "id": "t16",
+   "job": "we (spoken)",
+   "trap": "'we' pulls learners toward the -mos form",
+   "scene": "beach plans",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - 'we' pulls learners toward the -mos form",
+   "level_exceptions": []
+  },
+  {
+   "id": "t23",
+   "job": "where?",
+   "trap": "none",
+   "scene": "looking for the restroom in a restaurant",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t47",
+   "job": "so, then (drawing a conclusion)",
+   "trap": "none",
+   "scene": "rainy evening leaving a bar",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t57",
+   "job": "know (a fact); know how to",
+   "trap": "English 'know' covers facts and people",
+   "scene": "asking for directions",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'know' covers facts and people",
+   "level_exceptions": []
+  },
+  {
+   "id": "t66",
+   "job": "good (describes a noun)",
+   "trap": "English speakers mix good/well",
+   "scene": "recommending a restaurant",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English speakers mix good/well",
+   "level_exceptions": []
+  },
+  {
+   "id": "t04",
+   "job": "there is / there are (spoken existence)",
+   "trap": "none",
+   "scene": "showing a new neighborhood",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t41",
+   "job": "this / that (thing near you, before a noun)",
+   "trap": "none",
+   "scene": "clothes shop",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t34",
+   "job": "nobody",
+   "trap": "English allows a single negative ('I saw nobody')",
+   "scene": "calling the office",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English allows a single negative ('I saw nobody')",
+   "level_exceptions": []
+  },
+  {
+   "id": "t08",
+   "job": "can, be able or allowed",
+   "trap": "none",
+   "scene": "paying in a shop",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t50",
+   "job": "also, too",
+   "trap": "none",
+   "scene": "friends planning a concert",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t71",
+   "job": "thank you (agrees with the speaker)",
+   "trap": "learners match it to the listener or always use obrigado",
+   "scene": "getting a ride home",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - learners match it to the listener or always use obrigado",
+   "level_exceptions": []
+  },
+  {
+   "id": "t58",
+   "job": "know (a person or place), meet",
+   "trap": "none",
+   "scene": "tourist chat at a hostel",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t12",
+   "job": "I",
+   "trap": "none",
+   "scene": "birthday party",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t22",
+   "job": "who?",
+   "trap": "none",
+   "scene": "family logistics in the morning",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t31",
+   "job": "action in progress right now",
+   "trap": "English uses -ing for future plans",
+   "scene": "phone call while driving",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English uses -ing for future plans",
+   "level_exceptions": []
+  },
+  {
+   "id": "t05",
+   "job": "where fixed places are located",
+   "trap": "none",
+   "scene": "booking a hotel",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t38",
+   "job": "your (você's)",
+   "trap": "none",
+   "scene": "finding a phone in a café",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t48",
+   "job": "if (condition)",
+   "trap": "none",
+   "scene": "offering a ride",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t59",
+   "job": "think (opinion); find",
+   "trap": "English 'think' maps to pensar",
+   "scene": "checking the sky before leaving home",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'think' maps to pensar",
+   "level_exceptions": []
+  },
+  {
+   "id": "t67",
+   "job": "well, fine (describes an action or state)",
+   "trap": "none",
+   "scene": "morning after a trip",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t35",
+   "job": "never",
+   "trap": "none",
+   "scene": "juice bar",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t43",
+   "job": "this / that (a whole idea or thing, no noun)",
+   "trap": "none",
+   "scene": "market stall",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t10",
+   "job": "need",
+   "trap": "learners carry de into every use",
+   "scene": "phone battery dying at work",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - learners carry de into every use",
+   "level_exceptions": []
+  },
+  {
+   "id": "t51",
+   "job": "still, yet",
+   "trap": "English 'already/yet' split leads to já não",
+   "scene": "coworker asking about lunch",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'already/yet' split leads to já não",
+   "level_exceptions": []
+  },
+  {
+   "id": "t75",
+   "job": "thing",
+   "trap": "none",
+   "scene": "packed to-do list",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t14",
+   "job": "he / it (masc.)",
+   "trap": "none",
+   "scene": "friend asking where João is",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t24",
+   "job": "when?",
+   "trap": "none",
+   "scene": "friend going on a trip",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t29",
+   "job": "have to, must",
+   "trap": "none",
+   "scene": "leaving a party early",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t06",
+   "job": "go",
+   "trap": "none",
+   "scene": "grocery run",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t40",
+   "job": "his / her (de + ele/ela)",
+   "trap": "none",
+   "scene": "parking lot",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t49",
+   "job": "that (joins a clause)",
+   "trap": "English drops 'that'",
+   "scene": "talking about a film",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English drops 'that'",
+   "level_exceptions": []
+  },
+  {
+   "id": "t60",
+   "job": "like",
+   "trap": "English 'like' takes no preposition",
+   "scene": "music at a bar",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'like' takes no preposition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t68",
+   "job": "cool, nice (BR)",
+   "trap": "none",
+   "scene": "friend's new job",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t36",
+   "job": "not any, no (before a noun)",
+   "trap": "none",
+   "scene": "late-night bus stop",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t42",
+   "job": "that (over there, before a noun)",
+   "trap": "none",
+   "scene": "showing the city from a car",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t73",
+   "job": "should (advice); must be (a guess)",
+   "trap": "none",
+   "scene": "doctor's advice",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t52",
+   "job": "already; right away",
+   "trap": "none",
+   "scene": "Saturday lunch invitation",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t72",
+   "job": "okay, fine (agreeing)",
+   "trap": "none",
+   "scene": "setting a meeting time",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t15",
+   "job": "she / it (fem.)",
+   "trap": "none",
+   "scene": "looking for keys",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t25",
+   "job": "how?",
+   "trap": "none",
+   "scene": "chat about a new job",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t32",
+   "job": "have just done",
+   "trap": "English 'just' maps to só",
+   "scene": "texting a friend after work",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'just' maps to só",
+   "level_exceptions": []
+  },
+  {
+   "id": "t07",
+   "job": "come (toward the speaker)",
+   "trap": "English 'I'm coming' toward the listener",
+   "scene": "party invite by text",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'I'm coming' toward the listener",
+   "level_exceptions": []
+  },
+  {
+   "id": "t39",
+   "job": "our",
+   "trap": "none",
+   "scene": "housewarming",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t53",
+   "job": "only, just",
+   "trap": "none",
+   "scene": "airport check-in",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t55",
+   "job": "speak, talk, say",
+   "trap": "none",
+   "scene": "tourist information desk",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t69",
+   "job": "very; a lot of",
+   "trap": "none",
+   "scene": "summer day",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t44",
+   "job": "that thing over there (no noun)",
+   "trap": "none",
+   "scene": "beach at night",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t56",
+   "job": "say, tell",
+   "trap": "none",
+   "scene": "roommate's message",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t65",
+   "job": "manage to, be able to (after effort)",
+   "trap": "English 'can' maps to poder",
+   "scene": "noisy neighbors",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'can' maps to poder",
+   "level_exceptions": []
+  },
+  {
+   "id": "t17",
+   "job": "we (careful speech, writing)",
+   "trap": "none",
+   "scene": "hotel reception",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t26",
+   "job": "why? (question)",
+   "trap": "none",
+   "scene": "friend looking upset",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t18",
+   "job": "you (plural)",
+   "trap": "none",
+   "scene": "ordering food for a group",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t11",
+   "job": "negation before the verb",
+   "trap": "none",
+   "scene": "Monday morning",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t61",
+   "job": "give",
+   "trap": "none",
+   "scene": "birthday gift",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t28",
+   "job": "which / what (choosing)",
+   "trap": "English 'what' maps to o que",
+   "scene": "filling in a form at the clinic",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'what' maps to o que",
+   "level_exceptions": []
+  },
+  {
+   "id": "t19",
+   "job": "they (masc. or mixed)",
+   "trap": "none",
+   "scene": "talking about family",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t62",
+   "job": "see",
+   "trap": "none",
+   "scene": "weekend recap",
+   "fields": [
+    "example"
+   ],
+   "why_fields": "example only: the job is clear from definition + example",
+   "level_exceptions": []
+  },
+  {
+   "id": "t27",
+   "job": "how much / how many?",
+   "trap": "none",
+   "scene": "bus station ticket office",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t20",
+   "job": "they (all fem.)",
+   "trap": "none",
+   "scene": "end of a party",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t63",
+   "job": "take, grab, catch (a bus)",
+   "trap": "none",
+   "scene": "leaving a bar late",
+   "fields": [
+    "example",
+    "discussion"
+   ],
+   "why_fields": "discussion: one usage point not in the definition",
+   "level_exceptions": []
+  },
+  {
+   "id": "t64",
+   "job": "leave (something), let",
+   "trap": "English 'leave' covers leaving things and leaving places",
+   "scene": "locked out",
+   "fields": [
+    "example",
+    "anti_example"
+   ],
+   "why_fields": "anti_example: real trap - English 'leave' covers leaving things and leaving places",
+   "level_exceptions": []
+  }
+ ]
+}

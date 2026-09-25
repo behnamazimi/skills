@@ -1,0 +1,918 @@
+{
+ "raw": [
+  "ser",
+  "você",
+  "o que",
+  "mas",
+  "fazer",
+  "tudo bem",
+  "estar",
+  "meu",
+  "nada",
+  "porque",
+  "ir + infinitivo",
+  "querer",
+  "vez",
+  "ter",
+  "a gente",
+  "onde",
+  "então",
+  "saber",
+  "bom",
+  "tem (= há)",
+  "esse",
+  "ninguém",
+  "poder",
+  "também",
+  "obrigado",
+  "conhecer",
+  "eu",
+  "quem",
+  "estar + gerúndio",
+  "ficar",
+  "seu",
+  "se",
+  "achar",
+  "bem",
+  "nunca",
+  "isso",
+  "precisar de",
+  "ainda",
+  "coisa",
+  "ele",
+  "quando",
+  "ter que + infinitivo",
+  "ir",
+  "dele",
+  "que",
+  "gostar de",
+  "legal",
+  "nenhum",
+  "aquele",
+  "dever",
+  "já",
+  "tá bom",
+  "ela",
+  "como",
+  "acabar de + infinitivo",
+  "vir",
+  "nosso",
+  "só",
+  "falar",
+  "muito",
+  "aquilo",
+  "dizer",
+  "conseguir",
+  "nós",
+  "por que",
+  "vocês",
+  "não",
+  "dar",
+  "qual",
+  "eles",
+  "ver",
+  "quanto",
+  "elas",
+  "pegar",
+  "deixar"
+ ],
+ "items": [
+  {
+   "raw": "ser",
+   "term": "ser",
+   "lemma": "ser",
+   "job": "identity, origin, what something is",
+   "forms": [
+    "sou",
+    "é",
+    "somos",
+    "são",
+    "foi",
+    "fui",
+    "era",
+    "eram",
+    "seja"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "você",
+   "term": "você",
+   "lemma": "você",
+   "job": "you (default, one person)",
+   "forms": [
+    "te"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "o que",
+   "term": "o que",
+   "lemma": "o que",
+   "job": "what? (question)",
+   "forms": [
+    "o quê"
+   ],
+   "scope": "phrase"
+  },
+  {
+   "raw": "mas",
+   "term": "mas",
+   "lemma": "mas",
+   "job": "but",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "fazer",
+   "term": "fazer",
+   "lemma": "fazer",
+   "job": "do, make",
+   "forms": [
+    "faço",
+    "faz",
+    "fazem",
+    "fiz",
+    "fez",
+    "fazia"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "tudo bem",
+   "term": "tudo bem",
+   "lemma": "tudo bem",
+   "job": "how are you? / it's fine",
+   "forms": [
+    "tudo bom"
+   ],
+   "scope": "phrase"
+  },
+  {
+   "raw": "estar",
+   "term": "estar",
+   "lemma": "estar",
+   "job": "state or location right now",
+   "forms": [
+    "estou",
+    "está",
+    "estamos",
+    "estão",
+    "esteve",
+    "estava",
+    "tá",
+    "tô"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "meu",
+   "term": "meu",
+   "lemma": "meu",
+   "job": "my",
+   "forms": [
+    "minha",
+    "meus",
+    "minhas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "nada",
+   "term": "nada",
+   "lemma": "nada",
+   "job": "nothing (with não)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "porque",
+   "term": "porque",
+   "lemma": "porque",
+   "job": "because",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ir + infinitivo",
+   "term": "ir + infinitivo",
+   "lemma": "ir",
+   "job": "near future: going to",
+   "forms": [],
+   "scope": "phrase"
+  },
+  {
+   "raw": "querer",
+   "term": "querer",
+   "lemma": "querer",
+   "job": "want",
+   "forms": [
+    "quero",
+    "quer",
+    "queremos",
+    "querem",
+    "quis",
+    "queria"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "vez",
+   "term": "vez",
+   "lemma": "vez",
+   "job": "time (occasion): uma vez, duas vezes",
+   "forms": [
+    "vezes"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ter",
+   "term": "ter",
+   "lemma": "ter",
+   "job": "have, own",
+   "forms": [
+    "tenho",
+    "tem",
+    "temos",
+    "têm",
+    "tive",
+    "teve",
+    "tinha"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "a gente",
+   "term": "a gente",
+   "lemma": "gente",
+   "job": "we (spoken)",
+   "forms": [],
+   "scope": "phrase"
+  },
+  {
+   "raw": "onde",
+   "term": "onde",
+   "lemma": "onde",
+   "job": "where?",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "então",
+   "term": "então",
+   "lemma": "então",
+   "job": "so, then (drawing a conclusion)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "saber",
+   "term": "saber",
+   "lemma": "saber",
+   "job": "know (a fact); know how to",
+   "forms": [
+    "sei",
+    "sabe",
+    "sabem",
+    "sabia",
+    "soube"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "bom",
+   "term": "bom",
+   "lemma": "bom",
+   "job": "good (describes a noun)",
+   "forms": [
+    "boa",
+    "bons",
+    "boas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "tem (= há)",
+   "term": "tem (= há)",
+   "lemma": "haver",
+   "job": "there is / there are (spoken existence)",
+   "forms": [
+    "tem",
+    "há"
+   ],
+   "scope": "phrase"
+  },
+  {
+   "raw": "esse",
+   "term": "esse",
+   "lemma": "esse",
+   "job": "this / that (thing near you, before a noun)",
+   "forms": [
+    "essa",
+    "esses",
+    "essas",
+    "este",
+    "esta",
+    "estes",
+    "estas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ninguém",
+   "term": "ninguém",
+   "lemma": "ninguém",
+   "job": "nobody",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "poder",
+   "term": "poder",
+   "lemma": "poder",
+   "job": "can, be able or allowed",
+   "forms": [
+    "posso",
+    "pode",
+    "podemos",
+    "podem",
+    "pude",
+    "pôde",
+    "podia"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "também",
+   "term": "também",
+   "lemma": "também",
+   "job": "also, too",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "obrigado",
+   "term": "obrigado",
+   "lemma": "obrigado",
+   "job": "thank you (agrees with the speaker)",
+   "forms": [
+    "obrigada",
+    "obrigados",
+    "obrigadas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "conhecer",
+   "term": "conhecer",
+   "lemma": "conhecer",
+   "job": "know (a person or place), meet",
+   "forms": [
+    "conheço",
+    "conhece",
+    "conheci",
+    "conheceu"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "eu",
+   "term": "eu",
+   "lemma": "eu",
+   "job": "I",
+   "forms": [
+    "mim",
+    "me",
+    "comigo"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "quem",
+   "term": "quem",
+   "lemma": "quem",
+   "job": "who?",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "estar + gerúndio",
+   "term": "estar + gerúndio",
+   "lemma": "estar",
+   "job": "action in progress right now",
+   "forms": [],
+   "scope": "phrase"
+  },
+  {
+   "raw": "ficar",
+   "term": "ficar",
+   "lemma": "ficar",
+   "job": "where fixed places are; stay; become",
+   "forms": [
+    "fico",
+    "fica",
+    "ficam",
+    "ficou",
+    "fiquei"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "seu",
+   "term": "seu",
+   "lemma": "seu",
+   "job": "your (você's)",
+   "forms": [
+    "sua",
+    "seus",
+    "suas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "se",
+   "term": "se",
+   "lemma": "se",
+   "job": "if (condition)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "achar",
+   "term": "achar",
+   "lemma": "achar",
+   "job": "think (opinion); find",
+   "forms": [
+    "acho",
+    "acha",
+    "achei",
+    "achou"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "bem",
+   "term": "bem",
+   "lemma": "bem",
+   "job": "well, fine (describes an action or state)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "nunca",
+   "term": "nunca",
+   "lemma": "nunca",
+   "job": "never",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "isso",
+   "term": "isso",
+   "lemma": "isso",
+   "job": "this / that (a whole idea or thing, no noun)",
+   "forms": [
+    "isto"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "precisar de",
+   "term": "precisar de",
+   "lemma": "precisar",
+   "job": "need",
+   "forms": [
+    "precisar",
+    "preciso",
+    "precisa",
+    "precisou"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ainda",
+   "term": "ainda",
+   "lemma": "ainda",
+   "job": "still, yet",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "coisa",
+   "term": "coisa",
+   "lemma": "coisa",
+   "job": "thing",
+   "forms": [
+    "coisas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ele",
+   "term": "ele",
+   "lemma": "ele",
+   "job": "he / it (masc.)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "quando",
+   "term": "quando",
+   "lemma": "quando",
+   "job": "when?",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ter que + infinitivo",
+   "term": "ter que + infinitivo",
+   "lemma": "ter que",
+   "job": "have to, must",
+   "forms": [],
+   "scope": "phrase"
+  },
+  {
+   "raw": "ir",
+   "term": "ir",
+   "lemma": "ir",
+   "job": "go",
+   "forms": [
+    "vou",
+    "vai",
+    "vamos",
+    "vão",
+    "fui",
+    "foi",
+    "ia"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "dele",
+   "term": "dele",
+   "lemma": "dele",
+   "job": "his / her (de + ele/ela)",
+   "forms": [
+    "dela",
+    "deles",
+    "delas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "que",
+   "term": "que",
+   "lemma": "que",
+   "job": "that (joins a clause)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "gostar de",
+   "term": "gostar de",
+   "lemma": "gostar",
+   "job": "like",
+   "forms": [
+    "gostar",
+    "gosto",
+    "gosta",
+    "gostei"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "legal",
+   "term": "legal",
+   "lemma": "legal",
+   "job": "cool, nice (BR)",
+   "forms": [
+    "legais"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "nenhum",
+   "term": "nenhum",
+   "lemma": "nenhum",
+   "job": "not any, no (before a noun)",
+   "forms": [
+    "nenhuma",
+    "nenhuns",
+    "nenhumas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "aquele",
+   "term": "aquele",
+   "lemma": "aquele",
+   "job": "that (over there, before a noun)",
+   "forms": [
+    "aquela",
+    "aqueles",
+    "aquelas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "dever",
+   "term": "dever",
+   "lemma": "dever",
+   "job": "should (advice); must be (a guess)",
+   "forms": [
+    "devo",
+    "deve",
+    "devem",
+    "devia"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "já",
+   "term": "já",
+   "lemma": "já",
+   "job": "already; right away",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "tá bom",
+   "term": "tá bom",
+   "lemma": "tá bom",
+   "job": "okay, fine (agreeing)",
+   "forms": [
+    "está bom"
+   ],
+   "scope": "phrase"
+  },
+  {
+   "raw": "ela",
+   "term": "ela",
+   "lemma": "ela",
+   "job": "she / it (fem.)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "como",
+   "term": "como",
+   "lemma": "como",
+   "job": "how?",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "acabar de + infinitivo",
+   "term": "acabar de + infinitivo",
+   "lemma": "acabar de",
+   "job": "have just done",
+   "forms": [],
+   "scope": "phrase"
+  },
+  {
+   "raw": "vir",
+   "term": "vir",
+   "lemma": "vir",
+   "job": "come (toward the speaker)",
+   "forms": [
+    "venho",
+    "vem",
+    "vêm",
+    "vim",
+    "veio"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "nosso",
+   "term": "nosso",
+   "lemma": "nosso",
+   "job": "our",
+   "forms": [
+    "nossa",
+    "nossos",
+    "nossas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "só",
+   "term": "só",
+   "lemma": "só",
+   "job": "only, just",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "falar",
+   "term": "falar",
+   "lemma": "falar",
+   "job": "speak, talk, say",
+   "forms": [
+    "falo",
+    "fala",
+    "falam",
+    "falou",
+    "falei"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "muito",
+   "term": "muito",
+   "lemma": "muito",
+   "job": "very; a lot of",
+   "forms": [
+    "muita",
+    "muitos",
+    "muitas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "aquilo",
+   "term": "aquilo",
+   "lemma": "aquilo",
+   "job": "that thing over there (no noun)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "dizer",
+   "term": "dizer",
+   "lemma": "dizer",
+   "job": "say, tell",
+   "forms": [
+    "digo",
+    "diz",
+    "dizem",
+    "disse",
+    "dizia"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "conseguir",
+   "term": "conseguir",
+   "lemma": "conseguir",
+   "job": "manage to, be able to (after effort)",
+   "forms": [
+    "consigo",
+    "consegue",
+    "consegui",
+    "conseguiu"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "nós",
+   "term": "nós",
+   "lemma": "nós",
+   "job": "we (careful speech, writing)",
+   "forms": [
+    "nos",
+    "conosco"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "por que",
+   "term": "por que",
+   "lemma": "por que",
+   "job": "why? (question)",
+   "forms": [
+    "por quê"
+   ],
+   "scope": "phrase"
+  },
+  {
+   "raw": "vocês",
+   "term": "vocês",
+   "lemma": "vocês",
+   "job": "you (plural)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "não",
+   "term": "não",
+   "lemma": "não",
+   "job": "negation before the verb",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "dar",
+   "term": "dar",
+   "lemma": "dar",
+   "job": "give",
+   "forms": [
+    "dou",
+    "dá",
+    "dão",
+    "dei",
+    "deu"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "qual",
+   "term": "qual",
+   "lemma": "qual",
+   "job": "which / what (choosing)",
+   "forms": [
+    "quais"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "eles",
+   "term": "eles",
+   "lemma": "eles",
+   "job": "they (masc. or mixed)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "ver",
+   "term": "ver",
+   "lemma": "ver",
+   "job": "see",
+   "forms": [
+    "vejo",
+    "vê",
+    "veem",
+    "vi",
+    "viu"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "quanto",
+   "term": "quanto",
+   "lemma": "quanto",
+   "job": "how much / how many?",
+   "forms": [
+    "quanta",
+    "quantos",
+    "quantas"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "elas",
+   "term": "elas",
+   "lemma": "elas",
+   "job": "they (all fem.)",
+   "forms": [],
+   "scope": "lemma"
+  },
+  {
+   "raw": "pegar",
+   "term": "pegar",
+   "lemma": "pegar",
+   "job": "take, grab, catch (a bus)",
+   "forms": [
+    "pego",
+    "pega",
+    "peguei",
+    "pegou"
+   ],
+   "scope": "lemma"
+  },
+  {
+   "raw": "deixar",
+   "term": "deixar",
+   "lemma": "deixar",
+   "job": "leave (something), let",
+   "forms": [
+    "deixo",
+    "deixa",
+    "deixei",
+    "deixou"
+   ],
+   "scope": "lemma"
+  }
+ ],
+ "ignored": [],
+ "hints": {
+  "dialect": "Brazilian Portuguese (você, a gente, tem for 'there is')",
+  "noun_citation": "bare lemma",
+  "categories": [
+   "Adjective",
+   "Adverb",
+   "Connector",
+   "Negation",
+   "Noun",
+   "Pattern",
+   "Phrase",
+   "Pointing word",
+   "Possessive",
+   "Pronoun",
+   "Question word",
+   "Verb"
+  ]
+ },
+ "source": "series part 1 (glossary-part-1.json), added per R-SER-02; the user gave no exclude items"
+}

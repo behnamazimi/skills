@@ -1,0 +1,4 @@
+{ "reviewer": "inline (same agent, re-read only samples.json, style.json, rubric.md)", "scores": [
+ { "term": "ser", "definition": 4, "example": 4, "anti_example": 4 },
+ { "term": "então", "definition": 3, "example": 4, "discussion": 3 },
+ { "term": "tudo bem", "definition": 4, "example": 4, "discussion": 4 } ], "any_score_le_2": false }

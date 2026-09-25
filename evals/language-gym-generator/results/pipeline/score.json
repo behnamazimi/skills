@@ -620,8 +620,8 @@
   "pt-150": {
     "id": "pt-150",
     "ran": true,
-    "reply": "got question",
-    "schema": null,
+    "reply": "series",
+    "schema": true,
     "hard": [
       {
         "name": "asks before generating > 100",
@@ -629,7 +629,26 @@
       },
       {
         "name": "2 parts",
-        "pass": false,
+        "pass": true,
+        "value": 2
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 150 terms in total",
+        "pass": true,
+        "value": 150
+      },
+      {
+        "name": "each part ≤ 100",
+        "pass": true
+      },
+      {
+        "name": "no term repeated across parts",
+        "pass": true,
         "value": 0
       }
     ],
@@ -639,6 +658,23 @@
         "name": "parts read as one set (same labels, voice, dialect)",
         "pass": null
       }
+    ],
+    "terms": 150,
+    "optional_fields": 1.79,
+    "categories": [
+      "Verb",
+      "Pronoun",
+      "Question word",
+      "Connector",
+      "Phrase",
+      "Possessive",
+      "Negation",
+      "Pattern",
+      "Noun",
+      "Adjective",
+      "Pointing word",
+      "Adverb",
+      "Preposition"
     ]
   },
   "es-ex-ser": {

@@ -1,0 +1,120 @@
+{
+ "terms": [
+  {
+   "id": "t02",
+   "batch": 2,
+   "term": "aí",
+   "category": "Pointing word",
+   "definition": "There, near the person you're talking to.",
+   "example": "Como está o tempo aí em Lisboa? — How's the weather there in Lisbon?",
+   "mental_model": "Aqui is my side, aí is your side, ali is over there, lá is far away.",
+   "discussion": "In stories it also means 'then': 'Aí eu saí.'"
+  },
+  {
+   "id": "t48",
+   "batch": 2,
+   "term": "esperar",
+   "category": "Verb",
+   "definition": "Wait for someone or something.",
+   "example": "Espera um pouco, já vou! — Wait a sec, I'm coming!",
+   "discussion": "It also means 'hope': 'Espero que sim' is 'I hope so'."
+  },
+  {
+   "id": "t21",
+   "batch": 2,
+   "term": "tipo",
+   "category": "Connector",
+   "definition": "Fills a pause or gives an example, like casual English 'like'.",
+   "example": "Ele é tipo, muito engraçado. — He's, like, really funny.",
+   "discussion": "Fine with friends; in a job interview it sounds as sloppy as 'like' does."
+  },
+  {
+   "id": "t15",
+   "batch": 2,
+   "term": "estar com + substantivo",
+   "category": "Pattern",
+   "definition": "Describes a passing feeling or need: hungry, cold, sleepy, in a hurry.",
+   "example": "Estou com fome, vamos comer? — I'm hungry, shall we eat?",
+   "anti_example": "Not 'Estou fome': keep com, so 'Estou com fome', 'Estou com frio'."
+  },
+  {
+   "id": "t06",
+   "batch": 2,
+   "term": "hoje",
+   "category": "Adverb",
+   "definition": "Today, this very day; tonight is 'hoje à noite'.",
+   "example": "Hoje é meu aniversário! — Today is my birthday!",
+   "discussion": "'Hoje em dia' means 'nowadays'."
+  },
+  {
+   "id": "t59",
+   "batch": 2,
+   "term": "pronto",
+   "category": "Adjective",
+   "definition": "Ready, or finished: a meal, a job, a person.",
+   "example": "O jantar está pronto! — Dinner is ready!",
+   "discussion": "'Pronto!' on its own means 'done!' or 'there you go!'"
+  },
+  {
+   "id": "t66",
+   "batch": 2,
+   "term": "desculpa",
+   "category": "Phrase",
+   "definition": "Says sorry for a small mistake.",
+   "example": "Desculpa o atraso! — Sorry I'm late!",
+   "discussion": "'Desculpe' is a bit more polite, for strangers and shops."
+  },
+  {
+   "id": "t28",
+   "batch": 2,
+   "term": "por",
+   "category": "Preposition",
+   "definition": "Gives the reason or the exchange: 'thanks for', 'per day'.",
+   "example": "Obrigado por tudo! — Thanks for everything!",
+   "anti_example": "Not 'obrigado para': thanks and apologies take por. Para is for goals and people."
+  },
+  {
+   "id": "t43",
+   "batch": 2,
+   "term": "esquecer",
+   "category": "Verb",
+   "definition": "Forget something or someone.",
+   "example": "Esqueci meu guarda-chuva no ônibus. — I forgot my umbrella on the bus."
+  },
+  {
+   "id": "t13",
+   "batch": 2,
+   "term": "de novo",
+   "category": "Adverb",
+   "definition": "Again, one more time.",
+   "example": "Perdi a chave de novo! — I lost my key again!",
+   "discussion": "'Outra vez' means the same."
+  },
+  {
+   "id": "t62",
+   "batch": 2,
+   "term": "pior",
+   "category": "Adjective",
+   "definition": "Worse, or 'the worst' with o or a.",
+   "example": "O trânsito hoje está pior que ontem. — Traffic is worse today than yesterday."
+  },
+  {
+   "id": "t37",
+   "batch": 2,
+   "term": "voltar",
+   "category": "Verb",
+   "definition": "Return to a place: come back or go back.",
+   "example": "Volto em cinco minutos. — I'll be back in five minutes.",
+   "discussion": "'Voltar a + verb' means 'do again': 'Voltei a estudar.'"
+  },
+  {
+   "id": "t72",
+   "batch": 2,
+   "term": "sei lá",
+   "category": "Phrase",
+   "definition": "Shrugs off a question: 'dunno', 'who knows'.",
+   "example": "Onde está o João? Sei lá. — Where's João? Dunno.",
+   "discussion": "Casual; with your boss, just say 'não sei'."
+  }
+ ]
+}

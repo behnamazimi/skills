@@ -1,0 +1,146 @@
+[
+ {
+  "term": "nada",
+  "field": "definition",
+  "old": "Means 'nothing', or 'anything' in a negative sentence.",
+  "new": "Stands for 'nothing', or 'anything' in a negative sentence."
+ },
+ {
+  "term": "onde",
+  "field": "definition",
+  "old": "Asks 'where?' about a place.",
+  "new": "Opens a question about place: 'where?'."
+ },
+ {
+  "term": "ninguém",
+  "field": "definition",
+  "old": "Means 'nobody' or 'no one'.",
+  "new": "Means 'nobody' or 'no one'."
+ },
+ {
+  "term": "eu",
+  "field": "definition",
+  "old": "Means 'I'; often dropped, since the verb ending already shows who.",
+  "new": "'I' in Portuguese; often dropped, since the verb ending already shows who."
+ },
+ {
+  "term": "seu",
+  "field": "definition",
+  "old": "Means 'your' when you speak to você; sua, seus, suas follow the thing owned.",
+  "new": "Turns 'you' (você) into 'your'; sua, seus, suas follow the thing owned."
+ },
+ {
+  "term": "nunca",
+  "field": "definition",
+  "old": "Means 'never' and goes before the verb, with no não needed.",
+  "new": "Puts 'never' before the verb, with no não needed."
+ },
+ {
+  "term": "ainda",
+  "field": "definition",
+  "old": "Means 'still', or 'yet' in a negative sentence.",
+  "new": "Marks something as 'still' going on, or not done 'yet' in a negative sentence."
+ },
+ {
+  "term": "coisa",
+  "field": "definition",
+  "old": "A general word for any object, idea or matter: 'thing'.",
+  "new": "Any object, idea or matter: 'thing'."
+ },
+ {
+  "term": "quando",
+  "field": "definition",
+  "old": "Asks 'when?' about time.",
+  "new": "Wants to know the time of something: 'when?'."
+ },
+ {
+  "term": "ter que + infinitivo",
+  "field": "definition",
+  "old": "Says you must or have to do something.",
+  "new": "Puts an obligation on someone: 'have to', 'must'."
+ },
+ {
+  "term": "dele",
+  "field": "definition",
+  "old": "Says 'his' (de + ele); dela is 'her', deles and delas are 'their'.",
+  "new": "Shows 'his' (de + ele); dela is 'her', deles and delas are 'their'."
+ },
+ {
+  "term": "gostar de",
+  "field": "definition",
+  "old": "Says what you like, with de before the thing liked.",
+  "new": "Expresses liking, with de before the thing liked."
+ },
+ {
+  "term": "nenhum",
+  "field": "definition",
+  "old": "Means 'no' or 'not any' before a noun; nenhuma for feminine nouns.",
+  "new": "Negates a noun: 'no' or 'not any'; nenhuma for feminine nouns."
+ },
+ {
+  "term": "já",
+  "field": "definition",
+  "old": "Means 'already', or 'ever' in questions.",
+  "new": "'Already', or 'ever' in questions."
+ },
+ {
+  "term": "ela",
+  "field": "definition",
+  "old": "Refers to a woman, or to a feminine thing as 'it'.",
+  "new": "'She', or 'it' for a feminine thing."
+ },
+ {
+  "term": "como",
+  "field": "definition",
+  "old": "Asks 'how?' or 'what … like?'.",
+  "new": "Gets at manner or description: 'how?' or 'what … like?'."
+ },
+ {
+  "term": "acabar de + infinitivo",
+  "field": "definition",
+  "old": "Tells that something happened a moment ago: 'I've just…'.",
+  "new": "Places an action a moment ago: 'I've just…'."
+ },
+ {
+  "term": "nosso",
+  "field": "definition",
+  "old": "Means 'our'; nossa for feminine nouns.",
+  "new": "'Our'; nossa for feminine nouns."
+ },
+ {
+  "term": "muito",
+  "field": "definition",
+  "old": "Means 'very' before an adjective, and 'a lot (of)' with nouns or verbs.",
+  "new": "'Very' before an adjective, and 'a lot (of)' with nouns or verbs."
+ },
+ {
+  "term": "aquilo",
+  "field": "definition",
+  "old": "Points to a thing far away without naming it: 'that (over there)'.",
+  "new": "Names a thing far away without saying what it is: 'that (over there)'."
+ },
+ {
+  "term": "por que",
+  "field": "definition",
+  "old": "Asks 'why?'; the answer then uses porque.",
+  "new": "'Why?' in a question; the answer then uses porque."
+ },
+ {
+  "term": "qual",
+  "field": "definition",
+  "old": "Asks 'which?', or 'what?' when there are options to choose from.",
+  "new": "Picks from options: 'which?', or 'what?' when there's a choice."
+ },
+ {
+  "term": "eles",
+  "field": "example",
+  "old": "Meus pais? Eles moram no interior. — My parents? They live in the countryside.",
+  "new": "Meus pais? Eles moram em Minas. — My parents? They live in Minas."
+ },
+ {
+  "term": "quanto",
+  "field": "definition",
+  "old": "Asks 'how much?'; quantos and quantas ask 'how many?'.",
+  "new": "'How much?'; quantos and quantas ask 'how many?'."
+ }
+]

@@ -1,0 +1,832 @@
+{
+ "main": [
+  {
+   "id": "t01",
+   "term": "aqui",
+   "job": "here (near me)",
+   "slot": "spine",
+   "level": "A1",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t02",
+   "term": "aí",
+   "job": "there (near you)",
+   "slot": "spine",
+   "level": "A2",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t03",
+   "term": "ali",
+   "job": "over there (visible, not far)",
+   "slot": "spine",
+   "level": "A2",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t04",
+   "term": "lá",
+   "job": "there (far away or out of sight)",
+   "slot": "spine",
+   "level": "A2",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t05",
+   "term": "ontem",
+   "job": "yesterday",
+   "slot": "spine",
+   "level": "A1",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t06",
+   "term": "hoje",
+   "job": "today",
+   "slot": "spine",
+   "level": "A1",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t07",
+   "term": "amanhã",
+   "job": "tomorrow",
+   "slot": "spine",
+   "level": "A1",
+   "why": "sentence building block"
+  },
+  {
+   "id": "t08",
+   "term": "agora",
+   "job": "now",
+   "slot": "glue",
+   "level": "A1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t09",
+   "term": "depois",
+   "job": "after, later",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t10",
+   "term": "antes",
+   "job": "before, earlier",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t11",
+   "term": "sempre",
+   "job": "always",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t12",
+   "term": "às vezes",
+   "job": "sometimes",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t13",
+   "term": "de novo",
+   "job": "again",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t14",
+   "term": "dá pra + infinitivo",
+   "job": "it's possible to, can (spoken)",
+   "slot": "construction",
+   "level": "A2",
+   "why": "unlocking construction"
+  },
+  {
+   "id": "t15",
+   "term": "estar com + substantivo",
+   "job": "be hungry, cold, sleepy (have + feeling noun)",
+   "slot": "construction",
+   "level": "A2",
+   "why": "unlocking construction"
+  },
+  {
+   "id": "s21",
+   "term": "faz + tempo",
+   "job": "ago (faz dois anos)",
+   "slot": "construction",
+   "level": "B1",
+   "why": "unlocking construction"
+  },
+  {
+   "id": "t17",
+   "term": "começar a + infinitivo",
+   "job": "start doing",
+   "slot": "construction",
+   "level": "A2",
+   "why": "unlocking construction"
+  },
+  {
+   "id": "t18",
+   "term": "costumar + infinitivo",
+   "job": "usually do",
+   "slot": "construction",
+   "level": "B1",
+   "why": "unlocking construction"
+  },
+  {
+   "id": "t19",
+   "term": "mais … do que",
+   "job": "more … than",
+   "slot": "construction",
+   "level": "A2",
+   "why": "unlocking construction"
+  },
+  {
+   "id": "t20",
+   "term": "né",
+   "job": "right? isn't it? (tag)",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t21",
+   "term": "tipo",
+   "job": "like (filler, 'kind of')",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t22",
+   "term": "na verdade",
+   "job": "actually, in fact",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t23",
+   "term": "por isso",
+   "job": "that's why, so",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t24",
+   "term": "enquanto",
+   "job": "while",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t25",
+   "term": "quer dizer",
+   "job": "I mean (self-correction)",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t26",
+   "term": "pois é",
+   "job": "yeah, right (agreeing)",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t27",
+   "term": "pra",
+   "job": "to, for (spoken para)",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t28",
+   "term": "por",
+   "job": "for: the reason or the exchange (obrigado por…, por dia)",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t29",
+   "term": "até",
+   "job": "until; see you (até logo)",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t30",
+   "term": "sem",
+   "job": "without",
+   "slot": "glue",
+   "level": "A1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t31",
+   "term": "no / na",
+   "job": "in the, on the (em + article)",
+   "slot": "glue",
+   "level": "A1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t32",
+   "term": "do / da",
+   "job": "of the, from the (de + article)",
+   "slot": "glue",
+   "level": "A1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t33",
+   "term": "demais",
+   "job": "too much; awesome (BR)",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t34",
+   "term": "quase",
+   "job": "almost",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "t35",
+   "term": "chegar",
+   "job": "arrive",
+   "slot": "verb_adj",
+   "level": "A1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t36",
+   "term": "sair",
+   "job": "go out, leave (a place)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t37",
+   "term": "voltar",
+   "job": "come back, return",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t38",
+   "term": "levar",
+   "job": "take (somewhere, with you)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t39",
+   "term": "trazer",
+   "job": "bring",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t40",
+   "term": "pensar",
+   "job": "think (about), consider",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t41",
+   "term": "entender",
+   "job": "understand",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t42",
+   "term": "lembrar",
+   "job": "remember",
+   "slot": "verb_adj",
+   "level": "B1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t43",
+   "term": "esquecer",
+   "job": "forget",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t44",
+   "term": "perguntar",
+   "job": "ask (a question)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t45",
+   "term": "pedir",
+   "job": "ask for, order",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t46",
+   "term": "ajudar",
+   "job": "help",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t47",
+   "term": "tentar",
+   "job": "try",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t48",
+   "term": "esperar",
+   "job": "wait",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t49",
+   "term": "parecer",
+   "job": "seem, look like",
+   "slot": "verb_adj",
+   "level": "B1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t50",
+   "term": "acontecer",
+   "job": "happen",
+   "slot": "verb_adj",
+   "level": "B1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t51",
+   "term": "morar",
+   "job": "live (reside)",
+   "slot": "verb_adj",
+   "level": "A1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t52",
+   "term": "ligar",
+   "job": "call (phone)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t53",
+   "term": "tomar",
+   "job": "drink, take (medicine, shower)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t54",
+   "term": "assistir",
+   "job": "watch (TV, a film, a game)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t55",
+   "term": "procurar",
+   "job": "look for",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t56",
+   "term": "perder",
+   "job": "lose, miss (a bus)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t57",
+   "term": "pagar",
+   "job": "pay",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t58",
+   "term": "ruim",
+   "job": "bad",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t59",
+   "term": "pronto",
+   "job": "ready; done",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t60",
+   "term": "cheio",
+   "job": "full",
+   "slot": "verb_adj",
+   "level": "B1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t61",
+   "term": "melhor",
+   "job": "better, best",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t62",
+   "term": "pior",
+   "job": "worse, worst",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t63",
+   "term": "maior",
+   "job": "bigger, biggest",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t64",
+   "term": "menor",
+   "job": "smaller, smallest",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "t65",
+   "term": "com licença",
+   "job": "excuse me (to pass or interrupt)",
+   "slot": "phrase",
+   "level": "A2",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t66",
+   "term": "desculpa",
+   "job": "sorry",
+   "slot": "phrase",
+   "level": "A2",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t67",
+   "term": "de repente",
+   "job": "maybe (Brazilian speech)",
+   "slot": "phrase",
+   "level": "B1",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t68",
+   "term": "beleza",
+   "job": "okay, cool (BR)",
+   "slot": "phrase",
+   "level": "B1",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t69",
+   "term": "com certeza",
+   "job": "definitely, of course",
+   "slot": "phrase",
+   "level": "A2",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t70",
+   "term": "pelo menos",
+   "job": "at least",
+   "slot": "phrase",
+   "level": "B1",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t71",
+   "term": "que pena",
+   "job": "what a pity",
+   "slot": "phrase",
+   "level": "A2",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t72",
+   "term": "sei lá",
+   "job": "dunno, who knows",
+   "slot": "phrase",
+   "level": "B1",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t73",
+   "term": "tanto faz",
+   "job": "whatever, it doesn't matter",
+   "slot": "phrase",
+   "level": "B1",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "t74",
+   "term": "tempo",
+   "job": "time (duration); weather",
+   "slot": "noun",
+   "level": "A2",
+   "why": "high-frequency general noun"
+  },
+  {
+   "id": "t75",
+   "term": "jeito",
+   "job": "way, manner; knack",
+   "slot": "noun",
+   "level": "B1",
+   "why": "high-frequency general noun"
+  }
+ ],
+ "spares": [
+  {
+   "id": "s01",
+   "term": "lugar",
+   "job": "place",
+   "slot": "noun",
+   "level": "A2",
+   "why": "high-frequency general noun"
+  },
+  {
+   "id": "s02",
+   "term": "mudar",
+   "job": "change; move house",
+   "slot": "verb_adj",
+   "level": "B1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s03",
+   "term": "ganhar",
+   "job": "win; earn; get (a gift)",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s04",
+   "term": "usar",
+   "job": "use; wear",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s05",
+   "term": "encontrar",
+   "job": "find; meet",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s06",
+   "term": "ouvir",
+   "job": "hear, listen",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s07",
+   "term": "abrir",
+   "job": "open",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s08",
+   "term": "fechar",
+   "job": "close",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s09",
+   "term": "bastante",
+   "job": "quite, enough; a lot",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s10",
+   "term": "logo",
+   "job": "soon; right away",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s11",
+   "term": "cedo",
+   "job": "early",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s12",
+   "term": "aliás",
+   "job": "by the way, actually",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s13",
+   "term": "ou seja",
+   "job": "in other words",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s14",
+   "term": "claro",
+   "job": "of course",
+   "slot": "phrase",
+   "level": "A2",
+   "why": "load-bearing frozen phrase"
+  },
+  {
+   "id": "s15",
+   "term": "fácil",
+   "job": "easy",
+   "slot": "verb_adj",
+   "level": "A1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s16",
+   "term": "difícil",
+   "job": "difficult",
+   "slot": "verb_adj",
+   "level": "A1",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s17",
+   "term": "cansado",
+   "job": "tired",
+   "slot": "verb_adj",
+   "level": "A2",
+   "why": "high-frequency verb or state word"
+  },
+  {
+   "id": "s18",
+   "term": "conta",
+   "job": "bill; account",
+   "slot": "noun",
+   "level": "A2",
+   "why": "high-frequency general noun"
+  },
+  {
+   "id": "s19",
+   "term": "perto de",
+   "job": "near",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s20",
+   "term": "longe de",
+   "job": "far from",
+   "slot": "glue",
+   "level": "A2",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s22",
+   "term": "mesmo",
+   "job": "really; same; even",
+   "slot": "glue",
+   "level": "B1",
+   "why": "discourse glue"
+  },
+  {
+   "id": "s23",
+   "term": "com",
+   "job": "with",
+   "slot": "glue",
+   "level": "A1",
+   "why": "discourse glue"
+  }
+ ],
+ "sets": [
+  {
+   "name": "place adverbs",
+   "members": [
+    "aqui",
+    "aí",
+    "ali",
+    "lá"
+   ]
+  },
+  {
+   "name": "day words",
+   "members": [
+    "ontem",
+    "hoje",
+    "amanhã"
+   ]
+  },
+  {
+   "name": "irregular comparatives",
+   "members": [
+    "melhor",
+    "pior",
+    "maior",
+    "menor"
+   ]
+  },
+  {
+   "name": "copulas (known from part 1)",
+   "members": [
+    "ser",
+    "estar"
+   ]
+  }
+ ],
+ "shape": {
+  "jobs_covered": {
+   "all R-SEL-05 building blocks": "known from part 1 (see exclude.json)",
+   "place deixis": "place adverbs set",
+   "time": "day words set, agora, depois, antes, sempre, às vezes, de novo",
+   "possibility": "dá pra + infinitivo",
+   "let's": "vamos + infinitivo",
+   "comparison": "mais … do que, irregular comparatives set",
+   "habit": "costumar + infinitivo",
+   "discourse": "né, tipo, na verdade, por isso, quer dizer, pois é, enquanto",
+   "prepositions with traps": "pra, por, até, sem, no / na, do / da"
+  },
+  "concrete_nouns": 0,
+  "notes": "Part 2 of 2 moves forward from part 1: its 75 terms count as known. Prepositions are taken one by one for their traps, not as a closed set (the set is too big for a small closed set). Nouns stay at 2 abstract ones (tempo, jeito). The list stops at 75 because that is this part's size. Review round 1: vamos + infinitivo cut (same pattern as the excluded ir + infinitivo); faz + tempo moved up from spares; por and de repente tied to one job each."
+ }
+}

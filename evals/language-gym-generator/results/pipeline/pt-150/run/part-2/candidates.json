@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "errors": 0,
+  "findings": [],
+  "pairs": [
+    {
+      "id": "t12",
+      "from": "main",
+      "term": "às vezes",
+      "excluded": "vez",
+      "form": "vezes",
+      "reason": "equal after removing accents, marks, punctuation and articles"
+    },
+    {
+      "id": "t15",
+      "from": "main",
+      "term": "estar com + substantivo",
+      "excluded": "estar",
+      "form": "estar",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t15",
+      "from": "main",
+      "term": "estar com + substantivo",
+      "excluded": "estar + gerúndio",
+      "form": "estar",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "s21",
+      "from": "main",
+      "term": "faz + tempo",
+      "excluded": "fazer",
+      "form": "faz",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t19",
+      "from": "main",
+      "term": "mais … do que",
+      "excluded": "o que",
+      "form": "o que",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t19",
+      "from": "main",
+      "term": "mais … do que",
+      "excluded": "que",
+      "form": "que",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t23",
+      "from": "main",
+      "term": "por isso",
+      "excluded": "isso",
+      "form": "isso",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t25",
+      "from": "main",
+      "term": "quer dizer",
+      "excluded": "querer",
+      "form": "quer",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t25",
+      "from": "main",
+      "term": "quer dizer",
+      "excluded": "dizer",
+      "form": "dizer",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t28",
+      "from": "main",
+      "term": "por",
+      "excluded": "por que",
+      "form": "por que",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t50",
+      "from": "main",
+      "term": "acontecer",
+      "excluded": "conhecer",
+      "form": "conhecer",
+      "reason": "near-identical spelling"
+    },
+    {
+      "id": "t57",
+      "from": "main",
+      "term": "pagar",
+      "excluded": "pegar",
+      "form": "pegar",
+      "reason": "near-identical spelling"
+    },
+    {
+      "id": "t71",
+      "from": "main",
+      "term": "que pena",
+      "excluded": "o que",
+      "form": "o que",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t71",
+      "from": "main",
+      "term": "que pena",
+      "excluded": "que",
+      "form": "que",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t72",
+      "from": "main",
+      "term": "sei lá",
+      "excluded": "saber",
+      "form": "sei",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "t73",
+      "from": "main",
+      "term": "tanto faz",
+      "excluded": "fazer",
+      "form": "faz",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "s13",
+      "from": "spares",
+      "term": "ou seja",
+      "excluded": "ser",
+      "form": "seja",
+      "reason": "one contains the other as a whole word"
+    }
+  ]
+}

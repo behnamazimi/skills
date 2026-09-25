@@ -1,0 +1,33 @@
+[
+ {
+  "term": "hoje",
+  "field": "definition",
+  "note": "batch-2 retry: R-FLD-03 restated term"
+ },
+ {
+  "term": "sem",
+  "field": "definition",
+  "note": "batch-4 retry: R-FLD-03 restated term"
+ },
+ {
+  "term": "depois",
+  "field": "example",
+  "old": "Te ligo depois, tá? — I'll call you later, okay?",
+  "new": "Primeiro o trabalho, depois a praia. — Work first, beach later.",
+  "editor": "example editor: repeated frames (vamos…?, te ligo…, posso… coisa)"
+ },
+ {
+  "term": "ajudar",
+  "field": "example",
+  "old": "Posso ajudar em alguma coisa? — Can I help you with anything?",
+  "new": "Você me ajuda com as compras? — Can you help me with the shopping?",
+  "editor": "example editor: repeated frames (vamos…?, te ligo…, posso… coisa)"
+ },
+ {
+  "term": "assistir",
+  "field": "example",
+  "old": "Vamos assistir o jogo no bar? — Shall we watch the game at the bar?",
+  "new": "Você assistiu o jogo ontem? — Did you watch the game yesterday?",
+  "editor": "example editor: repeated frames (vamos…?, te ligo…, posso… coisa)"
+ }
+]

@@ -15,7 +15,7 @@
 | fr-restaurants | json | ok | 3/3 | 0 | — | 12 | 2 |
 | de-particles | json | ok | 3/3 | 0 | — | 8 | 2.13 |
 | it-count-2 | json | ok | 4/4 | 0 | — | 2 | 2 |
-| pt-150 | got question | — | 1/2 | 0 | — |  |  |
+| pt-150 | series | ok | 6/6 | 0 | — | 150 | 1.79 |
 | es-ex-ser | json | ok | 4/4 | 0 | — | 10 | 2.1 |
 | es-ex-accent | json | ok | 4/4 | 0 | — | 10 | 1.9 |
 | es-ex-articles | json | ok | 4/4 | 0 | — | 10 | 2 |
@@ -28,7 +28,4 @@
 | reject-sentence | text | — | 1/1 | 0 | — |  |  |
 | ask-conflict | question | — | 1/1 | 0 | — |  |  |
 
-**Totals:** 27/27 cases ran · schema 23/23 · hard properties 87/88 · mechanical violations 0 · judged 0/0
-
-**Failed hard properties:**
-- pt-150: 2 parts → 0
+**Totals:** 27/27 cases ran · schema 24/24 · hard properties 92/92 · mechanical violations 0 · judged 0/0

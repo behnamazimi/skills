@@ -1,0 +1,604 @@
+{
+ "answers": [
+  {
+   "term_id": "t01",
+   "question": "'I'm tired' with ser or estar?",
+   "answer": "estar",
+   "writer_claim": "estar",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t02",
+   "question": "Is 'estou no ônibus' natural for 'I'm on the bus'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t13",
+   "question": "Which verb form does você take?",
+   "answer": "3rd person singular",
+   "writer_claim": "same as ele/ela",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t13",
+   "question": "Is tu used in Brazil?",
+   "answer": "yes, regionally (South, Northeast, Rio), often with 3rd-person verb",
+   "writer_claim": "yes, South and Northeast",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t21",
+   "question": "Spelling of 'what' at the end of a question?",
+   "answer": "o quê",
+   "writer_claim": "o quê",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t26",
+   "question": "Spelling of 'why' at the end of a question?",
+   "answer": "por quê",
+   "writer_claim": "por quê",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t46",
+   "question": "Is 'porque' one word when it means 'because'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t45",
+   "question": "Do mas and mais sound alike in Brazil?",
+   "answer": "often yes (mais/mas both [majs] in many accents)",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t54",
+   "question": "Back-translate 'Ontem eu fiz o jantar para todos.'",
+   "answer": "Yesterday I made dinner for everyone.",
+   "writer_claim": "Yesterday I made dinner for everyone.",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t54",
+   "question": "Does 'faz dois anos' mean 'two years ago'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t70",
+   "question": "Can 'tudo bem' answer an apology?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t37",
+   "question": "Does meu/minha agree with the owner or the thing owned?",
+   "answer": "the thing owned",
+   "writer_claim": "the thing owned",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t33",
+   "question": "Is 'Eu comi nada' standard?",
+   "answer": "no, 'Eu não comi nada'",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t30",
+   "question": "Is the synthetic future (comerei) common in speech?",
+   "answer": "no, rare in speech",
+   "writer_claim": "no, sounds formal",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t09",
+   "question": "Is 'queria' used as a polite request?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t74",
+   "question": "'Twice' in Portuguese?",
+   "answer": "duas vezes",
+   "writer_claim": "duas vezes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t03",
+   "question": "'I'm 30' in Portuguese?",
+   "answer": "Tenho 30 anos",
+   "writer_claim": "Tenho 30 anos",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t16",
+   "question": "Verb form with a gente?",
+   "answer": "3rd person singular (a gente vai)",
+   "writer_claim": "a gente vai",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t23",
+   "question": "Is 'pra onde' used for 'where to'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t57",
+   "question": "'Do you know Maria?' with saber or conhecer?",
+   "answer": "conhecer",
+   "writer_claim": "conhecer",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t66",
+   "question": "Feminine of bom?",
+   "answer": "boa",
+   "writer_claim": "boa",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t04",
+   "question": "Is impersonal 'tem' for 'there is' standard in Brazilian speech?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t41",
+   "question": "Do Brazilians use esse for 'this' in speech?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t34",
+   "question": "Is 'Vi ninguém' standard?",
+   "answer": "no, 'Não vi ninguém'",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t08",
+   "question": "Does 'Pode.' alone mean 'go ahead'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t50",
+   "question": "'Me neither'?",
+   "answer": "eu também não",
+   "writer_claim": "eu também não",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t71",
+   "question": "What does a woman say for thanks?",
+   "answer": "obrigada",
+   "writer_claim": "obrigada",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t58",
+   "question": "Meaning of 'Prazer em conhecer'?",
+   "answer": "nice to meet you",
+   "writer_claim": "nice to meet you",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t12",
+   "question": "'For me' in Portuguese?",
+   "answer": "para mim",
+   "writer_claim": "para mim",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t22",
+   "question": "'Whose?' in Portuguese?",
+   "answer": "de quem",
+   "writer_claim": "de quem",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t31",
+   "question": "Does Portugal use estar a + infinitive?",
+   "answer": "yes",
+   "writer_claim": "not claimed in entry",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t05",
+   "question": "Is ficar used for location of buildings?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t38",
+   "question": "Can seu mean 'his/her'?",
+   "answer": "yes, ambiguous",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t48",
+   "question": "Meaning of se in 'Se você quer, eu te levo'?",
+   "answer": "if",
+   "writer_claim": "if",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t59",
+   "question": "Is 'eu acho que' the normal way to give an opinion?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t67",
+   "question": "Does 'bem caro' mean 'really expensive'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t35",
+   "question": "Does nunca before the verb need não?",
+   "answer": "no",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t43",
+   "question": "Does 'Isso!' mean 'exactly!'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t10",
+   "question": "Is 'preciso de sair' standard?",
+   "answer": "no, 'preciso sair'",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t51",
+   "question": "Difference between 'ainda não' and 'já não'?",
+   "answer": "not yet vs no longer",
+   "writer_claim": "not yet vs no longer",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t75",
+   "question": "Gender of coisa?",
+   "answer": "feminine",
+   "writer_claim": "feminine",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t14",
+   "question": "Is 'eu vi ele' used in Brazilian speech?",
+   "answer": "yes, informal",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t29",
+   "question": "Is ter de more formal than ter que?",
+   "answer": "slightly, yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t06",
+   "question": "'By bus' / 'on foot'?",
+   "answer": "de ônibus / a pé",
+   "writer_claim": "de ônibus / a pé",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t40",
+   "question": "Position of dele?",
+   "answer": "after the noun",
+   "writer_claim": "after the noun",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t49",
+   "question": "Can que be dropped like English 'that'?",
+   "answer": "no",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t60",
+   "question": "Does gostar take de before the object?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t68",
+   "question": "Meaning of legal in Brazilian speech?",
+   "answer": "cool, nice",
+   "writer_claim": "cool, nice",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t36",
+   "question": "Feminine of nenhum?",
+   "answer": "nenhuma",
+   "writer_claim": "nenhuma",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t42",
+   "question": "Is aquele for things far from speaker and listener?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t73",
+   "question": "Does 'deve ser' mean 'it must be' (guess)?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t52",
+   "question": "Does 'já volto' mean 'I'll be right back'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t72",
+   "question": "Is tá the spoken form of está?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t15",
+   "question": "Can ela mean 'it' for a feminine noun?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t25",
+   "question": "'What's X like?' in Portuguese?",
+   "answer": "Como é X?",
+   "writer_claim": "Como é X?",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t32",
+   "question": "'I've just arrived'?",
+   "answer": "acabei de chegar",
+   "writer_claim": "acabei de chegar",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t07",
+   "question": "'I'm coming!' when going to the listener?",
+   "answer": "Já vou!",
+   "writer_claim": "Já vou!",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t39",
+   "question": "Does 'Nossa!' mean 'wow'?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t53",
+   "question": "Meaning of só?",
+   "answer": "only, just",
+   "writer_claim": "only, just",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t55",
+   "question": "Does 'Falou!' mean bye/deal in casual speech?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t69",
+   "question": "Does muito agree before nouns?",
+   "answer": "yes (muita, muitos, muitas)",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t44",
+   "question": "Is aquilo used before a noun?",
+   "answer": "no",
+   "writer_claim": "no",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t56",
+   "question": "'How do you say…?'",
+   "answer": "Como se diz…?",
+   "writer_claim": "Como se diz…?",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t65",
+   "question": "Does 'não posso' only mean 'I'm not allowed'?",
+   "answer": "no: it also means 'I can't' because of circumstances (no time, plans); 'não consigo' is for failing after trying",
+   "writer_claim": "it means 'I'm not allowed'",
+   "agree": false,
+   "unsure": false
+  },
+  {
+   "term_id": "t17",
+   "question": "Verb ending with nós?",
+   "answer": "-mos",
+   "writer_claim": "-mos",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t18",
+   "question": "Verb form with vocês?",
+   "answer": "3rd person plural",
+   "writer_claim": "eles form",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t11",
+   "question": "Does 'Não sei não' occur in casual Brazilian speech?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t61",
+   "question": "Meaning of 'dá pra ir a pé?'",
+   "answer": "is it possible to walk there?",
+   "writer_claim": "is it possible to…",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t28",
+   "question": "'What's your name?' with qual or o que?",
+   "answer": "qual",
+   "writer_claim": "qual",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t19",
+   "question": "Pronoun for a mixed group?",
+   "answer": "eles",
+   "writer_claim": "eles",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t62",
+   "question": "Back-translate 'Vi a Ana no metrô hoje.'",
+   "answer": "I saw Ana on the subway today.",
+   "writer_claim": "I saw Ana on the subway today.",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t27",
+   "question": "'How many?' in Portuguese?",
+   "answer": "quantos/quantas",
+   "writer_claim": "quantos/quantas",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t20",
+   "question": "Pronoun for an all-female group?",
+   "answer": "elas",
+   "writer_claim": "elas",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t63",
+   "question": "Is pegar used for taking a bus/taxi?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t64",
+   "question": "'I left home at 8' uses deixar or sair?",
+   "answer": "sair",
+   "writer_claim": "sair",
+   "agree": true,
+   "unsure": false
+  }
+ ]
+}

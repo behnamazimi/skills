@@ -1,0 +1,115 @@
+{
+ "terms": [
+  {
+   "id": "t04",
+   "batch": 4,
+   "term": "lá",
+   "category": "Pointing word",
+   "definition": "Points far away or out of sight: 'there'.",
+   "example": "Manaus? Nunca fui lá. — Manaus? I've never been there."
+  },
+  {
+   "id": "t45",
+   "batch": 4,
+   "term": "pedir",
+   "category": "Verb",
+   "definition": "Requests or orders something: food, help, a favor.",
+   "example": "Vou pedir uma pizza pra gente. — I'll order a pizza for us.",
+   "discussion": "'Pedir desculpa' is 'to apologize'."
+  },
+  {
+   "id": "t23",
+   "batch": 4,
+   "term": "por isso",
+   "category": "Connector",
+   "definition": "Links a cause to its result: 'that's why', 'so'.",
+   "example": "Choveu muito, por isso fiquei em casa. — It rained a lot, so I stayed home."
+  },
+  {
+   "id": "t17",
+   "batch": 4,
+   "term": "começar a + infinitivo",
+   "category": "Pattern",
+   "definition": "Marks the start of an action: 'start doing'.",
+   "example": "Comecei a estudar português em março. — I started studying Portuguese in March.",
+   "anti_example": "Keep the a: 'Comecei a trabalhar', not 'Comecei trabalhar'."
+  },
+  {
+   "id": "t09",
+   "batch": 4,
+   "term": "depois",
+   "category": "Adverb",
+   "definition": "After, or later.",
+   "example": "Te ligo depois, tá? — I'll call you later, okay?",
+   "discussion": "Before a noun or verb it takes de: 'depois do jantar'."
+  },
+  {
+   "id": "t64",
+   "batch": 4,
+   "term": "menor",
+   "category": "Adjective",
+   "definition": "Smaller, or 'the smallest' with o or a.",
+   "example": "Tem um tamanho menor? — Do you have a smaller size?"
+  },
+  {
+   "id": "t68",
+   "batch": 4,
+   "term": "beleza",
+   "category": "Phrase",
+   "definition": "Casual 'okay' or 'cool' among friends, and a greeting: 'Beleza?'.",
+   "example": "Beleza, te vejo às sete. — Cool, see you at seven.",
+   "discussion": "As a noun it means 'beauty', but in chat it's almost always this 'okay'."
+  },
+  {
+   "id": "t30",
+   "batch": 4,
+   "term": "sem",
+   "category": "Preposition",
+   "definition": "Without: no sugar, no time ('sem açúcar', 'sem tempo').",
+   "example": "Um café sem açúcar, por favor. — A coffee without sugar, please."
+  },
+  {
+   "id": "t40",
+   "batch": 4,
+   "term": "pensar",
+   "category": "Verb",
+   "definition": "Think about something, or consider doing it.",
+   "example": "Estou pensando em mudar de emprego. — I'm thinking of changing jobs.",
+   "anti_example": "Not 'penso sobre você' for 'I think about you': it's 'penso em você'."
+  },
+  {
+   "id": "t11",
+   "batch": 4,
+   "term": "sempre",
+   "category": "Adverb",
+   "definition": "Always, every time.",
+   "example": "Ela sempre chega atrasada. — She's always late."
+  },
+  {
+   "id": "t75",
+   "batch": 4,
+   "term": "jeito",
+   "category": "Noun",
+   "definition": "Way or manner of doing something.",
+   "example": "Não tem outro jeito. — There's no other way.",
+   "discussion": "'Dar um jeito' means 'find a way' or 'sort it out', a very Brazilian move."
+  },
+  {
+   "id": "t41",
+   "batch": 4,
+   "term": "entender",
+   "category": "Verb",
+   "definition": "Understand what someone says or means.",
+   "example": "Desculpa, não entendi. Pode repetir? — Sorry, I didn't get that. Can you repeat?",
+   "discussion": "Use the past 'não entendi' for 'I didn't catch that'; 'não entendo' is 'I don't understand' in general."
+  },
+  {
+   "id": "t71",
+   "batch": 4,
+   "term": "que pena",
+   "category": "Phrase",
+   "definition": "Shows sympathy or disappointment: 'what a shame', 'too bad'.",
+   "example": "Você não vem? Que pena! — You're not coming? What a shame!"
+  }
+ ]
+}

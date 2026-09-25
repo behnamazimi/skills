@@ -1,0 +1,24 @@
+{
+ "findings": [
+  {
+   "term_id": "t12",
+   "field": "anti_example",
+   "rule": "R-FLD-11",
+   "severity": "must_fix",
+   "quote": "that's 'a few times'",
+   "problem": "Fact check: algumas vezes can also mean 'sometimes'; the claim is too absolute.",
+   "fix": "Say it leans toward 'a few times' and that às vezes is the everyday word.",
+   "source": "facts"
+  },
+  {
+   "term_id": "t58",
+   "field": "discussion",
+   "rule": "R-FLD-13",
+   "severity": "should_fix",
+   "quote": "'estou mal'",
+   "problem": "Leans on mal, which the glossary never teaches, with no gloss.",
+   "fix": "Add the gloss: 'estou mal' ('I feel bad').",
+   "source": "rules"
+  }
+ ]
+}

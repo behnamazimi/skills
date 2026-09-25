@@ -1,0 +1,27 @@
+# Step 5 retries (batches 1,3,5,6) + step 6 definition editor: opening-word spread.
+NEW = {
+"nada": "Stands for 'nothing', or 'anything' in a negative sentence.",
+"ninguém": "Means 'nobody' or 'no one'.",
+"onde": "Opens a question about place: 'where?'.",
+"eu": "'I' in Portuguese; often dropped, since the verb ending already shows who.",
+"seu": "Turns 'you' (você) into 'your'; sua, seus, suas follow the thing owned.",
+"nunca": "Puts 'never' before the verb, with no não needed.",
+"ainda": "Marks something as 'still' going on, or not done 'yet' in a negative sentence.",
+"coisa": "Any object, idea or matter: 'thing'.",
+"quando": "Wants to know the time of something: 'when?'.",
+"ter que + infinitivo": "Puts an obligation on someone: 'have to', 'must'.",
+"dele": "Shows 'his' (de + ele); dela is 'her', deles and delas are 'their'.",
+"gostar de": "Expresses liking, with de before the thing liked.",
+"nenhum": "Negates a noun: 'no' or 'not any'; nenhuma for feminine nouns.",
+"já": "'Already', or 'ever' in questions.",
+"ela": "'She', or 'it' for a feminine thing.",
+"como": "Gets at manner or description: 'how?' or 'what … like?'.",
+"acabar de + infinitivo": "Places an action a moment ago: 'I've just…'.",
+"nosso": "'Our'; nossa for feminine nouns.",
+"muito": "'Very' before an adjective, and 'a lot (of)' with nouns or verbs.",
+"aquilo": "Names a thing far away without saying what it is: 'that (over there)'.",
+"por que": "'Why?' in a question; the answer then uses porque.",
+"qual": "Picks from options: 'which?', or 'what?' when there's a choice.",
+"quanto": "'How much?'; quantos and quantas ask 'how many?'.",
+}
+EX = {"eles": "Meus pais? Eles moram em Minas. — My parents? They live in Minas."}

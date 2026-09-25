@@ -68,7 +68,7 @@ Nothing loops without a limit.
 ## 5. Counts above 100 (R-SER)
 
 After the user confirms at parse time:
-1. Run the whole pipeline once per part. Part N's `exclude` = the user's exclude items + every term from parts 1…N−1. Reuse the same `spec` (only `series.part` changes), and part 1's `style.json` and `samples.json` as the model entries.
+1. Run the whole pipeline once per part. Part N's `exclude` = the user's exclude items + every term from parts 1…N−1. Reuse the same `spec` (only `series.part` changes), and part 1's `style.json` and `samples.json` as the model entries. Parts after the first skip step 4's sample writing and sample checks: part 1's samples are already checked, and their terms are now on the exclude list, so `validate batch --exclude` would always fail on them.
 2. Print each part as its own message containing only its JSON, as soon as it passes assembly. Keep `glossary-part-N.json` in the run folder.
 3. Finish with one line: the run folder path, plus "stopped early: <reason>" if the topic ran out of useful items (R-EX-06).
 

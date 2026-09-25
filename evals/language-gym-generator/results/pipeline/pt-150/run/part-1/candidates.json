@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "errors": 0,
+  "findings": [],
+  "pairs": [
+    {
+      "id": "t21",
+      "from": "main",
+      "term": "o que",
+      "other_id": "t49",
+      "other": "que",
+      "reason": "two list items equal after removing accents, marks and articles"
+    }
+  ]
+}

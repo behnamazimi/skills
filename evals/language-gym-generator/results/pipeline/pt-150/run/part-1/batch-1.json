@@ -1,0 +1,122 @@
+{
+ "terms": [
+  {
+   "id": "t01",
+   "batch": 1,
+   "term": "ser",
+   "category": "Verb",
+   "definition": "Says what someone or something is: identity, job, origin, or a lasting trait.",
+   "example": "Sou engenheira, sou de Recife. — I'm an engineer, from Recife.",
+   "anti_example": "Not 'Eu sou cansado' for 'I'm tired': a feeling right now takes estar, so 'Estou cansado'."
+  },
+  {
+   "id": "t13",
+   "batch": 1,
+   "term": "você",
+   "category": "Pronoun",
+   "definition": "Your everyday 'you' for one person; its verb form is the same as for ele or ela.",
+   "example": "Você quer um café? — Do you want a coffee?",
+   "discussion": "Tu is common in the South and Northeast, often with você's verb form. For older strangers, o senhor or a senhora is more polite."
+  },
+  {
+   "id": "t21",
+   "batch": 1,
+   "term": "o que",
+   "category": "Question word",
+   "definition": "Asks 'what?' about a thing or an action.",
+   "example": "O que você vai comer? — What are you going to eat?",
+   "discussion": "At the very end of a sentence it takes an accent: 'Você quer o quê?'"
+  },
+  {
+   "id": "t45",
+   "batch": 1,
+   "term": "mas",
+   "category": "Connector",
+   "definition": "Joins two ideas that pull in opposite directions, like English 'but'.",
+   "example": "Quero ir, mas estou sem dinheiro. — I want to go, but I'm broke.",
+   "anti_example": "Not 'Quero ir, mais estou sem dinheiro': mais means 'more'. In Brazil they sound alike, so watch the spelling."
+  },
+  {
+   "id": "t54",
+   "batch": 1,
+   "term": "fazer",
+   "category": "Verb",
+   "definition": "Covers both 'do' and 'make': dinner, homework, sport, a favor.",
+   "example": "Ontem eu fiz o jantar para todos. — Yesterday I made dinner for everyone.",
+   "discussion": "It also gives weather and time ago: 'Faz calor' (it's hot), 'faz dois anos' (two years ago)."
+  },
+  {
+   "id": "t70",
+   "batch": 1,
+   "term": "tudo bem",
+   "category": "Phrase",
+   "definition": "Asks 'how's it going?', and also answers it: 'all good'.",
+   "example": "Tudo bem? Tudo, e você? — All good? Yes, and you?",
+   "discussion": "After an apology it means 'it's okay': 'Desculpa!' 'Tudo bem.'"
+  },
+  {
+   "id": "t02",
+   "batch": 1,
+   "term": "estar",
+   "category": "Verb",
+   "definition": "Tells where someone is, or how someone or something is right now.",
+   "example": "Onde você está? Estou no ônibus. — Where are you? I'm on the bus.",
+   "mental_model": "Ser is the label on the box; estar is a photo of the box right now.",
+   "anti_example": "Not 'Sou no trabalho' for 'I'm at work': being somewhere takes estar, so 'Estou no trabalho'."
+  },
+  {
+   "id": "t37",
+   "batch": 1,
+   "term": "meu",
+   "category": "Possessive",
+   "definition": "Means 'my', and it agrees with the thing you own, not with you.",
+   "example": "Essa é minha irmã, Ana. — This is my sister, Ana.",
+   "anti_example": "A man says 'minha casa', not 'meu casa': casa is feminine, and that decides it."
+  },
+  {
+   "id": "t33",
+   "batch": 1,
+   "term": "nada",
+   "category": "Negation",
+   "definition": "Stands for 'nothing', or 'anything' in a negative sentence.",
+   "example": "Não tem nada na geladeira. — There's nothing in the fridge.",
+   "anti_example": "Not 'Eu comi nada': keep não before the verb, so 'Eu não comi nada'."
+  },
+  {
+   "id": "t46",
+   "batch": 1,
+   "term": "porque",
+   "category": "Connector",
+   "definition": "Gives the reason for something, like 'because'.",
+   "example": "Cheguei tarde porque perdi o ônibus. — I was late because I missed the bus.",
+   "anti_example": "Not 'Porque você está triste?' for 'why?': the question is 'Por que…?', two words."
+  },
+  {
+   "id": "t30",
+   "batch": 1,
+   "term": "ir + infinitivo",
+   "category": "Pattern",
+   "definition": "Talks about the future the everyday way: 'going to' do something.",
+   "example": "Amanhã eu vou visitar minha avó. — Tomorrow I'm going to visit my grandma.",
+   "discussion": "In speech this replaces the textbook future: 'vou comer' is normal, while 'comerei' sounds like a news report."
+  },
+  {
+   "id": "t09",
+   "batch": 1,
+   "term": "querer",
+   "category": "Verb",
+   "definition": "Expresses what you want, a thing or an action: 'quero um café', 'quero dormir'.",
+   "example": "Eu queria um pão de queijo, por favor. — I'd like a cheese bread, please.",
+   "discussion": "'Quero' is fine with friends; 'queria' (literally 'I wanted') softens a request in shops."
+  },
+  {
+   "id": "t74",
+   "batch": 1,
+   "term": "vez",
+   "category": "Noun",
+   "definition": "Counts occasions, like 'time' in 'one time, two times': uma vez, duas vezes.",
+   "example": "Já fui a Salvador duas vezes. — I've been to Salvador twice.",
+   "anti_example": "Not 'três tempos' for 'three times': occasions are vezes; tempo is clock time or weather."
+  }
+ ]
+}

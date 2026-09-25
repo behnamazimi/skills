@@ -1,0 +1,606 @@
+{
+  "domain": "Portuguese",
+  "description": "Portuguese conversation core, part 2 of 2, A2–B1, Brazilian Portuguese",
+  "terms": [
+    {
+      "term": "aqui",
+      "category": "Pointing word",
+      "definition": "Here, on the speaker's side.",
+      "example": "Pode sentar aqui, está livre. — You can sit here, it's free."
+    },
+    {
+      "term": "chegar",
+      "category": "Verb",
+      "definition": "Arrive: reach a place or a person.",
+      "example": "Cheguei! Estou na porta. — I'm here! I'm at the door.",
+      "controversy": "Speech says 'chegar em casa'; grammar books prefer 'chegar a casa'."
+    },
+    {
+      "term": "né",
+      "category": "Phrase",
+      "definition": "Tags a sentence to ask for agreement, like 'right?' or 'isn't it?'.",
+      "example": "Está quente hoje, né? — It's hot today, isn't it?",
+      "discussion": "It's não é squeezed together, and it never changes, unlike 'isn't it / aren't you / didn't she'."
+    },
+    {
+      "term": "dá pra + infinitivo",
+      "category": "Pattern",
+      "definition": "Asks or says whether something is possible: 'can I…?', 'is it possible to…?'.",
+      "example": "Dá pra ir a pé daqui? — Can you walk there from here?",
+      "discussion": "Very spoken; in writing you'd see 'é possível'."
+    },
+    {
+      "term": "ontem",
+      "category": "Adverb",
+      "definition": "Yesterday, the day before today.",
+      "example": "Ontem choveu o dia todo. — Yesterday it rained all day."
+    },
+    {
+      "term": "ruim",
+      "category": "Adjective",
+      "definition": "Bad: food, weather, news, a day.",
+      "example": "O café daqui é muito ruim. — The coffee here is really bad.",
+      "discussion": "It's the everyday opposite of bom; for how you feel, Brazilians usually say 'estou mal' ('I feel bad')."
+    },
+    {
+      "term": "com licença",
+      "category": "Phrase",
+      "definition": "Excuse me: to get past someone or to interrupt politely.",
+      "example": "Com licença, posso passar? — Excuse me, can I get through?",
+      "anti_example": "Not 'desculpa' to get past someone: that's for saying sorry. Use 'com licença'."
+    },
+    {
+      "term": "pra",
+      "category": "Preposition",
+      "definition": "Spoken para: 'to' a place or 'for' someone.",
+      "example": "Esse presente é pra você. — This present is for you.",
+      "discussion": "Before o it becomes pro: 'Vou pro trabalho.'"
+    },
+    {
+      "term": "lembrar",
+      "category": "Verb",
+      "definition": "Remember: keep or bring back something in your mind.",
+      "example": "Não lembro o nome dela. — I don't remember her name.",
+      "discussion": "You'll also hear 'me lembro de…' for 'I remember…'; both are normal."
+    },
+    {
+      "term": "às vezes",
+      "category": "Adverb",
+      "definition": "Sometimes: now and then, not always.",
+      "example": "Às vezes eu trabalho de casa. — Sometimes I work from home.",
+      "anti_example": "Not 'algumas vezes' as the everyday 'sometimes': it leans toward 'a few times'. Say 'às vezes'."
+    },
+    {
+      "term": "melhor",
+      "category": "Adjective",
+      "definition": "Better, or 'the best' with o or a; it replaces 'mais bom'.",
+      "example": "Esse é o melhor pão da cidade. — This is the best bread in town.",
+      "anti_example": "Not 'mais bom' for 'better': say 'melhor', as in 'Esse é melhor'."
+    },
+    {
+      "term": "tempo",
+      "category": "Noun",
+      "definition": "Time as an amount: how long, free time, no time.",
+      "example": "Não tenho tempo hoje, desculpa. — I don't have time today, sorry.",
+      "discussion": "It also means the weather: 'Como está o tempo?'"
+    },
+    {
+      "term": "sair",
+      "category": "Verb",
+      "definition": "Leave a place, or go out for dinner or a party.",
+      "example": "Saí do trabalho às seis. — I left work at six.",
+      "anti_example": "Not 'deixei o trabalho' for leaving at the end of the day: that sounds like quitting. Say 'saí do trabalho'."
+    },
+    {
+      "term": "aí",
+      "category": "Pointing word",
+      "definition": "There, near the person you're talking to.",
+      "example": "Como está o tempo aí em Lisboa? — How's the weather there in Lisbon?",
+      "mental_model": "Aqui is my side, aí is your side, ali is over there, lá is far away.",
+      "discussion": "In stories it also means 'then': 'Aí eu saí.'"
+    },
+    {
+      "term": "esperar",
+      "category": "Verb",
+      "definition": "Wait for someone or something.",
+      "example": "Espera um pouco, já vou! — Wait a sec, I'm coming!",
+      "discussion": "It also means 'hope': 'Espero que sim' is 'I hope so'."
+    },
+    {
+      "term": "tipo",
+      "category": "Connector",
+      "definition": "Fills a pause or gives an example, like casual English 'like'.",
+      "example": "Ele é tipo, muito engraçado. — He's, like, really funny.",
+      "discussion": "Fine with friends; in a job interview it sounds as sloppy as 'like' does."
+    },
+    {
+      "term": "estar com + substantivo",
+      "category": "Pattern",
+      "definition": "Describes a passing feeling or need: hungry, cold, sleepy, in a hurry.",
+      "example": "Estou com fome, vamos comer? — I'm hungry, shall we eat?",
+      "anti_example": "Not 'Estou fome': keep com, so 'Estou com fome', 'Estou com frio'."
+    },
+    {
+      "term": "hoje",
+      "category": "Adverb",
+      "definition": "Today, this very day; tonight is 'hoje à noite'.",
+      "example": "Hoje é meu aniversário! — Today is my birthday!",
+      "discussion": "'Hoje em dia' means 'nowadays'."
+    },
+    {
+      "term": "pronto",
+      "category": "Adjective",
+      "definition": "Ready, or finished: a meal, a job, a person.",
+      "example": "O jantar está pronto! — Dinner is ready!",
+      "discussion": "'Pronto!' on its own means 'done!' or 'there you go!'"
+    },
+    {
+      "term": "desculpa",
+      "category": "Phrase",
+      "definition": "Says sorry for a small mistake.",
+      "example": "Desculpa o atraso! — Sorry I'm late!",
+      "discussion": "'Desculpe' is a bit more polite, for strangers and shops."
+    },
+    {
+      "term": "por",
+      "category": "Preposition",
+      "definition": "Gives the reason or the exchange: 'thanks for', 'per day'.",
+      "example": "Obrigado por tudo! — Thanks for everything!",
+      "anti_example": "Not 'obrigado para': thanks and apologies take por. Para is for goals and people."
+    },
+    {
+      "term": "esquecer",
+      "category": "Verb",
+      "definition": "Forget something or someone.",
+      "example": "Esqueci meu guarda-chuva no ônibus. — I forgot my umbrella on the bus."
+    },
+    {
+      "term": "de novo",
+      "category": "Adverb",
+      "definition": "Again, one more time.",
+      "example": "Perdi a chave de novo! — I lost my key again!",
+      "discussion": "'Outra vez' means the same."
+    },
+    {
+      "term": "pior",
+      "category": "Adjective",
+      "definition": "Worse, or 'the worst' with o or a.",
+      "example": "O trânsito hoje está pior que ontem. — Traffic is worse today than yesterday."
+    },
+    {
+      "term": "voltar",
+      "category": "Verb",
+      "definition": "Return to a place: come back or go back.",
+      "example": "Volto em cinco minutos. — I'll be back in five minutes.",
+      "discussion": "'Voltar a + verb' means 'do again': 'Voltei a estudar.'"
+    },
+    {
+      "term": "sei lá",
+      "category": "Phrase",
+      "definition": "Shrugs off a question: 'dunno', 'who knows'.",
+      "example": "Onde está o João? Sei lá. — Where's João? Dunno.",
+      "discussion": "Casual; with your boss, just say 'não sei'."
+    },
+    {
+      "term": "ali",
+      "category": "Pointing word",
+      "definition": "Over there, a place you can see or point to.",
+      "example": "O banheiro é ali, à direita. — The bathroom is over there, on the right."
+    },
+    {
+      "term": "levar",
+      "category": "Verb",
+      "definition": "Take someone or something with you to another place.",
+      "example": "Vou levar um vinho pra festa. — I'll take some wine to the party.",
+      "anti_example": "'Can I bring wine to your party?' is 'Posso levar um vinho?': you're going away from here."
+    },
+    {
+      "term": "na verdade",
+      "category": "Connector",
+      "definition": "Corrects or adds the real story: 'actually', 'in fact'.",
+      "example": "Na verdade, eu não gosto de praia. — Actually, I don't like the beach.",
+      "anti_example": "Not 'atualmente' for 'actually': atualmente means 'nowadays'."
+    },
+    {
+      "term": "faz + tempo",
+      "category": "Pattern",
+      "definition": "Counts time back from now: 'faz dois anos' is 'two years ago'.",
+      "example": "Cheguei faz uma hora. — I arrived an hour ago.",
+      "discussion": "'Faz tempo!' on its own means 'it's been ages!'"
+    },
+    {
+      "term": "amanhã",
+      "category": "Adverb",
+      "definition": "Tomorrow, the day after today.",
+      "example": "Amanhã a gente conversa. — Let's talk tomorrow."
+    },
+    {
+      "term": "cheio",
+      "category": "Adjective",
+      "definition": "Full: of people, food or things.",
+      "example": "O metrô está cheio hoje. — The subway is packed today.",
+      "discussion": "'Estou cheio de…' also means 'I'm fed up with…'."
+    },
+    {
+      "term": "de repente",
+      "category": "Phrase",
+      "definition": "In Brazilian speech, a soft 'maybe' for suggestions.",
+      "example": "De repente a gente vai no domingo. — Maybe we'll go on Sunday.",
+      "discussion": "In stories it means 'suddenly': 'De repente, a luz apagou.'"
+    },
+    {
+      "term": "até",
+      "category": "Preposition",
+      "definition": "Until: up to a time or a place.",
+      "example": "A loja fica aberta até as dez. — The shop is open until ten.",
+      "discussion": "'Até logo' and 'até amanhã' mean 'see you later' and 'see you tomorrow'."
+    },
+    {
+      "term": "perguntar",
+      "category": "Verb",
+      "definition": "Ask a question.",
+      "example": "Posso te perguntar uma coisa? — Can I ask you something?",
+      "anti_example": "Not 'perguntar' for asking for things: 'ask for the bill' is 'pedir a conta'."
+    },
+    {
+      "term": "agora",
+      "category": "Adverb",
+      "definition": "Now, at this moment.",
+      "example": "Agora não posso, estou no trabalho. — I can't now, I'm at work.",
+      "discussion": "'Agora mesmo' is 'right now'."
+    },
+    {
+      "term": "maior",
+      "category": "Adjective",
+      "definition": "Bigger, or 'the biggest' with o or a.",
+      "example": "São Paulo é a maior cidade do Brasil. — São Paulo is Brazil's biggest city."
+    },
+    {
+      "term": "trazer",
+      "category": "Verb",
+      "definition": "Bring something to where you or the listener are.",
+      "example": "Pode trazer a conta, por favor? — Can you bring the bill, please?"
+    },
+    {
+      "term": "tanto faz",
+      "category": "Phrase",
+      "definition": "Tells someone you don't mind which: 'whatever', 'either is fine'.",
+      "example": "Pizza ou hambúrguer? Tanto faz. — Pizza or burger? I don't mind."
+    },
+    {
+      "term": "lá",
+      "category": "Pointing word",
+      "definition": "Points far away or out of sight: 'there'.",
+      "example": "Manaus? Nunca fui lá. — Manaus? I've never been there."
+    },
+    {
+      "term": "pedir",
+      "category": "Verb",
+      "definition": "Requests or orders something: food, help, a favor.",
+      "example": "Vou pedir uma pizza pra gente. — I'll order a pizza for us.",
+      "discussion": "'Pedir desculpa' is 'to apologize'."
+    },
+    {
+      "term": "por isso",
+      "category": "Connector",
+      "definition": "Links a cause to its result: 'that's why', 'so'.",
+      "example": "Choveu muito, por isso fiquei em casa. — It rained a lot, so I stayed home."
+    },
+    {
+      "term": "começar a + infinitivo",
+      "category": "Pattern",
+      "definition": "Marks the start of an action: 'start doing'.",
+      "example": "Comecei a estudar português em março. — I started studying Portuguese in March.",
+      "anti_example": "Keep the a: 'Comecei a trabalhar', not 'Comecei trabalhar'."
+    },
+    {
+      "term": "depois",
+      "category": "Adverb",
+      "definition": "After, or later.",
+      "example": "Primeiro o trabalho, depois a praia. — Work first, beach later.",
+      "discussion": "Before a noun or verb it takes de: 'depois do jantar'."
+    },
+    {
+      "term": "menor",
+      "category": "Adjective",
+      "definition": "Smaller, or 'the smallest' with o or a.",
+      "example": "Tem um tamanho menor? — Do you have a smaller size?"
+    },
+    {
+      "term": "beleza",
+      "category": "Phrase",
+      "definition": "Casual 'okay' or 'cool' among friends, and a greeting: 'Beleza?'.",
+      "example": "Beleza, te vejo às sete. — Cool, see you at seven.",
+      "discussion": "As a noun it means 'beauty', but in chat it's almost always this 'okay'."
+    },
+    {
+      "term": "sem",
+      "category": "Preposition",
+      "definition": "Without: no sugar, no time ('sem açúcar', 'sem tempo').",
+      "example": "Um café sem açúcar, por favor. — A coffee without sugar, please."
+    },
+    {
+      "term": "pensar",
+      "category": "Verb",
+      "definition": "Think about something, or consider doing it.",
+      "example": "Estou pensando em mudar de emprego. — I'm thinking of changing jobs.",
+      "anti_example": "Not 'penso sobre você' for 'I think about you': it's 'penso em você'."
+    },
+    {
+      "term": "sempre",
+      "category": "Adverb",
+      "definition": "Always, every time.",
+      "example": "Ela sempre chega atrasada. — She's always late."
+    },
+    {
+      "term": "jeito",
+      "category": "Noun",
+      "definition": "Way or manner of doing something.",
+      "example": "Não tem outro jeito. — There's no other way.",
+      "discussion": "'Dar um jeito' means 'find a way' or 'sort it out', a very Brazilian move."
+    },
+    {
+      "term": "entender",
+      "category": "Verb",
+      "definition": "Understand what someone says or means.",
+      "example": "Desculpa, não entendi. Pode repetir? — Sorry, I didn't get that. Can you repeat?",
+      "discussion": "Use the past 'não entendi' for 'I didn't catch that'; 'não entendo' is 'I don't understand' in general."
+    },
+    {
+      "term": "que pena",
+      "category": "Phrase",
+      "definition": "Shows sympathy or disappointment: 'what a shame', 'too bad'.",
+      "example": "Você não vem? Que pena! — You're not coming? What a shame!"
+    },
+    {
+      "term": "ajudar",
+      "category": "Verb",
+      "definition": "Help someone.",
+      "example": "Você me ajuda com as compras? — Can you help me with the shopping?",
+      "anti_example": "Before a verb, add a: 'Me ajuda a limpar?', not 'Me ajuda limpar?'"
+    },
+    {
+      "term": "quer dizer",
+      "category": "Connector",
+      "definition": "Corrects you mid-sentence: 'I mean'.",
+      "example": "Moro em Santos, quer dizer, perto. — I live in Santos, I mean, nearby.",
+      "discussion": "'O que quer dizer…?' asks what a word means."
+    },
+    {
+      "term": "costumar + infinitivo",
+      "category": "Pattern",
+      "definition": "Talks about habits: what you usually do.",
+      "example": "Costumo correr de manhã. — I usually run in the morning.",
+      "anti_example": "Not 'Eu usualmente corro': Brazilians say 'Costumo correr'."
+    },
+    {
+      "term": "antes",
+      "category": "Adverb",
+      "definition": "Before, or earlier.",
+      "example": "Chega antes das oito, tá? — Get here before eight, okay?"
+    },
+    {
+      "term": "com certeza",
+      "category": "Phrase",
+      "definition": "Agrees strongly: 'definitely', 'for sure'.",
+      "example": "Você vem amanhã? Com certeza! — Are you coming tomorrow? Definitely!"
+    },
+    {
+      "term": "no / na",
+      "category": "Preposition",
+      "definition": "In or on the: em + o or em + a, always merged.",
+      "example": "Te espero na padaria. — I'll wait for you at the bakery.",
+      "anti_example": "Not 'em a padaria': em and the article always merge, so 'na padaria'."
+    },
+    {
+      "term": "tentar",
+      "category": "Verb",
+      "definition": "Try to do something.",
+      "example": "Vou tentar chegar cedo. — I'll try to get there early."
+    },
+    {
+      "term": "quase",
+      "category": "Adverb",
+      "definition": "Almost, nearly.",
+      "example": "Quase perdi o voo! — I almost missed the flight!"
+    },
+    {
+      "term": "parecer",
+      "category": "Verb",
+      "definition": "Seem, or look like something.",
+      "example": "Você parece cansado hoje. — You look tired today.",
+      "discussion": "'Parece que…' is 'it looks like…': 'Parece que vai chover.'"
+    },
+    {
+      "term": "acontecer",
+      "category": "Verb",
+      "definition": "Happen: take place, planned or not.",
+      "example": "O que aconteceu? Você está bem? — What happened? Are you okay?"
+    },
+    {
+      "term": "pelo menos",
+      "category": "Phrase",
+      "definition": "At least: the minimum, or the good side of a bad situation.",
+      "example": "Pelo menos está sol. — At least it's sunny."
+    },
+    {
+      "term": "morar",
+      "category": "Verb",
+      "definition": "Live in a place: your home, city or country.",
+      "example": "Moro com dois amigos. — I live with two friends.",
+      "anti_example": "Not 'Onde você vive?' for your address: the normal question is 'Onde você mora?'"
+    },
+    {
+      "term": "pois é",
+      "category": "Phrase",
+      "definition": "Nods along in a chat: 'yeah', 'I know, right?'.",
+      "example": "Que calor! Pois é, horrível. — So hot! I know, awful."
+    },
+    {
+      "term": "mais … do que",
+      "category": "Pattern",
+      "definition": "Compares two things: 'more … than'.",
+      "example": "O Rio é mais quente do que São Paulo. — Rio is hotter than São Paulo.",
+      "discussion": "In speech do often drops: 'mais quente que'."
+    },
+    {
+      "term": "ligar",
+      "category": "Verb",
+      "definition": "Phone someone: call.",
+      "example": "Te ligo à noite. — I'll call you tonight.",
+      "discussion": "It also means 'turn on' ('liga a luz'), and 'não ligo' is 'I don't care'."
+    },
+    {
+      "term": "do / da",
+      "category": "Preposition",
+      "definition": "Of the or from the: de + o or de + a, always merged.",
+      "example": "Esse é o carro da minha mãe. — This is my mom's car."
+    },
+    {
+      "term": "tomar",
+      "category": "Verb",
+      "definition": "Take in: drink something, take medicine, take a shower.",
+      "example": "Vamos tomar um café? — Shall we have a coffee?",
+      "discussion": "'Tomar banho' is 'to shower'; for coffee, tomar is more common than beber."
+    },
+    {
+      "term": "demais",
+      "category": "Adverb",
+      "definition": "Too much, or in Brazil also 'awesome'.",
+      "example": "Esse show foi demais! — That show was awesome!",
+      "discussion": "For 'too expensive' it goes after: 'caro demais'."
+    },
+    {
+      "term": "assistir",
+      "category": "Verb",
+      "definition": "Watch a film, a game or TV.",
+      "example": "Você assistiu o jogo ontem? — Did you watch the game yesterday?",
+      "anti_example": "Not 'assistir' for 'assist': helping is ajudar.",
+      "controversy": "Grammar books want 'assistir ao jogo'; speech says 'assistir o jogo'."
+    },
+    {
+      "term": "enquanto",
+      "category": "Connector",
+      "definition": "While: two things at the same time.",
+      "example": "Escuto música enquanto cozinho. — I listen to music while I cook."
+    },
+    {
+      "term": "procurar",
+      "category": "Verb",
+      "definition": "Look for something or someone.",
+      "example": "Estou procurando meus óculos. — I'm looking for my glasses.",
+      "anti_example": "Not 'procurar para': no preposition, so 'procuro um emprego'."
+    },
+    {
+      "term": "perder",
+      "category": "Verb",
+      "definition": "Lose something, or miss a bus, a flight, a show.",
+      "example": "Perdi a carteira no metrô. — I lost my wallet on the subway."
+    },
+    {
+      "term": "pagar",
+      "category": "Verb",
+      "definition": "Pay for something, or pay someone.",
+      "example": "Eu pago a conta hoje. — I'll pay the bill today.",
+      "discussion": "No 'for' after it: 'pagar o jantar' is 'pay for dinner'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "levar",
+      "target": "trazer",
+      "relationship_type": "often confused with",
+      "description": "Levar goes away from here; trazer comes toward here."
+    },
+    {
+      "source": "perguntar",
+      "target": "pedir",
+      "relationship_type": "often confused with",
+      "description": "Perguntar asks a question; pedir asks for a thing."
+    },
+    {
+      "source": "com licença",
+      "target": "desculpa",
+      "relationship_type": "often confused with",
+      "description": "Com licença asks to pass; desculpa says sorry."
+    },
+    {
+      "source": "por",
+      "target": "pra",
+      "relationship_type": "often confused with",
+      "description": "Thanks go with por; a goal or a person gets pra."
+    },
+    {
+      "source": "aqui",
+      "target": "aí",
+      "relationship_type": "contrasts with",
+      "description": "Aqui is my side; aí is your side."
+    },
+    {
+      "source": "ali",
+      "target": "lá",
+      "relationship_type": "contrasts with",
+      "description": "Ali is a place you can point to; lá is far or out of sight."
+    },
+    {
+      "source": "antes",
+      "target": "depois",
+      "relationship_type": "contrasts with",
+      "description": "Before versus after, both with de before a noun."
+    },
+    {
+      "source": "ontem",
+      "target": "amanhã",
+      "relationship_type": "contrasts with",
+      "description": "The day before today versus the day after."
+    },
+    {
+      "source": "às vezes",
+      "target": "sempre",
+      "relationship_type": "contrasts with",
+      "description": "Now and then versus every time."
+    },
+    {
+      "source": "melhor",
+      "target": "pior",
+      "relationship_type": "opposite of",
+      "description": "Better versus worse."
+    },
+    {
+      "source": "maior",
+      "target": "menor",
+      "relationship_type": "opposite of",
+      "description": "Bigger versus smaller."
+    },
+    {
+      "source": "lembrar",
+      "target": "esquecer",
+      "relationship_type": "opposite of",
+      "description": "Remember versus forget."
+    },
+    {
+      "source": "chegar",
+      "target": "sair",
+      "relationship_type": "opposite of",
+      "description": "Arrive at a place versus leave it."
+    },
+    {
+      "source": "no / na",
+      "target": "do / da",
+      "relationship_type": "same pattern as",
+      "description": "Both merge a preposition with o or a: em + o = no, de + a = da."
+    },
+    {
+      "source": "melhor",
+      "target": "mais … do que",
+      "relationship_type": "exception to",
+      "description": "'Better' is melhor, never 'mais bom'."
+    },
+    {
+      "source": "tanto faz",
+      "target": "sei lá",
+      "relationship_type": "similar to",
+      "description": "Both are casual shrugs; tanto faz is 'I don't mind', sei lá is 'I don't know'."
+    }
+  ]
+}

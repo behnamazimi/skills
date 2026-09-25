@@ -1,0 +1,120 @@
+{
+ "terms": [
+  {
+   "id": "t12",
+   "batch": 3,
+   "term": "eu",
+   "category": "Pronoun",
+   "definition": "'I' in Portuguese; often dropped, since the verb ending already shows who.",
+   "example": "Quem quer mais bolo? Eu! — Who wants more cake? Me!",
+   "discussion": "After a preposition it becomes mim: 'para mim' (for me). 'With me' is comigo."
+  },
+  {
+   "id": "t22",
+   "batch": 3,
+   "term": "quem",
+   "category": "Question word",
+   "definition": "Asks 'who?' about a person.",
+   "example": "Quem vai levar as crianças? — Who's taking the kids?",
+   "discussion": "'De quem' asks 'whose?': 'De quem é essa bolsa?'"
+  },
+  {
+   "id": "t31",
+   "batch": 3,
+   "term": "estar + gerúndio",
+   "category": "Pattern",
+   "definition": "Describes an action happening right now: 'I'm driving', 'she's working'.",
+   "example": "Não posso falar, estou dirigindo. — I can't talk, I'm driving.",
+   "anti_example": "Not 'Estou trabalhando amanhã' for a plan: say 'Vou trabalhar amanhã' or 'Trabalho amanhã'."
+  },
+  {
+   "id": "t05",
+   "batch": 3,
+   "term": "ficar",
+   "category": "Verb",
+   "definition": "Tells where a building, city or shop is located.",
+   "example": "O hotel fica perto da praia. — The hotel is near the beach.",
+   "discussion": "It also means 'stay' (fiquei em casa) and 'become' (ficou nervoso); both are very common."
+  },
+  {
+   "id": "t38",
+   "batch": 3,
+   "term": "seu",
+   "category": "Possessive",
+   "definition": "Turns 'you' (você) into 'your'; sua, seus, suas follow the thing owned.",
+   "example": "Esse é o seu celular? — Is this your phone?",
+   "discussion": "Seu can also mean 'his' or 'her', so for those Brazilians usually say dele or dela."
+  },
+  {
+   "id": "t48",
+   "batch": 3,
+   "term": "se",
+   "category": "Connector",
+   "definition": "Sets a condition, like English 'if'.",
+   "example": "Se você quer, eu te levo. — If you want, I'll take you.",
+   "discussion": "The se in 'como se diz?' is a different word with a different job."
+  },
+  {
+   "id": "t59",
+   "batch": 3,
+   "term": "achar",
+   "category": "Verb",
+   "definition": "Gives your opinion: 'acho que…' is the normal 'I think…'.",
+   "example": "Acho que vai chover hoje. — I think it's going to rain today.",
+   "anti_example": "For opinions, 'Eu penso que…' sounds stiff; Brazilians say 'Eu acho que…'."
+  },
+  {
+   "id": "t67",
+   "batch": 3,
+   "term": "bem",
+   "category": "Adverb",
+   "definition": "Tells how something is done or how someone feels: 'well', 'fine'.",
+   "example": "Estou bem, obrigado. Dormi bem. — I'm fine, thanks. I slept well.",
+   "discussion": "Before an adjective it means 'really': 'bem caro' is 'really expensive'."
+  },
+  {
+   "id": "t35",
+   "batch": 3,
+   "term": "nunca",
+   "category": "Negation",
+   "definition": "Puts 'never' before the verb, with no não needed.",
+   "example": "Nunca comi açaí. — I've never had açaí."
+  },
+  {
+   "id": "t43",
+   "batch": 3,
+   "term": "isso",
+   "category": "Pointing word",
+   "definition": "Points to a thing or idea without naming it: 'this', 'that'.",
+   "example": "Isso é muito caro para mim. — That's too expensive for me.",
+   "discussion": "'Isso!' on its own means 'exactly!' or 'that's it!'"
+  },
+  {
+   "id": "t10",
+   "batch": 3,
+   "term": "precisar de",
+   "category": "Verb",
+   "definition": "Expresses need, for things or for actions.",
+   "example": "Preciso de um carregador. — I need a charger.",
+   "anti_example": "Before a verb, drop de: 'Preciso sair', not 'Preciso de sair'."
+  },
+  {
+   "id": "t51",
+   "batch": 3,
+   "term": "ainda",
+   "category": "Adverb",
+   "definition": "Marks something as 'still' going on, or not done 'yet' in a negative sentence.",
+   "example": "Ainda não almocei. — I haven't had lunch yet.",
+   "anti_example": "'Not yet' is 'ainda não', not 'já não': 'já não' means 'no longer'."
+  },
+  {
+   "id": "t75",
+   "batch": 3,
+   "term": "coisa",
+   "category": "Noun",
+   "definition": "Any object, idea or matter: 'thing'.",
+   "example": "Tenho muita coisa para fazer hoje. — I have lots to do today.",
+   "discussion": "It's feminine (uma coisa), and 'muita coisa' in the singular is the usual 'a lot of things'."
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "entries": [
+  "t12",
+  "t58"
+ ],
+ "learner_test": [
+  {
+   "id": "t12",
+   "pass": true,
+   "unknown_words": []
+  },
+  {
+   "id": "t58",
+   "pass": true,
+   "unknown_words": []
+  }
+ ],
+ "judge": [
+  {
+   "id": "t12",
+   "field": "anti_example",
+   "winner": "rewrite",
+   "reason": "accurate and still points to the everyday choice"
+  },
+  {
+   "id": "t58",
+   "field": "discussion",
+   "winner": "rewrite",
+   "reason": "the untaught word now carries its own gloss"
+  }
+ ],
+ "step9": {
+  "script_errors": 0,
+  "level_findings": 0,
+  "fact_disagreements": 0,
+  "rule_findings": 0
+ }
+}

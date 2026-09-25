@@ -1,0 +1,17 @@
+{
+ "round": 1,
+ "applied": [
+  {
+   "finding": 0,
+   "term_id": "t65",
+   "field": "anti_example"
+  },
+  {
+   "finding": 1,
+   "term_id": "t34",
+   "field": "anti_example"
+  }
+ ],
+ "rejected": [],
+ "dropped": []
+}

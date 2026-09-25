@@ -1,0 +1,5 @@
+{ "findings": [
+ { "term_id": "t16", "field": "term", "rule": "R-EX-01", "severity": "must_fix", "quote": "vamos + infinitivo", "problem": "vamos + infinitivo is the nós form of the excluded pattern ir + infinitivo ('vamos comer' is also 'we're going to eat'), so it is the same pattern in another inflection.", "fix": "Cut it; fill from the next item in line.", "source": "rules" },
+ { "term_id": "t28", "field": "term", "rule": "R-TERM-05", "severity": "should_fix", "quote": "por", "problem": "por has several unrelated jobs at this level (through, by, per, for a reason); the list job names all of them.", "fix": "Tie the entry to one job: 'for' as the reason or exchange (obrigado por…, por dia).", "source": "rules" },
+ { "term_id": "t67", "field": "term", "rule": "R-TERM-05", "severity": "should_fix", "quote": "de repente", "problem": "Two unrelated jobs (suddenly / maybe) in one entry.", "fix": "Tie it to the Brazilian 'maybe' job, which is the trap; 'suddenly' goes in discussion.", "source": "rules" }
+] }

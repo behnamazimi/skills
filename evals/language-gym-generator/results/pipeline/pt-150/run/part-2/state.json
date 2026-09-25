@@ -1,0 +1,30 @@
+{
+ "step": "assembled",
+ "done": [
+  "00-parse",
+  "01-exclude",
+  "02-select",
+  "03-review-list",
+  "04-plan",
+  "05-write",
+  "06-edit",
+  "07-coach",
+  "08-links",
+  "09-check",
+  "10-fix:round-1",
+  "09-check:recheck",
+  "assemble"
+ ],
+ "retries": {
+  "03-review-list->02-select": 1,
+  "05-write:batch-2": 1,
+  "05-write:batch-4": 1
+ },
+ "inline": true,
+ "node": true,
+ "warnings": [
+  "step 1 first wrote multi-word exclude forms split into single words (e.g. por qu\u00ea -> por, qu\u00ea); caught by validate list and corrected before selection",
+  "samples.json are part 1 model entries; they fail validate batch against part 2 exclude by design (their terms are part 1 terms) and pass without --exclude"
+ ],
+ "part": 2
+}

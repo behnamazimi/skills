@@ -1,0 +1,119 @@
+{
+ "terms": [
+  {
+   "id": "t01",
+   "batch": 1,
+   "term": "aqui",
+   "category": "Pointing word",
+   "definition": "Here, on the speaker's side.",
+   "example": "Pode sentar aqui, está livre. — You can sit here, it's free."
+  },
+  {
+   "id": "t35",
+   "batch": 1,
+   "term": "chegar",
+   "category": "Verb",
+   "definition": "Arrive: reach a place or a person.",
+   "example": "Cheguei! Estou na porta. — I'm here! I'm at the door.",
+   "controversy": "Speech says 'chegar em casa'; grammar books prefer 'chegar a casa'."
+  },
+  {
+   "id": "t20",
+   "batch": 1,
+   "term": "né",
+   "category": "Phrase",
+   "definition": "Tags a sentence to ask for agreement, like 'right?' or 'isn't it?'.",
+   "example": "Está quente hoje, né? — It's hot today, isn't it?",
+   "discussion": "It's não é squeezed together, and it never changes, unlike 'isn't it / aren't you / didn't she'."
+  },
+  {
+   "id": "t14",
+   "batch": 1,
+   "term": "dá pra + infinitivo",
+   "category": "Pattern",
+   "definition": "Asks or says whether something is possible: 'can I…?', 'is it possible to…?'.",
+   "example": "Dá pra ir a pé daqui? — Can you walk there from here?",
+   "discussion": "Very spoken; in writing you'd see 'é possível'."
+  },
+  {
+   "id": "t05",
+   "batch": 1,
+   "term": "ontem",
+   "category": "Adverb",
+   "definition": "Yesterday, the day before today.",
+   "example": "Ontem choveu o dia todo. — Yesterday it rained all day."
+  },
+  {
+   "id": "t58",
+   "batch": 1,
+   "term": "ruim",
+   "category": "Adjective",
+   "definition": "Bad: food, weather, news, a day.",
+   "example": "O café daqui é muito ruim. — The coffee here is really bad.",
+   "discussion": "It's the everyday opposite of bom; for how you feel, Brazilians usually say 'estou mal'."
+  },
+  {
+   "id": "t65",
+   "batch": 1,
+   "term": "com licença",
+   "category": "Phrase",
+   "definition": "Excuse me: to get past someone or to interrupt politely.",
+   "example": "Com licença, posso passar? — Excuse me, can I get through?",
+   "anti_example": "Not 'desculpa' to get past someone: that's for saying sorry. Use 'com licença'."
+  },
+  {
+   "id": "t27",
+   "batch": 1,
+   "term": "pra",
+   "category": "Preposition",
+   "definition": "Spoken para: 'to' a place or 'for' someone.",
+   "example": "Esse presente é pra você. — This present is for you.",
+   "discussion": "Before o it becomes pro: 'Vou pro trabalho.'"
+  },
+  {
+   "id": "t42",
+   "batch": 1,
+   "term": "lembrar",
+   "category": "Verb",
+   "definition": "Remember: keep or bring back something in your mind.",
+   "example": "Não lembro o nome dela. — I don't remember her name.",
+   "discussion": "You'll also hear 'me lembro de…' for 'I remember…'; both are normal."
+  },
+  {
+   "id": "t12",
+   "batch": 1,
+   "term": "às vezes",
+   "category": "Adverb",
+   "definition": "Sometimes: now and then, not always.",
+   "example": "Às vezes eu trabalho de casa. — Sometimes I work from home.",
+   "anti_example": "Not 'algumas vezes' as the everyday 'sometimes': that's 'a few times'. Say 'às vezes'."
+  },
+  {
+   "id": "t61",
+   "batch": 1,
+   "term": "melhor",
+   "category": "Adjective",
+   "definition": "Better, or 'the best' with o or a; it replaces 'mais bom'.",
+   "example": "Esse é o melhor pão da cidade. — This is the best bread in town.",
+   "anti_example": "Not 'mais bom' for 'better': say 'melhor', as in 'Esse é melhor'."
+  },
+  {
+   "id": "t74",
+   "batch": 1,
+   "term": "tempo",
+   "category": "Noun",
+   "definition": "Time as an amount: how long, free time, no time.",
+   "example": "Não tenho tempo hoje, desculpa. — I don't have time today, sorry.",
+   "discussion": "It also means the weather: 'Como está o tempo?'"
+  },
+  {
+   "id": "t36",
+   "batch": 1,
+   "term": "sair",
+   "category": "Verb",
+   "definition": "Leave a place, or go out for dinner or a party.",
+   "example": "Saí do trabalho às seis. — I left work at six.",
+   "anti_example": "Not 'deixei o trabalho' for leaving at the end of the day: that sounds like quitting. Say 'saí do trabalho'."
+  }
+ ]
+}

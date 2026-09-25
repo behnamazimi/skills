@@ -1,0 +1,1230 @@
+{
+ "results": [
+  {
+   "id": "t01",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu sou de Portugal.",
+    "question": "'I'm from Brazil': sou or estou?",
+    "answer": "sou",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t13",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Você mora aqui?",
+    "question": "Which verb form goes with você: quer or quero?",
+    "answer": "quer",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t21",
+   "learner_test": {
+    "pass": true,
+    "sentence": "O que você quer beber?",
+    "question": "How do you ask 'What do you want?'",
+    "answer": "O que você quer?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t45",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Estou cansado, mas vou trabalhar.",
+    "question": "Does mas add a contrast or a reason?",
+    "answer": "a contrast",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t54",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu faço bolo no domingo.",
+    "question": "'I do yoga' and 'I make a cake': same verb?",
+    "answer": "yes, fazer for both",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t70",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Oi, tudo bem com você?",
+    "question": "Can 'tudo bem' be both the question and the answer?",
+    "answer": "yes",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 3,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t02",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Estou em casa agora.",
+    "question": "'I'm at home': sou or estou?",
+    "answer": "estou",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "mental_model": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t37",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Meu irmão mora em Lisboa.",
+    "question": "A woman talks about her car (carro): meu or minha?",
+    "answer": "meu, because carro is masculine",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t33",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Não comprei nada no shopping.",
+    "question": "What does 'Não quero nada' mean?",
+    "answer": "I don't want anything",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t46",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Não fui porque estava doente.",
+    "question": "Does porque answer or ask?",
+    "answer": "it gives the reason",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t30",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Vou jantar com a minha mãe.",
+    "question": "How do you say 'I'm going to sleep'?",
+    "answer": "Vou dormir.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t09",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu queria uma água, por favor.",
+    "question": "Which is softer in a shop: quero or queria?",
+    "answer": "queria",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t74",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Fui ao cinema uma vez este mês.",
+    "question": "'I called three times': vezes or tempo?",
+    "answer": "vezes",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t03",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Tenho uma bicicleta vermelha.",
+    "question": "How do you say 'I have a car'?",
+    "answer": "Tenho um carro.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t16",
+   "learner_test": {
+    "pass": true,
+    "sentence": "A gente come às sete.",
+    "question": "'A gente vai' or 'a gente vamos'?",
+    "answer": "a gente vai",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t23",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Onde está o meu celular?",
+    "question": "How do you ask where the station is?",
+    "answer": "Onde fica a estação?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t47",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Estou com fome, então vou comer.",
+    "question": "Does então give a result or a contrast?",
+    "answer": "a result",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t57",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu sei cozinhar arroz.",
+    "question": "'I know the answer': sei or conheço?",
+    "answer": "sei",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t66",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Esse livro é bom.",
+    "question": "'A good idea' (ideia is feminine): bom or boa?",
+    "answer": "boa ideia",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t04",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Tem muita gente aqui hoje.",
+    "question": "How do you say 'There's a problem'?",
+    "answer": "Tem um problema.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t41",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Esse ônibus vai para o centro?",
+    "question": "'This shirt' (camisa, fem.): esse or essa?",
+    "answer": "essa",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t34",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ninguém gosta de segunda-feira.",
+    "question": "Does ninguém need não when it starts the sentence?",
+    "answer": "no",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t08",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Posso usar o banheiro?",
+    "question": "How do you ask 'Can I sit here?'",
+    "answer": "Posso sentar aqui?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t50",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu também gosto de café.",
+    "question": "How do you say 'She works here too'?",
+    "answer": "Ela também trabalha aqui.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t71",
+   "learner_test": {
+    "pass": false,
+    "sentence": "Obrigado pelo presente!",
+    "question": "What does a woman say to thank a man?",
+    "answer": "obrigada",
+    "unknown_words": [
+     "carona"
+    ]
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "rewrite",
+   "rewrite": {
+    "field": "example",
+    "text": "Muito obrigada pelo café! — Thanks a lot for the coffee!"
+   },
+   "judge": {
+    "winner": "rewrite",
+    "reason": "same point with no word above the level; carona adds nothing to the job",
+    "order": "A=original, B=rewrite (shuffled per pair)"
+   },
+   "original": "Muito obrigada pela carona! — Thanks a lot for the ride!"
+  },
+  {
+   "id": "t58",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu conheço o seu pai.",
+    "question": "'Do you know Ana (the person)?': sabe or conhece?",
+    "answer": "conhece",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t12",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu trabalho num hospital.",
+    "question": "Can you drop eu in 'Eu moro aqui'?",
+    "answer": "yes: 'Moro aqui'",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t22",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Quem é aquele homem?",
+    "question": "How do you ask 'Who's calling?'",
+    "answer": "Quem está ligando?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t31",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Estou lendo um livro agora.",
+    "question": "How do you say 'I'm eating' right now?",
+    "answer": "Estou comendo.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t05",
+   "learner_test": {
+    "pass": true,
+    "sentence": "A escola fica no centro.",
+    "question": "'Where is the museum?' (a building): which verb?",
+    "answer": "fica: 'Onde fica o museu?'",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t38",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Qual é o seu telefone?",
+    "question": "Talking to você about her bag (bolsa): seu or sua?",
+    "answer": "sua",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t48",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Se chove, eu fico em casa.",
+    "question": "What does se add to 'Se você quer, eu vou'?",
+    "answer": "a condition: 'if'",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 2
+   },
+   "action": "rewrite",
+   "rewrite": {
+    "field": "discussion",
+    "text": "Don't mix it up with the se in 'como se diz?' ('how do you say?'): same spelling, different word."
+   },
+   "judge": {
+    "winner": "rewrite",
+    "reason": "names what 'como se diz?' means, so the learner can actually tell the two apart",
+    "order": "A=original, B=rewrite (shuffled per pair)"
+   },
+   "original": "The se in 'como se diz?' is a different word with a different job."
+  },
+  {
+   "id": "t59",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Acho que ele não vem.",
+    "question": "How do you give an opinion: 'I think it's expensive'?",
+    "answer": "Acho que é caro.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t67",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ela canta muito bem.",
+    "question": "'I'm fine': bem or bom?",
+    "answer": "bem",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t35",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Nunca vou à praia.",
+    "question": "Does 'Nunca bebo café' need não?",
+    "answer": "no",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t43",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Isso é para você.",
+    "question": "How do you ask 'What is this?' without naming the thing?",
+    "answer": "O que é isso?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t10",
+   "learner_test": {
+    "pass": false,
+    "sentence": "Preciso de um táxi.",
+    "question": "'I need a pen' (caneta): precisar or precisar de?",
+    "answer": "Preciso de uma caneta.",
+    "unknown_words": [
+     "carregador"
+    ]
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "rewrite",
+   "rewrite": {
+    "field": "example",
+    "text": "Preciso de ajuda com a mala. — I need help with the suitcase."
+   },
+   "judge": {
+    "winner": "rewrite",
+    "reason": "every word is at A2, and the scene is still concrete",
+    "order": "A=original, B=rewrite (shuffled per pair)"
+   },
+   "original": "Preciso de um carregador. — I need a charger."
+  },
+  {
+   "id": "t51",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ainda não sei.",
+    "question": "How do you say 'I still live here'?",
+    "answer": "Ainda moro aqui.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t75",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Essa coisa é muito boa.",
+    "question": "Is coisa masculine or feminine?",
+    "answer": "feminine",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t14",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ele trabalha num banco.",
+    "question": "What can ele mean besides 'he'?",
+    "answer": "'it' for a masculine noun",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t24",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Quando começa o filme?",
+    "question": "How do you ask 'When is the party?'",
+    "answer": "Quando é a festa?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t29",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Tenho que estudar hoje.",
+    "question": "How do you say 'I have to work'?",
+    "answer": "Tenho que trabalhar.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t06",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Vou ao cinema amanhã.",
+    "question": "How do you say 'I went to the beach'?",
+    "answer": "Fui à praia.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t40",
+   "learner_test": {
+    "pass": true,
+    "sentence": "O livro é dela.",
+    "question": "'Her house': a casa dele or a casa dela?",
+    "answer": "a casa dela",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t49",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Acho que vai chover.",
+    "question": "Can you drop que in 'Ela disse que vem'?",
+    "answer": "no",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t60",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Gosto de dançar.",
+    "question": "'I like coffee': gosto café or gosto de café?",
+    "answer": "gosto de café",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t68",
+   "learner_test": {
+    "pass": true,
+    "sentence": "O show foi muito legal.",
+    "question": "Would you use legal for a fun plan?",
+    "answer": "yes",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t36",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Não tenho nenhum dinheiro.",
+    "question": "'No problem' with problema (masc.): nenhum or nenhuma?",
+    "answer": "nenhum",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t42",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Aquela casa é da minha tia.",
+    "question": "For something far from both of you: esse or aquele?",
+    "answer": "aquele",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t73",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Você deve dormir mais.",
+    "question": "How do you say 'You should rest'?",
+    "answer": "Você deve descansar.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t52",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Já comi, obrigado.",
+    "question": "How do you ask 'Have you ever been to Brazil?'",
+    "answer": "Você já foi ao Brasil?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t72",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Tá bom, eu vou.",
+    "question": "Your friend says 'Amanhã, tá bom?'. Are they asking or telling?",
+    "answer": "asking if it's okay",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t15",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ela é minha professora.",
+    "question": "'The door (porta)? It's open': which pronoun?",
+    "answer": "ela",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t25",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Como você vai para o trabalho?",
+    "question": "How do you ask 'What's the weather like?'",
+    "answer": "Como está o tempo?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t32",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Acabei de acordar.",
+    "question": "How do you say 'I've just eaten'?",
+    "answer": "Acabei de comer.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t07",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Meu irmão vem amanhã.",
+    "question": "Your friend is at your house. 'Come here!': vem or vai?",
+    "answer": "vem",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t39",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Nosso carro é velho.",
+    "question": "'Our city' (cidade, fem.): nosso or nossa?",
+    "answer": "nossa",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t53",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Só bebo água.",
+    "question": "What does só add to 'Só tenho dez reais'?",
+    "answer": "'only'",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t55",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eu falo com minha mãe todo dia.",
+    "question": "How do you ask 'Do you speak Portuguese?'",
+    "answer": "Você fala português?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t69",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Tem muita gente aqui.",
+    "question": "'Very good': muito bom or muita bom?",
+    "answer": "muito bom",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t44",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Aquilo é um avião?",
+    "question": "Does aquilo come before a noun?",
+    "answer": "no, it stands alone",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t56",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ele disse que está com fome.",
+    "question": "How do you report 'He said he's tired'?",
+    "answer": "Ele disse que está cansado.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t65",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Consegui um emprego novo.",
+    "question": "You tried and failed to open a jar: 'não consigo' or 'não posso'?",
+    "answer": "não consigo",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t17",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Nós moramos em Belo Horizonte.",
+    "question": "Which verb form goes with nós: vamos or vai?",
+    "answer": "vamos",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t26",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Por que você não veio?",
+    "question": "How do you ask 'Why are you here?'",
+    "answer": "Por que você está aqui?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t18",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Vocês são de onde?",
+    "question": "Talking to two friends: você or vocês?",
+    "answer": "vocês",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t11",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Não moro aqui.",
+    "question": "Where does não go in 'I don't speak French'?",
+    "answer": "before the verb: 'Não falo francês'",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t61",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Ela deu um presente para mim.",
+    "question": "How do you say 'Give me the key'?",
+    "answer": "Me dá a chave.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t28",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Qual é a sua cor favorita?",
+    "question": "'What's your phone number?': qual or o que?",
+    "answer": "qual",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t19",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Eles são meus amigos.",
+    "question": "A group of women and one man: eles or elas?",
+    "answer": "eles",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t62",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Vi o jogo na TV.",
+    "question": "How do you say 'I saw the sea'?",
+    "answer": "Vi o mar.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 3,
+    "example": 4
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t27",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Quantos filhos você tem?",
+    "question": "How do you ask the price of a coffee?",
+    "answer": "Quanto custa um café?",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t20",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Elas estão no parque.",
+    "question": "Only women in the group: eles or elas?",
+    "answer": "elas",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t63",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Vou pegar o metrô.",
+    "question": "How do you say 'I take the bus every day'?",
+    "answer": "Pego o ônibus todo dia.",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "discussion": 3
+   },
+   "action": "keep"
+  },
+  {
+   "id": "t64",
+   "learner_test": {
+    "pass": true,
+    "sentence": "Deixei o celular no carro.",
+    "question": "'I left my bag at the office': deixei or saí?",
+    "answer": "deixei",
+    "unknown_words": []
+   },
+   "scores": {
+    "definition": 4,
+    "example": 4,
+    "anti_example": 4
+   },
+   "action": "keep"
+  }
+ ],
+ "notes": "inline mode: coach, learner test and judge run by the same agent, each pass re-reading only its own inputs"
+}
