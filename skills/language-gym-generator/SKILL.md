@@ -9,7 +9,7 @@ argument-hint: "[language or slice] | [count=10] | [exclude: term, ...] | [learn
 `$ARGUMENTS` carries positional parts first, then optional named flags. Parse in order (whitespace- and `|`-flexible):
 
 1. **domain** (required) — language, optionally plus a slice (e.g. `Spanish`, `Spanish A2`, `French restaurants`, `German modal particles`, `Japanese keigo`)
-2. **count** (optional) — how many terms to generate; default **10** when omitted or blank. Integer from 1–100.
+2. **count** (optional) — how many terms to generate; default **10** when omitted or blank. 1–100 runs straight through; a larger number needs one confirmation first (see **Counts above 100**).
 3. **exclude** (optional) — preexisting items, or terms that must not appear in `terms[]` (comma-separated; optional `exclude:` prefix)
 
 Named flags (anywhere in `$ARGUMENTS` or the surrounding message):
@@ -29,6 +29,10 @@ Examples of valid `$ARGUMENTS`:
 
 When the user states count, exclusions, **learner language**, **target dialect**, **level**, **immersion**, or **pronunciation** in the surrounding message, honor those the same way. Missing count → **10**. Missing exclude → empty ban list. Missing learner language → **English** (unless **immersion**). Missing dialect → the widely taught default for that language (name it in `description`). Missing level → A2–B1 scaffolding as above.
 
+If the user asks for “all” / “full” / “complete” vocabulary, a CEFR wordlist, a textbook index, or any unbounded dump without naming a number, treat **count as 100** and run the **Selection procedure**. Do not emit an open-ended lexicon.
+
+**Counts above 100.** Don't reject, and don't silently comply. Stop and say plainly what gets worse at that size: the back of the list thins out, near-duplicates creep in to reach the number, and weaker items dilute the must-know core. Ask whether to go ahead anyway or cut to 100, and generate only after an answer. Once the user confirms, honor their number — the confirmation is the gate, so don't re-litigate it later.
+
 **Hard rule — exclusions:** Every name in `exclude` is banned from the output.
 - No `terms[].term` may match an excluded name (case-insensitive; ignore accent/script differences that are the same lemma, e.g. `Que` excludes `qué` when they are the same item).
 - No synonym, abbreviation, inflected form presented as a separate entry, romanization, or near-duplicate of an excluded term either (if `ser` is excluded, omit `soy` / `eres` as standalone term names when they are just conjugations of the same lemma).
@@ -37,7 +41,7 @@ When the user states count, exclusions, **learner language**, **target dialect**
 
 Reject — reply briefly with the expected argument shape and 1–2 examples, then stop — when:
 - **domain** is missing, empty, a full sentence/instruction/prompt, pasted JSON/glossary/file path, or not a language / language+slice
-- **count** is present but not an integer in 1–100
+- **count** is present but not a positive integer
 - **pronunciation** is present but not one of `ipa`, `spoken`, `none`
 
 If the user already has glossary JSON and wants it checked, review it instead of generating. If they want a live lesson, drills, or conversation practice, that is a tutor skill — this skill only emits import JSON.
@@ -59,6 +63,7 @@ When immersion is on:
   - Use a concrete everyday scene instead of an abstract paraphrase.
   - Use a short comparison ("mental model") in plain target language rather than an abstract noun.
   - It's fine if the explanation is slightly imprecise as long as it stays fully in simple target language — precision is secondary to comprehensibility at this level.
+  - If a field still won't work in simple target language, **omit that field**. Omitting is the correct move; an L1 gloss is not. This matters most for `mental_model`, where naming the L1 equivalent ("think of English 'there is'", "denk aan het Engelse '-ing'") is the tempting shortcut — leave it out instead.
 
 ### Beginner scaffolding — A2–B1
 
@@ -74,11 +79,7 @@ When beginner scaffolding is on:
   - Idiomatic expressions or fixed phrases a beginner wouldn't recognize literally.
   - Rare or abstract vocabulary (e.g. "sfeer", "weerspiegelt") used to explain a different unfamiliar word — this just trades one unknown for another.
   - Separable/compound verbs buried inside definitions of other terms (e.g. "eruitzien" showing up while defining "gezellig").
-- Definitions must be short and must not start with a banned opening.
-  - Keep definitions to 1–2 short sentences (plus pronunciation only if that mode requires it).
-  - Never start a definition with "Je gebruikt dit woord..." (or equivalent formulaic openers like "Dit woord betekent...", "Dit is wanneer...", or the same formulas in the learner language: "You use this word…", "This word means…", "This is when…").
-  - Also never start with meta padding about the item being a word: "This word…", "This simple word…", "This common word…", "A simple word for…", "Dit (simpele/gewone) woord…", "Een eenvoudig woord voor…". The `term` field already is the word — open with meaning.
-  - Lead with the plainest possible statement of meaning, then (optionally) one short clarifying sentence.
+- Definitions stay short: 1–2 short sentences (plus pronunciation only if that mode requires it). Lead with the plainest statement of meaning, then at most one clarifying sentence. The opener rules in **Field rules** apply here unchanged.
 - Examples and mental models must stay concrete.
   - Examples should describe one clear, everyday scene (people, places, objects a beginner already has vocabulary for) rather than an abstract statement.
   - Mental models should use a simple comparison ("Denk aan..." / "Think of...") in short sentences, not a restatement of the definition in fancier words.
@@ -90,6 +91,8 @@ When beginner scaffolding is on:
 
 ### Pronunciation
 
+The resolved mode comes from **Input**: `ipa` by default, but `none` whenever beginner scaffolding is on and the user didn't ask for pronunciation. Check which one is live before adding anything phonetic.
+
 - **`ipa`:** after the meaning, end `definition` with IPA in slashes for the `term` as written. Match the dialect named in `description`. No extra sentence ("Pronounced…"); just a space (or a sentence-final period, then a space) and `/…/`. Example: `…the grammar around it picks the sense. /keˈðaɾ/`
 - **`spoken`:** IPA transcriptions aren't beginner scaffolding. Replace with a simple spoken-style hint (e.g. "zeg: ge-ZEL-lig") only if genuinely useful — don't default to including it. Put it at the end of `definition` the same way IPA would go.
 - **`none`:** no phonetic/IPA notation anywhere. Don't put pronunciation in `term`, `example`, or other fields either.
@@ -98,17 +101,25 @@ Don't put IPA in `term`, `example`, or other fields to "also cover" pronunciatio
 
 ## What a term is
 
-Keep the same JSON keys as Jargon Gym. A `term` is **one thing the learner must be able to use or recognize** in the named slice — not a textbook chapter.
+Keep the same JSON keys as Jargon Gym. A `term` is **one thing the learner must be able to use or recognize** in the named slice — not a textbook chapter, not a contents-page heading, not a metalanguage label.
+
+**Spoken-form test (hard):** `term` must be a string the learner will **say, hear, or read as language**, or a **productive pattern with a slot** written in the target language (`estar + gerundio`, `avoir/être + participe passé`, `〜てしまう`). If the English gloss of the term is a pedagogy heading — inversion, the comparative, the diminutive, separable verbs, subordinate clause, adjective agreement, “the perfect tense” as a title — it is **not** a term unless **domain** is explicitly that grammar slice (or linguistics). Rewrite it as the form used in speech, or drop it.
 
 Pick the mix from the domain, in this order of preference:
 
 1. **Word or fixed phrase** in the target language — the default for a language or usage slice (`la cuenta`, `en plus`, `doch`, `お疲れ様です`)
-2. **Named construction** when the slice is grammar or the item is used as a unit (`passé composé`, `ser`, `〜てしまう`)
+2. **Pattern-as-unit** when the item is used as a construction (`estar + gerundio`, `ser`, `〜てしまう`). A school name (`passé composé`) is allowed only when the domain is a grammar slice; on a conversation/language slice prefer the pattern speakers produce.
 3. **Learner-facing contrast label** only when the contrast *is* the thing people study (`ser vs estar` is two terms plus a relationship, not one mega-term — unless the domain is explicitly the contrast)
 
-Do not mix professional jargon-of-linguistics as the main list (`allophone`, `clitic climbing`) unless the domain is linguistics. Write for someone learning to speak and understand, not for a syntax seminar.
+Do not mix professional jargon-of-linguistics as the main list (`allophone`, `clitic climbing`) unless the domain is linguistics. Write for someone learning to speak and understand, not for a syntax seminar. Do not use the target language’s classroom names for chapters as `term` either (`inversie`, `la proposition subordonnée`, `el pretérito` as a heading) on a non-grammar slice — same ban, any language.
 
 Write `term` as learners actually meet it: dictionary lemma or the frozen phrase, in the target script. Do not make separate terms for routine inflections of the same lemma.
+
+**Citation consistency:** pick **one** noun citation convention for the whole glossary (bare lemma, or lemma plus article/classifier if that is the language’s normal dictionary form) and apply it to every noun. Do not prefix a random subset with an article to sneak gender/class teaching.
+
+**Framed function words:** if a short function word does several unrelated jobs at this level, `term` must identify **one** job (`il y a`, `there is/are`, `se` + impersonal) or split into separate terms. A bare particle/pronoun/preposition as the whole `term` is allowed only when that form has essentially one load-bearing job in this slice. Put related jobs in `discussion` or a second term plus a relationship — do not emit an unframed stub.
+
+**One pattern, one entry:** if several drafted entries would carry essentially the same definition, they are instances of one pattern — merge them into the pattern and show the variants in `example`. Three near-identical cards for the same slot-filling is padding, not coverage.
 
 ## Task
 
@@ -116,7 +127,7 @@ After valid input is accepted, generate a glossary JSON for **domain** (target l
 
 **Success output:** respond with only the final JSON object — no markdown fences, no preamble, no explanation. Rejection replies above are the exception.
 
-The field shape below is this skill's import contract for Jargon Gym. If the user states different fields, follow theirs. Term count follows **count** (default 10; **100 is the ceiling, not a target**). Relationships: at most 100.
+The field shape below is this skill's import contract for Jargon Gym. If the user states different fields, follow theirs. Term count follows **count** (default 10; past 100 only after the user confirmed). Relationships: at most 100.
 
 ## JSON structure
 
@@ -150,27 +161,31 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 ## Field rules
 
 - `term`, `category`, and `definition` are the only required fields per term.
-- `category` is a browse label, not a learning field — pick whatever helps filter the list later (typical buckets: Verb, Noun, Adjective, Adverb, Particle, Phrase, Idiom, Grammar, Pronoun, Register, Number, Connector). Write category labels in the learner language when immersion is on.
+- **Don't lean on words you didn't teach.** A word carrying the weight of a `definition`, `anti_example`, or relationship description should either be a term in this glossary or be understandable without one. If the explanation only works once the learner knows some other item, teach that item or rewrite the explanation.
+- **Unit lock (hard):** every field on an entry is about the **same spoken unit** named in `term`. Do not pick a good `term` and then write a grammar-chapter `definition`, a different-sense `example`, or a `mental_model` that names the lesson instead of the job. If `term` is `omdat` / `porque` / `because` as a connector, the fields teach that connector — not “the subordinate clause.”
+- `category` is a browse label, not a learning field and not a measure of the glossary's mix — pick whatever helps filter the list later (typical buckets: Verb, Noun, Adjective, Adverb, Particle, Phrase, Idiom, Grammar, Pronoun, Register, Number, Connector). Write category labels in the learner language when immersion is on. Use **Grammar** only for a real construction/pattern on a grammar slice — not as a bucket for classroom headings.
 - **`definition` is meaning or function, then pronunciation only if that mode requires it:** what the item IS or DOES, in the learner language. Do not put conjugation tables, full usage guides, dialect essays, or “don't confuse with X” in the definition — those belong in other fields.
-  - Never start a definition with "refers to", "is defined as", "can be described as", or the term restated as its own subject (e.g. "`Quedar` is a verb that…"). Open with the substance.
-  - Never start by announcing that the item is a word (or a simple/common/small word). Ban openers like "This word…", "This simple word…", "This common word…", "A simple word for…", "You use this word…", "This word means…", "This is when…", and the same in any learner language ("Dit woord…", "Dit simpele woord…", "Dit gewone woord…", "Een eenvoudig woord voor…", "Je gebruikt dit woord…", "Dit woord betekent…", "Dit is wanneer…"). The `term` field already names the item — the definition starts with what it means or does. Do not spend the first clause calling it a noun/verb/adjective either unless that part-of-speech fact *is* the point (rare).
-  - Under beginner scaffolding, those formulaic openers stay banned; keep definitions to 1–2 short sentences.
-  - Don't repeat the same sentence structure or opening word across terms — that repetition makes a whole glossary read robotic.
+  - Open with the substance. Never restate the term as its own subject — not "`Quedar` is a verb that…", and not the same shape carrying the target language's article ("De man is een volwassen persoon…", "Le train est un véhicule…"). Never open by announcing the item is a word ("this word…", "a simple word for…", "you use this word…", "dit woord…", the same formula in any learner language), with "refers to" / "is defined as", or by naming the part of speech unless that fact *is* the point (rare).
+  - **No template per category.** Cap any opening word at roughly three entries across the whole glossary, and never use it twice in a row. If every noun, or every question word, or every adjective opens the same way, that is a template — rewrite them, even though each sentence is fine on its own.
   - Don't explain the target language with unexplained extra target-language jargon. If a short everyday comparison in the learner language helps the idea click, use one. Under immersion, never reach for an L1 equivalent — see **Immersion**.
   - Keep sentences short and concrete. If a definition needs two clauses, split it — don't chain qualifiers into one long sentence. Under beginner scaffolding: 1–2 short sentences; one clause per sentence wherever possible.
-  - For grammar constructions, state the job (what it marks or lets you say), not a mini-lesson.
-  - Apply **Pronunciation** above. Pronounce the whole phrase when `term` is a phrase. For a named construction, pronounce the construction's usual spoken name in the target language.
+  - For a **pattern-as-unit**, define the job of the pattern (what it lets you mark or say), not a mini-lesson and not the school-book name. For a **framed function word**, define **only the framed job**. Other jobs go in `discussion` or a second term.
+  - Do not use a classroom heading as the meaning (“this is inversion,” “introduces a subordinate clause,” “the comparative,” or the same idea in any learner language). Name the job in ordinary words: reason, contrast, completed event, extra emphasis, polite distance.
+  - Apply **Pronunciation** above. Pronounce the whole phrase when `term` is a phrase. For a pattern with a slot, transcribe one filled form of it or omit the pronunciation entirely — never just the fixed fragment, and never an L1 grammar label.
 - `example`, `mental_model`, `discussion`, `anti_example`, and `controversy` are all optional. Omit each one individually when it wouldn't add real value — empty optional fields mean "not needed," not TODO. Do not fill every field on every term.
 - **`example`:** add when the definition alone wouldn't let someone say or recognize the item. Prefer **one natural sentence in the target language**. A short learner-language gloss after an em dash or in parentheses is fine when the sentence wouldn't be obvious — **except under immersion: no gloss in another language**. Don't turn the example into a parallel-text paragraph. Skip toy drill sentences (`The cat is on the table`) unless the slice is literally that beginner set. Under beginner scaffolding, the sentence must be one clear everyday scene (people, places, objects a beginner already has vocabulary for).
-- **`mental_model`:** add when a comparison would make the item click faster than the definition alone — mapping onto a learner-language habit, a physical picture, or "think of it as the knob that does X" / "Denk aan...". Skip it when the gloss is already obvious (`agua` → water) unless immersion forbids that L1 gloss and a tiny comparison still helps. Under beginner scaffolding: simple comparison in short sentences, not a restatement of the definition in fancier words.
-- **`discussion`:** register (who you'd say this to), collocation, regional default, or the learner pitfall that isn't a different term — usage nuance that isn't obvious from definition and example. Do not restate the definition. When included, make it actionable — not a dump of every conjugation or a travel-blog aside. Under beginner scaffolding, keep it as short and clause-simple as the definition; omit if it would need hedging or B2+ discourse.
-- **`anti_example`:** only when there's a real near-miss — false friend, calque, the other word in a famous pair, or the construction learners produce instead. Skip when there's no genuine risk of confusion. Under immersion, describe the near-miss in the target language with no L1 name-dropping unless that L1 word *is* the false friend and immersion is off.
+  - The example must **instantiate this `term`’s job**. If `term` is a pattern, fill every slot in one sentence. If `term` is a framed particle, show that job — not a different sense of the same spelling.
+- **`mental_model`:** add when a comparison would make the item click faster than the definition alone — mapping onto a learner-language habit, a physical picture, or "think of it as the knob that does X" / "Denk aan...". Skip it when the gloss is already obvious (`agua` → water) unless immersion forbids that L1 gloss and a tiny comparison still helps. Under beginner scaffolding: simple comparison in short sentences, not a restatement of the definition in fancier words. Do not analogize to a textbook chapter name.
+- **`discussion`:** register (who you'd say this to), collocation, regional default, or the learner pitfall that isn't a different term — usage nuance that isn't obvious from definition and example. Do not restate the definition. When included, make it actionable — not a dump of every conjugation or a travel-blog aside. Under beginner scaffolding, keep it as short and clause-simple as the definition; omit if it would need hedging or B2+ discourse. Extra senses of a framed word belong here (briefly) or as separate terms — not piled into `definition`.
+- **`anti_example`:** only when there's a real near-miss — false friend, calque, the other word in a famous pair, the other job of the same spelling, or the construction learners produce instead. Skip when there's no genuine risk of confusion. Under immersion, describe the near-miss in the target language with no L1 name-dropping unless that L1 word *is* the false friend and immersion is off. Framed function words, copula/auxiliary pairs, and lookalike connectors should usually get one — this is where “wrong job / wrong twin” lives, not in `definition`.
 - **`controversy`:** when beginner scaffolding is **off**: before finalizing, scan the full term list once specifically looking for items where speakers, regions, or reputable teachers genuinely dispute form, meaning, politeness, or "correctness" — not "beginners overuse this," not "this word has two senses." Expect this to be rare, but confirm that by checking each term against the trigger, not by skipping the field by default. Most terms should NOT have this field, but "most" is not "none" — a glossary that comes out with zero `controversy` fields is a sign the scan wasn't done (languages are full of dialect and prescription fights; some lists will still honestly have none). When beginner scaffolding is **on**: omit the field, or one flat short sentence with no hedging or comparative clauses — do not run the "zero controversy = failed scan" check.
-- **`relationships`:** the array as a whole is optional. Add a relationship when two terms have any real connection worth naming — prerequisite of, subtype of, contrasts with, synonym of, depends on, builds on, often confused with, etc. Most terms won't need one, and that's expected. `relationship_type` should read naturally in a sentence; don't default to "often confused with" for every pair — pick whichever type actually describes the connection. `source`/`target` must match term names exactly. Cap: 100. Under immersion, write `relationship_type` and `description` in the target language.
+- **`relationships`:** the array as a whole is optional. Add a relationship when two terms have any real connection worth naming — prerequisite of, subtype of, contrasts with, synonym of, depends on, builds on, often confused with, etc. Conventional pairs (this vs that, want vs can, arrive vs leave) should be one relationship, not a third near-duplicate lemma. Most terms won't need one, and that's expected. `relationship_type` should read naturally in a sentence, and no single type may cover more than half the array — if one label fits everything, you're labelling rather than connecting. Skip pairs whose definitions already carry the link: when one definition says "the negative form of X", a `contrasts with` edge adds nothing. `source`/`target` must match term names exactly. Cap: 100. Under immersion, write `relationship_type` and `description` in the target language.
   - Cross-check against `anti_example`: if a relationship is "often confused with" (or similar near-miss framing), at least one of the two terms' own `anti_example` should capture that same confusion. Don't let a relationship name a mix-up that neither term's entry reflects.
 - A term is complete when someone could use or recognize it correctly in conversation — not when every optional field is filled.
+- **Don't group `terms[]` by category.** Interleave them, so verbs, constructions, connectors, phrases and nouns alternate down the list. A long contiguous run of one category concentrates every later shortcut in one place and invites filling that block to a round number.
 - **Consistency at scale:** apply the same per-term optional-field evaluation to the last term on the list that you applied to the first. On longer runs it's easy to get more careful early and coast on bare `term`/`category`/`definition`/`example` toward the end — that's a rigor drop, not a judgment call, and it should not happen. For runs over ~30 terms, treat it as a sanity check that roughly a quarter to a third of terms end up with at least one optional field beyond `example`; if the back half of the list is noticeably sparser than the front half with no substantive reason, that's a signal to re-pass it, not ship it.
-  - For **count** over 40, draft in batches of roughly 20 terms and re-apply the full optional-field evaluation (including the `controversy` scan when beginner scaffolding is off) within each batch, rather than doing one evaluation pass at the very end. This keeps rigor even across the list instead of front-loading it.
+  - For **count** over 40, settle the whole `terms[]` name list first (Selection procedure steps 1–5), then write the fields in passes of roughly 20, re-applying the full optional-field evaluation (including the `controversy` scan when beginner scaffolding is off) within each pass rather than one pass at the very end. This keeps rigor even across the list instead of front-loading it.
+  - These passes are a **field-writing** device only. Selection, shape, and closed sets are properties of the whole glossary, judged once on the full name list — never per pass. A pass of 20 is not required to cover the jobs, hit the noun ratio, or complete a paradigm on its own.
 - **`category` consistency:** reuse the same category label verbatim across terms that belong to the same group (always "Verb", never a mix of "Verb" and "Verbs" in one glossary). Near-duplicate category strings fragment the filter view in Jargon Gym.
 - **No duplicate relationships:** don't add both directions of the same pair (A→B and B→A) as separate relationships, and don't add more than one relationship entry for the same source/target pair.
 
@@ -184,12 +199,74 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 
 ## Selection
 
-- Include up to **count** must-know items for **domain** (default 10; max 100). **100 is the ceiling, not a target.** Only include items a learner absolutely must know to follow or join a conversation in this slice — high-frequency words, phrases, and constructions that come up constantly.
+- Include up to **count** must-know items for **domain** (default 10; past 100 only after the user confirmed). Only include items a learner absolutely must know to follow or join a conversation in this slice — high-frequency words, phrases, and constructions that come up constantly.
+- **Every number here is a ceiling, not a target.** Landing exactly on one — the term count, the noun share in step 5, the relationship cap — is evidence you filled to the line instead of earning each slot. Cut.
 - Skip rare, literary-only, exam-trivia, or "nice to know" items, even if they're technically in the language. If unsure whether an item is common enough for this slice, leave it out. Prefer fewer terms over padding with weaker ones just to approach **count** or the cap.
-- For a bare language name (`Spanish`), prefer a balanced core: greetings and politeness only if they're truly load-bearing; then high-frequency verbs, connectors, and a few constructions — not 10 nouns for furniture.
 - Apply the **Hard rule — exclusions** before finalizing the list; re-check the finished `terms[]` against `exclude` and drop any accidental hits.
 - Term names must be unique within the import.
 - Write for someone learning the language, not for linguists skimming glosses.
+
+### Selection procedure (do this in order; do not alphabetize a textbook index)
+
+This procedure is language-agnostic. Instantiating it means naming **this language’s** equivalents — not copying examples from another language.
+
+**1. Decide the job of the glossary**
+
+- **Bare language** (`Spanish`, `Dutch A2`, `Japanese`): conversation core at the named level.
+- **Usage slice** (`French restaurants`, `German airports`): must-know for that situation only. Spine items appear only if the situation cannot work without them.
+- **Grammar slice** (`Japanese keigo`, `German modal particles`, `ser vs estar`): constructions and the words that realize them. Classroom names are allowed here when learners actually study under that name.
+
+**2. Fill in this order until `count` is met** (stop early rather than pad). This is the order you *claim slots* in, not the order entries appear in `terms[]` — the finished array is interleaved, per **Field rules**:
+
+1. **Sentence spine** — the closed-class gear needed to parse and produce a basic sentence at this level in **this** language: how existence/identity is conjugated (copula / existence verb / equivalent), core person reference (the subject pronouns or person-marking the taught variety actually uses), negation, question formation, the core “go / come / have / want / can / must” set (or this language’s real equivalents — not a translated English list). If any of these are load-bearing at this level, they outrank every concrete noun.
+2. **Unlocking constructions** — patterns that let the learner say things this level requires (progressive, perfect/completed past as used in speech, comparison as used forms, polite request, future-as-used). Write them as spoken patterns, not chapter titles.
+3. **Discourse glue** — high-frequency connectors and particles **as framed units**.
+4. **High-frequency verbs and state adjectives** that carry everyday talk.
+5. **Frozen survival phrases** that are actually load-bearing (not a phrasebook dump of every greeting).
+6. **Content nouns last**, and only if frequency in this slice earns the slot.
+
+**3. Level is a filter, not a permission to dump everything “up through” that band**
+
+- **A1 / beginner / omitted default:** from-zero spine, including greetings only if they are truly load-bearing.
+- **A2 / A2–B1 / B1:** do **not** spend slots on A1-only **content** (elementary concrete nouns, phrasebook hellos) unless this is a usage slice that needs them or they remain a famous trap. Still include spine items that sentences at this level cannot work without — even if A1 also teaches them. Never drop the copula/existence verb to keep “sandwich” / “umbrella” / “receipt”.
+- **B2+:** traps, register, and constructions that still block fluent comprehension — not a second copy of the A2 noun list.
+
+**4. Closed sets are all-or-nothing**
+
+If you include any member of a **small closed paradigm** that learners treat as a set, include every member that is in-scope for this level **and this variety** — or include none. Typical paradigms (instantiate per language; skip those the language does not have): subject pronouns of the taught variety; yes/no pair; weekday names; the core article/classifier set; the core copula/auxiliary/modal set you opened. Do not emit four weekdays, or `I/you/he` without this variety’s “we/they”.
+
+If you open a **small theme** with a conventional core set (kinship at this level, urban transit modes, basic meals), fill that core or drop the theme. Random members from a set are a sampling error, not a glossary.
+
+**5. Shape check — gear vs content**
+
+Run this once, on the complete `terms[]` name list, before writing any fields. It is a whole-glossary property: on a long run, do not re-run it per field-writing pass or per section of the list.
+
+Judge the mix from the `term` strings themselves. Not from JSON `category` (retagging changes nothing), not by part-of-speech percentages, and not against a topic pie — uneven themes are fine when the jobs below are covered.
+
+On a **bare-language** glossary, verify two things:
+
+- **The jobs are covered.** Could a learner at this level introduce themselves, negate, ask a question, say that something exists or where it is, and express want / can / must / go — using only these terms plus morphology they can infer? Instantiate each job in **this** language. A missing job beats any noun: cut content and add the missing gear.
+- **Content stays the minority.** Concrete nouns (objects, foods, rooms, jobs, body parts) stay **under a quarter** of `terms[]`. The rest is gear: spine, constructions, glue, frequent verbs and state adjectives, plus the few genuinely load-bearing frozen phrases. Count a greeting stack as content — at A2+, a pile of hello / bye / good-night formulas is padding.
+
+On a **usage slice**, replace the jobs above with that situation's must-do acts (order, pay, ask where, board). Nouns may dominate and the quarter cap is off. On a **grammar slice**, cover different jobs of the pattern rather than a side list of nouns.
+
+All three still obey step 4 and carry zero classroom headings.
+
+**6. Cut order when over `count`**
+
+1. Classroom headings and linguistics labels  
+2. Extra greeting/leave-taking formulas (especially at A2+)  
+3. A1 content nouns (if level is A2+)  
+4. Theme extras beyond the closed/core set  
+5. Low-frequency content  
+6. Never leave a closed set incomplete — complete it or remove every member  
+7. Never cut sentence-spine items or an uncovered required job to save a noun  
+
+**7. Final pass over the drafted list**
+
+Re-read `terms[]` once against steps 3–5: spoken-form, consistent noun citation, framed function words, whole closed sets, jobs covered, content a minority. On a long list this is still **one** pass over the finished glossary — the field-writing passes in **Field rules** do not multiply it. Then check each entry for unit lock — `definition` gives this unit's job in ordinary words, `example` shows that same job with pattern slots filled, `discussion` doesn't smuggle a second lesson, and `anti_example` agrees with any mix-up a relationship names.
+
+Fix a failure by cutting and backfilling from step 2, or by rewriting the offending field. Never by adding topic nouns to look balanced, and never by turning a `term` back into a chapter title.
 
 ## Example (valid format, domain: Spanish, count: 3)
 
@@ -242,13 +319,16 @@ Default modes for this sample: learner=English, pronunciation=ipa, beginner scaf
 
 Before responding, walk through the checklist below against the drafted JSON — don't treat it as background spec, actually verify each line.
 
-- Input parsed (domain valid; count defaulted to 10 if omitted; exclude list applied; learner / level / immersion / pronunciation resolved) — or rejection already returned.
+- Input parsed (domain valid; count defaulted to 10 if omitted; exclude list applied; learner / level / immersion / pronunciation resolved) — or rejection already returned. A count above 100 was confirmed with the user before generating.
 - Success response is only the JSON object matching the structure above.
 - `terms.length` is ≤ **count**, and equals **count** when enough must-know terms remain after exclusions — never pad with niche or weak terms.
 - No term (nor synonym/inflection/near-duplicate) from **exclude** appears in `terms[]` or as a relationship endpoint.
 - Terms are unique; every relationship `source`/`target` resolves to a term name in this glossary; `relationships.length` ≤ 100.
 - Each included term is usable or recognizable in conversation; optional fields omitted when they add no value; relationships only where a real connection is worth naming.
-- Definitions are in the learner language; `term` and `example` sentences are in the target language. No definition starts with meta padding ("this word", "this simple word", "dit woord", part-of-speech throat-clearing, "refers to", "you use this word").
+- Every `term` passes the **spoken-form test**; no worksheet/chapter headings on a non-grammar slice; noun citation style is consistent; function words are framed when polysemous.
+- **Unit lock** holds on every entry: definition, example, mental_model, discussion, and anti_example all teach the job named in `term`.
+- Selection procedure was followed (spine → constructions → glue → verbs → phrases → nouns), closed sets are whole, and the step 5 shape check passes — jobs covered, concrete nouns under a quarter on a bare-language glossary. No alphabetized textbook dump, no category blocks in `terms[]`, and no count or ratio sitting exactly on its ceiling.
+- Definitions are in the learner language; `term` and `example` sentences are in the target language. No definition restates the term as its own subject, opens with meta padding ("this word", "dit woord", "refers to", part-of-speech throat-clearing), or repeats one category's opening word as a template.
 - Pronunciation matches the resolved mode: IPA at end of every `definition` iff `ipa`; spoken hint only if `spoken` and useful; nothing phonetic iff `none`.
-- If immersion: no L1 words, glosses, or translations in any field.
+- If immersion: no L1 words, glosses, or translations in any field — fields that would need one were omitted instead.
 - If beginner scaffolding: short simple sentences; no subordinate-clause chains, idioms, or rare explaining-vocab; definitions 1–2 sentences without banned openers; examples/mental models concrete; controversy omitted or one flat sentence; consistency check read-aloud as if to an A2–B1 learner passed.
