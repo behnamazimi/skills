@@ -1,0 +1,13 @@
+{ "answers": [
+ { "term_id": "t05", "question": "Main meaning of 'querer' with a thing or an infinitive?", "answer": "to want", "writer_claim": "want", "agree": true, "unsure": false },
+ { "term_id": "t05", "question": "What does 'te quiero' mean?", "answer": "I love you (family, friends)", "writer_claim": "love for family and close friends", "agree": true, "unsure": false },
+ { "term_id": "t02", "question": "Which countries use 'vos' instead of 'tú'?", "answer": "Argentina, Uruguay (also parts of Central America, Paraguay)", "writer_claim": "Argentina and Uruguay", "agree": true, "unsure": false },
+ { "term_id": "t08", "question": "How is age expressed?", "answer": "tener + años", "writer_claim": "tengo treinta años", "agree": true, "unsure": false },
+ { "term_id": "t03", "question": "Which verb form goes with usted?", "answer": "third person singular", "writer_claim": "he/she form", "agree": true, "unsure": false },
+ { "term_id": "t06", "question": "Learned skill 'I can swim' in Spanish?", "answer": "sé nadar", "writer_claim": "sé nadar", "agree": true, "unsure": false },
+ { "term_id": "t04", "question": "Is vosotros used in Latin America?", "answer": "no, ustedes for all plural you", "writer_claim": "ustedes covers everyone", "agree": true, "unsure": false },
+ { "term_id": "t09", "question": "a + el contraction?", "answer": "al", "writer_claim": "al", "agree": true, "unsure": false },
+ { "term_id": "t01", "question": "'I don't want anything'?", "answer": "no quiero nada", "writer_claim": "no quiero nada", "agree": true, "unsure": false },
+ { "term_id": "t07", "question": "Back-translate 'Tengo que trabajar el sábado'.", "answer": "I have to work on Saturday.", "writer_claim": "I have to work on Saturday.", "agree": true, "unsure": false },
+ { "term_id": "t10", "question": "'I'm coming!' when walking toward the person calling you?", "answer": "¡Ya voy!", "writer_claim": "¡Ya voy!", "agree": true, "unsure": false }
+] }

@@ -1,0 +1,96 @@
+{
+  "domain": "Spanish",
+  "description": "Spanish conversation building blocks for A2–B1 learners: forms of address, want, can, must, have, go, come and negation, in broadly neutral Latin American Spanish.",
+  "terms": [
+    {
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Says what you want: a thing, or something you'd like to do.",
+      "example": "Quiero dormir un poco más. — I want to sleep a bit more.",
+      "discussion": "With people it also means love: 'te quiero' is what you say to family and close friends."
+    },
+    {
+      "term": "tú",
+      "category": "Function word",
+      "definition": "Means 'you' when you talk to one friend, a kid, or someone in your family.",
+      "example": "Oye, ¿tú vienes a la fiesta? — Hey, are you coming to the party?",
+      "discussion": "In Argentina and Uruguay people say 'vos' instead. You'll hear it there, but 'tú' works everywhere."
+    },
+    {
+      "term": "tener",
+      "category": "Verb",
+      "definition": "Says what you have or own, and also how old you are.",
+      "example": "Tengo dos hermanos y un perro. — I have two brothers and a dog.",
+      "anti_example": "Not 'soy treinta años' for 'I'm thirty': say 'tengo treinta años'."
+    },
+    {
+      "term": "usted",
+      "category": "Function word",
+      "definition": "Polite 'you' for one person: a stranger, someone older, or your boss. Its verb takes the 'he/she' form.",
+      "example": "¿Usted es la doctora García? — Are you Doctor García?",
+      "anti_example": "Not 'usted eres' or 'usted tienes': say 'usted es', 'usted tiene'."
+    },
+    {
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Lets you say you're able to do something, or ask someone for a favor.",
+      "example": "¿Puedes abrir la ventana? Hace calor. — Can you open the window? It's hot.",
+      "anti_example": "For a skill you learned, use 'sé': 'sé nadar' is 'I can swim', not 'puedo nadar'."
+    },
+    {
+      "term": "ustedes",
+      "category": "Function word",
+      "definition": "Talks to two or more people at once, friends and strangers the same.",
+      "example": "¿Ustedes quieren algo de tomar? — Do you all want something to drink?",
+      "discussion": "Spain uses 'vosotros' with friends. In Latin America 'ustedes' covers everyone, so it's the only plural 'you' you need."
+    },
+    {
+      "term": "ir",
+      "category": "Verb",
+      "definition": "Moves you to a place. Put 'a' before where you're going.",
+      "example": "Voy al mercado con mi abuela. — I'm going to the market with my grandma.",
+      "discussion": "'a' + 'el' always becomes 'al': 'voy al banco', never 'voy a el banco'."
+    },
+    {
+      "term": "no",
+      "category": "Function word",
+      "definition": "Goes right before the verb to turn a sentence negative.",
+      "example": "No tengo tiempo hoy, lo siento. — I don't have time today, sorry.",
+      "anti_example": "Not 'no quiero algo' for 'I don't want anything': Spanish doubles up, 'no quiero nada'."
+    },
+    {
+      "term": "tener que + infinitivo",
+      "category": "Verb",
+      "definition": "Covers what you have to do: a duty, a rule, a task you can't skip.",
+      "example": "Tengo que trabajar el sábado. — I have to work on Saturday.",
+      "anti_example": "Not 'tengo trabajar' or 'tengo a trabajar': the 'que' always stays, 'tengo que trabajar'."
+    },
+    {
+      "term": "venir",
+      "category": "Verb",
+      "definition": "Shows movement toward the person speaking, like 'come here' or 'come to my place'.",
+      "example": "¿Vienes a mi casa el domingo? — Are you coming to my place on Sunday?",
+      "anti_example": "When you head toward the other person, use 'ir': 'I'm coming!' is '¡Ya voy!', not '¡Ya vengo!'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "tú",
+      "target": "usted",
+      "relationship_type": "contrasts with",
+      "description": "Same 'you', different distance: friends and family get tú, strangers and bosses get usted."
+    },
+    {
+      "source": "ir",
+      "target": "venir",
+      "relationship_type": "often confused with",
+      "description": "Spanish picks by the speaker's spot: venir comes toward you, ir goes anywhere else."
+    },
+    {
+      "source": "tener",
+      "target": "tener que + infinitivo",
+      "relationship_type": "builds on",
+      "description": "Add 'que' and a verb, and 'have' becomes 'have to'."
+    }
+  ]
+}

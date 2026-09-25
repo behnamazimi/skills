@@ -1,0 +1,31 @@
+{
+  "main": [
+    { "id": "t01", "term": "ser", "job": "identity: what or who something is, origin, time", "slot": "spine", "level": "A1", "why": "one of the two 'be' verbs; English speakers must split 'be'" },
+    { "id": "t02", "term": "estar", "job": "location and temporary state", "slot": "spine", "level": "A1", "why": "other half of the copula pair; the #1 trap for English speakers" },
+    { "id": "t03", "term": "hay", "job": "existence: there is / there are", "slot": "spine", "level": "A1", "why": "the only way to say something exists; learners wrongly use estar" },
+    { "id": "t04", "term": "tú", "job": "informal singular you", "slot": "spine", "level": "A1", "why": "politeness is marked in the verb; half of a closed pair" },
+    { "id": "t05", "term": "usted", "job": "polite singular you", "slot": "spine", "level": "A1", "why": "the safe default with strangers in much of Latin America" },
+    { "id": "t06", "term": "tener", "job": "have / possession, plus age and body states (tener hambre)", "slot": "spine", "level": "A1", "why": "the 'have' job; also covers age and hunger where English uses 'be'" },
+    { "id": "t07", "term": "tener que + infinitivo", "job": "obligation: have to do something", "slot": "construction", "level": "A1", "why": "the everyday way to say must" },
+    { "id": "t08", "term": "ir a + infinitivo", "job": "near future and plans", "slot": "construction", "level": "A1", "why": "the most common future in speech; unlocks talking about plans" },
+    { "id": "t09", "term": "poder", "job": "can: ability, permission, requests", "slot": "spine", "level": "A1", "why": "can job; also the polite request frame ¿puedes...?" },
+    { "id": "t10", "term": "querer", "job": "want (things or to do something)", "slot": "spine", "level": "A1", "why": "want job; orders and wishes" },
+    { "id": "t11", "term": "gustar", "job": "liking with me gusta / te gusta + thing or infinitive", "slot": "construction", "level": "A1", "why": "backwards structure compared with English 'like'; very frequent" },
+    { "id": "t12", "term": "no … nada", "job": "negation with nothing: double negative", "slot": "construction", "level": "A2", "why": "English speakers avoid the double negative, which Spanish requires" }
+  ],
+  "spares": [
+    { "id": "s01", "term": "venir", "job": "come", "slot": "spine", "level": "A1", "why": "come job" },
+    { "id": "s02", "term": "es que", "job": "framing an excuse or explanation", "slot": "glue", "level": "A2", "why": "very frequent discourse glue in speech" },
+    { "id": "s03", "term": "acabar de + infinitivo", "job": "just did something", "slot": "construction", "level": "A2", "why": "recent past without a new tense" },
+    { "id": "s04", "term": "deber", "job": "should / ought to", "slot": "spine", "level": "A2", "why": "advice; softer than tener que" }
+  ],
+  "sets": [
+    { "name": "copulas (be)", "members": ["ser", "estar"] },
+    { "name": "singular you (politeness)", "members": ["tú", "usted"] }
+  ],
+  "shape": {
+    "jobs_covered": { "identity": "ser", "location": "estar", "existence": "hay", "referring to people / politeness": "tú, usted", "negation": "no … nada", "have": "tener", "must": "tener que + infinitivo", "go / future": "ir a + infinitivo", "can": "poder", "want": "querer", "liking": "gustar" },
+    "concrete_nouns": 0,
+    "notes": "Count 12 fits the spine only. Question words (a closed set of about 8) would not fit and are not started; yes/no questions work by intonation. 'come' (venir) and discourse glue (es que) are the first spares. Modal verbs are not a closed class in Spanish, so no modal set is declared; deber is a spare."
+  }
+}

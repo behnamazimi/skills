@@ -1,0 +1,453 @@
+{
+ "rater": 1,
+ "ratings": [
+  {
+   "token": "quiero",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "dormir",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "un",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    },
+    {
+     "term_id": "t08",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "poco",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "más",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "oye",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "vienes",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "la",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "t03",
+     "field": "example"
+    },
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "fiesta",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "tengo",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t08",
+     "field": "example"
+    },
+    {
+     "term_id": "t01",
+     "field": "example"
+    },
+    {
+     "term_id": "t07",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "dos",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t08",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "hermanos",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t08",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "y",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t08",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "perro",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t08",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "doctora",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "garcía",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "puedes",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "abrir",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "ventana",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "hace",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "calor",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "quieren",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "algo",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "de",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "tomar",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "al",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "mercado",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "con",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "mi",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "abuela",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "tiempo",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "hoy",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "lo",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "siento",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "trabajar",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "el",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "sábado",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "casa",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "domingo",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "term_id": "t06",
+   "field": "example",
+   "structure": "weather with hacer (hace calor)",
+   "level": "A1"
+  },
+  {
+   "term_id": "t04",
+   "field": "example",
+   "structure": "algo de + infinitive",
+   "level": "A2"
+  },
+  {
+   "term_id": "t01",
+   "field": "example",
+   "structure": "fixed apology 'lo siento'",
+   "level": "A1"
+  },
+  {
+   "term_id": "t07",
+   "field": "example",
+   "structure": "tener que + infinitive",
+   "level": "A1"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "raw": ["estar", "ser", "hay", "ir a + infinitivo"],
+  "items": [
+    { "raw": "estar", "term": "estar", "lemma": "estar", "job": null, "forms": ["estoy", "estás", "está", "estamos", "están", "estuve", "estuvo", "estaba", "esté"], "scope": "lemma" },
+    { "raw": "ser", "term": "ser", "lemma": "ser", "job": null, "forms": ["soy", "eres", "es", "somos", "son", "fui", "fue", "era", "sea"], "scope": "lemma" },
+    { "raw": "hay", "term": "hay", "lemma": "haber", "job": "existence: there is / there are", "forms": ["había", "hubo", "habrá", "va a haber"], "scope": "phrase" },
+    { "raw": "ir a + infinitivo", "term": "ir a + infinitivo", "lemma": "ir", "job": "plans and near future", "forms": ["ir a + infinitive", "voy a", "vas a", "va a", "vamos a", "van a", "iba a"], "scope": "phrase" }
+  ],
+  "ignored": [],
+  "hints": { "dialect": "Latin American Spanish (broadly neutral), per the pasted description", "noun_citation": "bare lemma (no nouns in the pasted terms; verbs cited as infinitives)", "categories": ["Verb", "Grammar"] }
+}

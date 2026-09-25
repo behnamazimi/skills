@@ -1,0 +1,140 @@
+{
+  "domain": "Spanish",
+  "description": "Core Spanish building blocks for A2–B1 learners: be, have, there is, you, want, can, must, plans, liking and negation. Latin American Spanish (broadly neutral).",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "ser",
+      "category": "Verb",
+      "definition": "Says what or who someone is: name, job, where they're from, what they're like.",
+      "example": "Soy Ana y soy de Lima. — I'm Ana, and I'm from Lima.",
+      "mental_model": "Ser is the label on the box; estar is a photo of the box right now."
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "tú",
+      "category": "Pronoun",
+      "definition": "Informal 'you' for one person: friends, family, kids and people your age.",
+      "example": "Yo quiero té, ¿y tú? — I want tea, what about you?",
+      "discussion": "The verb ending already shows it's tú, so people usually drop it: ¿Quieres un café? Say tú for contrast."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "estar",
+      "category": "Verb",
+      "definition": "Tells where someone or something is, or how they feel right now.",
+      "example": "Estoy en el bus, ya llego. — I'm on the bus, almost there.",
+      "anti_example": "Not 'soy cansado' for 'I'm tired': say 'estoy cansado'. How you feel today goes with estar."
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "tener que + infinitivo",
+      "category": "Pattern",
+      "definition": "Lets you say you have to do something: tener que, then a verb like trabajar.",
+      "example": "Tengo que trabajar el sábado. — I have to work on Saturday.",
+      "anti_example": "Not 'tengo trabajar': the que is required. Say 'tengo que trabajar'."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "hay",
+      "category": "Verb",
+      "definition": "Means 'there is' or 'there are', with the same form for one thing or many.",
+      "example": "¿Hay un baño por aquí? — Is there a bathroom around here?",
+      "anti_example": "Not 'está un baño aquí' for 'there's a bathroom here': say 'hay un baño aquí'. Estar is for where a known thing is."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "usted",
+      "category": "Pronoun",
+      "definition": "Polite 'you' for one person: strangers, older people, clients, your doctor.",
+      "example": "Disculpe, ¿usted es la doctora López? — Excuse me, are you Dr. López?",
+      "discussion": "It takes the same verb form as él and ella: usted tiene, not usted tienes. With a stranger, start with usted."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Expresses 'can': being able to, being allowed to, and asking for things.",
+      "example": "¿Puedes pasarme la sal? — Can you pass me the salt?",
+      "discussion": "¿Me puede traer la cuenta? is the normal polite way to ask a waiter. Add por favor and you're set."
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "ir a + infinitivo",
+      "category": "Pattern",
+      "definition": "Talks about plans and what's coming soon: voy a comer, vamos a ver.",
+      "example": "Mañana voy a llamar a mi mamá. — Tomorrow I'm going to call my mom.",
+      "discussion": "In everyday talk this is the normal way to speak about the future. You'll hear it far more than the textbook future."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "tener",
+      "category": "Verb",
+      "definition": "Covers 'have', and also age, hunger, thirst and cold, where English uses 'be'.",
+      "example": "Tengo mucha hambre, ¿comemos algo? — I'm really hungry, shall we eat?",
+      "anti_example": "Not 'soy 30 años' for 'I'm 30': say 'tengo 30 años'. Same with 'tengo frío' for 'I'm cold'."
+    },
+    {
+      "id": "t12",
+      "batch": 1,
+      "term": "no … nada",
+      "category": "Pattern",
+      "definition": "Gives you 'nothing' or 'not anything': no goes before the verb and nada after it.",
+      "example": "No quiero nada más, gracias. — I don't want anything else, thanks.",
+      "anti_example": "Not 'quiero nada' or 'no quiero algo': Spanish needs both words, no and nada."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "querer",
+      "category": "Verb",
+      "definition": "States what you want: a thing, like quiero agua, or an action, like quiero salir.",
+      "example": "Quiero un jugo de naranja, por favor. — I'd like an orange juice, please.",
+      "discussion": "Quiero plus por favor is a normal way to order, not rude. With people, te quiero means 'I love you'."
+    },
+    {
+      "id": "t11",
+      "batch": 1,
+      "term": "gustar",
+      "category": "Verb",
+      "definition": "Shows what you like: me gusta with one thing or an action, me gustan with several things.",
+      "example": "Me gustan los tacos de este lugar. — I like the tacos at this place.",
+      "anti_example": "Not 'yo gusto el café' for 'I like coffee': say 'me gusta el café'. The coffee is what does the pleasing."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ser",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Both translate as 'be': ser says what something is, estar says where it is or how it is now."
+    },
+    {
+      "source": "hay",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Hay says a thing exists; estar says where a known thing is."
+    },
+    {
+      "source": "tú",
+      "target": "usted",
+      "relationship_type": "contrasts with",
+      "description": "Same person, different distance: friends get tú, strangers get usted."
+    },
+    {
+      "source": "tener que + infinitivo",
+      "target": "tener",
+      "relationship_type": "builds on",
+      "description": "Add que and a verb to tener and it means you have to do something."
+    }
+  ]
+}

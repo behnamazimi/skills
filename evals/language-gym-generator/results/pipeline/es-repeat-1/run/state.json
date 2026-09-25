@@ -1,0 +1,1 @@
+{ "step": "done", "done": ["00-parse", "02-select", "03-review-list", "04-plan", "05-write", "06-edit", "07-coach", "08-links", "09-check", "10-fix", "assemble"], "retries": {}, "inline": true, "node": true, "warnings": ["01-exclude skipped: no exclude given", "inline mode: reviews done by the same agent"] }

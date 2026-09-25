@@ -1,0 +1,24 @@
+{
+  "main": [
+    { "id": "t01", "term": "no", "job": "negation: no before the verb", "slot": "spine", "level": "A1", "why": "Negation job; not covered by known items." },
+    { "id": "t02", "term": "tú", "job": "informal 'you' for one person", "slot": "spine", "level": "A1", "why": "Politeness is grammatical in Spanish; address set member." },
+    { "id": "t03", "term": "usted", "job": "polite 'you' for one person", "slot": "spine", "level": "A1", "why": "Address set member; takes third-person verb forms, a real trap." },
+    { "id": "t04", "term": "ustedes", "job": "'you' for a group, any register (Latin America)", "slot": "spine", "level": "A1", "why": "Address set member; the only plural you in Latin America." },
+    { "id": "t05", "term": "querer", "job": "want (a thing or to do something)", "slot": "spine", "level": "A1", "why": "Want job." },
+    { "id": "t06", "term": "poder", "job": "can: ability, permission, requests", "slot": "spine", "level": "A1", "why": "Can job; also polite requests (¿puedes...?)." },
+    { "id": "t07", "term": "tener que + infinitivo", "job": "must / have to", "slot": "spine", "level": "A1", "why": "Must job, everyday obligation." },
+    { "id": "t08", "term": "tener", "job": "have: possession, and age", "slot": "spine", "level": "A1", "why": "Have job; age with tener is a classic English-speaker trap." },
+    { "id": "t09", "term": "ir", "job": "go (movement to a place)", "slot": "spine", "level": "A1", "why": "Go job; ir a + infinitivo is known but covers only plans." },
+    { "id": "t10", "term": "venir", "job": "come (toward the speaker)", "slot": "spine", "level": "A1", "why": "Come job; direction differs from English 'come'." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "me gusta", "job": "saying what you like", "slot": "construction", "level": "A1", "why": "Unlocking construction; backwards from English 'like'." },
+    { "id": "s02", "term": "porque", "job": "giving a reason: because", "slot": "glue", "level": "A1", "why": "Core discourse glue." },
+    { "id": "s03", "term": "hacer", "job": "do / make", "slot": "verb_adj", "level": "A1", "why": "Top-frequency verb." }
+  ],
+  "sets": [
+    { "name": "forms of address (you) in Latin America", "members": ["tú", "usted", "ustedes"] },
+    { "name": "copulas", "members": ["ser", "estar"] }
+  ],
+  "shape": { "jobs_covered": { "identity": "ser (known)", "location/state": "estar (known)", "existence": "hay (known)", "plans": "ir a + infinitivo (known)", "people/address": "tú, usted, ustedes", "negation": "no", "want": "querer", "can": "poder", "must": "tener que + infinitivo", "have": "tener", "go": "ir", "come": "venir", "questions": "intonation only; question words deferred (closed set larger than remaining count)" }, "concrete_nouns": 0, "notes": "All ten slots go to building blocks per R-SEL-05; constructions and glue sit in spares. Subject pronouns beyond the address forms are skipped: Spanish is pro-drop and the full set would not fit." }
+}

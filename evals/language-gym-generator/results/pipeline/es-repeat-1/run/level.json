@@ -1,0 +1,560 @@
+{
+  "rater": 1,
+  "ratings": [
+    {
+      "token": "soy",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ana",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "y",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "de",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t10",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "lima",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "yo",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "quiero",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        },
+        {
+          "term_id": "t12",
+          "field": "example"
+        },
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "té",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "estoy",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "en",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "el",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        },
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "bus",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ya",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "llego",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tengo",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        },
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "trabajar",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sábado",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "un",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        },
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "baño",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "por",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        },
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "aquí",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "disculpe",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "es",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "la",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "doctora",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "lópez",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "puedes",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "pasarme",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sal",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mañana",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "voy",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "llamar",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mamá",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mucha",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "hambre",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "comemos",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "algo",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "más",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "gracias",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "jugo",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "naranja",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "favor",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "me",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "gustan",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "los",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tacos",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "este",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "lugar",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "term_id": "t09",
+      "field": "example",
+      "structure": "infinitive with attached object pronoun (pasarme)",
+      "level": "A2"
+    },
+    {
+      "term_id": "t08",
+      "field": "example",
+      "structure": "ir a + infinitive future",
+      "level": "A1"
+    },
+    {
+      "term_id": "t06",
+      "field": "example",
+      "structure": "nosotros present as suggestion (¿comemos algo?)",
+      "level": "A2"
+    }
+  ],
+  "note": "Nothing rated above B1, so no rater 2 pass was needed."
+}

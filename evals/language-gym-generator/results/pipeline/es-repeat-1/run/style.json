@@ -1,0 +1,13 @@
+{
+  "voice": "second person where needed, present tense, plain; a tutor texting a friend",
+  "categories": ["Verb", "Pronoun", "Pattern"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 18, "discussion": 24, "anti_example": 20, "controversy": 14 },
+  "opening_moves": ["action verb: 'Says…', 'Tells…', 'Shows…'", "plain meaning: 'Means…', 'Polite you…'", "enabling: 'Lets you…'", "scope: 'Covers…', 'Expresses…'", "register first: 'Informal…', 'Polite…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "a key part of", "plays a crucial role", "essential tool", "navigate", "in essence"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["meeting someone at a party", "friend's kitchen", "phone call from the bus", "office chat about the weekend shift", "looking for a bathroom in a mall", "doctor's reception", "family dinner", "calling mom", "hungry after work", "waiter offers dessert", "café order", "street taco stand"] },
+  "ceiling": "B1",
+  "ipa_format": "none (pronunciation = none)",
+  "notes": "Patterns with a slot are written 'verb + infinitivo' in term; the example fills every slot. Examples: one Spanish sentence, then ' — ' and a short English gloss. Spanish words quoted inside English fields are written plain, with single quotes only for whole mistaken or corrected phrases. Latin American defaults: ustedes for plural you, no vosotros. No IPA or stress hints anywhere."
+}

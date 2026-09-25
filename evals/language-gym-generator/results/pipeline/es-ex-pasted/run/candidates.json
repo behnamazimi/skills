@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "errors": 0,
+  "findings": [],
+  "pairs": [
+    {
+      "id": "t09",
+      "from": "main",
+      "term": "ir",
+      "excluded": "ir a + infinitivo",
+      "form": "ir a + infinitivo",
+      "reason": "one contains the other as a whole word"
+    },
+    {
+      "id": "s03",
+      "from": "spares",
+      "term": "hacer",
+      "excluded": "hay",
+      "form": "haber",
+      "reason": "near-identical spelling"
+    }
+  ]
+}

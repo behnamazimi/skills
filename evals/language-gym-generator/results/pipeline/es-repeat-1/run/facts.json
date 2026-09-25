@@ -1,0 +1,15 @@
+{ "answers": [
+  { "term_id": "t01", "question": "Does ser express origin (soy de Lima)?", "answer": "yes", "writer_claim": "yes", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "Is 'I'm tired' estoy cansado?", "answer": "estoy cansado", "writer_claim": "estoy cansado", "agree": true, "unsure": false },
+  { "term_id": "t03", "question": "Does hay change for plural?", "answer": "no", "writer_claim": "no", "agree": true, "unsure": false },
+  { "term_id": "t04", "question": "Back-translate 'Yo quiero té, ¿y tú?'", "answer": "I want tea, and you?", "writer_claim": "I want tea, what about you?", "agree": true, "unsure": false },
+  { "term_id": "t05", "question": "Verb form with usted?", "answer": "third person singular (usted tiene)", "writer_claim": "usted tiene", "agree": true, "unsure": false },
+  { "term_id": "t06", "question": "How do you say 'I'm cold' and 'I'm 30'?", "answer": "tengo frío, tengo 30 años", "writer_claim": "tengo frío, tengo 30 años", "agree": true, "unsure": false },
+  { "term_id": "t07", "question": "Meaning of tener que + infinitive?", "answer": "have to / must", "writer_claim": "have to do something", "agree": true, "unsure": false },
+  { "term_id": "t08", "question": "Is ir a + infinitive more common in speech than the simple future in Latin America?", "answer": "yes", "writer_claim": "yes", "agree": true, "unsure": false },
+  { "term_id": "t09", "question": "Back-translate '¿Puedes pasarme la sal?'", "answer": "Can you pass me the salt?", "writer_claim": "Can you pass me the salt?", "agree": true, "unsure": false },
+  { "term_id": "t10", "question": "Does te quiero mean I love you?", "answer": "yes, to family and friends", "writer_claim": "yes", "agree": true, "unsure": false },
+  { "term_id": "t10", "question": "Is jugo the Latin American word for juice?", "answer": "yes (zumo in Spain)", "writer_claim": "jugo", "agree": true, "unsure": false },
+  { "term_id": "t11", "question": "me gusta or me gustan with los tacos?", "answer": "me gustan", "writer_claim": "me gustan", "agree": true, "unsure": false },
+  { "term_id": "t12", "question": "Is 'no quiero nada' correct standard Spanish?", "answer": "yes", "writer_claim": "yes", "agree": true, "unsure": false }
+] }
