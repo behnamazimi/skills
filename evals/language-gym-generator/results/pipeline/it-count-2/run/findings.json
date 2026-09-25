@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t01", "field": "example", "rule": "R-FLD-08", "severity": "must_fix", "quote": "Hi, I'm Marco", "problem": "Piacere means 'nice to meet you', not 'hi'; the gloss mistranslates it.", "fix": "Gloss as 'Nice to meet you, I'm Marco, from Naples.'", "source": "facts" }
+] }

@@ -1,0 +1,13 @@
+{
+  "voice": "second person, present tense, plain, like a friend texting",
+  "categories": ["Verb"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 16, "discussion": 22, "anti_example": 20, "controversy": 14 },
+  "opening_moves": ["action verb: 'Says…', 'Points out…'", "scene: 'When you…'", "use: 'Use it to…'", "plain meaning: 'Who or what…'", "'Your way to…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "in essence", "a crucial", "plays a key role", "whether you're"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["meeting a new colleague at work", "asking a stranger on the street for a pharmacy"] },
+  "ceiling": "B1",
+  "ipa_format": "none (pronunciation=none)",
+  "notes": "One category only because the list is two verbs; every label must be used at least twice. Examples: Italian sentence, then ' — ' and a short English gloss. Anti-examples: 'Not X for Y: …' with the correct Italian form given. Use the standard Italian apostrophe (c'è). No pronunciation anywhere."
+}

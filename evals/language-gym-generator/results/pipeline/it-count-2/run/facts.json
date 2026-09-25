@@ -1,0 +1,7 @@
+{ "answers": [
+  { "term_id": "t01", "question": "Meaning of 'essere'?", "answer": "to be (identity, origin, description)", "writer_claim": "who someone is, what something is, or what it's like", "agree": true, "unsure": false },
+  { "term_id": "t01", "question": "Back-translate 'Piacere, sono Marco, sono di Napoli.'", "answer": "Nice to meet you, I'm Marco, I'm from Naples.", "writer_claim": "Hi, I'm Marco, from Naples.", "agree": false, "unsure": false },
+  { "term_id": "t01", "question": "How do you say 'I'm 25' in Italian?", "answer": "Ho 25 anni.", "writer_claim": "ho 25 anni", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "Meaning of 'c'è' and its plural?", "answer": "there is; plural ci sono", "writer_claim": "something is there or exists; ci sono for more than one", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "Back-translate 'Scusi, c'è una farmacia qui vicino?'", "answer": "Excuse me, is there a pharmacy near here?", "writer_claim": "Excuse me, is there a pharmacy nearby?", "agree": true, "unsure": false }
+] }

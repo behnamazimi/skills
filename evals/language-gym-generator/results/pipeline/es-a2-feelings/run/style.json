@@ -1,0 +1,13 @@
+{
+  "voice": "second person, present tense, plain, like a friend texting",
+  "categories": ["Pattern", "Phrase", "Verb", "Adjective"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 18, "discussion": 20, "anti_example": 16, "controversy": 14 },
+  "opening_moves": ["action verb: 'Says…', 'Asks…', 'Tells…', 'Shows…'", "the English meaning first: 'Worried…', 'Bored…'", "a scene: 'Your reply when…'", "a gerund: 'Being…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "it's worth noting", "plays a crucial role"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["evening at home", "office coworker", "calling in sick", "son with a fever", "street noise at night", "late for the boss", "dogs in the park", "Sunday TV", "friend got the job", "friend misses the party"] },
+  "ceiling": "A2",
+  "ipa_format": "none (pronunciation=none)",
+  "notes": "Spanish in single quotes when quoted inside English text; a gloss after ' — ' only when the Spanish has words beyond the term and basic A1 vocabulary. Anti-examples open with Not '…' and end with the right form. Present and simple past only in Spanish. Masculine adjective form as the term; mention the -a form where it matters."
+}

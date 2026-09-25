@@ -1,0 +1,32 @@
+{
+  "domain": "Italian",
+  "description": "Italian conversation core for English speakers, level A2–B1, standard Italian: saying who something is and what is there.",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "essere",
+      "category": "Verb",
+      "definition": "Says who someone is, what something is, or what it's like: your name, job, origin or mood.",
+      "example": "Piacere, sono Marco, sono di Napoli. — Nice to meet you, I'm Marco, from Naples.",
+      "anti_example": "Not 'sono 25 anni' for 'I'm 25': age takes avere, so say 'ho 25 anni'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "c'è",
+      "category": "Verb",
+      "definition": "Points out that something is there or exists; for more than one thing, switch to ci sono.",
+      "example": "Scusi, c'è una farmacia qui vicino? — Excuse me, is there a pharmacy nearby?",
+      "anti_example": "Not 'è una farmacia qui' for 'there's a pharmacy here': è alone means 'it is'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "c'è",
+      "target": "essere",
+      "relationship_type": "builds on",
+      "description": "c'è is ci + è, the it-form of essere, so it follows the same verb."
+    }
+  ]
+}

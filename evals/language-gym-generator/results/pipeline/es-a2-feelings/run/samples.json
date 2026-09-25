@@ -1,0 +1,31 @@
+{
+ "terms": [
+  {
+   "id": "t01",
+   "batch": 1,
+   "term": "estar + adjetivo",
+   "category": "Pattern",
+   "definition": "Says how you feel right now. The feeling word matches you: cansado for a man, cansada for a woman.",
+   "example": "Hoy estoy cansada y un poco triste. — I'm tired and a bit sad today.",
+   "anti_example": "Not 'soy cansado' for 'I'm tired': feelings right now take estar, so 'estoy cansado'."
+  },
+  {
+   "id": "t02",
+   "batch": 1,
+   "term": "¿Qué te pasa?",
+   "category": "Phrase",
+   "definition": "Asks a friend what's wrong when they look upset or quiet.",
+   "example": "Estás muy serio hoy. ¿Qué te pasa? — You look very serious today. What's wrong?",
+   "discussion": "Say '¿Qué le pasa?' to someone you call usted. Answers often start with 'Nada' or 'Es que…'."
+  },
+  {
+   "id": "t08",
+   "batch": 1,
+   "term": "aburrido",
+   "category": "Adjective",
+   "definition": "Bored, with estar: nothing to do and time goes slowly.",
+   "example": "Estoy aburrido, no hay nada en la tele. — I'm bored, there's nothing on TV.",
+   "anti_example": "Not 'soy aburrido' for 'I'm bored': that means 'I'm boring'. Say 'estoy aburrido'."
+  }
+ ]
+}

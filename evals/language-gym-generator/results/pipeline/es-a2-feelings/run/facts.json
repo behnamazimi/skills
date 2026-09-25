@@ -1,0 +1,84 @@
+{
+ "answers": [
+  {
+   "term_id": "t01",
+   "question": "Which verb do Spanish speakers use for 'I'm tired'?",
+   "answer": "estar (estoy cansado/a)",
+   "writer_claim": "estar",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t02",
+   "question": "What does '¿Qué te pasa?' mean?",
+   "answer": "What's wrong with you? / What's up?",
+   "writer_claim": "asks what's wrong",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t03",
+   "question": "Is 'siento triste' correct?",
+   "answer": "no, me siento triste",
+   "writer_claim": "needs me",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t04",
+   "question": "Which preposition marks the cause of worry?",
+   "answer": "por",
+   "writer_claim": "por",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t05",
+   "question": "In 'me molesta el ruido', what is the subject?",
+   "answer": "el ruido",
+   "writer_claim": "the annoying thing does the verb",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t06",
+   "question": "Is enojado the usual Latin American word for angry, and enfadado the Spain one?",
+   "answer": "yes",
+   "writer_claim": "yes",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t07",
+   "question": "Which preposition introduces what you fear?",
+   "answer": "de",
+   "writer_claim": "de",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t08",
+   "question": "What does 'soy aburrido' mean?",
+   "answer": "I'm boring",
+   "writer_claim": "I'm boring",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t09",
+   "question": "Back-translate '¿Te dieron el trabajo? ¡Me alegro mucho!'",
+   "answer": "Did you get the job? I'm really glad!",
+   "writer_claim": "You got the job? I'm so glad!",
+   "agree": true,
+   "unsure": false
+  },
+  {
+   "term_id": "t10",
+   "question": "What does '¡Qué lástima!' mean?",
+   "answer": "What a shame / too bad",
+   "writer_claim": "what a shame",
+   "agree": true,
+   "unsure": false
+  }
+ ]
+}

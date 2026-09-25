@@ -1,0 +1,9 @@
+150 terms is more than this glossary is built for, so I'm checking before I generate. At that size, a few things get worse:
+
+- **The back of the list gets thin.** Brazilian Portuguese at the default A2–B1 level has maybe 100 truly must-know items. Past that, the extra slots go to things that are nice to know but not core.
+- **Near-duplicates start to show up.** To reach the number, the list begins splitting one pattern into several cards, or adding a second word that does the same job as one already there.
+- **The core gets diluted.** The items that matter most (ser/estar, tem, ir + infinitive, a gente, né?) end up mixed in with weaker ones, so each study session covers less of what matters.
+
+Here is what I'd use if you don't say otherwise: Brazilian Portuguese, English definitions, A2–B1 level, no pronunciation.
+
+Should I go ahead with 150, or cut it to 100?

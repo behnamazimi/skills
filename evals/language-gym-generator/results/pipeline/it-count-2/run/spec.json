@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "domain": "Italian",
+  "language": "Italian",
+  "slice": null,
+  "slice_type": "bare",
+  "count": 2,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "A2–B1", "floor": "A2", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Standard Italian (neutral, as widely taught)",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": { "locale": "it", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true, "diacritics_meaningful": true, "articles": ["il", "lo", "la", "l'", "i", "gli", "le", "un", "uno", "una", "un'"], "noun_citation": "bare lemma", "pronunciation_convention": "IPA, broad transcription, standard Italian; spoken = stress hint", "grammar_notes": "Copula essere for identity and description; existence with c'è / ci sono (esserci); stare for how someone is (come stai?) and stare + gerundio for ongoing action. Subject pronouns usually dropped; the verb ending carries the person. Negation with non before the verb. Yes/no questions by intonation only. Polite address with Lei (3rd person singular) vs tu. Modals volere, potere, dovere + infinitive. Past: passato prossimo with avere or essere. Closed sets: subject pronouns, definite articles by gender/number/initial sound, modal set (volere, potere, dovere), clitic pronouns." },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "count": "user", "learner": "default", "level": "default", "immersion": "default", "pronunciation": "default", "dialect": "default" }
+}
