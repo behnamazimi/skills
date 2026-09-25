@@ -79,7 +79,7 @@ Words used below:
   | A2 | `identity`, `existence`, `location`, `negation`, `questions`, `past`, `want`, `can`, `go`, `must` |
   | B1 and above | the A2 list, then `future` |
 
-  Meanings: `identity` = say what or who something is; `existence` = say something exists or is there; `location` = say where something is; `negation`; `questions` = ask a basic question (a question word or the language's question marker); `past` = talk about a finished event; `want`, `can`, `go`, `must` = those meanings; `future` = talk about plans. A language that marks politeness grammatically (Japanese, Korean) adds `politeness` right after `questions`.
+  Meanings: `identity` = say what or who something is; `existence` = say something exists or is there; `location` = say where something is; `negation` = negate a verb (where a language has a separate negation for nouns or adjectives, like Turkish `değil` beside verb `-mA`, the verb one is what counts); `questions` = ask a basic question (a question word or the language's question marker); `past` = talk about a finished event; `want`, `can`, `go`, `must` = those meanings; `future` = talk about plans. A language that marks politeness grammatically (Japanese, Korean) adds `politeness` right after `questions`.
 
   `list.shape.jobs` maps **every** required job to one of:
   - a term in `main`, written exactly;

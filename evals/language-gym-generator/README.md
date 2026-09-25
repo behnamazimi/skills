@@ -38,4 +38,5 @@ To compare against the previous single-pass skill, take `skills/language-gym-gen
 - **Import-schema passes:** 24/24 vs 23/25.
 - **Mechanical violations:** 0 vs 13.
 - **Blind wins:** 16 of 23 for the pipeline, with fewer errors (15 vs 21) and fewer above-level words (4 vs 6).
+- **Round 2** (after the required-jobs, beginner-clause and IPA fixes, on the 4 cases the pipeline had lost): 2 wins, 1 tie, 1 loss (Turkish: verb negation and `must` missing; the negation rule now says the verb negation is what counts). Consistency 4.00 vs 3.50, example score 3.72 vs 3.47.
 - **Caveats:** the pipeline ran in its inline fallback (no nested subagents were available), one run per case, and the judges were the same model family as the generator.
