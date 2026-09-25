@@ -1,0 +1,13 @@
+{
+  "voice": "second person where needed, present tense, plain and direct; reading-focused (what you will meet in a text), nothing phrased as conversation practice",
+  "categories": ["Verb", "Function word", "Pronoun", "Connector"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 18, "discussion": 24, "anti_example": 20, "controversy": 14 },
+  "opening_moves": ["action verb: 'Says…', 'Turns…', 'Joins…'", "meaning in quotes: 'Means \"have\"…'", "reading cue: 'Tells you…'", "question job: 'Asks…'", "pointer: 'Points back…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "it is worth noting", "plays a crucial role", "in essence", "a key aspect"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["street scene", "night at home", "market stall", "festival singing", "children in the wood", "farm field", "describing a family member", "schoolroom book", "cold water at the well", "garden"] },
+  "ceiling": "B1",
+  "ipa_format": "none (pronunciation = none)",
+  "notes": "Target text in Classical Latin with macrons on long vowels in terms and examples. Examples are short text sentences (narrative or reported), each followed by ' — ' and an English gloss. Verbs cited as first person present + infinitive; pronoun lemmas cited by their nominative forms. Patterns with a case slot are written 'in + ablative' and the example fills the slot. Avoid city names in examples (they take the locative, not in + ablative). Use only A1–A2 Latin vocabulary outside the glossary's own terms."
+}

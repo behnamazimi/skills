@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "domain": "Latin",
+  "language": "Latin",
+  "slice": null,
+  "slice_type": "reading",
+  "count": 10,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "A2–B1", "floor": "A2", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Classical Latin (Ciceronian and Caesarian prose norms), macrons marked on terms",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": {
+    "locale": "la",
+    "scripts": ["Latn"],
+    "direction": "ltr",
+    "cased": true,
+    "word_separated": true,
+    "diacritics_meaningful": true,
+    "articles": [],
+    "noun_citation": "nominative + genitive ending (rosa, -ae)",
+    "pronunciation_convention": "Classical IPA; spoken = stress hint",
+    "grammar_notes": "Copula sum/esse for identity and location; est/sunt also states existence ('there is'). No articles. Six cases carry roles (nominative subject, accusative object, genitive of, dative to/for, ablative by/with/in); word order is free, so endings, not position, show who does what. Verb endings mark person, so subject pronouns are usually dropped. Negation with non; questions with -ne, nonne, num, and interrogatives quis/quid. Coordination et, -que, sed; relative qui, quae, quod. Closed sets: personal pronouns (ego, tū, nōs, vōs), sum paradigm, prepositions with accusative vs ablative, the relative pronoun, demonstratives hic/ille/is. Modal jobs: possum (can), volō (want), dēbeō (must), eō (go), veniō (come), habeō (have). Reading slice: nothing phrased as conversation."
+  },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "count": "user", "learner": "default", "level": "default", "immersion": "default", "pronunciation": "default", "dialect": "default", "slice_type": "inferred" }
+}

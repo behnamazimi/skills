@@ -1,0 +1,144 @@
+{
+  "results": [
+    {
+      "id": "t01",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Was machst du denn heute Abend?",
+        "question": "To ask a friend casually what they're doing, would you say 'Was machst du denn?' or 'Was machst du dann?'",
+        "answer": "Was machst du denn?",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep",
+      "fix_round_1": {
+        "learner_test": {
+          "pass": true,
+          "question": "Would you write Was machst du denn? or Was machst du dann? to ask casually?",
+          "answer": "denn"
+        },
+        "judge": {
+          "winner": "rewrite",
+          "reason": "New definition states the effect without a placement claim that is not always true."
+        }
+      }
+    },
+    {
+      "id": "t04",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Du bist ja müde.",
+        "question": "In 'Es regnet ja schon wieder', does ja mean 'yes'?",
+        "answer": "No, it means 'as we can both see'.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t02",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Kannst du mal die Tür zumachen?",
+        "question": "Which sounds friendlier to a colleague: 'Hilf mir!' or 'Hilf mir mal!'?",
+        "answer": "Hilf mir mal!",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 3
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t07",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Das Wetter wird schon besser.",
+        "question": "In 'Das klappt schon', does schon mean 'already'?",
+        "answer": "No, it means 'it'll be fine, don't worry'.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t06",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Wo wohnst du eigentlich?",
+        "question": "What does eigentlich add to 'Wo wohnst du eigentlich?'",
+        "answer": "It changes the topic, like 'by the way, where do you live?'",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t05",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Du hast doch Hunger!",
+        "question": "Your friend forgot you told them about the party. Which fits better: 'Ich habe es dir ja gesagt' or 'Ich habe es dir doch gesagt!'?",
+        "answer": "Ich habe es dir doch gesagt!",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 3,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t03",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Bleib doch noch ein bisschen!",
+        "question": "Is 'Komm doch mit!' an order or an invitation?",
+        "answer": "An invitation.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t08",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Ich habe halt keine Zeit.",
+        "question": "Does 'Das ist halt so' sound formal or casual?",
+        "answer": "Casual.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "mental_model": 4,
+        "discussion": 3
+      },
+      "action": "keep"
+    }
+  ]
+}

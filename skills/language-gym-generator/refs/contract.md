@@ -16,7 +16,7 @@ Every step reads and writes files in the run folder. It never passes data only t
 | `exclude.json` | 1 | `GYM validate exclude` |
 | `list.json` | 2 | `GYM validate list --spec --exclude` |
 | `candidates.json` | orchestrator | output of `GYM candidates` |
-| `list-findings.json` | 3 | same shape as `findings.json` (with `term_id` = list id) |
+| `list-findings.json` | 3 | `GYM validate findings list-findings.json --draft list.json --rules refs/rules.md` |
 | `style.json`, `plan.json` | 4 | shape below |
 | `samples.json` | 4 | `GYM validate batch --spec --style` |
 | `batch-N.json` | 5 | `GYM validate batch --spec --style --exclude` |

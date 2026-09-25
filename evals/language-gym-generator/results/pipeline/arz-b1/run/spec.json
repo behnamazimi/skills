@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "domain": "Egyptian Arabic",
+  "language": "Egyptian Arabic",
+  "slice": null,
+  "slice_type": "bare",
+  "count": 10,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "B1", "floor": "B1", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Egyptian Arabic, Cairene colloquial, written in Arabic script without vowel marks (colloquial spelling conventions)",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": {
+    "locale": "arz",
+    "scripts": ["Arab"],
+    "direction": "rtl",
+    "cased": false,
+    "word_separated": true,
+    "diacritics_meaningful": true,
+    "articles": [],
+    "noun_citation": "bare singular",
+    "pronunciation_convention": "IPA (Cairene); spoken = simple Latin transliteration",
+    "grammar_notes": "No present-tense copula (zero copula for identity and state); فيه for existence ('there is'); عند + pronoun suffix for possession ('have'); negation with ما...ش circumfix on verbs and مش for nominal/adjectival sentences and future; questions by intonation plus postposed question words (فين، إيه، إمتى، إزاي، ليه، مين); b- prefix marks habitual/progressive present, ح- (or هـ) marks future; كان for past state; modality via عايز (want), لازم (must), ممكن (can/possible), يقدر (be able); politeness via حضرتك rather than verb morphology. Closed sets: independent pronouns (أنا، إنت، إنتي، هو، هي، إحنا، إنتو، هم), possessive/object suffixes, question words, demonstratives (ده، دي، دول)."
+  },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "count": "user", "learner": "default", "level": "user", "immersion": "default", "pronunciation": "default", "dialect": "user" }
+}

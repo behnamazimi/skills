@@ -1,0 +1,111 @@
+{
+  "domain": "Arabic",
+  "description": "Core Modern Standard Arabic building blocks for A2–B1 English speakers: negation, existence, possession, questions, the past 'was', the future and 'want to'.",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "لَيْسَ",
+      "category": "Negator",
+      "definition": "Says 'is not' or 'am not' in a sentence that has no verb, like 'I'm not busy'.",
+      "example": "لَسْتُ مَشْغُولًا الآنَ، تَفَضَّلْ. — I'm not busy now, go ahead.",
+      "discussion": "It changes with the person: لَسْتُ (I), لَسْتَ (you), لَيْسَتْ (she). The next word takes the ـًا ending: مَشْغُولًا.",
+      "anti_example": "Not 'أَنَا لَا مَشْغُولٌ' for 'I'm not busy': لَا goes with verbs. Say 'لَسْتُ مَشْغُولًا'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "هُنَاكَ",
+      "category": "Building block",
+      "definition": "There is, there are: tells you something exists in a place.",
+      "example": "هُنَاكَ مَقْهًى صَغِيرٌ قُرْبَ بَيْتِي. — There's a small café near my house.",
+      "discussion": "Standing alone, it also means 'over there'. For 'there isn't', say لَيْسَ هُنَاكَ."
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "كَانَ",
+      "category": "Verb",
+      "definition": "Past 'was' or 'were'. Present sentences need no verb, but the past needs this one.",
+      "example": "كَانَ الفِيلْمُ طَوِيلًا جِدًّا. — The film was very long.",
+      "anti_example": "Not 'البَيْتُ يَكُونُ كَبِيرٌ' for 'the house is big': the present takes no verb. Say 'البَيْتُ كَبِيرٌ'."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "هَلْ",
+      "category": "Particle",
+      "definition": "Turns a statement into a yes/no question when you put it first.",
+      "example": "هَلْ أَنْتَ جَائِعٌ؟ — Are you hungry?",
+      "discussion": "In spoken dialects people often drop it and just raise their voice. In writing and on the news, keep it."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "لَا + مُضَارِع",
+      "category": "Negator",
+      "definition": "Makes a present-tense verb negative: 'don't' or 'doesn't'.",
+      "example": "لَا أَفْهَمُ هَذِهِ الكَلِمَةَ. — I don't understand this word.",
+      "discussion": "On its own, لَا is also the answer 'no'."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "عِنْدِي",
+      "category": "Building block",
+      "definition": "Means 'I have'. Arabic has no verb for 'have', so it says 'at me' instead.",
+      "example": "عِنْدِي مَوْعِدٌ مَعَ الطَّبِيبِ غَدًا. — I have a doctor's appointment tomorrow.",
+      "discussion": "Change the ending for other people: عِنْدَكَ (you, man), عِنْدَكِ (you, woman), عِنْدَهُ (he), عِنْدَنَا (we)."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "يُرِيدُ أَنْ",
+      "category": "Verb",
+      "definition": "Wanting to do something: put a present-tense verb right after أَنْ.",
+      "example": "أُرِيدُ أَنْ أَحْجِزَ طَاوِلَةً لِشَخْصَيْنِ. — I want to book a table for two.",
+      "anti_example": "'أُرِيدُ أَنْ يَذْهَبَ' means 'I want him to go'. For yourself, both verbs are 'I': 'أُرِيدُ أَنْ أَذْهَبَ'."
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "لَمْ + مُضَارِع",
+      "category": "Negator",
+      "definition": "Says 'didn't': put it before a present-tense verb to talk about the past.",
+      "example": "لَمْ أَذْهَبْ إِلَى العَمَلِ أَمْسِ. — I didn't go to work yesterday.",
+      "anti_example": "Not 'لَمْ ذَهَبْتُ' for 'I didn't go': after لَمْ the verb takes its present form, 'لَمْ أَذْهَبْ'."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "سَوْفَ / سَـ",
+      "category": "Particle",
+      "definition": "Adds 'will' to a present-tense verb. سَـ sticks to the verb; سَوْفَ stands alone.",
+      "example": "سَأَتَّصِلُ بِكَ بَعْدَ العَمَلِ. — I'll call you after work.",
+      "discussion": "Same meaning in daily use. سَـ is more common; سَوْفَ sounds a little heavier and more formal."
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "لَنْ + مُضَارِع",
+      "category": "Negator",
+      "definition": "Means 'won't': a firm no about the future, placed before a present-tense verb.",
+      "example": "لَنْ أَنْسَى عِيدَ مِيلَادِكِ. — I won't forget your birthday.",
+      "anti_example": "Not 'لَا سَأَذْهَبُ' for 'I won't go': one word does the job. Say 'لَنْ أَذْهَبَ'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "لَيْسَ",
+      "target": "لَا + مُضَارِع",
+      "relationship_type": "often confused with",
+      "description": "لَيْسَ negates sentences with no verb; لَا negates present verbs."
+    },
+    {
+      "source": "لَنْ + مُضَارِع",
+      "target": "سَوْفَ / سَـ",
+      "relationship_type": "negative of",
+      "description": "سَأَذْهَبُ 'I'll go' becomes لَنْ أَذْهَبَ 'I won't go'."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{ "answers": [
+ {"term_id":"t01","question":"Does Turkish express 'I have X' with var plus a possessive ending?","answer":"yes","writer_claim":"yes","agree":true,"unsure":false},
+ {"term_id":"t02","question":"Meaning of yok?","answer":"there isn't / don't have / none","writer_claim":"isn't there / don't have","agree":true,"unsure":false},
+ {"term_id":"t03","question":"Is değil used to negate nouns and adjectives rather than verbs?","answer":"yes; verbs use -ma/-me","writer_claim":"yes","agree":true,"unsure":false},
+ {"term_id":"t04","question":"How does the vowel of the question particle mI change?","answer":"four-way harmony with the last vowel of the preceding word","writer_claim":"matches the last vowel of the word before","agree":true,"unsure":false},
+ {"term_id":"t05","question":"Back-translate 'Akşam sinemaya gitmek istiyorum'.","answer":"I want to go to the cinema this evening.","writer_claim":"I want to go to the cinema tonight.","agree":true,"unsure":false},
+ {"term_id":"t06","question":"Negative of gelebiliyorum?","answer":"gelemiyorum","writer_claim":"gelemiyorum","agree":true,"unsure":false},
+ {"term_id":"t07","question":"What form does the verb take before lazım in 'gitmem lazım'?","answer":"verbal noun -mA plus possessive ending (-m = my)","writer_claim":"a verb with a person ending","agree":true,"unsure":false},
+ {"term_id":"t08","question":"Meaning of yani?","answer":"I mean / that is / so","writer_claim":"I mean / so","agree":true,"unsure":false},
+ {"term_id":"t09","question":"Meaning of bence?","answer":"in my opinion","writer_claim":"I think / in my view","agree":true,"unsure":false},
+ {"term_id":"t10","question":"With a pronoun, which form comes before gibi: ben or benim?","answer":"benim gibi","writer_claim":"benim gibi","agree":true,"unsure":false}
+] }

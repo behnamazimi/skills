@@ -1,0 +1,26 @@
+{
+  "round": 1,
+  "applied": [
+    {
+      "finding": 0,
+      "term_id": "t03",
+      "field": "definition"
+    }
+  ],
+  "rejected": [],
+  "dropped": [],
+  "recheck": {
+    "learner_test": {
+      "pass": true,
+      "sentence": "البيت ده مش كبير.",
+      "question": "Which is right for 'I'm not tired': مش تعبان or متعبانش?",
+      "answer": "مش تعبان",
+      "unknown_words": []
+    },
+    "judge": {
+      "winner": "rewrite",
+      "reason": "No longer contradicts itself about the future; the learner can apply it straight away."
+    },
+    "step9": "script, level (no new target words), facts and rules re-run on t03: no findings"
+  }
+}

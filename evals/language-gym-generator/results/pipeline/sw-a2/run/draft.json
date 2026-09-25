@@ -1,0 +1,132 @@
+{
+  "domain": "Swahili",
+  "description": "Core Swahili building blocks for English speakers at A2, in Standard Swahili (Tanzania and Kenya).",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "ni",
+      "category": "Key word",
+      "definition": "Links a person or thing to what it is: am, is, are. It stays the same for every person.",
+      "example": "Jina langu ni Amina, mimi ni jirani yako. — My name is Amina, I'm your neighbour.",
+      "anti_example": "Not 'Mimi ni nyumbani' for 'I'm at home': where you are takes -ko, so 'Niko nyumbani'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "-na-",
+      "category": "Verb pattern",
+      "definition": "Marks an action happening now or done as a habit. It goes between the person prefix and the verb.",
+      "example": "Tunakunywa chai sasa. — We're having tea now.",
+      "discussion": "The person prefixes are ni- (I), u- (you), a- (he/she), tu- (we), m- (you all) and wa- (they)."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "kutaka",
+      "category": "Verb",
+      "definition": "Says what you want: a thing, or an action with ku- + verb after it.",
+      "example": "Nataka chai bila sukari, tafadhali. — I want tea without sugar, please.",
+      "discussion": "In speech ninataka shortens to nataka. You'll hear nataka far more, and it's fine in a shop."
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "-ko",
+      "category": "Verb pattern",
+      "definition": "Tells where someone is, or how they are right now. Add a person prefix: niko, uko, yuko.",
+      "example": "Uko wapi? Niko sokoni. — Where are you? I'm at the market.",
+      "discussion": "For he or she it's yuko, not ako. The negative swaps the prefix: siko, huko, hayuko."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "kuna",
+      "category": "Key word",
+      "definition": "Says something exists or is available: there is, there are. Hakuna means there isn't any.",
+      "example": "Kuna mkate leo? — Is there any bread today?",
+      "discussion": "Hakuna matata is real Swahili, but in daily life people mostly say hakuna shida: no problem."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "-li-",
+      "category": "Verb pattern",
+      "definition": "Puts an action in the past. Use person prefix + -li- + verb: nilikula, I ate.",
+      "example": "Jana tulikwenda sokoni na mama. — Yesterday we went to the market with Mum.",
+      "anti_example": "Not 'sililala' for 'I didn't sleep': the negative past uses -ku-, so 'sikulala'."
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "kuwa na",
+      "category": "Verb",
+      "definition": "Means have, literally 'be with'. Nina, una, ana: I have, you have, he or she has.",
+      "example": "Una chenji? Nina elfu kumi tu. — Got change? I only have ten thousand.",
+      "anti_example": "Not 'si nina' for 'I don't have': say 'sina', and 'huna', 'hana' for you and him or her."
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "si-/hu-/ha- … -i",
+      "category": "Verb pattern",
+      "definition": "Makes a present action negative: use a negative prefix, drop -na-, and end the verb in -i.",
+      "example": "Sipendi samaki, asante. — I don't like fish, thanks.",
+      "discussion": "The negative prefixes: si- (I), hu- (you), ha- (he/she), hatu- (we), ham- (you all), hawa- (they)."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "lazima",
+      "category": "Key word",
+      "definition": "Expresses must or have to. The verb after it usually ends in -e: lazima niende, I must go.",
+      "example": "Samahani, lazima niondoke sasa. — Sorry, I have to leave now."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "-ta-",
+      "category": "Verb pattern",
+      "definition": "Points an action to the future. Use person prefix + -ta- + verb: nitarudi, I'll come back.",
+      "example": "Nitamaliza kazi hii kesho asubuhi. — I'll finish this work tomorrow morning."
+    },
+    {
+      "id": "t11",
+      "batch": 1,
+      "term": "kuweza",
+      "category": "Verb",
+      "definition": "Shows you are able to do something. The action follows as ku- + verb: naweza kusoma.",
+      "example": "Unaweza kunisaidia, tafadhali? — Can you help me, please?",
+      "discussion": "Unaweza…? is also the polite way to ask a stranger for a favour."
+    },
+    {
+      "id": "t12",
+      "batch": 1,
+      "term": "-me-",
+      "category": "Verb pattern",
+      "definition": "Marks something already done that is still true now. Many states use it: nimechoka, I'm tired.",
+      "example": "Tumefika nyumbani salama. — We got home safely.",
+      "anti_example": "Not 'ninachoka' for 'I'm tired': that means 'I'm getting tired'. Say 'nimechoka'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ni",
+      "target": "-ko",
+      "relationship_type": "often confused with",
+      "description": "Ni says what someone is; -ko says where they are or how they are right now."
+    },
+    {
+      "source": "-li-",
+      "target": "-na-",
+      "relationship_type": "builds on",
+      "description": "Same slot after the person prefix; only the time marker changes."
+    },
+    {
+      "source": "-me-",
+      "target": "-li-",
+      "relationship_type": "contrasts with",
+      "description": "Nilikula is I ate, back then; nimekula is I have eaten, so I am full now."
+    }
+  ]
+}

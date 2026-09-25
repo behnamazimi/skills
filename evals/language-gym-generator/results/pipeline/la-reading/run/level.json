@@ -1,0 +1,9 @@
+{ "rater": 1, "ratings": [
+ {"token":"viā","level":"A1"},{"token":"est","level":"A1"},{"token":"canis","level":"A1"},{"token":"mārcus","level":"A1"},{"token":"dormit","level":"A1"},{"token":"habēs","level":"A1"},{"token":"mēnsā","level":"A1"},{"token":"puella","level":"A1"},{"token":"potest","level":"A2"},{"token":"dormīre","level":"A1"},{"token":"puerī","level":"A1"},{"token":"puellaeque","level":"A2"},{"token":"silvā","level":"A1"},{"token":"ambulant","level":"A1"},{"token":"cantat","level":"A1"},{"token":"iūlia","level":"A1"},{"token":"discipulus","level":"A2"},{"token":"novum","level":"A1"},{"token":"librum","level":"A1"},{"token":"habet","level":"A1"},{"token":"agricola","level":"A1"},{"token":"agrō","level":"A1"},{"token":"labōrat","level":"A1"},{"token":"dīcit","level":"A1"},{"token":"aqua","level":"A1"},{"token":"frīgida","level":"A2"},{"token":"frāter","level":"A1"},{"token":"meus","level":"A1"},{"token":"parvus","level":"A1"},{"token":"fortis","level":"A2"}
+ ],
+ "structures": [
+  {"term_id":"t05","field":"example","structure":"relative clause with quae","level":"B1"},
+  {"term_id":"t04","field":"example","structure":"possum + present infinitive","level":"A2"},
+  {"term_id":"t10","field":"example","structure":"direct speech after dīcit","level":"A1"}
+ ],
+ "notes": "Rater 1 only: nothing rated above ceiling B1, so no rater 2 pass was needed. Inline mode: same agent." }

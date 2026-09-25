@@ -1,0 +1,11 @@
+{ "answers": [
+  { "term_id": "t01", "question": "What does unstressed denn add to a w-question?", "answer": "interest, friendliness, 'so…?'", "writer_claim": "curious and friendly instead of blunt", "agree": true, "unsure": false },
+  { "term_id": "t01", "question": "Does modal denn always come right after the verb and the subject?", "answer": "No; it follows the finite verb and usually pronouns, but can come before a full-noun subject (Wie heißt denn dein Bruder?)", "writer_claim": "It sits after the verb and subject.", "agree": false, "unsure": false },
+  { "term_id": "t04", "question": "Back-translate 'Es regnet ja schon wieder.'", "answer": "It's raining again (as you can see).", "writer_claim": "It's raining again, as you can see.", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "What does mal do in 'Kannst du mir mal das Salz geben?'", "answer": "softens the request", "writer_claim": "softens a request", "agree": true, "unsure": false },
+  { "term_id": "t07", "question": "Meaning of schon in 'Das schaffst du schon'?", "answer": "reassurance: you'll manage, surely", "writer_claim": "reassures that things will work out", "agree": true, "unsure": false },
+  { "term_id": "t06", "question": "What does eigentlich add to 'Was machst du eigentlich beruflich?'", "answer": "topic shift, 'by the way / actually'", "writer_claim": "shifts a question to a new topic", "agree": true, "unsure": false },
+  { "term_id": "t05", "question": "Meaning of doch in 'Die Schlüssel liegen doch da!'?", "answer": "reminder / mild reproach: they're right there, you should see that", "writer_claim": "reminds with mild impatience", "agree": true, "unsure": false },
+  { "term_id": "t03", "question": "Meaning of doch in 'Setz dich doch!'?", "answer": "friendly encouragement/invitation", "writer_claim": "warm nudge", "agree": true, "unsure": false },
+  { "term_id": "t08", "question": "Is halt used in standard German in Germany, and where is it most common?", "answer": "yes, colloquial; most common in the south, eben is more northern", "writer_claim": "common in the south and in casual talk everywhere; north also says eben", "agree": true, "unsure": false }
+] }

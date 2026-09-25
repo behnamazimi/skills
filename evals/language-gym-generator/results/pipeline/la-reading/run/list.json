@@ -1,0 +1,25 @@
+{
+  "main": [
+    { "id": "t01", "term": "sum, esse", "job": "identity, location and existence ('is', 'there is')", "slot": "spine", "level": "A1", "why": "The most frequent verb in any text; carries identity, location and 'there is'." },
+    { "id": "t02", "term": "nōn", "job": "negation of a statement", "slot": "spine", "level": "A1", "why": "Every text negates; placement before the verb is the reading cue." },
+    { "id": "t03", "term": "quis, quid", "job": "asks who / what", "slot": "spine", "level": "A2", "why": "The question job in reading; direct speech and dialogues in simple texts turn on it." },
+    { "id": "t04", "term": "possum, posse", "job": "can, be able + infinitive", "slot": "spine", "level": "A2", "why": "The 'can' job; irregular, built on sum, so unreadable without being taught." },
+    { "id": "t05", "term": "quī, quae, quod", "job": "relative 'who / which / that' linking a clause to a noun", "slot": "construction", "level": "B1", "why": "Relative clauses appear in almost every sentence of connected prose." },
+    { "id": "t06", "term": "-que", "job": "'and' attached to the end of the second word", "slot": "glue", "level": "A2", "why": "Very frequent and invisible to beginners, who read it as part of the word." },
+    { "id": "t07", "term": "in + ablative", "job": "in / on (place where)", "slot": "construction", "level": "A2", "why": "Place where is everywhere in narrative; the case after 'in' changes the meaning." },
+    { "id": "t08", "term": "sed", "job": "but (contrast)", "slot": "glue", "level": "A1", "why": "Main contrast connector in simple prose." },
+    { "id": "t09", "term": "habeō, habēre", "job": "have, hold", "slot": "verb_adj", "level": "A1", "why": "Core possession verb; also 'consider' later." },
+    { "id": "t10", "term": "dīcō, dīcere", "job": "say, tell", "slot": "verb_adj", "level": "A1", "why": "Speech verbs frame reported speech throughout narrative texts." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "in + accusative", "job": "into / onto (motion toward)", "slot": "construction", "level": "A2", "why": "The other job of 'in'; motion is as frequent as place in narrative." },
+    { "id": "s02", "term": "volō, velle", "job": "want + infinitive", "slot": "spine", "level": "A2", "why": "The 'want' job; irregular." },
+    { "id": "s03", "term": "ubi", "job": "where (question and relative)", "slot": "glue", "level": "A2", "why": "Frequent in both questions and narrative." }
+  ],
+  "sets": [],
+  "shape": {
+    "jobs_covered": { "identity": "sum, esse", "existence": "sum, esse (est / sunt = there is / are)", "location": "sum, esse + in + ablative", "negation": "nōn", "questions": "quis, quid", "can": "possum, posse", "have": "habeō, habēre", "linking": "-que, sed", "relative clauses": "quī, quae, quod", "reported speech frame": "dīcō, dīcere", "people reference": "verb endings mark person; no pronoun set started" },
+    "concrete_nouns": 0,
+    "notes": "Reading slice: no greetings or conversation phrases. Pronoun set (ego, tū, nōs, vōs) and question-particle triad (-ne, nōnne, num) deliberately not started: both would need more slots than a 10-term list can spare, and verb endings carry person. Verbs cited as first person present + infinitive."
+  }
+}

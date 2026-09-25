@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "domain": "German modal particles",
+  "language": "German",
+  "slice": "modal particles",
+  "slice_type": "grammar",
+  "count": 8,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "A2–B1", "floor": "A2", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Standard German as spoken in Germany (everyday colloquial register)",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": { "locale": "de-DE", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true, "diacritics_meaningful": true, "articles": ["der", "die", "das", "ein", "eine"], "noun_citation": "lemma + article", "pronunciation_convention": "IPA; spoken = stress hint", "grammar_notes": "Modal particles (Abtönungspartikeln) are unstressed words in the middle field (after the finite verb, usually before the object/adverb) that signal the speaker's attitude: shared knowledge, surprise, softening, urging, resignation. They can't start a sentence, are rarely stressed, and don't translate word for word. Most have a second, non-particle job (doch = 'but/yes!', ja = 'yes', denn = 'because', mal = 'times', schon = 'already', eben = 'just/flat'), so each term must be tied to its particle job. Sentence type matters: denn and eigentlich live in questions; mal and doch soften imperatives; ja and doch appear in statements. Combinations (doch mal, ja mal, halt mal) are common. Not a closed set: the core group is ~15 words." },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "count": "user", "learner": "default", "level": "default", "immersion": "default", "pronunciation": "default", "dialect": "default", "slice_type": "inferred", "profile": "inferred" }
+}

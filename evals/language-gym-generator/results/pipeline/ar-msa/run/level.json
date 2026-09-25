@@ -1,0 +1,393 @@
+{
+  "rater": 1,
+  "ratings": [
+    {
+      "token": "لَسْتُ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "مَشْغُولًا",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "الآنَ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "تَفَضَّلْ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "مَقْهًى",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "صَغِيرٌ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "قُرْبَ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "بَيْتِي",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "الفِيلْمُ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "طَوِيلًا",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "جِدًّا",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أَنْتَ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "جَائِعٌ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أَفْهَمُ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "هَذِهِ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "الكَلِمَةَ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "مَوْعِدٌ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "مَعَ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "الطَّبِيبِ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "غَدًا",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أُرِيدُ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أَحْجِزَ",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "طَاوِلَةً",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "لِشَخْصَيْنِ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أَذْهَبْ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "إِلَى",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "العَمَلِ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أَمْسِ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "سَأَتَّصِلُ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "بِكَ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "بَعْدَ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "أَنْسَى",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "عِيدَ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "مِيلَادِكِ",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "term_id": "t01",
+      "field": "example",
+      "structure": "لَيْسَ with accusative predicate (لَسْتُ مَشْغُولًا)",
+      "level": "A2"
+    },
+    {
+      "term_id": "t01",
+      "field": "example",
+      "structure": "imperative تَفَضَّلْ",
+      "level": "A2"
+    },
+    {
+      "term_id": "t04",
+      "field": "example",
+      "structure": "كَانَ with accusative predicate",
+      "level": "A2"
+    },
+    {
+      "term_id": "t07",
+      "field": "example",
+      "structure": "لَمْ + jussive",
+      "level": "A2"
+    },
+    {
+      "term_id": "t08",
+      "field": "example",
+      "structure": "لَنْ + subjunctive",
+      "level": "B1"
+    },
+    {
+      "term_id": "t09",
+      "field": "example",
+      "structure": "future سَـ + present",
+      "level": "A2"
+    },
+    {
+      "term_id": "t10",
+      "field": "example",
+      "structure": "أَنْ + subjunctive; dual noun",
+      "level": "A2"
+    }
+  ]
+}

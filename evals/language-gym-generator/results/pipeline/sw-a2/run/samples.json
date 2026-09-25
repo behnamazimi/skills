@@ -1,0 +1,31 @@
+{
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "ni",
+      "category": "Key word",
+      "definition": "Links a person or thing to what it is: am, is, are. It stays the same for every person.",
+      "example": "Jina langu ni Amina, mimi ni jirani yako. — My name is Amina, I'm your neighbour.",
+      "anti_example": "Not 'Mimi ni nyumbani' for 'I'm at home': where you are takes -ko, so 'Niko nyumbani'."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "kutaka",
+      "category": "Verb",
+      "definition": "Says what you want: a thing, or an action with ku- + verb after it.",
+      "example": "Nataka chai bila sukari, tafadhali. — I want tea without sugar, please.",
+      "discussion": "In speech ninataka shortens to nataka. You'll hear nataka far more, and it's fine in a shop."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "-li-",
+      "category": "Verb pattern",
+      "definition": "Puts an action in the past. Use person prefix + -li- + verb: nilikula, I ate.",
+      "example": "Jana tulikwenda sokoni na mama. — Yesterday we went to the market with Mum.",
+      "anti_example": "Not 'sililala' for 'I didn't sleep': the negative past uses -ku-, so 'sikulala'."
+    }
+  ]
+}

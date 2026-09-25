@@ -315,3 +315,11 @@ test('CLI: emit prints only valid import JSON; validate exits 1 on errors', () =
   try { execFileSync('node', [gym, 'validate', 'list', join(here, 'fixtures/list-es.json'), '--spec', spec], { encoding: 'utf8' }); } catch (e) { code = e.status; }
   assert.equal(code, 1);
 });
+
+test('findings can target list.json, and candidates work without an exclude file', () => {
+  const list = fx('list-es.json');
+  const ok = { findings: [{ term_id: 't03', field: 'term', rule: 'R-EX-01', severity: 'must_fix', quote: 'cuenta', problem: 'p' }] };
+  assert.deepEqual(rules(validateFindings(ok, list, ruleIdsFrom(rulesMd))), []);
+  const out = execFileSync('node', [gym, 'candidates', join(here, 'fixtures/list-es.json'), '--spec', join(here, 'fixtures/spec-es.json')], { encoding: 'utf8' });
+  assert.ok(Array.isArray(JSON.parse(out).pairs));
+});

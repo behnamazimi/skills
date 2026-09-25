@@ -1,0 +1,128 @@
+{
+  "domain": "French restaurants",
+  "description": "Restaurant French for English speakers, level A2–B1, standard metropolitan French (France): booking, ordering, special requests and paying.",
+  "terms": [
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "réserver",
+      "category": "Word",
+      "definition": "Book a table ahead, by phone or online.",
+      "example": "J'ai réservé pour huit heures, au nom de Martin.",
+      "discussion": "On arrival, give the name: 'J'ai réservé au nom de…'. Busy places on weekends often need a booking."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "une table pour deux",
+      "category": "Phrase",
+      "definition": "Asks for a table for two when you walk in. Swap in any number.",
+      "example": "Bonsoir, vous avez une table pour deux?",
+      "discussion": "Say 'bonjour' or 'bonsoir' first. Skipping the greeting sounds rude in France, even when the place is busy."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "la carte",
+      "category": "Word",
+      "definition": "The full list of dishes, where you choose each one separately.",
+      "example": "On peut avoir la carte, s'il vous plaît?",
+      "discussion": "Same idea as English 'à la carte': you pick dishes one by one and pay for each."
+    },
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "je voudrais…",
+      "category": "Pattern",
+      "definition": "Politely asks for something: 'I would like…'. Add a noun or a verb after it.",
+      "example": "Je voudrais un café, s'il vous plaît.",
+      "anti_example": "Not 'je veux un café': to a waiter it sounds like a demand. Say 'je voudrais un café'."
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "qu'est-ce que vous me conseillez?",
+      "category": "Phrase",
+      "definition": "'What do you recommend?' Use it when the menu is long or everything looks good.",
+      "example": "Je ne sais pas quoi choisir. Qu'est-ce que vous me conseillez?",
+      "discussion": "Waiters like this question. A shorter spoken version: 'Vous me conseillez quoi?'"
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "le plat du jour",
+      "category": "Word",
+      "definition": "Today's special, often written on a chalkboard. Usually the quickest, cheapest main dish.",
+      "example": "Le plat du jour, c'est quoi?",
+      "discussion": "At lunch it's often part of a cheap menu. Order it early: popular ones run out."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "je vais prendre…",
+      "category": "Pattern",
+      "definition": "Tells the waiter what you're ordering: 'I'll have…'.",
+      "example": "Pour moi, je vais prendre le poulet.",
+      "discussion": "'Je prends…' works just as well. Both answer the waiter's 'Vous avez choisi?'"
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "le menu",
+      "category": "Word",
+      "definition": "A fixed-price set meal: usually two or three courses for one price.",
+      "example": "Je prends le menu à quinze euros.",
+      "anti_example": "Asking for 'le menu' can get you the set meal. For the full list of dishes, ask for 'la carte'."
+    },
+    {
+      "id": "t12",
+      "batch": 1,
+      "term": "être allergique à…",
+      "category": "Pattern",
+      "definition": "Says a food makes you ill, so you can't eat it. Put the food after à.",
+      "example": "Je suis allergique aux noix. Il y a des noix dedans?",
+      "anti_example": "Not 'allergique à les noix': à + les becomes aux, and à + le becomes au."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "une carafe d'eau",
+      "category": "Phrase",
+      "definition": "A jug of tap water. Restaurants in France serve it free.",
+      "example": "Et une carafe d'eau pour la table, s'il vous plaît.",
+      "discussion": "Say 'une carafe d'eau', not just 'de l'eau', or you may get a bottle you pay for."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "l'addition",
+      "category": "Word",
+      "definition": "The bill at the end of the meal. The waiter won't bring it until you ask.",
+      "example": "L'addition, s'il vous plaît!",
+      "anti_example": "Not 'le billet' (a ticket or banknote) or 'la facture' (an invoice). At the table, ask for 'l'addition'."
+    },
+    {
+      "id": "t11",
+      "batch": 1,
+      "term": "le service est compris",
+      "category": "Phrase",
+      "definition": "Service is already in the price, so a tip is a small extra, not expected.",
+      "example": "Le service est compris, mais on laisse deux euros.",
+      "discussion": "In France, prices include service by law. For good service, people round up or leave a few euros, not 15–20%."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "la carte",
+      "target": "le menu",
+      "relationship_type": "often confused with",
+      "description": "English \"menu\" is la carte; le menu is the set meal."
+    },
+    {
+      "source": "je voudrais…",
+      "target": "je vais prendre…",
+      "relationship_type": "alternative to",
+      "description": "Both order politely; je vais prendre… answers \"Vous avez choisi?\"."
+    }
+  ]
+}

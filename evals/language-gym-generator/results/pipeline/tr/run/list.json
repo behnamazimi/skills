@@ -1,0 +1,27 @@
+{
+  "main": [
+    { "id": "t01", "term": "var", "job": "existence and having: there is / I have", "slot": "spine", "level": "A1", "why": "Turkish has no 'have' verb; var carries both existence and possession." },
+    { "id": "t02", "term": "yok", "job": "non-existence and not having: there isn't / I don't have", "slot": "spine", "level": "A1", "why": "Other half of the var/yok pair; hugely frequent in shops and daily talk." },
+    { "id": "t03", "term": "değil", "job": "negating identity or description: is not / am not", "slot": "spine", "level": "A1", "why": "Negation for nouns and adjectives; English speakers wrongly reach for verb negation or yok." },
+    { "id": "t04", "term": "mı / mi / mu / mü", "job": "turning a statement into a yes/no question", "slot": "spine", "level": "A1", "why": "The only way to ask yes/no questions; vowel harmony and placement trip learners." },
+    { "id": "t05", "term": "-mak / -mek istemek", "job": "want to do something", "slot": "construction", "level": "A2", "why": "Want + verb is a core building block." },
+    { "id": "t06", "term": "-abilmek / -ebilmek", "job": "can / be able to do something", "slot": "construction", "level": "A2", "why": "Ability and permission are built with this suffix, not a separate verb." },
+    { "id": "t07", "term": "lazım", "job": "need / have to (in speech)", "slot": "construction", "level": "A2", "why": "The everyday spoken way to say 'I have to' and 'I need'." },
+    { "id": "t08", "term": "yani", "job": "I mean / so (rephrasing and concluding in talk)", "slot": "glue", "level": "A2", "why": "One of the most frequent spoken fillers; learners hear it constantly." },
+    { "id": "t09", "term": "bence", "job": "in my opinion", "slot": "glue", "level": "A2", "why": "The compact way to give an opinion; needed to join conversation." },
+    { "id": "t10", "term": "gibi", "job": "like / as (comparison after a noun)", "slot": "glue", "level": "A2", "why": "Very frequent postposition for comparing and describing." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "-malı / -meli", "job": "should / must (advice and obligation)", "slot": "construction", "level": "A2", "why": "Next obligation form after lazım." },
+    { "id": "s02", "term": "hiç", "job": "never / not at all (with negation)", "slot": "glue", "level": "A2", "why": "Frequent intensifier of negation." },
+    { "id": "s03", "term": "galiba", "job": "I guess / probably", "slot": "glue", "level": "B1", "why": "Common hedge in speech." }
+  ],
+  "sets": [
+    { "name": "existence pair", "members": ["var", "yok"] }
+  ],
+  "shape": {
+    "jobs_covered": { "existence": "var", "possession": "var / yok", "negation (nouns, adjectives)": "değil", "questions": "mı / mi / mu / mü", "want": "-mak / -mek istemek", "can": "-abilmek / -ebilmek", "must": "lazım", "identity": "zero copula in 3rd person; negated with değil", "people": "person is marked on verb endings; pronoun set (6) not started at count 10" },
+    "concrete_nouns": 0,
+    "notes": "Bare A2–B1 list, building blocks first, then glue. Pronoun set and personal 'be' endings left out as A1 sets too large for 10 slots. No greetings or nouns."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "biti",
+      "category": "Verb",
+      "definition": "Says who someone is, what something is like, or where it is. Short forms: sam, si, je, smo, ste, su.",
+      "example": "Gde si? U autobusu sam. — Where are you? I'm on the bus.",
+      "anti_example": "Not 'Sam umoran' for 'I'm tired': a short form can't start a sentence. Say 'Umoran sam'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "ima / nema",
+      "category": "Sentence builder",
+      "definition": "There is, there isn't: ima for yes, nema for no.",
+      "example": "Ima li mleka? Nema, sve smo popili. — Is there milk? No, we drank it all.",
+      "anti_example": "Not 'nema mleko': after nema the noun changes its ending, so 'nema mleka', 'nema vremena'."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "ne",
+      "category": "Sentence builder",
+      "definition": "Makes a verb negative. It goes right before the verb and is written apart: ne znam.",
+      "example": "Izvinite, ne znam gde je pošta. — Sorry, I don't know where the post office is.",
+      "anti_example": "Not 'ne sam' or 'ne imam': with biti, imati and hteti it joins the verb, so nisam, nemam, neću."
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "da li",
+      "category": "Sentence builder",
+      "definition": "Turns a normal sentence into a yes/no question when you put it first.",
+      "example": "Da li radiš sutra? — Are you working tomorrow?",
+      "discussion": "In speech people often drop it and just raise the voice, or put li after the verb: Radiš li sutra?"
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "imati",
+      "category": "Verb",
+      "definition": "Have or own something. The negative is one word: nemam, nemaš, nema.",
+      "example": "Imaš li olovku? Moja ne piše. — Got a pen? Mine doesn't work.",
+      "anti_example": "Not 'imam da idem' for 'I have to go': imati is only 'own'. Say 'moram da idem'."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "hteti",
+      "category": "Verb",
+      "definition": "Want something, or want to do it: hoću kafu, hoću da spavam.",
+      "example": "Hoću da idem kući, umorna sam. — I want to go home, I'm tired.",
+      "discussion": "Hoću sounds pushy when you order. In a café say 'Jednu kafu, molim' or 'Mogu li dobiti kafu?'"
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "moći",
+      "category": "Verb",
+      "definition": "Can, be able to. With li it is also the polite way to ask for something: mogu li dobiti vodu?",
+      "example": "Mogu li da platim karticom? — Can I pay by card?"
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "morati",
+      "category": "Verb",
+      "definition": "Must, have to. Add da and a present verb: moram da radim.",
+      "example": "Moram da idem, mama me čeka. — I have to go, Mom's waiting.",
+      "anti_example": "Not 'ne moram' for 'I mustn't': ne moram means you don't have to. For not allowed, say ne smem."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "ići",
+      "category": "Verb",
+      "definition": "Go, on foot or in general. Present forms: idem, ideš, ide.",
+      "example": "Idem u prodavnicu, treba li ti nešto? — I'm going to the shop, need anything?",
+      "discussion": "Idemo! is the everyday 'Let's go!', often with ajde in front: Ajde, idemo!"
+    },
+    {
+      "id": "s02",
+      "batch": 1,
+      "term": "doći",
+      "category": "Verb",
+      "definition": "Come or arrive, as one finished event: kad dođeš, when you get here.",
+      "example": "Kad dođeš kući, pošalji mi poruku. — Text me when you get home.",
+      "anti_example": "Not 'Dođem sutra' alone for 'I'm coming tomorrow': say 'Doći ću sutra' or 'Dolazim sutra'."
+    }
+  ]
+}

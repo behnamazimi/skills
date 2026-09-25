@@ -1,0 +1,12 @@
+{ "terms": [
+  { "id": "t01", "job": "existence and having", "trap": "English speakers look for a 'have' verb and calque 'sahip olmak'", "scene": "street directions", "fields": ["example", "anti_example"], "why_fields": "anti_example: the missing 'have' verb is the big trap", "level_exceptions": [] },
+  { "id": "t02", "job": "non-existence and not having", "trap": "None beyond var; the useful point is answering with bare yok", "scene": "bakery", "fields": ["example", "discussion"], "why_fields": "discussion: bare 'yok' as the natural answer to 'var mı?'", "level_exceptions": [] },
+  { "id": "t03", "job": "negating a noun or adjective", "trap": "English speakers use yok for 'not'", "scene": "restaurant soup", "fields": ["example", "anti_example"], "why_fields": "anti_example: değil vs yok mix-up", "level_exceptions": [] },
+  { "id": "t04", "job": "yes/no question", "trap": "writing it joined to the word, or putting the person ending on the verb", "scene": "bus stop", "fields": ["example", "discussion"], "why_fields": "discussion: spelling as a separate word and where endings go", "level_exceptions": [] },
+  { "id": "t05", "job": "want to do something", "trap": "English word order: istemek before the verb", "scene": "evening plans", "fields": ["example", "anti_example"], "why_fields": "anti_example: SOV order trap", "level_exceptions": [] },
+  { "id": "t06", "job": "can / be able to", "trap": "keeping -bil- in the negative", "scene": "hot office", "fields": ["example", "anti_example"], "why_fields": "anti_example: gelebilmiyorum vs gelemiyorum", "level_exceptions": [] },
+  { "id": "t07", "job": "have to / need", "trap": "None major; useful point is 'Bana X lazım'", "scene": "leaving a party", "fields": ["example", "discussion"], "why_fields": "discussion: noun + lazım for needing things", "level_exceptions": [] },
+  { "id": "t08", "job": "I mean / so in talk", "trap": "None", "scene": "texting a friend", "fields": ["example", "discussion"], "why_fields": "discussion: filler use and register", "level_exceptions": [] },
+  { "id": "t09", "job": "in my opinion", "trap": "calque 'Düşünüyorum ki…' for 'I think'", "scene": "clothes shop", "fields": ["example", "anti_example"], "why_fields": "anti_example: the calque is what English speakers produce", "level_exceptions": [] },
+  { "id": "t10", "job": "like / as (comparison)", "trap": "'ben gibi' instead of 'benim gibi'", "scene": "family at home", "fields": ["example", "discussion"], "why_fields": "discussion: pronoun form before gibi", "level_exceptions": [] }
+] }

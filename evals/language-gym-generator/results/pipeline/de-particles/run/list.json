@@ -1,0 +1,23 @@
+{
+  "main": [
+    { "id": "t01", "term": "denn (in questions)", "job": "makes a question sound engaged and natural rather than blunt", "slot": "glue", "level": "A2", "why": "Most frequent particle in spoken questions; learners hear it constantly and questions without it can sound cold." },
+    { "id": "t02", "term": "mal (in requests)", "job": "softens an imperative or request into a casual 'just/quickly'", "slot": "glue", "level": "A2", "why": "Everyday requests (Kannst du mal…, Guck mal) use it constantly; the easiest particle to start producing." },
+    { "id": "t03", "term": "doch (in suggestions)", "job": "turns an imperative into a friendly nudge or invitation: 'why don't you…'", "slot": "glue", "level": "B1", "why": "Komm doch mit! / Setz dich doch! are core polite-invitation forms." },
+    { "id": "t04", "term": "ja (shared knowledge)", "job": "marks a statement as something both speakers already know or can see", "slot": "glue", "level": "B1", "why": "Extremely frequent in statements; unstressed ja is not 'yes' and learners misread it." },
+    { "id": "t05", "term": "doch (reminding)", "job": "in a statement: 'but you know that / I told you', reminding or mild reproach", "slot": "glue", "level": "B1", "why": "Das weißt du doch! is everyday; separate job from the suggestion doch (R-TERM-05)." },
+    { "id": "t06", "term": "eigentlich (in questions)", "job": "shifts a question to a new topic or asks what someone 'actually' does: 'by the way'", "slot": "glue", "level": "B1", "why": "Was machst du eigentlich beruflich? — standard small-talk topic shift." },
+    { "id": "t07", "term": "schon (reassurance)", "job": "reassures: 'it'll be fine, surely'", "slot": "glue", "level": "B1", "why": "Das klappt schon / Das wird schon — high frequency comfort phrase pattern." },
+    { "id": "t08", "term": "halt (that's how it is)", "job": "presents something as a plain fact you can't change; shrugging acceptance", "slot": "glue", "level": "B1", "why": "Very common in colloquial speech across Germany, Austria and the south; learners hear it all the time." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "eben (that's how it is)", "job": "same shrug as halt, more northern and slightly more standard", "slot": "glue", "level": "B1", "why": "Next in frequency; regional twin of halt." },
+    { "id": "s02", "term": "ruhig (permission)", "job": "in imperatives: 'go ahead, feel free'", "slot": "glue", "level": "B1", "why": "Nimm dir ruhig noch was — common hospitality particle." },
+    { "id": "s03", "term": "ja (surprise)", "job": "in exclamations: surprise at what you see", "slot": "glue", "level": "B1", "why": "Das ist ja toll! — second frequent job of ja." }
+  ],
+  "sets": [],
+  "shape": {
+    "jobs_covered": { "questions": "denn, eigentlich", "requests and suggestions": "mal, doch (suggestions)", "statements: shared knowledge": "ja", "statements: reminder/reproach": "doch (reminding)", "reassurance": "schon", "resignation": "halt" },
+    "concrete_nouns": 0,
+    "notes": "Grammar slice: every item is a particle tied to one job, spread across the three sentence types particles live in (questions, requests, statements). Modal particles are not a small closed set (~15 core members), so no set is declared. No nouns."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "voice": "second person, present tense, plain; a tutor texting a friend",
+  "categories": ["Key word", "Verb", "Verb pattern"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 18, "discussion": 22, "anti_example": 20, "controversy": 12 },
+  "opening_moves": ["action verb: 'Says…', 'Marks…', 'Puts…'", "meaning first: 'Means…'", "effect: 'Makes…', 'Turns…'", "scene: 'When you…'", "link: 'Links…', 'Points…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "this word", "refers to", "is defined as", "commonly used"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["meeting a new neighbour", "tea break with family", "ordering at a café", "phone call from the market", "asking at a small shop", "chat about yesterday", "paying a boda boda or taxi", "family dinner", "leaving a friend's house", "promise at work", "asking a stranger for help", "arriving to meet a friend"] },
+  "ceiling": "A2",
+  "ipa_format": "none (pronunciation=none)",
+  "notes": "Verbs are cited as ku- infinitives (kutaka, kuweza, kuwa na). Affix patterns are cited with hyphens (-na-, -ko). Swahili forms inside English fields are in their normal spelling, no italics or quotes except in anti_example, where the wrong form goes in single quotes. Examples: one Swahili sentence (or a two-line exchange in one line), then ' — ' and a short natural English gloss. Use the common spoken contractions nataka/naweza only where people really say them. Standard Swahili spelling; no Sheng."
+}

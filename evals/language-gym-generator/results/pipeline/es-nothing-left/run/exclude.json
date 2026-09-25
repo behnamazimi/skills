@@ -1,0 +1,9 @@
+{
+  "raw": ["sí", "no"],
+  "items": [
+    { "raw": "sí", "term": "sí", "lemma": "sí", "job": null, "forms": ["sí, sí", "que sí", "sí que", "claro que sí", "eso sí", "pues sí"], "scope": "lemma" },
+    { "raw": "no", "term": "no", "lemma": "no", "job": null, "forms": ["no, no", "que no", "claro que no", "pues no", "eso no"], "scope": "lemma" }
+  ],
+  "ignored": [],
+  "hints": {}
+}

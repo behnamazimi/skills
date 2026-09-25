@@ -1,0 +1,31 @@
+{
+  "main": [
+    { "id": "t01", "term": "ni", "job": "identity: says what someone or something is (am/is/are)", "slot": "spine", "level": "A1", "why": "The identity link; invariant for person, used in every introduction." },
+    { "id": "t02", "term": "-na-", "job": "present action: person prefix + -na- + verb", "slot": "construction", "level": "A1", "why": "The first working verb frame; carries the person prefixes every other verb form reuses." },
+    { "id": "t03", "term": "kutaka", "job": "want", "slot": "spine", "level": "A1", "why": "Want is a building-block job; nataka is used in every shop and café." },
+    { "id": "t04", "term": "-ko", "job": "location and current state: niko, uko, yuko", "slot": "spine", "level": "A1", "why": "How Swahili says where someone is; English speakers wrongly use ni for this." },
+    { "id": "t05", "term": "kuna", "job": "existence: there is / there are (negative hakuna)", "slot": "spine", "level": "A1", "why": "Existence and availability; asked daily in shops and homes." },
+    { "id": "t06", "term": "-li-", "job": "past action: person prefix + -li- + verb", "slot": "construction", "level": "A2", "why": "Lets the learner tell what happened; core of A2 storytelling." },
+    { "id": "t07", "term": "kuwa na", "job": "have (be with): nina, una, ana", "slot": "spine", "level": "A1", "why": "Possession; Swahili has no separate have verb, so it must be taught as a unit." },
+    { "id": "t08", "term": "si-/hu-/ha- … -i", "job": "negation of present actions: negative prefix, no -na-, verb ends in -i", "slot": "spine", "level": "A2", "why": "Negation is a building block; Swahili marks it on the verb, not with a separate 'not'." },
+    { "id": "t09", "term": "lazima", "job": "must / have to", "slot": "spine", "level": "A2", "why": "Must is a building-block job; very frequent in daily plans." },
+    { "id": "t10", "term": "-ta-", "job": "future action: person prefix + -ta- + verb", "slot": "construction", "level": "A2", "why": "Plans and promises; completes the core tense set." },
+    { "id": "t11", "term": "kuweza", "job": "can / be able to", "slot": "spine", "level": "A1", "why": "Can is a building-block job and the everyday way to ask for help." },
+    { "id": "t12", "term": "-me-", "job": "done and still true now (perfect); many states: nimechoka", "slot": "construction", "level": "A2", "why": "Used constantly for states (tired, full, arrived); English speakers use -na- instead." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "kwenda", "job": "go", "slot": "verb_adj", "level": "A1", "why": "Go is a building-block job; keeps ku- in tensed forms (ninakwenda)." },
+    { "id": "s02", "term": "kuja", "job": "come", "slot": "verb_adj", "level": "A1", "why": "Come is a building-block job; keeps ku- in tensed forms (ninakuja)." },
+    { "id": "s03", "term": "je", "job": "marks a yes/no question at the start of a sentence", "slot": "glue", "level": "A2", "why": "Optional question marker heard in careful speech and writing." },
+    { "id": "s04", "term": "lakini", "job": "but: joins a contrast", "slot": "glue", "level": "A1", "why": "The most frequent contrast connector." }
+  ],
+  "sets": [
+    { "name": "core tense/aspect markers", "members": ["-na-", "-li-", "-ta-", "-me-"] },
+    { "name": "want / can / must", "members": ["kutaka", "kuweza", "lazima"] }
+  ],
+  "shape": {
+    "jobs_covered": { "identity": "ni", "location/state": "-ko", "existence": "kuna", "possession": "kuwa na", "people reference": "person prefixes ni-/u-/a-/tu-/m-/wa- taught inside -na- (pronouns are usually dropped)", "negation": "si-/hu-/ha- … -i", "time": "-na-, -li-, -ta-, -me-", "want": "kutaka", "can": "kuweza", "must": "lazima", "yes/no questions": "rising intonation, no word needed (je is spare s03)", "wh-questions": "question-word set (nini, nani, wapi, lini, gani, vipi, -ngapi) is too big for 12 slots; not started", "go/come": "not covered at this count (spares s01, s02)", "politeness": "lexical only, not grammatical" },
+    "concrete_nouns": 0,
+    "notes": "Bare A2 slice with no known items, so building blocks and the core tense set take every slot. No greetings (A2 filter). Go/come and wh-words are the next items in line."
+  }
+}

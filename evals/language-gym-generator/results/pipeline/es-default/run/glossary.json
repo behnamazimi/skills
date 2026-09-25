@@ -1,0 +1,92 @@
+{
+  "domain": "Spanish",
+  "description": "Core Spanish conversation building blocks for English speakers, level A2–B1, Latin American Spanish (broadly neutral).",
+  "terms": [
+    {
+      "term": "ser",
+      "category": "Verb",
+      "definition": "Says who or what someone is: name, job, origin, or what they are like.",
+      "example": "Hola, soy Ana, la nueva. Soy de Colombia.",
+      "anti_example": "Not 'soy en la oficina' for 'I'm at the office': location takes estar, 'estoy en la oficina'."
+    },
+    {
+      "term": "no + verbo",
+      "category": "Function word",
+      "definition": "Makes a sentence negative: put no right before the verb.",
+      "example": "No quiero nada más, gracias, ya comí mucho.",
+      "anti_example": "Not 'no quiero algo' for 'I don't want anything': Spanish doubles the negative, 'no quiero nada'."
+    },
+    {
+      "term": "estar",
+      "category": "Verb",
+      "definition": "Tells where something is, or how someone feels or looks right now.",
+      "example": "¿Dónde estás? Estoy en el bus, muy cansada.",
+      "mental_model": "Ser is the label on the box; estar is a photo of the box right now.",
+      "anti_example": "Not 'soy cansado' for 'I'm tired': a feeling right now takes estar, 'estoy cansado'."
+    },
+    {
+      "term": "me gusta",
+      "category": "Pattern",
+      "definition": "Shows what you like. The liked thing is the subject: 'me gusta el café', 'me gustan los tacos'.",
+      "example": "Me gustan mucho los tacos de este mercado.",
+      "mental_model": "Think 'it pleases me': the coffee does the pleasing, so the verb matches the coffee.",
+      "anti_example": "Not 'yo gusto el café' for 'I like coffee': say 'me gusta el café'."
+    },
+    {
+      "term": "hay",
+      "category": "Verb",
+      "definition": "Means 'there is' or 'there are', for one thing or many. It never changes form.",
+      "example": "Disculpe, ¿hay una farmacia por aquí?",
+      "anti_example": "Not '¿dónde hay el baño?' for a place you know exists: use estar, '¿dónde está el baño?'."
+    },
+    {
+      "term": "tener que + infinitivo",
+      "category": "Pattern",
+      "definition": "Lets you say you must do something, like 'tengo que trabajar'.",
+      "example": "Lo siento, me voy: mañana tengo que trabajar temprano.",
+      "anti_example": "Not 'tengo trabajar': the que is required, 'tengo que trabajar'."
+    },
+    {
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Expresses what you want: a thing, or to do something, as in 'quiero comer'.",
+      "example": "Quiero un café con leche, por favor.",
+      "discussion": "With people it means love or care: 'te quiero' is what you say to family and close friends."
+    },
+    {
+      "term": "entonces",
+      "category": "Function word",
+      "definition": "Moves a story or idea forward, like 'so' or 'then'.",
+      "example": "Perdí el bus, entonces llegué tarde al trabajo.",
+      "discussion": "People also say it alone to push a story on: '¿Entonces? ¿Qué pasó?' means 'So? What happened?'"
+    },
+    {
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Covers 'can': being able to, or being allowed to, do something.",
+      "example": "¿Puedes abrir la ventana? Hace mucho calor.",
+      "anti_example": "Not '¿puedes nadar?' for a skill you learned: use saber, '¿sabes nadar?'."
+    },
+    {
+      "term": "ir a + infinitivo",
+      "category": "Pattern",
+      "definition": "Talks about plans and what happens soon, like English 'going to'.",
+      "example": "El sábado vamos a ver una película, ¿vienes?",
+      "discussion": "This is the normal spoken future. Keep the a: 'voy a comer', never 'voy comer'."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ser",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Both are 'to be': ser for who or what something is, estar for where it is and how it is now."
+    },
+    {
+      "source": "hay",
+      "target": "estar",
+      "relationship_type": "often confused with",
+      "description": "Hay asks whether something exists; estar says where a known thing is."
+    }
+  ]
+}

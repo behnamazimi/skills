@@ -9,11 +9,11 @@
 //   validate list      <list.json>     --spec <spec.json> [--exclude <exclude.json>]
 //   validate batch     <batch.json>    --spec <spec.json> [--style <style.json>]
 //   validate glossary  <draft.json>    --spec <spec.json> [--exclude ..] [--style ..]
-//   validate findings  <findings.json> --draft <draft.json> [--rules <rules.md>]
+//   validate findings  <findings.json> --draft <draft.json | list.json> [--rules <rules.md>]
 //   validate output    <glossary.json> [--spec <spec.json>]
 //   normalize          <draft.json>    --spec <spec.json> [--style ..] [--out <file>]
 //   metrics            <draft.json>    --spec <spec.json> [--plan <plan.json>]
-//   candidates         <list.json>     --exclude <exclude.json> --spec <spec.json>
+//   candidates         <list.json>     --spec <spec.json> [--exclude <exclude.json>]
 //   tokens             <draft.json>    --spec <spec.json> [--exclude ..] [--levellist <file>]
 //   emit               <draft.json>    --spec <spec.json> [--out <file>]
 // Output: JSON on stdout. Exit 0 = ok, 1 = findings (errors), 2 = usage/IO error.
@@ -490,7 +490,9 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
 export function validateFindings(fnd, draft, ruleIds = null) {
   const out = [];
   if (!isObj(fnd) || !Array.isArray(fnd.findings)) return [finding('R-FIND-02', '', 'findings file must be {findings: []}')];
-  const byId = new Map(draftTerms(draft).map((t) => [t.id, t]));
+  // Works on a draft (terms[]) or on list.json (main[] + spares[], where the only field is `term`).
+  const entries = Array.isArray(draft?.terms) ? draft.terms : [...(draft?.main || []), ...(draft?.spares || [])];
+  const byId = new Map(entries.map((t) => [t.id, t]));
   fnd.findings.forEach((f, i) => {
     const p = `findings[${i}]`;
     for (const k of ['term_id', 'field', 'rule', 'severity', 'quote', 'problem']) if (typeof f[k] !== 'string' || !f[k].trim()) out.push(finding('R-FIND-02', `${p}.${k}`, 'must be a non-empty string'));
@@ -702,7 +704,7 @@ function main(argv) {
       return;
     }
     case 'metrics': return report([], metrics(readJson(a), need(flags, 'spec'), opt('plan')));
-    case 'candidates': return report([], { pairs: candidates(readJson(a), need(flags, 'exclude'), need(flags, 'spec')) });
+    case 'candidates': return report([], { pairs: candidates(readJson(a), opt('exclude') || { items: [] }, need(flags, 'spec')) });
     case 'tokens': return report([], tokens(readJson(a), need(flags, 'spec'), { ex: opt('exclude'), style: opt('style'), levellist: flags.levellist ? readFileSync(flags.levellist, 'utf8') : null }));
     case 'emit': {
       const spec = need(flags, 'spec');

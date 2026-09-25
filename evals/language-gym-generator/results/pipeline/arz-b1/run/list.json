@@ -1,0 +1,44 @@
+{
+  "main": [
+    { "id": "t01", "term": "فيه", "job": "existence: there is / there are", "slot": "spine", "level": "A1", "why": "Egyptian has no verb for 'there is'; فيه does it in every scene (shops, traffic, problems)." },
+    { "id": "t02", "term": "عند + ضمير", "job": "possession: have (عندي، عندك، عنده…)", "slot": "spine", "level": "A1", "why": "The real Egyptian 'have'; no verb exists for it." },
+    { "id": "t03", "term": "مش", "job": "negation of non-verb sentences, adjectives, participles and the future", "slot": "spine", "level": "A1", "why": "The most frequent negator; needed wherever there is no conjugated verb." },
+    { "id": "t04", "term": "ما…ش", "job": "negation of conjugated verbs (wrap the verb)", "slot": "spine", "level": "A2", "why": "Second half of the negation system; learners constantly misuse مش here." },
+    { "id": "t05", "term": "عايز", "job": "want (participle, agrees: عايزة، عايزين)", "slot": "spine", "level": "A1", "why": "Core 'want' for requests and plans." },
+    { "id": "t06", "term": "لازم", "job": "must / have to", "slot": "spine", "level": "A2", "why": "Core obligation word, invariable." },
+    { "id": "t07", "term": "ممكن", "job": "possibility and polite requests: can / may / could", "slot": "spine", "level": "A1", "why": "Default polite request opener and 'maybe'." },
+    { "id": "t08", "term": "يقدر", "job": "be able to (conjugated ability verb)", "slot": "spine", "level": "A2", "why": "Completes the modal set; ability of a specific person." },
+    { "id": "t09", "term": "بـ + مضارع", "job": "present habit or action in progress (بشتغل، بتاكل)", "slot": "construction", "level": "A2", "why": "Unlocks every present-tense statement in Egyptian; the bare form means something else." },
+    { "id": "t10", "term": "حـ + مضارع", "job": "future (حروح، حتيجي)", "slot": "construction", "level": "A2", "why": "Unlocks talking about plans." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "كان + بـ + مضارع", "job": "past habit or ongoing past action: used to / was doing", "slot": "construction", "level": "B1", "why": "B1 step for narrating the past." },
+    { "id": "s02", "term": "لسه", "job": "still / not yet / just now", "slot": "glue", "level": "A2", "why": "Very frequent time glue in conversation." },
+    { "id": "s03", "term": "يعني", "job": "discourse filler: I mean / so / like", "slot": "glue", "level": "A2", "why": "Everywhere in speech; framing and softening." },
+    { "id": "s04", "term": "خلاص", "job": "that's it / done / enough / okay then", "slot": "glue", "level": "A2", "why": "Load-bearing reply word in everyday talk." }
+  ],
+  "sets": [
+    { "name": "negators", "members": ["مش", "ما…ش"] },
+    { "name": "modal words (want, must, can/may, be able)", "members": ["عايز", "لازم", "ممكن", "يقدر"] },
+    { "name": "verb prefixes for present and future", "members": ["بـ + مضارع", "حـ + مضارع"] }
+  ],
+  "shape": {
+    "jobs_covered": {
+      "identity": "zero copula (no term needed: أنا تعبان)",
+      "existence": "فيه",
+      "location": "zero copula + فين question (question-word set not started)",
+      "possession / have": "عند + ضمير",
+      "negation": "مش, ما…ش",
+      "want": "عايز",
+      "can": "ممكن, يقدر",
+      "must": "لازم",
+      "present": "بـ + مضارع",
+      "future": "حـ + مضارع",
+      "questions": "intonation only; question-word set (8 members) too big for count 10 (R-SEL-04)",
+      "referring to people": "pronoun set (8 members) too big for count 10 (R-SEL-04)",
+      "go / come": "not claimed at count 10; next in line after spares"
+    },
+    "concrete_nouns": 0,
+    "notes": "Bare B1 list with nothing excluded, so building blocks take all ten slots. Three closed sets fully included; pronouns and question words deliberately not started because each would take most of the count."
+  }
+}

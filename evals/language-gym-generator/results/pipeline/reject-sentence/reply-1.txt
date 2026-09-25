@@ -1,0 +1,5 @@
+I need a language to build a glossary for, so I can't use a sentence as the topic. Give me a language, optionally with a slice, a count and settings:
+
+`[language or slice] | [count=10] | [exclude] | [learner=English] | [level] | [immersion] | [pronunciation=ipa|spoken|none]`
+
+Examples: `Spanish 25`, `French A2 | 15`

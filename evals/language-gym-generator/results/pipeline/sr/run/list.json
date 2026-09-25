@@ -1,0 +1,127 @@
+{
+  "main": [
+    {
+      "id": "t01",
+      "term": "biti",
+      "job": "identity, description and location (to be), incl. clitic forms sam/si/je and nisam/nije",
+      "slot": "spine",
+      "level": "A1",
+      "why": "the copula; every description and 'where are you' needs it"
+    },
+    {
+      "id": "t02",
+      "term": "ima / nema",
+      "job": "existence: there is / there isn't",
+      "slot": "spine",
+      "level": "A1",
+      "why": "Serbian says existence with ima/nema, not with biti; nema + genitive is everywhere"
+    },
+    {
+      "id": "t03",
+      "term": "ne",
+      "job": "negation before a verb",
+      "slot": "spine",
+      "level": "A1",
+      "why": "basic negation; also the trap of the fused forms"
+    },
+    {
+      "id": "t04",
+      "term": "da li",
+      "job": "yes/no question opener",
+      "slot": "spine",
+      "level": "A1",
+      "why": "the standard way to turn a statement into a yes/no question"
+    },
+    {
+      "id": "t05",
+      "term": "imati",
+      "job": "possession: have",
+      "slot": "spine",
+      "level": "A1",
+      "why": "have is a core building-block job"
+    },
+    {
+      "id": "t06",
+      "term": "hteti",
+      "job": "want (hoću da + present)",
+      "slot": "spine",
+      "level": "A1",
+      "why": "want is a core job; hoću da + present is the pattern"
+    },
+    {
+      "id": "t07",
+      "term": "moći",
+      "job": "can / be able to",
+      "slot": "spine",
+      "level": "A1",
+      "why": "can is a core job; mogu li...? is also the polite request"
+    },
+    {
+      "id": "t08",
+      "term": "morati",
+      "job": "must / have to",
+      "slot": "spine",
+      "level": "A2",
+      "why": "must is a core job"
+    },
+    {
+      "id": "t09",
+      "term": "ići",
+      "job": "go (on foot or in general)",
+      "slot": "spine",
+      "level": "A1",
+      "why": "go is a core job; irregular forms idem/idi"
+    },
+    {
+      "id": "s02",
+      "term": "doći",
+      "job": "come / arrive",
+      "slot": "spine",
+      "level": "A1",
+      "why": "come is a core job"
+    }
+  ],
+  "spares": [
+    {
+      "id": "s01",
+      "term": "treba da",
+      "job": "need to / should + present",
+      "slot": "construction",
+      "level": "A2",
+      "why": "very frequent impersonal need/should pattern"
+    },
+    {
+      "id": "s03",
+      "term": "znači",
+      "job": "discourse glue: so / I mean",
+      "slot": "glue",
+      "level": "A2",
+      "why": "constant filler and summarizer in speech"
+    },
+    {
+      "id": "s04",
+      "term": "ću + infinitiv",
+      "job": "future: will do",
+      "slot": "construction",
+      "level": "A2",
+      "why": "the future unlocks plans and promises; clitic position trips learners"
+    }
+  ],
+  "sets": [],
+  "shape": {
+    "jobs_covered": {
+      "identity/location": "biti",
+      "existence": "ima / nema",
+      "negation": "ne",
+      "questions": "da li",
+      "have": "imati",
+      "want": "hteti",
+      "can": "moći",
+      "must": "morati",
+      "go": "ići",
+      "come": "doći"
+    },
+    "concrete_nouns": 0,
+    "notes": "Count 10 is too small to start the personal pronoun set (10 members), so it is not started. After review, doći (come, a building block) replaced the future construction ću + infinitiv, which is now the first construction spare with treba da. Politeness (ti/Vi) is shown inside entries rather than as the pronoun set."
+  }
+}

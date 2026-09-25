@@ -1,0 +1,439 @@
+{
+  "rater": 1,
+  "ratings": [
+    {
+      "token": "gde",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "si",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "u",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "autobusu",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sam",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mleka",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sve",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "smo",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "popili",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "hoću",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "idem",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        },
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "kući",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        },
+        {
+          "term_id": "s02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "umorna",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "izvinite",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "znam",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "je",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "pošta",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "imaš",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "olovku",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "moja",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "piše",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "radiš",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sutra",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mogu",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "platim",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "karticom",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "prodavnicu",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "treba",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ti",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "nešto",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "moram",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mama",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "me",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "čeka",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "kad",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "s02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "dođeš",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "s02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "pošalji",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "s02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "s02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "poruku",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "s02",
+          "field": "example"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "term_id": "t02",
+      "field": "example",
+      "structure": "past tense (sve smo popili)",
+      "level": "A2"
+    },
+    {
+      "term_id": "s02",
+      "field": "example",
+      "structure": "kad + present of a finished-event verb; imperative",
+      "level": "A2"
+    },
+    {
+      "term_id": "t07",
+      "field": "example",
+      "structure": "mogu li da + present",
+      "level": "A2"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{ "terms": [
+  { "id": "t01", "job": "identity, location and existence", "trap": "English speakers look for a separate word for 'there' in 'there is'; Latin uses est alone", "scene": "street scene", "fields": ["example", "anti_example"], "why_fields": "anti_example: the missing 'there' is the first reading stumble", "level_exceptions": [] },
+  { "id": "t02", "job": "negation of a statement", "trap": "None serious; placement before the verb differs from English", "scene": "night at home", "fields": ["example", "discussion"], "why_fields": "discussion: where nōn sits is the reading cue", "level_exceptions": [] },
+  { "id": "t03", "job": "asks who / what", "trap": "None", "scene": "market stall", "fields": ["example"], "why_fields": "example is enough", "level_exceptions": [] },
+  { "id": "t04", "job": "can, be able + infinitive", "trap": "Forms (potest, possunt) are not recognised as 'can'", "scene": "night at home (girl can't sleep)", "fields": ["example", "mental_model"], "why_fields": "mental_model: pot- + sum makes the irregular forms readable", "level_exceptions": [] },
+  { "id": "t05", "job": "relative who / which / that", "trap": "English 'who' has one form, so learners pick quī for everyone instead of matching the noun's gender", "scene": "festival singing", "fields": ["example", "anti_example"], "why_fields": "anti_example: gender matching is the real trap", "level_exceptions": [] },
+  { "id": "t06", "job": "'and' on the end of the second word", "trap": "Learners strip -que off words where it is part of the word (quoque, itaque)", "scene": "children in the wood", "fields": ["example", "anti_example"], "why_fields": "anti_example: false -que in quoque/itaque", "level_exceptions": [] },
+  { "id": "t07", "job": "in / on, place where", "trap": "in + accusative means 'into'; English 'in' has one meaning", "scene": "farm field", "fields": ["example", "anti_example"], "why_fields": "anti_example: the other half of the in pair", "level_exceptions": [] },
+  { "id": "t08", "job": "but", "trap": "None", "scene": "describing a family member", "fields": ["example"], "why_fields": "example is enough", "level_exceptions": [] },
+  { "id": "t09", "job": "have, hold", "trap": "None at this level", "scene": "schoolroom book", "fields": ["example"], "why_fields": "example is enough", "level_exceptions": [] },
+  { "id": "t10", "job": "say, tell", "trap": "None at this level", "scene": "cold water at the well", "fields": ["example"], "why_fields": "example is enough", "level_exceptions": [] }
+] }

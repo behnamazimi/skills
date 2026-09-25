@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t10", "field": "term", "rule": "R-SEL-05", "severity": "must_fix", "quote": "ću + infinitiv", "problem": "The building-block job 'come' is not covered by any main term or known item, while a slot-2 construction (future) takes a place. Building blocks are claimed before unlocking constructions, and R-SEL-10 forbids leaving a building-block job uncovered.", "fix": "Promote s02 doći into main and move ću + infinitiv to spares." }
+] }

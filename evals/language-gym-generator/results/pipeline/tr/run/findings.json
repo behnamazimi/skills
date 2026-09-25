@@ -1,0 +1,3 @@
+{ "findings": [
+ { "term_id": "t07", "field": "definition", "rule": "R-FLD-03", "severity": "should_fix", "quote": "After a verb with a person ending", "problem": "The ending in 'gitmem' is a 'my/your' (possessive) ending on the -ma/-me form, not the verb's person ending; a learner following the definition may write 'gidiyorum lazım'.", "fix": "Say the verb gets a 'my/your' ending: gitmem, gitmen.", "source": "rules" }
+] }

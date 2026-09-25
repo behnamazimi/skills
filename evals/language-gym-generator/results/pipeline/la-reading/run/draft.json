@@ -1,0 +1,100 @@
+{
+  "domain": "Latin",
+  "description": "Core words and patterns for reading simple Classical Latin prose, A2–B1, Ciceronian norms, for English speakers.",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "sum, esse",
+      "category": "Verb",
+      "definition": "Says what something is, where it is, or that it exists.",
+      "example": "In viā est canis. — There is a dog in the street.",
+      "anti_example": "Don't hunt for a word for 'there': est alone already means 'there is'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "nōn",
+      "category": "Function word",
+      "definition": "Makes a statement negative, like English 'not'.",
+      "example": "Mārcus nōn dormit. — Marcus isn't sleeping.",
+      "discussion": "It sits right before the word it cancels, usually the verb at the end: puer nōn venit."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "quis, quid",
+      "category": "Pronoun",
+      "definition": "Asks who or what: quis for a person, quid for a thing.",
+      "example": "Quid habēs in mēnsā? — What do you have on the table?"
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "possum, posse",
+      "category": "Verb",
+      "definition": "Means 'I can' or 'I am able'; an infinitive follows to say what.",
+      "example": "Puella nōn potest dormīre. — The girl can't sleep.",
+      "mental_model": "Think pot- + sum: 'be able' is 'be' with a prefix, so potest looks like est."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "-que",
+      "category": "Connector",
+      "definition": "Joins two words as 'and', but sits on the end of the second one.",
+      "example": "Puerī puellaeque in silvā ambulant. — Boys and girls walk in the wood.",
+      "anti_example": "Not every -que means 'and': quoque means 'also', and itaque means 'so'."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "quī, quae, quod",
+      "category": "Pronoun",
+      "definition": "Points back to a noun and adds a clause about it: 'who', 'which' or 'that'.",
+      "example": "Puella quae cantat est Iūlia. — The girl who is singing is Julia.",
+      "anti_example": "Not 'puella quī cantat': a girl needs quae, the feminine form."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "habeō, habēre",
+      "category": "Verb",
+      "definition": "Means 'have' or 'hold', for things you own or carry.",
+      "example": "Discipulus novum librum habet. — The pupil has a new book."
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "in + ablative",
+      "category": "Function word",
+      "definition": "Tells you where something is, with no movement; the noun takes an ablative ending, like viā or agrō.",
+      "example": "Agricola in agrō labōrat. — The farmer works in the field.",
+      "anti_example": "Not 'in hortum' for 'in the garden': that means 'into the garden'. Write in hortō."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "dīcō, dīcere",
+      "category": "Verb",
+      "definition": "Reports speech: 'say' or 'tell'.",
+      "example": "Mārcus dīcit: 'Aqua est frīgida.' — Marcus says: 'The water is cold.'"
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "sed",
+      "category": "Connector",
+      "definition": "Brings in a contrast, like English 'but'.",
+      "example": "Frāter meus est parvus, sed fortis. — My brother is small, but brave."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "possum, posse",
+      "target": "sum, esse",
+      "relationship_type": "builds on",
+      "description": "possum is sum with the prefix pot-, so its forms follow sum."
+    }
+  ]
+}

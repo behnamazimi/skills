@@ -1,0 +1,477 @@
+{
+  "rater": 1,
+  "ratings": [
+    {
+      "token": "jina",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "langu",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "amina",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mimi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "jirani",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "yako",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tunakunywa",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "chai",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        },
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sasa",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "nataka",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "bila",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sukari",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tafadhali",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "uko",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "wapi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "niko",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sokoni",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        },
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mkate",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "leo",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "jana",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tulikwenda",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mama",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "una",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "chenji",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "nina",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "elfu",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "kumi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tu",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sipendi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "samaki",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "asante",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "samahani",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "niondoke",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "nitamaliza",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "kazi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "hii",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "kesho",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "asubuhi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "unaweza",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "kunisaidia",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "tumefika",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "nyumbani",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "salama",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "term_id": "t09",
+      "field": "example",
+      "structure": "subjunctive after lazima (niondoke)",
+      "level": "A2"
+    },
+    {
+      "term_id": "t11",
+      "field": "example",
+      "structure": "object infix -ni- (kunisaidia)",
+      "level": "A2"
+    },
+    {
+      "term_id": "t12",
+      "field": "example",
+      "structure": "perfect -me-",
+      "level": "A2"
+    },
+    {
+      "term_id": "t10",
+      "field": "example",
+      "structure": "future -ta-",
+      "level": "A2"
+    }
+  ]
+}

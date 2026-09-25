@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t11", "field": "discussion", "rule": "R-FLD-13", "severity": "should_fix", "quote": "Menus in France include service by law.", "problem": "English 'menus' here means menu prices, but the glossary teaches that 'le menu' is the set meal; the word invites exactly the confusion t06 warns about.", "fix": "Say 'In France, menu prices include service by law.' or 'prices'.", "source": "rules" }
+] }

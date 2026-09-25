@@ -1,0 +1,5 @@
+{ "terms": [
+  { "id": "t01", "batch": 1, "term": "biti", "category": "Verb", "definition": "Says who someone is, what something is like, or where it is. Short forms: sam, si, je, smo, ste, su.", "example": "Gde si? U autobusu sam. — Where are you? I'm on the bus.", "anti_example": "Not 'Sam umoran' for 'I'm tired': a short form can't start a sentence. Say 'Umoran sam'." },
+  { "id": "t04", "batch": 1, "term": "da li", "category": "Sentence builder", "definition": "Turns a normal sentence into a yes/no question when you put it first.", "example": "Da li radiš sutra? — Are you working tomorrow?", "discussion": "In speech people often drop it and just raise the voice, or put li after the verb: Radiš li sutra?" },
+  { "id": "t08", "batch": 1, "term": "morati", "category": "Verb", "definition": "Must, have to. Add da and a present verb: moram da radim.", "example": "Moram da idem, mama me čeka. — I have to go, Mom's waiting.", "anti_example": "Not 'ne moram' for 'I mustn't': ne moram means you don't have to. For not allowed, say ne smem." }
+] }

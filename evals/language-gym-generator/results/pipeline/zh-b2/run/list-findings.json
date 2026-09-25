@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t06", "field": "term", "rule": "R-TERM-05", "severity": "should_fix", "quote": "到底", "problem": "到底 has several jobs a B2 learner meets (pressing question 'on earth'; 'after all' as in 到底是孩子; 'to the end' as in 坚持到底). The term does not name the job.", "fix": "Keep the bare form learners meet, but tie the definition strictly to the question job and put the other jobs briefly in discussion (R-FLD-10).", "source": "rules" }
+] }

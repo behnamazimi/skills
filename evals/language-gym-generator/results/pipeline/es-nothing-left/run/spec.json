@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "domain": "Spanish yes/no words",
+  "language": "Spanish",
+  "slice": "yes/no words",
+  "slice_type": "grammar",
+  "count": 5,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "A2–B1", "floor": "A2", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Latin American Spanish (broadly neutral)",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": { "locale": "es-419", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true, "diacritics_meaningful": true, "articles": ["el", "la", "los", "las", "un", "una"], "noun_citation": "bare lemma", "pronunciation_convention": "IPA; spoken = stress hint", "grammar_notes": "Copula split ser/estar; hay for existence; pro-drop with verb agreement; negation with preverbal no plus negative concord (nada, nunca, nadie); yes/no questions by intonation only; tú/usted politeness split. Closed sets: yes/no (sí, no), subject pronouns, articles, weekdays, clitic pronouns." },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "domain": "user", "count": "user", "exclude": "user", "learner": "default", "level": "default", "immersion": "default", "pronunciation": "default", "dialect": "default", "slice_type": "inferred" }
+}

@@ -1,0 +1,1020 @@
+{
+  "domain": "Portuguese",
+  "description": "Core everyday Brazilian Portuguese (urban speech of São Paulo and Rio) for A2–B1 learners who want to follow and join normal conversation.",
+  "terms": [
+    {
+      "term": "ser",
+      "category": "Verb",
+      "definition": "Identity 'be': who or what something is. Use it for your name, job, origin, and the clock time.",
+      "example": "Eu sou professora e sou de Recife.",
+      "anti_example": "For how you feel right now, use estar: 'estou cansado', not 'sou cansado'."
+    },
+    {
+      "term": "você",
+      "category": "Pronoun",
+      "definition": "You, for one person. In most of Brazil, it is the normal way to talk to anyone.",
+      "example": "Você mora aqui perto?",
+      "discussion": "It takes the same verb form as ele and ela: 'você fala'. In the South and the North, you also hear 'tu'."
+    },
+    {
+      "term": "não",
+      "category": "Negation",
+      "definition": "No, or not. Put it right before the verb.",
+      "example": "Eu não entendo.",
+      "discussion": "Brazilians often say it twice: 'Não sei, não.' It sounds relaxed. It is not a mistake."
+    },
+    {
+      "term": "estar + gerúndio",
+      "category": "Pattern",
+      "definition": "Right now, in the middle of doing something. Use estar plus a verb ending in -ando, -endo, or -indo.",
+      "example": "Ela está trabalhando agora.",
+      "mental_model": "Think of English 'I am working'. It works almost the same way.",
+      "anti_example": "Books from Portugal say 'estou a trabalhar'. In Brazil, say 'estou trabalhando'."
+    },
+    {
+      "term": "estar",
+      "category": "Verb",
+      "definition": "'Be' for states that change: mood, health, and where people are right now.",
+      "example": "O Pedro está em casa. Ele está doente."
+    },
+    {
+      "term": "e",
+      "category": "Connector",
+      "definition": "And. It joins two words or two short sentences.",
+      "example": "Eu tomo café e ela toma chá."
+    },
+    {
+      "term": "tem",
+      "category": "Verb",
+      "definition": "There is, there are. It says that something exists somewhere.",
+      "example": "Tem uma farmácia aqui perto?",
+      "discussion": "'Há' means the same. In speech, it sounds formal. Brazilians say 'tem' almost all the time.",
+      "controversy": "Some teachers still call this 'tem' too informal for writing."
+    },
+    {
+      "term": "hoje",
+      "category": "Time",
+      "definition": "Today.",
+      "example": "Hoje eu não posso sair."
+    },
+    {
+      "term": "eu",
+      "category": "Pronoun",
+      "definition": "I, the speaker. Brazilians usually say it out loud before the verb.",
+      "example": "Eu trabalho num banco."
+    },
+    {
+      "term": "querer",
+      "category": "Verb",
+      "definition": "Want. Put a thing or a verb after it.",
+      "example": "Você quer um café?",
+      "discussion": "'Quero' can sound a bit direct in a shop. 'Eu queria' is softer."
+    },
+    {
+      "term": "o que",
+      "category": "Question",
+      "definition": "What. Ask about a thing or an action with it.",
+      "example": "O que você vai fazer no sábado?",
+      "anti_example": "Not for picking a name or a number: 'Qual é o seu nome?', not 'O que é o seu nome?'."
+    },
+    {
+      "term": "meu / minha",
+      "category": "Possessive",
+      "definition": "My. It matches the thing you have: 'meu carro', 'minha casa'.",
+      "example": "Minha mãe mora em Salvador.",
+      "discussion": "People often put 'o' or 'a' in front: 'o meu carro'. Both ways are normal."
+    },
+    {
+      "term": "mas",
+      "category": "Connector",
+      "definition": "But. It adds the other side.",
+      "example": "Eu quero ir, mas estou cansado."
+    },
+    {
+      "term": "ele",
+      "category": "Pronoun",
+      "definition": "He, or 'it' for a masculine thing.",
+      "example": "Ele trabalha de noite.",
+      "discussion": "In speech, it also means 'him': 'Eu vi ele ontem.'",
+      "controversy": "Grammar books want 'eu o vi' instead of 'eu vi ele'."
+    },
+    {
+      "term": "ir + infinitivo",
+      "category": "Pattern",
+      "definition": "Future plans. Say 'vou', 'vai', or 'vamos' plus a verb.",
+      "example": "Amanhã eu vou visitar a minha avó.",
+      "discussion": "This is the normal future in speech. Forms like 'falarei' are for writing and speeches."
+    },
+    {
+      "term": "ir",
+      "category": "Verb",
+      "definition": "Go somewhere. Put 'pra' before the place.",
+      "example": "Eu vou pra praia no domingo."
+    },
+    {
+      "term": "aqui",
+      "category": "Place",
+      "definition": "Here, where I am.",
+      "example": "Aqui é a minha casa."
+    },
+    {
+      "term": "nunca",
+      "category": "Negation",
+      "definition": "Never. It goes before the verb.",
+      "example": "Eu nunca fui a Manaus."
+    },
+    {
+      "term": "ter",
+      "category": "Verb",
+      "definition": "Have or own something.",
+      "example": "Eu tenho dois irmãos.",
+      "anti_example": "Age also uses ter: 'Tenho trinta anos', not 'Sou trinta'."
+    },
+    {
+      "term": "qual",
+      "category": "Question",
+      "definition": "Which one. Use it before 'é' for names, numbers, and addresses.",
+      "example": "Qual é o seu telefone?"
+    },
+    {
+      "term": "a gente",
+      "category": "Pronoun",
+      "definition": "We, in normal speech. The verb has the same form as with 'ele'.",
+      "example": "A gente vai jantar fora hoje.",
+      "anti_example": "Say 'a gente vai', not 'a gente vamos'."
+    },
+    {
+      "term": "porque",
+      "category": "Connector",
+      "definition": "Because. It gives the reason.",
+      "example": "Não fui porque estava doente."
+    },
+    {
+      "term": "falar",
+      "category": "Verb",
+      "definition": "Speak or talk.",
+      "example": "Você fala inglês?",
+      "discussion": "'Falar com' is 'talk to someone'. In speech, 'falar que' also means 'say that'."
+    },
+    {
+      "term": "esse / essa",
+      "category": "Demonstrative",
+      "definition": "This or that, for a thing near you or near the listener.",
+      "example": "Essa camiseta é nova?",
+      "discussion": "In speech, Brazilians use 'esse' for both 'this' and 'that'. 'Este' is mostly for writing.",
+      "controversy": "Grammar books still teach a strict este / esse split."
+    },
+    {
+      "term": "de manhã",
+      "category": "Time",
+      "definition": "In the morning.",
+      "example": "Eu corro de manhã."
+    },
+    {
+      "term": "poder",
+      "category": "Verb",
+      "definition": "Can: be able to, or be allowed to.",
+      "example": "Posso pagar com cartão?",
+      "anti_example": "For a skill you learned, use saber: 'sei nadar', not 'posso nadar'."
+    },
+    {
+      "term": "um / uma",
+      "category": "Article",
+      "definition": "A or an. 'Um' goes with masculine words, 'uma' with feminine words.",
+      "example": "Quero um café e uma água.",
+      "discussion": "'Uns' and 'umas' mean 'some' or 'about': 'uns dez minutos'."
+    },
+    {
+      "term": "onde",
+      "category": "Question",
+      "definition": "Where.",
+      "example": "Onde você mora?",
+      "discussion": "For movement, say 'pra onde': 'Pra onde você vai?'"
+    },
+    {
+      "term": "ela",
+      "category": "Pronoun",
+      "definition": "She, or 'it' for a feminine thing.",
+      "example": "Ela é do Rio."
+    },
+    {
+      "term": "então",
+      "category": "Connector",
+      "definition": "So, then. It moves the talk to the next step.",
+      "example": "Então, vamos?",
+      "discussion": "People also start a story with 'Então...'. It gives them a second to think."
+    },
+    {
+      "term": "falei / falou",
+      "category": "Pattern",
+      "definition": "One finished action in the past. For -ar verbs: falei, falou. For -er and -ir verbs: comi, comeu; abri, abriu.",
+      "example": "Ontem eu trabalhei muito e ela cozinhou."
+    },
+    {
+      "term": "bom / boa",
+      "category": "Adjective",
+      "definition": "Good.",
+      "example": "A comida aqui é muito boa.",
+      "discussion": "You hear it in greetings: 'bom dia', 'boa tarde', 'boa noite'."
+    },
+    {
+      "term": "saber",
+      "category": "Verb",
+      "definition": "Know a fact, or know how to do something.",
+      "example": "Você sabe onde fica o metrô?",
+      "anti_example": "For people and places, use conhecer: 'conheço a Ana', not 'sei a Ana'."
+    },
+    {
+      "term": "nós",
+      "category": "Pronoun",
+      "definition": "Also 'we', in a more careful style. The verb ends in -mos.",
+      "example": "Nós moramos em São Paulo.",
+      "discussion": "In daily talk, 'a gente' is more common. 'Nós' is normal in writing and on the news."
+    },
+    {
+      "term": "no / na",
+      "category": "Preposition",
+      "definition": "'Em' + 'o' or 'a': in the, on the, or at the.",
+      "example": "Estou no trabalho. Ela está na rua.",
+      "anti_example": "Don't say 'em o' or 'em a'. Portuguese always joins them."
+    },
+    {
+      "term": "isso",
+      "category": "Demonstrative",
+      "definition": "Points at an idea or a thing with no name: 'this' or 'that'.",
+      "example": "O que é isso?",
+      "discussion": "'Isso!' alone means 'Exactly!'."
+    },
+    {
+      "term": "quando",
+      "category": "Question",
+      "definition": "When. It asks questions. It also joins two sentences.",
+      "example": "Quando você chega?"
+    },
+    {
+      "term": "também",
+      "category": "Adverb",
+      "definition": "Also, too.",
+      "example": "Eu também gosto de samba.",
+      "discussion": "For 'me neither', say 'eu também não'."
+    },
+    {
+      "term": "vir",
+      "category": "Verb",
+      "definition": "Come toward the speaker.",
+      "example": "Você vem pra festa amanhã?",
+      "anti_example": "Toward the other person, Portuguese uses ir: 'Já vou!' is 'I'm coming!'."
+    },
+    {
+      "term": "ontem",
+      "category": "Time",
+      "definition": "Yesterday.",
+      "example": "Ontem eu fiquei em casa."
+    },
+    {
+      "term": "precisar de",
+      "category": "Verb",
+      "definition": "Need. Put 'de' before a thing.",
+      "example": "Preciso de um táxi.",
+      "discussion": "Before a verb, drop the 'de': 'preciso sair'."
+    },
+    {
+      "term": "por favor",
+      "category": "Phrase",
+      "definition": "Please.",
+      "example": "Uma água, por favor."
+    },
+    {
+      "term": "vocês",
+      "category": "Pronoun",
+      "definition": "You, for two or more people.",
+      "example": "Vocês querem água?"
+    },
+    {
+      "term": "nada",
+      "category": "Negation",
+      "definition": "Nothing.",
+      "example": "Não comi nada hoje.",
+      "discussion": "Keep 'não' before the verb: 'não quero nada'. Two negatives are correct here."
+    },
+    {
+      "term": "ter que",
+      "category": "Pattern",
+      "definition": "Must, have to. Put a verb right after it.",
+      "example": "Tenho que trabalhar amanhã.",
+      "discussion": "'Ter de' means the same. It sounds more like writing."
+    },
+    {
+      "term": "como",
+      "category": "Question",
+      "definition": "How, or what something is like.",
+      "example": "Como é a sua cidade?",
+      "discussion": "'Como?' alone means 'Sorry, what?'. Use it when you didn't hear."
+    },
+    {
+      "term": "só",
+      "category": "Adverb",
+      "definition": "Only, just.",
+      "example": "Só quero uma água.",
+      "discussion": "'Só um minuto' is 'just a minute'."
+    },
+    {
+      "term": "seu / sua",
+      "category": "Possessive",
+      "definition": "Your, for 'você'. It matches the thing, not the person.",
+      "example": "Esse é o seu celular?"
+    },
+    {
+      "term": "fazer",
+      "category": "Verb",
+      "definition": "Do or make.",
+      "example": "O que você faz no fim de semana?",
+      "discussion": "'O que você faz?' can also mean 'What is your job?'."
+    },
+    {
+      "term": "aí",
+      "category": "Place",
+      "definition": "There, near you, the listener.",
+      "example": "Está frio aí?",
+      "discussion": "'E aí?' means 'What's up?'. In stories, 'aí' also means 'and then'."
+    },
+    {
+      "term": "falava / comia",
+      "category": "Pattern",
+      "definition": "Habits and background in the past: 'used to' or 'was doing'.",
+      "example": "Antes, eu trabalhava num banco.",
+      "anti_example": "For one finished event, use falei: 'ontem eu falei com ela', not 'ontem eu falava com ela'."
+    },
+    {
+      "term": "eles",
+      "category": "Pronoun",
+      "definition": "They, for men or a mixed group.",
+      "example": "Eles chegaram ontem.",
+      "discussion": "One man in the group is enough for 'eles'."
+    },
+    {
+      "term": "cansado",
+      "category": "Adjective",
+      "definition": "Tired.",
+      "example": "Estou muito cansada hoje."
+    },
+    {
+      "term": "dever",
+      "category": "Verb",
+      "definition": "Should. Use it for advice.",
+      "example": "Você deve descansar.",
+      "discussion": "It can also mean 'probably': 'Ele deve estar em casa.'"
+    },
+    {
+      "term": "do / da",
+      "category": "Preposition",
+      "definition": "'De' + 'o' or 'a': of the, or from the.",
+      "example": "Ela é da Bahia.",
+      "discussion": "It also shows the owner: 'o carro do Pedro'."
+    },
+    {
+      "term": "quem",
+      "category": "Question",
+      "definition": "Who.",
+      "example": "Quem vai buscar as crianças?"
+    },
+    {
+      "term": "né?",
+      "category": "Particle",
+      "definition": "Right? A short tag at the end of a sentence. You ask the listener to agree.",
+      "example": "Está calor hoje, né?",
+      "discussion": "It comes from 'não é'. Brazilians use it all the time."
+    },
+    {
+      "term": "dizer",
+      "category": "Verb",
+      "definition": "Say or tell.",
+      "example": "Ele disse que está doente.",
+      "discussion": "In speech, 'falar' often takes its place: 'ele falou que...'."
+    },
+    {
+      "term": "amanhã",
+      "category": "Time",
+      "definition": "Tomorrow.",
+      "example": "Amanhã tenho aula."
+    },
+    {
+      "term": "conseguir",
+      "category": "Verb",
+      "definition": "Manage to do something, after some effort.",
+      "example": "Não consigo abrir a porta.",
+      "mental_model": "Think 'can', but after trying."
+    },
+    {
+      "term": "elas",
+      "category": "Pronoun",
+      "definition": "'They' for a group of only women.",
+      "example": "Elas estudam juntas."
+    },
+    {
+      "term": "estar com + substantivo",
+      "category": "Pattern",
+      "definition": "Hunger, thirst, cold, sleep, fear: how your body feels right now.",
+      "example": "Estou com fome. Vamos comer?",
+      "mental_model": "Think 'I am with hunger'.",
+      "anti_example": "Not 'estou fome'. You need 'com'."
+    },
+    {
+      "term": "ninguém",
+      "category": "Negation",
+      "definition": "Nobody, no one.",
+      "example": "Ninguém atende o telefone."
+    },
+    {
+      "term": "pra",
+      "category": "Preposition",
+      "definition": "To, or for. It is the spoken form of 'para'.",
+      "example": "Vou pra casa.",
+      "discussion": "Write 'para' in formal texts. Say 'pra' almost always."
+    },
+    {
+      "term": "conhecer",
+      "category": "Verb",
+      "definition": "Be familiar with a person or a place. In the past, it means 'met'.",
+      "example": "Eu conheci o Paulo no trabalho.",
+      "discussion": "'Você conhece o Rio?' means 'Have you been to Rio?'."
+    },
+    {
+      "term": "tipo",
+      "category": "Particle",
+      "definition": "Like, for an example or a pause.",
+      "example": "Ele é, tipo, muito engraçado.",
+      "discussion": "Very casual. Young people use it a lot."
+    },
+    {
+      "term": "dele / dela",
+      "category": "Possessive",
+      "definition": "His (dele) and her (dela). They go after the thing: 'o carro dele'.",
+      "example": "A casa dela é bem grande.",
+      "anti_example": "Don't use 'seu carro' for 'his car'. People will hear 'your car'."
+    },
+    {
+      "term": "por que",
+      "category": "Question",
+      "definition": "Why, in a question. Written as two words.",
+      "example": "Por que você está triste?",
+      "anti_example": "The answer uses 'porque', one word: 'Porque estou cansado.'"
+    },
+    {
+      "term": "mais ... do que",
+      "category": "Pattern",
+      "definition": "More ... than. Put the adjective in the middle.",
+      "example": "O Rio é mais quente do que São Paulo.",
+      "discussion": "'Do' is often dropped: 'mais alto que'."
+    },
+    {
+      "term": "agora",
+      "category": "Time",
+      "definition": "Now.",
+      "example": "Agora não posso falar.",
+      "discussion": "'Agora mesmo' is 'right now'."
+    },
+    {
+      "term": "obrigado / obrigada",
+      "category": "Phrase",
+      "definition": "Thank you. Men say 'obrigado'. Women say 'obrigada'.",
+      "example": "Obrigada pela ajuda!",
+      "anti_example": "It matches the speaker, not the listener. A woman thanking a man still says 'obrigada'."
+    },
+    {
+      "term": "dar",
+      "category": "Verb",
+      "definition": "Give.",
+      "example": "Me dá um copo d'água?",
+      "discussion": "'Me dá...' is a normal casual way to ask for something in Brazil."
+    },
+    {
+      "term": "ali",
+      "category": "Place",
+      "definition": "Over there, close and in sight.",
+      "example": "O banheiro é ali."
+    },
+    {
+      "term": "coisa",
+      "category": "Noun",
+      "definition": "Thing.",
+      "example": "Tenho muita coisa pra fazer hoje."
+    },
+    {
+      "term": "gostar de",
+      "category": "Verb",
+      "definition": "Like something. You always need 'de' after it.",
+      "example": "Eu gosto de café.",
+      "anti_example": "Not 'eu gosto café'. Say 'gosto de café' or 'gosto do Rio'."
+    },
+    {
+      "term": "que",
+      "category": "Connector",
+      "definition": "That, linking an idea to 'I think', 'I know', or 'he said'.",
+      "example": "Ele disse que vem amanhã.",
+      "anti_example": "English can drop 'that'. Portuguese can't: 'acho que ela vem', not 'acho ela vem'."
+    },
+    {
+      "term": "nosso / nossa",
+      "category": "Possessive",
+      "definition": "Our. It matches the thing: 'nosso time', 'nossa casa'.",
+      "example": "Nossa casa fica perto da praia.",
+      "anti_example": "'Nossa!' alone is a cry of surprise. It doesn't mean 'our'."
+    },
+    {
+      "term": "acho que",
+      "category": "Pattern",
+      "definition": "I think that. Give an opinion or a guess with it.",
+      "example": "Acho que vai chover.",
+      "discussion": "'Acho que sim' is 'I think so'. 'Acho que não' is 'I don't think so'."
+    },
+    {
+      "term": "de tarde",
+      "category": "Time",
+      "definition": "During the afternoon.",
+      "example": "De tarde eu trabalho em casa.",
+      "anti_example": "'Tarde' alone often means 'late': 'Já é tarde.'"
+    },
+    {
+      "term": "ver",
+      "category": "Verb",
+      "definition": "See or watch.",
+      "example": "Vamos ver um filme hoje?"
+    },
+    {
+      "term": "ruim",
+      "category": "Adjective",
+      "definition": "Bad.",
+      "example": "O café daqui é ruim."
+    },
+    {
+      "term": "quanto / quanta",
+      "category": "Question",
+      "definition": "How much or how many. Plural: quantos, quantas.",
+      "example": "Quanto custa esse livro?",
+      "discussion": "'Quanto é?' is the fast way to ask a price."
+    },
+    {
+      "term": "se",
+      "category": "Connector",
+      "definition": "If.",
+      "example": "Se chover, a gente fica em casa.",
+      "discussion": "The other 'se' goes with verbs: 'ele se chama Paulo'. That is a different job."
+    },
+    {
+      "term": "com",
+      "category": "Preposition",
+      "definition": "With.",
+      "example": "Vou ao cinema com a minha irmã.",
+      "discussion": "'With me' is 'comigo', not 'com eu'."
+    },
+    {
+      "term": "nenhum / nenhuma",
+      "category": "Negation",
+      "definition": "No, not one. It goes before a noun.",
+      "example": "Não tenho nenhuma ideia."
+    },
+    {
+      "term": "acabar de + infinitivo",
+      "category": "Pattern",
+      "definition": "Just did: something happened a moment ago.",
+      "example": "Acabei de chegar em casa."
+    },
+    {
+      "term": "lá",
+      "category": "Place",
+      "definition": "Far away, or out of sight: 'there'.",
+      "example": "Eu morei lá dois anos."
+    },
+    {
+      "term": "tomar",
+      "category": "Verb",
+      "definition": "Drink. Also 'take' a shower, a bus, or medicine.",
+      "example": "Vou tomar um café.",
+      "discussion": "Brazilians say 'tomar' for drinks more than 'beber'. 'Tomar banho' is 'take a shower'."
+    },
+    {
+      "term": "aquele / aquela",
+      "category": "Demonstrative",
+      "definition": "That one over there, far from you and the listener.",
+      "example": "Aquele prédio é o hospital."
+    },
+    {
+      "term": "já",
+      "category": "Adverb",
+      "definition": "Already. In a question, it means 'yet?'.",
+      "example": "Você já comeu?",
+      "discussion": "'Já vou!' means 'Coming!'. Here 'já' means 'right now'."
+    },
+    {
+      "term": "de vocês",
+      "category": "Possessive",
+      "definition": "Your, for two or more people. It goes after the thing.",
+      "example": "O apartamento de vocês é muito bonito."
+    },
+    {
+      "term": "desculpa",
+      "category": "Phrase",
+      "definition": "Sorry. Say it for a small mistake.",
+      "example": "Desculpa, cheguei atrasado."
+    },
+    {
+      "term": "ou",
+      "category": "Connector",
+      "definition": "Or.",
+      "example": "Você quer café ou chá?"
+    },
+    {
+      "term": "melhor",
+      "category": "Adjective",
+      "definition": "Better. With 'o' or 'a', it means 'the best'.",
+      "example": "Esse restaurante é melhor.",
+      "anti_example": "Not 'mais bom'. Say 'melhor'."
+    },
+    {
+      "term": "morar",
+      "category": "Verb",
+      "definition": "Live somewhere, as your home.",
+      "example": "Eu moro em Belo Horizonte.",
+      "anti_example": "For 'be alive', use 'viver'. For your home, use 'morar'."
+    },
+    {
+      "term": "perto de",
+      "category": "Preposition",
+      "definition": "Near, close to.",
+      "example": "Moro perto do metrô."
+    },
+    {
+      "term": "depois",
+      "category": "Time",
+      "definition": "After, later.",
+      "example": "Depois do trabalho, vou pra academia."
+    },
+    {
+      "term": "eu queria",
+      "category": "Phrase",
+      "definition": "Polite 'I would like'. Ask for things in shops and cafés with it.",
+      "example": "Eu queria um pão de queijo, por favor.",
+      "discussion": "It looks like past tense. In a shop, it just sounds polite."
+    },
+    {
+      "term": "legal",
+      "category": "Adjective",
+      "definition": "Nice, cool, fun.",
+      "example": "Seu amigo é muito legal."
+    },
+    {
+      "term": "ainda",
+      "category": "Adverb",
+      "definition": "Still. Nothing has changed yet.",
+      "example": "Você ainda mora lá?"
+    },
+    {
+      "term": "deles / delas",
+      "category": "Possessive",
+      "definition": "Their. 'Deles' for men or a mixed group, 'delas' for only women.",
+      "example": "Os filhos deles estudam aqui."
+    },
+    {
+      "term": "nem",
+      "category": "Negation",
+      "definition": "Not even. It makes a 'no' stronger.",
+      "example": "Ele nem olhou pra mim.",
+      "discussion": "'Nem ... nem' is 'neither ... nor': 'nem café nem chá'."
+    },
+    {
+      "term": "comer",
+      "category": "Verb",
+      "definition": "Eat.",
+      "example": "A gente come arroz e feijão todo dia."
+    },
+    {
+      "term": "cadê",
+      "category": "Question",
+      "definition": "Casual 'where is...?'. You look for something or someone.",
+      "example": "Cadê a minha chave?",
+      "discussion": "Only for speech and texting. In writing, use 'onde está'."
+    },
+    {
+      "term": "tão ... quanto",
+      "category": "Pattern",
+      "definition": "As ... as. Two things are equal.",
+      "example": "Ela é tão alta quanto o pai."
+    },
+    {
+      "term": "sem",
+      "category": "Preposition",
+      "definition": "Without.",
+      "example": "Um café sem açúcar, por favor."
+    },
+    {
+      "term": "de noite",
+      "category": "Time",
+      "definition": "At night, in the evening.",
+      "example": "De noite a gente vê um filme."
+    },
+    {
+      "term": "vamos + infinitivo",
+      "category": "Pattern",
+      "definition": "Let's do something together.",
+      "example": "Vamos comer alguma coisa?",
+      "discussion": "'Vamos!' alone means 'Let's go!'."
+    },
+    {
+      "term": "ainda não",
+      "category": "Adverb",
+      "definition": "Not yet.",
+      "example": "— Você já almoçou? — Ainda não."
+    },
+    {
+      "term": "trabalhar",
+      "category": "Verb",
+      "definition": "Work.",
+      "example": "Trabalho numa escola.",
+      "discussion": "'Trabalhar com' names your field: 'trabalho com vendas'."
+    },
+    {
+      "term": "aquilo",
+      "category": "Demonstrative",
+      "definition": "That thing over there, with no name.",
+      "example": "O que é aquilo no céu?"
+    },
+    {
+      "term": "pois é",
+      "category": "Phrase",
+      "definition": "Yeah, I know. You agree with the other person.",
+      "example": "— Está caro, né? — Pois é."
+    },
+    {
+      "term": "tudo bem?",
+      "category": "Phrase",
+      "definition": "Everything OK? The normal 'how are you?' in Brazil.",
+      "example": "— Oi, tudo bem? — Tudo, e você?",
+      "discussion": "Answer with 'tudo' or 'tudo bem'. It is a greeting, not a real question."
+    },
+    {
+      "term": "chato",
+      "category": "Adjective",
+      "definition": "Boring or annoying.",
+      "example": "Essa reunião é chata."
+    },
+    {
+      "term": "antes",
+      "category": "Time",
+      "definition": "Before, earlier.",
+      "example": "Antes do jantar, eu tomo banho."
+    },
+    {
+      "term": "dá pra + infinitivo",
+      "category": "Pattern",
+      "definition": "Is it possible? It asks or says what can happen.",
+      "example": "Dá pra abrir a janela?",
+      "discussion": "'Não dá' means 'It's not possible' or 'I can't make it'."
+    },
+    {
+      "term": "longe de",
+      "category": "Preposition",
+      "definition": "Far from.",
+      "example": "A praia é longe daqui?",
+      "discussion": "'De' + 'aqui' becomes 'daqui'."
+    },
+    {
+      "term": "entender",
+      "category": "Verb",
+      "definition": "Understand.",
+      "example": "Desculpa, não entendi.",
+      "discussion": "'Não entendi' is the normal way to say 'I don't get it'."
+    },
+    {
+      "term": "o / a",
+      "category": "Article",
+      "definition": "The. 'O' goes with masculine words, 'a' with feminine words. Plural: os, as.",
+      "example": "O ônibus e a padaria ficam ali.",
+      "discussion": "Brazilians often put it before names: 'a Maria', 'o João'."
+    },
+    {
+      "term": "sim",
+      "category": "Phrase",
+      "definition": "Yes.",
+      "example": "— Você quer café? — Quero, sim.",
+      "discussion": "A bare 'sim' can sound stiff. Brazilians often answer with the verb: 'Tem? — Tem.'"
+    },
+    {
+      "term": "pior",
+      "category": "Adjective",
+      "definition": "Worse. With 'o' or 'a', it means 'the worst'.",
+      "example": "O trânsito hoje está pior.",
+      "controversy": "Many people call 'mais ruim' wrong."
+    },
+    {
+      "term": "por isso",
+      "category": "Connector",
+      "definition": "That's why. It gives the result.",
+      "example": "Choveu, por isso não saí."
+    },
+    {
+      "term": "faz + tempo",
+      "category": "Pattern",
+      "definition": "Ago, or 'for' a time until now.",
+      "example": "Faz dois anos que eu moro aqui.",
+      "discussion": "'Faz tempo!' means 'Long time no see!'."
+    },
+    {
+      "term": "chegar",
+      "category": "Verb",
+      "definition": "Arrive, get somewhere.",
+      "example": "Cheguei em casa às dez.",
+      "controversy": "Grammar books want 'chegar a casa', not 'chegar em casa'."
+    },
+    {
+      "term": "vez",
+      "category": "Noun",
+      "definition": "Occasion: 'one time', 'two times'.",
+      "example": "Eu fui lá uma vez.",
+      "anti_example": "For clock time, use 'hora'. For time in general, use 'tempo'."
+    },
+    {
+      "term": "até",
+      "category": "Preposition",
+      "definition": "Until, or as far as.",
+      "example": "Vou até a esquina.",
+      "discussion": "'Até logo' and 'até amanhã' are ways to say 'see you'."
+    },
+    {
+      "term": "fácil",
+      "category": "Adjective",
+      "definition": "Easy.",
+      "example": "A prova foi fácil."
+    },
+    {
+      "term": "de novo",
+      "category": "Adverb",
+      "definition": "Again.",
+      "example": "Pode falar de novo, por favor?"
+    },
+    {
+      "term": "onde fica ...?",
+      "category": "Question",
+      "definition": "Where is...? for places that don't move: streets, shops, cities.",
+      "example": "Onde fica o banheiro?",
+      "anti_example": "For people, use estar or cadê: 'Cadê o Pedro?'"
+    },
+    {
+      "term": "sair",
+      "category": "Verb",
+      "definition": "Go out, or leave a place.",
+      "example": "Saio de casa às sete."
+    },
+    {
+      "term": "com licença",
+      "category": "Phrase",
+      "definition": "Excuse me. Say it to pass someone or to interrupt.",
+      "example": "Com licença, posso passar?",
+      "anti_example": "For a mistake, say 'desculpa' instead."
+    },
+    {
+      "term": "muito",
+      "category": "Adverb",
+      "definition": "Very, or a lot.",
+      "example": "O filme é muito bom.",
+      "discussion": "Before a noun, it changes: 'muita gente', 'muitos amigos'."
+    },
+    {
+      "term": "ficar + adjetivo",
+      "category": "Pattern",
+      "definition": "Get or become. Something changes in a person or a thing.",
+      "example": "Eu fico nervoso no avião."
+    },
+    {
+      "term": "na frente de",
+      "category": "Preposition",
+      "definition": "In front of.",
+      "example": "Te espero na frente do cinema."
+    },
+    {
+      "term": "semana que vem",
+      "category": "Time",
+      "definition": "Next week. Same pattern: 'mês que vem', 'ano que vem'.",
+      "example": "Semana que vem eu viajo."
+    },
+    {
+      "term": "voltar",
+      "category": "Verb",
+      "definition": "Come back or go back.",
+      "example": "Volto já!"
+    },
+    {
+      "term": "tá",
+      "category": "Phrase",
+      "definition": "OK, fine. Short for 'está'.",
+      "example": "— Te ligo às oito. — Tá.",
+      "discussion": "'Tá bom' means the same. 'Tá' also replaces 'está' in speech: 'tá frio'."
+    },
+    {
+      "term": "difícil",
+      "category": "Adjective",
+      "definition": "Hard, difficult.",
+      "example": "Português é difícil?"
+    },
+    {
+      "term": "às vezes",
+      "category": "Adverb",
+      "definition": "Sometimes.",
+      "example": "Às vezes eu vou de bicicleta pro trabalho."
+    },
+    {
+      "term": "pegar",
+      "category": "Verb",
+      "definition": "Take or grab. Also catch a bus.",
+      "example": "Vou pegar o ônibus das oito."
+    },
+    {
+      "term": "bem",
+      "category": "Adverb",
+      "definition": "Well, in a good way.",
+      "example": "Você fala português muito bem!",
+      "discussion": "Before an adjective, it means 'very': 'bem longe'.",
+      "anti_example": "Not 'bom' after a verb: 'fala bem', not 'fala bom'."
+    },
+    {
+      "term": "dinheiro",
+      "category": "Noun",
+      "definition": "Money.",
+      "example": "Não tenho dinheiro agora."
+    },
+    {
+      "term": "semana passada",
+      "category": "Time",
+      "definition": "Last week. Same pattern: 'mês passado', 'ano passado'.",
+      "example": "Semana passada choveu muito."
+    },
+    {
+      "term": "esperar",
+      "category": "Verb",
+      "definition": "Wait for someone or something.",
+      "example": "Espera um pouco!",
+      "discussion": "It also means 'hope': 'espero que sim'."
+    },
+    {
+      "term": "sempre",
+      "category": "Adverb",
+      "definition": "Always, or every time.",
+      "example": "Ela sempre chega atrasada."
+    },
+    {
+      "term": "nossa!",
+      "category": "Phrase",
+      "definition": "Wow! Oh my! A cry of surprise.",
+      "example": "Nossa, que calor!"
+    },
+    {
+      "term": "um pouco",
+      "category": "Adverb",
+      "definition": "A little.",
+      "example": "Eu falo um pouco de português."
+    },
+    {
+      "term": "demais",
+      "category": "Adverb",
+      "definition": "Too much, more than is good.",
+      "example": "Esse restaurante é caro demais.",
+      "discussion": "In casual talk, 'demais!' also means 'awesome!': 'O show foi demais!'"
+    }
+  ],
+  "relationships": [
+    { "source": "ser", "target": "estar", "relationship_type": "often confused with", "description": "Ser is for what something is. Estar is for how it is right now." },
+    { "source": "a gente", "target": "nós", "relationship_type": "means the same as", "description": "Both mean 'we'. A gente is the everyday choice." },
+    { "source": "ir", "target": "vir", "relationship_type": "contrasts with", "description": "Ir is away from you. Vir is toward you." },
+    { "source": "poder", "target": "saber", "relationship_type": "often confused with", "description": "Poder is 'able or allowed'. Saber + verb is a skill." },
+    { "source": "saber", "target": "conhecer", "relationship_type": "often confused with", "description": "Saber is for facts. Conhecer is for people and places." },
+    { "source": "o que", "target": "qual", "relationship_type": "often confused with", "description": "Qual picks one from a set, like a name or a number." },
+    { "source": "por que", "target": "porque", "relationship_type": "often confused with", "description": "Two words to ask. One word to answer." },
+    { "source": "seu / sua", "target": "dele / dela", "relationship_type": "often confused with", "description": "Seu usually means 'your'. Dele and dela mean 'his' and 'her'." },
+    { "source": "nosso / nossa", "target": "nossa!", "relationship_type": "often confused with", "description": "Same spelling, different job: 'our' versus 'wow'." },
+    { "source": "bem", "target": "bom / boa", "relationship_type": "often confused with", "description": "Bem goes with verbs. Bom goes with nouns." },
+    { "source": "falei / falou", "target": "falava / comia", "relationship_type": "contrasts with", "description": "One finished event versus a habit or background." },
+    { "source": "estar", "target": "estar + gerúndio", "relationship_type": "prerequisite of" },
+    { "source": "ir", "target": "ir + infinitivo", "relationship_type": "prerequisite of" },
+    { "source": "estar", "target": "estar com + substantivo", "relationship_type": "prerequisite of" },
+    { "source": "ter que", "target": "ter", "relationship_type": "builds on" },
+    { "source": "tem", "target": "ter", "relationship_type": "builds on", "description": "The same verb, used to say that something exists." },
+    { "source": "dá pra + infinitivo", "target": "dar", "relationship_type": "builds on" },
+    { "source": "faz + tempo", "target": "fazer", "relationship_type": "builds on" },
+    { "source": "eu queria", "target": "querer", "relationship_type": "builds on", "description": "A softer form of 'quero'." },
+    { "source": "ainda não", "target": "ainda", "relationship_type": "builds on" },
+    { "source": "já", "target": "ainda não", "relationship_type": "is answered by", "description": "'Já comeu?' — 'Ainda não.'" },
+    { "source": "semana que vem", "target": "semana passada", "relationship_type": "contrasts with" },
+    { "source": "fácil", "target": "difícil", "relationship_type": "contrasts with" },
+    { "source": "bom / boa", "target": "ruim", "relationship_type": "contrasts with" },
+    { "source": "melhor", "target": "bom / boa", "relationship_type": "is the comparative of" },
+    { "source": "pior", "target": "ruim", "relationship_type": "is the comparative of" },
+    { "source": "mais ... do que", "target": "tão ... quanto", "relationship_type": "contrasts with", "description": "Different amounts versus the same amount." },
+    { "source": "com licença", "target": "desculpa", "relationship_type": "often confused with", "description": "Com licença is before you pass. Desculpa is after a mistake." },
+    { "source": "onde fica ...?", "target": "cadê", "relationship_type": "contrasts with", "description": "Onde fica is for fixed places. Cadê is for things and people you are looking for." },
+    { "source": "esse / essa", "target": "aquele / aquela", "relationship_type": "contrasts with", "description": "Near versus far." },
+    { "source": "isso", "target": "aquilo", "relationship_type": "contrasts with", "description": "Near versus far." },
+    { "source": "o / a", "target": "no / na", "relationship_type": "prerequisite of" },
+    { "source": "nada", "target": "não", "relationship_type": "depends on", "description": "Nada after the verb needs não before it." },
+    { "source": "que", "target": "acho que", "relationship_type": "prerequisite of" }
+  ]
+}

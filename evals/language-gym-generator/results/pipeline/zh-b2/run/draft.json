@@ -1,0 +1,96 @@
+{
+  "domain": "Mandarin Chinese",
+  "description": "Mandarin Chinese at B2 for English speakers: patterns and discourse markers that still trip up upper-intermediate learners, Standard Mandarin (Putonghua), Simplified characters.",
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "……不了",
+      "category": "Pattern",
+      "definition": "Tacked onto a verb, says something can't happen because of circumstances or capacity, not because it's forbidden: too much to eat, too late to go. /tɕʰy˥˩ pu liau˨˩˦/",
+      "example": "菜点太多了，我们两个人吃不了。 — We ordered too much; the two of us can't finish it.",
+      "anti_example": "Too full to finish? Say 吃不了, not 不能吃: 不能吃 sounds like you can't eat it at all, because it's unsafe, forbidden, or your body can't take it."
+    },
+    {
+      "id": "t04",
+      "batch": 1,
+      "term": "难怪",
+      "category": "Discourse marker",
+      "definition": "Says 'no wonder': you've just learned the reason, and something that puzzled you now makes sense. /nan˧˥ kuai˥˩/",
+      "example": "他有孩子了？难怪最近总是这么累。 — He had a baby? No wonder he's so tired lately."
+    },
+    {
+      "id": "t07",
+      "batch": 1,
+      "term": "差点儿",
+      "category": "Adverb",
+      "definition": "Tells you something came very close to happening but in the end didn't: 'almost', 'nearly'. /ʈʂʰa˥˩ tiɐɻ˨˩˦/",
+      "example": "今天在地铁站楼梯上差点儿摔倒。 — I nearly fell on the subway stairs today.",
+      "controversy": "People disagree over 差点儿没. With bad events, 差点儿没摔倒 still means 'almost fell'; some teachers call that illogical, but speakers use it daily. Safe default: plain 差点儿."
+    },
+    {
+      "id": "t08",
+      "batch": 1,
+      "term": "不见得",
+      "category": "Expression",
+      "definition": "Disagrees gently: 'not necessarily', 'I wouldn't be so sure'. Softer than telling someone they're wrong. /pu˧˥ tɕiɛn˥˩ tɤ˧˥/",
+      "example": "贵的饭馆不见得更好吃。 — Expensive restaurants aren't necessarily better.",
+      "discussion": "Close to 不一定, but it sounds more like your own doubt. It also works alone as a reply: 他会来吧？ — 不见得。"
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "连……都",
+      "category": "Pattern",
+      "definition": "Puts the most extreme, least expected case in front of the verb to say 'even X', usually in surprise or complaint. /liɛn˧˥ wo˨˩ tou˥/",
+      "example": "他忙得连饭都没时间吃。 — He's so busy he doesn't even have time to eat.",
+      "discussion": "连……也 works the same way. The whole 连 phrase goes before the verb; English speakers tend to leave 'even' where English puts it, and drop the 都."
+    },
+    {
+      "id": "t05",
+      "batch": 1,
+      "term": "反正",
+      "category": "Discourse marker",
+      "definition": "Waves away the details: whatever the situation, the result won't change, so act on that. Often comes with a shrug or mild impatience. /fan˨˩ ʈʂəŋ˥˩/",
+      "example": "反正已经迟到了，别打车了，坐地铁吧。 — We're late anyway, so forget the taxi; let's take the subway.",
+      "anti_example": "English 'Anyway, how was your trip?' isn't 反正: to change the subject, use 对了. 反正 always means the outcome stays the same whatever happens."
+    },
+    {
+      "id": "t09",
+      "batch": 1,
+      "term": "舍不得",
+      "category": "Expression",
+      "definition": "Can't bring yourself to let go: to leave a person or place, throw something out, or spend money on it. /ʂɤ˨˩ pu tə/",
+      "example": "我妈舍不得扔这件旧大衣。 — My mom can't bear to throw out this old coat.",
+      "anti_example": "舍不得买 means you won't let yourself spend; 买不起 means you really can't afford it. English 'I can't afford it' is usually 买不起."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "好不容易",
+      "category": "Adverb",
+      "definition": "Stresses that something finally happened only after a lot of trouble: 'at long last', 'it took forever, but'. /xau˨˩ pu˥˩ ʐʊŋ˧˥ i˥˩/",
+      "example": "春节的火车票我好不容易才买到。 — After endless tries, I finally got Spring Festival train tickets.",
+      "discussion": "Usually followed by 才 + verb. Oddly, 好容易才买到 means exactly the same, so don't read the 不 as 'not'."
+    },
+    {
+      "id": "t03",
+      "batch": 1,
+      "term": "既然……就",
+      "category": "Pattern",
+      "definition": "Starts from a fact both speakers already accept and draws the obvious next step: 'since that's so, then…'. Handy for nudging a decision. /tɕi˥˩ ʐan˧˥ lei˥˩ lə tɕiou˥˩ ʂuei˥˩/",
+      "example": "既然你这么累，就别去聚会了。 — Since you're this tired, skip the party.",
+      "anti_example": "Not 既然 for news the listener doesn't know yet: 因为下雨，我没去 explains a reason. 既然 only builds on a fact already on the table."
+    },
+    {
+      "id": "t06",
+      "batch": 1,
+      "term": "到底",
+      "category": "Discourse marker",
+      "definition": "Presses for a straight answer in a question, like 'on earth' or 'exactly': you've waited long enough. /tau˥˩ ti˨˩˦/",
+      "example": "你到底想吃什么？ — What on earth do you want to eat?",
+      "anti_example": "Never with 吗: 你到底去不去？ or 你到底去哪儿？, not 你到底去吗？ 到底 needs a question word or a 去不去-style either/or.",
+      "discussion": "It can sound impatient, so soften it with 呢 and avoid it with your boss. Outside questions it also means 'after all' (他到底是孩子) or 'to the end' (坚持到底)."
+    }
+  ]
+}

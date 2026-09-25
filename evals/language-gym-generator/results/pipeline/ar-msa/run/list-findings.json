@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t10", "field": "term", "rule": "R-SEL-07", "severity": "should_fix", "quote": "يُرِيدُ أَنْ", "problem": "The R-SEL-05 jobs 'can', 'must', 'go' and 'come' are not covered by the list or known items; only 'want' is. At count 10 with a complete 4-member negator set this is a count limit, not an oversight, and the spares already hold يَجِبُ أَنْ and يَسْتَطِيعُ أَنْ.", "fix": "Keep as is; name the uncovered jobs in the report so a follow-up glossary starts with the spares." }
+] }

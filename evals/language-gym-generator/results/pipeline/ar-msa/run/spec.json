@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "domain": "Arabic",
+  "language": "Arabic",
+  "slice": null,
+  "slice_type": "bare",
+  "count": 10,
+  "series": null,
+  "confirmed": false,
+  "learner": "English",
+  "level": { "label": "A2–B1", "floor": "A2", "ceiling": "B1" },
+  "beginner_mode": true,
+  "immersion": false,
+  "pronunciation": "none",
+  "dialect": "Modern Standard Arabic (fuṣḥā), the widely taught standard; Arabic script, terms fully vowelled, other target text partly vowelled",
+  "fields": null,
+  "levellist": null,
+  "path": "lite",
+  "profile": {
+    "locale": "ar",
+    "scripts": ["Arab"],
+    "direction": "rtl",
+    "cased": false,
+    "word_separated": true,
+    "diacritics_meaningful": true,
+    "articles": [],
+    "noun_citation": "bare singular, with vowel marks on terms",
+    "pronunciation_convention": "IPA (MSA); spoken = simple Latin transliteration",
+    "grammar_notes": "No present-tense copula: identity and description are verbless nominal sentences (أَنَا طَالِبٌ); كَانَ supplies past/future 'be'. Negation of present nominal sentences with لَيْسَ (conjugated), of present verbs with لَا, past with لَمْ + jussive or مَا + past, future with لَنْ. Existence with هُنَاكَ / يُوجَدُ. Possession has no verb: عِنْدَ + attached pronoun (عِنْدِي 'I have'), also لِ / مَعَ. Location with فِي and other prepositions. Questions: هَلْ for yes/no; question words مَا/مَاذَا, مَنْ, أَيْنَ, مَتَى, كَيْفَ, لِمَاذَا, كَمْ. Modality via verbs + أَنْ: يُرِيدُ أَنْ (want), يَسْتَطِيعُ أَنْ (can), يَجِبُ أَنْ (must). Motion: ذَهَبَ/يَذْهَبُ (go), جَاءَ/يَجِيءُ (come). Verbs are cited in the past 3rd masc. sing. (dictionary form) or taught with the present stem. Future with سَـ / سَوْفَ. Politeness is not grammatical; formulae (مِنْ فَضْلِكَ, شُكْرًا). Closed sets: independent pronouns (12 incl. dual), attached pronoun suffixes, question words, demonstratives (هٰذَا/هٰذِهِ/ذٰلِكَ/تِلْكَ…), the definite article ال (attached), gender and dual marking."
+  },
+  "learner_profile": { "locale": "en", "scripts": ["Latn"], "direction": "ltr", "cased": true, "word_separated": true },
+  "sources": { "domain": "user", "count": "user", "learner": "default", "level": "default", "immersion": "default", "pronunciation": "default", "dialect": "default", "slice_type": "inferred", "fields": "default" }
+}

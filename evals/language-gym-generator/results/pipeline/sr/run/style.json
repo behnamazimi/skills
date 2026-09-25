@@ -1,0 +1,13 @@
+{
+  "voice": "second person, present tense, plain; a tutor texting a friend",
+  "categories": ["Verb", "Sentence builder"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 18, "discussion": 24, "anti_example": 20, "controversy": 15 },
+  "opening_moves": ["action verb: 'Says…', 'Makes…', 'Turns…'", "plain meaning: 'Must, have to…'", "English equivalent first: 'Have or own…'", "scene: 'When you…'"],
+  "banned_phrases": ["it's important to note", "in today's fast-paced world", "leverage", "utilize", "robust", "seamless", "delve into", "unlock", "game-changer", "cutting-edge", "a crucial", "plays a key role", "in essence"],
+  "confusion_types": ["often confused with"],
+  "scenes_by_batch": { "1": ["on the bus, phone call", "checking the fridge", "asking a stranger for directions", "work chat about tomorrow", "office meeting, borrowing a pen", "tired after a party", "paying in a café", "leaving to meet Mom", "popping out to the shop", "texting a friend to get home safe"] },
+  "ceiling": "B1",
+  "ipa_format": "none (pronunciation = none)",
+  "notes": "Ekavian Latin script with č ć š ž đ always written. Verbs cited in the infinitive; show 1-2 present forms in the definition only when irregular. Patterns with da are written 'da + present verb'. Polite Vi appears in examples where a stranger is addressed. Example gloss: Serbian sentence, then ' — ' and a short English gloss."
+}

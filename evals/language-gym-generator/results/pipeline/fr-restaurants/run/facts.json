@@ -1,0 +1,16 @@
+{ "answers": [
+  { "term_id": "t04", "question": "Meaning of réserver in a restaurant?", "answer": "to book a table", "writer_claim": "book a table ahead", "agree": true, "unsure": false },
+  { "term_id": "t03", "question": "Back-translate 'Bonsoir, vous avez une table pour deux ?'", "answer": "Good evening, do you have a table for two?", "writer_claim": "ask for a table for two", "agree": true, "unsure": false },
+  { "term_id": "t05", "question": "What is la carte in a French restaurant?", "answer": "the full menu of dishes", "writer_claim": "the full list of dishes", "agree": true, "unsure": false },
+  { "term_id": "t05", "question": "Gender of carte?", "answer": "feminine", "writer_claim": "la carte", "agree": true, "unsure": false },
+  { "term_id": "t01", "question": "Is 'je veux' less polite than 'je voudrais' to a waiter?", "answer": "yes", "writer_claim": "je veux sounds like a demand", "agree": true, "unsure": false },
+  { "term_id": "t08", "question": "Meaning of 'Qu'est-ce que vous me conseillez ?'", "answer": "What do you recommend (to me)?", "writer_claim": "What do you recommend?", "agree": true, "unsure": false },
+  { "term_id": "t07", "question": "Meaning of le plat du jour?", "answer": "dish of the day, today's special", "writer_claim": "today's special", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "Is 'je prends…' also used to order?", "answer": "yes", "writer_claim": "je prends works just as well", "agree": true, "unsure": false },
+  { "term_id": "t06", "question": "What is le menu in a French restaurant?", "answer": "a fixed-price set meal (formule)", "writer_claim": "fixed-price set meal", "agree": true, "unsure": false },
+  { "term_id": "t12", "question": "Contraction of à + les?", "answer": "aux", "writer_claim": "aux", "agree": true, "unsure": false },
+  { "term_id": "t10", "question": "Must French restaurants give tap water free?", "answer": "yes, a carafe d'eau is free", "writer_claim": "served free", "agree": true, "unsure": false },
+  { "term_id": "t09", "question": "Gender of addition?", "answer": "feminine", "writer_claim": "l'addition (elided)", "agree": true, "unsure": false },
+  { "term_id": "t09", "question": "Meaning of 'la facture'?", "answer": "an invoice", "writer_claim": "an invoice", "agree": true, "unsure": false },
+  { "term_id": "t11", "question": "Is service included in French restaurant prices by law?", "answer": "yes, since 1987", "writer_claim": "include service by law", "agree": true, "unsure": false }
+] }

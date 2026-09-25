@@ -1,0 +1,455 @@
+{
+  "rater": 1,
+  "ratings": [
+    {
+      "token": "j'ai",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "réservé",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "huit",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "heures",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "au",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "nom",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "de",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "martin",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "bonsoir",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "avez",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "on",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "peut",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "avoir",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "s'il",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        },
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t10",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "plaît",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        },
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t10",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "un",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "café",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ne",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "sais",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "pas",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "quoi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        },
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "choisir",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "c'est",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "moi",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "poulet",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "prends",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "quinze",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "euros",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "suis",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "aux",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "noix",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        },
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "il",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "y",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "a",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "des",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "dedans",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "et",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "mais",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "laisse",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "term_id": "t04",
+      "field": "example",
+      "structure": "passé composé (j'ai réservé)",
+      "level": "A2"
+    },
+    {
+      "term_id": "t08",
+      "field": "example",
+      "structure": "ne… pas quoi + infinitive",
+      "level": "A2"
+    },
+    {
+      "term_id": "t11",
+      "field": "example",
+      "structure": "clause joined with mais",
+      "level": "A1"
+    }
+  ]
+}

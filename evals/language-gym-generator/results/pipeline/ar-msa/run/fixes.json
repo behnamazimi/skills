@@ -1,0 +1,22 @@
+{
+  "round": 1,
+  "applied": [
+    {
+      "finding": 0,
+      "term_id": "t01",
+      "field": "anti_example"
+    }
+  ],
+  "rejected": [],
+  "dropped": [],
+  "recheck": {
+    "t01": {
+      "learner_test": "pass (sentence: هُوَ لَيْسَ فِي البَيْتِ.)",
+      "blind_judge": {
+        "winner": "rewrite",
+        "reason": "Version quoting أَنَا لَا مَشْغُولٌ shows the mistake English speakers really make."
+      },
+      "step9": "script ok, no new tokens, facts unchanged, rule check: no findings"
+    }
+  }
+}

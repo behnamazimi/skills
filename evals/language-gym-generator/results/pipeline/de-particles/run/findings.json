@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t01", "field": "definition", "rule": "R-FLD-03", "severity": "must_fix", "quote": "It sits after the verb and subject.", "problem": "Placement note is a usage guide, not the meaning, and it's not always true: denn can come before a full-noun subject (Wie heißt denn dein Bruder?).", "fix": "Replace the second sentence with a plain gloss of the effect.", "source": "facts" }
+] }

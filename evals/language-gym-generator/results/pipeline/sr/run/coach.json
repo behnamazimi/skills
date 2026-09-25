@@ -1,0 +1,171 @@
+{
+  "results": [
+    {
+      "id": "t01",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Kod kuće sam, dođi.",
+        "question": "Which is correct for 'I'm tired': 'Sam umoran' or 'Umoran sam'?",
+        "answer": "Umoran sam",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t02",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Ima li hleba? Nema.",
+        "question": "For 'there's a café nearby', do you say 'Ima kafić blizu' or 'Je kafić blizu'?",
+        "answer": "Ima kafić blizu",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "rewrite",
+      "rewrite": {
+        "field": "definition",
+        "text": "There is, there isn't: ima kafić blizu, nema hleba."
+      },
+      "judge": {
+        "winner": "rewrite",
+        "reason": "Shows the pattern in use, including the changed ending after nema, in fewer abstract words."
+      }
+    },
+    {
+      "id": "t06",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Hoću da jedem picu.",
+        "question": "How do you say 'I want to sleep'?",
+        "answer": "Hoću da spavam",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t03",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Ne pijem kafu.",
+        "question": "Where does ne go in 'I don't work today'?",
+        "answer": "Right before the verb: Danas ne radim.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t05",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Imam dva brata.",
+        "question": "How do you say 'I don't have a car'?",
+        "answer": "Nemam auto",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t04",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Da li imaš vremena?",
+        "question": "Turn 'Ti si umoran' into a yes/no question.",
+        "answer": "Da li si umoran?",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 3,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t07",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Mogu li da uđem?",
+        "question": "How do you politely ask 'Can I sit here?'",
+        "answer": "Mogu li da sednem ovde?",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t09",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Idemo u bioskop.",
+        "question": "How do you say 'I'm going home'?",
+        "answer": "Idem kući",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t08",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Moram da učim za ispit.",
+        "question": "Complete: 'I have to work' = 'Moram ___ radim'.",
+        "answer": "da",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "s02",
+      "learner_test": {
+        "pass": true,
+        "sentence": "Kad dođem, pozvaću te.",
+        "question": "Complete 'When you arrive, call me': 'Kad ___, zovi me.'",
+        "answer": "dođeš",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    }
+  ]
+}

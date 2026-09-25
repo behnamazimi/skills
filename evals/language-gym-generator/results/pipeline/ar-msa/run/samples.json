@@ -1,0 +1,32 @@
+{
+  "terms": [
+    {
+      "id": "t01",
+      "batch": 1,
+      "term": "لَيْسَ",
+      "category": "Negator",
+      "definition": "Says 'is not' or 'am not' in a sentence that has no verb, like 'I'm not busy'.",
+      "example": "لَسْتُ مَشْغُولًا الآنَ، تَفَضَّلْ. — I'm not busy now, go ahead.",
+      "discussion": "It changes with the person: لَسْتُ (I), لَسْتَ (you), لَيْسَتْ (she). The next word takes the ـًا ending: مَشْغُولًا.",
+      "anti_example": "Not 'لَا أَنَا مَشْغُولٌ' for 'I'm not busy': لَا goes with verbs. Say 'لَسْتُ مَشْغُولًا'."
+    },
+    {
+      "id": "t02",
+      "batch": 1,
+      "term": "هُنَاكَ",
+      "category": "Building block",
+      "definition": "There is, there are: tells you something exists in a place.",
+      "example": "هُنَاكَ مَقْهًى صَغِيرٌ قُرْبَ بَيْتِي. — There's a small café near my house.",
+      "discussion": "Standing alone, it also means 'over there'. For 'there isn't', say لَيْسَ هُنَاكَ."
+    },
+    {
+      "id": "t10",
+      "batch": 1,
+      "term": "يُرِيدُ أَنْ",
+      "category": "Verb",
+      "definition": "Wanting to do something: put a present-tense verb right after أَنْ.",
+      "example": "أُرِيدُ أَنْ أَحْجِزَ طَاوِلَةً لِشَخْصَيْنِ. — I want to book a table for two.",
+      "anti_example": "'أُرِيدُ أَنْ يَذْهَبَ' means 'I want him to go'. For yourself, both verbs are 'I': 'أُرِيدُ أَنْ أَذْهَبَ'."
+    }
+  ]
+}

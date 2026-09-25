@@ -1,0 +1,24 @@
+{
+  "main": [
+    { "id": "t01", "term": "je voudrais…", "job": "polite request: ask for something", "slot": "construction", "level": "A1", "why": "The default polite way to ask for anything at the table; unlocks every order." },
+    { "id": "t02", "term": "je vais prendre…", "job": "order: state your choice to the waiter", "slot": "construction", "level": "A2", "why": "What French diners actually say when the waiter asks for the order." },
+    { "id": "t03", "term": "une table pour deux", "job": "arrive: ask for a table for N people", "slot": "phrase", "level": "A1", "why": "First act on arrival; the number slot changes." },
+    { "id": "t04", "term": "réserver", "job": "book a table", "slot": "verb_adj", "level": "A2", "why": "Booking is a core restaurant act; needed on the phone and at the door." },
+    { "id": "t05", "term": "la carte", "job": "the full menu you order from", "slot": "noun", "level": "A2", "why": "The word for 'the menu'; asked for at every meal." },
+    { "id": "t06", "term": "le menu", "job": "the fixed-price set meal", "slot": "noun", "level": "A2", "why": "False friend with English 'menu'; decides what you get and pay." },
+    { "id": "t07", "term": "le plat du jour", "job": "today's special", "slot": "noun", "level": "A2", "why": "On every chalkboard; the cheap, quick option at lunch." },
+    { "id": "t08", "term": "qu'est-ce que vous me conseillez ?", "job": "ask the waiter for a recommendation", "slot": "phrase", "level": "B1", "why": "Load-bearing question when the menu is unclear." },
+    { "id": "t09", "term": "l'addition", "job": "pay: ask for the bill", "slot": "noun", "level": "A2", "why": "The bill never comes unless you ask; the key paying word." },
+    { "id": "t10", "term": "une carafe d'eau", "job": "ask for free tap water", "slot": "phrase", "level": "A2", "why": "Avoids paying for bottled water; asked at almost every meal." },
+    { "id": "t11", "term": "le service est compris", "job": "tip: service charge already included", "slot": "phrase", "level": "B1", "why": "Answers the tipping question every visitor has." },
+    { "id": "t12", "term": "être allergique à…", "job": "say what you can't eat", "slot": "construction", "level": "B1", "why": "Safety-critical act when ordering." }
+  ],
+  "spares": [
+    { "id": "s01", "term": "excusez-moi", "job": "get the waiter's attention", "slot": "phrase", "level": "A1", "why": "How to call a waiter politely." },
+    { "id": "s02", "term": "sans…", "job": "order without an ingredient", "slot": "construction", "level": "A2", "why": "Adjusting a dish is a common act." },
+    { "id": "s03", "term": "on peut payer par carte ?", "job": "ask how to pay", "slot": "phrase", "level": "A2", "why": "Payment method question at the end of every meal." },
+    { "id": "s04", "term": "le pourboire", "job": "the tip", "slot": "noun", "level": "B1", "why": "Word for leaving a little extra." }
+  ],
+  "sets": [],
+  "shape": { "jobs_covered": { "arrive": "une table pour deux", "book": "réserver", "read the menu": "la carte, le menu, le plat du jour", "ask advice": "qu'est-ce que vous me conseillez ?", "request": "je voudrais…", "order": "je vais prendre…", "dietary needs": "être allergique à…", "drinks": "une carafe d'eau", "pay": "l'addition", "tip": "le service est compris" }, "concrete_nouns": 4, "notes": "usage slice: noun limit off. Meal-course set (entrée/plat/dessert) and doneness set (bleu/saignant/à point/bien cuit) not started: too big for 12 alongside the core acts." }
+}
