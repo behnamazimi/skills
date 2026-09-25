@@ -634,7 +634,8 @@ export function normalize(draft, spec, style = null) {
   const clean = (s) => nfc(String(s))
     .replace(/[\r\n\t\u2028\u2029]+/gu, ' ')
     .replace(/\*\*|__|`/gu, '')
-    .replace(/\s+([,.;:!?])/gu, '$1')
+    // Only , and . lose a preceding space: French and others put a space before ; : ! ? and keep it.
+    .replace(/\s+([,.])(?!\d)/gu, '$1')
     .replace(/ (?:--|–|-) (?=\S)/gu, ' — ')
     .replace(/\s{2,}/gu, ' ')
     .trim();

@@ -20,7 +20,7 @@ This step makes every decision that must be the same across the whole glossary, 
 - `voice`, `gloss_separator` (` — ` unless the learner language's punctuation calls for something else), `ipa_format`. For a tone language, `ipa_format` fixes one tone convention for every entry: citation tones or tones after sandhi, which tone letters, and how neutral tone is written.
 - `opening_moves`: 4–6 different ways to open a definition, in the learner language, so that no opening word is used more than 3 times (R-FLD-04).
 - `banned_phrases`: AI-cliché filler in the learner language (R-TONE-02).
-- `example_markers`: the learner language's words and phrases that introduce an example (e.g. "e.g.", "for example", "such as"; "bijvoorbeeld", "zoals" in Dutch). The R-FLD-18 check uses them to spot examples hidden in definitions.
+- `example_markers`: the learner language's words and phrases that introduce an example (e.g. "e.g.", "for example", "such as"; "bijvoorbeeld", "zoals" in Dutch). List only unambiguous markers: not "like" or "as", which also appear in ordinary definitions ("I would like"). The R-FLD-18 check uses them to spot examples hidden in definitions.
 - `confusion_types`: the relationship type(s) meaning "often confused with", in the language used for relationships.
 - `scenes_by_batch`: split the planned scenes so each batch of about 12 has its own set.
 - `ceiling`, and `notes` on anything else every writer must do the same way (how to write patterns with slots, how to show politeness levels, the script and marks convention).

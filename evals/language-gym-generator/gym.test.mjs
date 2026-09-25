@@ -453,3 +453,10 @@ test('metrics ignore scenes on entries that get no example', () => {
   const real = { terms: ['t01', 't02', 't03'].map((id) => ({ id, scene: 'café order', fields: ['example'] })) };
   assert.equal(metrics(esDraft, esSpec, real).repeated_scenes.length, 1);
 });
+
+test('normalize keeps the space French puts before ? ! : ;', () => {
+  const d = { terms: [{ id: 't1', term: 'conseiller', category: 'Verbe', definition: 'Vous me conseillez ? Oui !', example: 'Deux choses : le plat et le vin ; merci .' }] };
+  const n = normalize(d, esSpec);
+  assert.equal(n.terms[0].definition, 'Vous me conseillez ? Oui !');
+  assert.equal(n.terms[0].example, 'Deux choses : le plat et le vin ; merci.');
+});
