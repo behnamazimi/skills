@@ -87,7 +87,7 @@ Words used below:
   - `n/a: <reason>`, when the language has no separate means for it;
   - `deferred`, only when every slot is already used by a higher-priority job, i.e. deferred jobs must come after all covered ones in the priority order.
 
-  At B2 and above the jobs still have to be mapped, but they are usually `known` or `n/a`: B2 lists spend their slots on traps and register. Check: `script` (mapping) + `agent` (whether the term really does that job).
+  This applies only when the ceiling is B1 or lower. At B2 and above the basics are assumed, and slots go to traps and register (**R-SEL-06**). Check: `script` (mapping) + `agent` (whether the term really does that job).
 - **R-SEL-06** Level is a filter:
   - A1: the basics from zero; greetings only if load-bearing.
   - A2–B1: no A1-only content nouns or phrasebook greetings unless the topic needs them. Building blocks still come first.
@@ -119,7 +119,7 @@ Words used below:
 - **R-TERM-03** Written as learners meet it: the dictionary form or the fixed phrase, in the chosen script. No separate entries for routine inflections of one lemma.
 - **R-TERM-04** One noun format for the whole glossary (from `profile.noun_citation`), applied to every noun.
 - **R-TERM-05** A function word with several unrelated jobs at this level is tied to one job in `term` (e.g. `se` + impersonal), or split into several terms. Terms stay unique because each names its job.
-- **R-TERM-06** `term` uses only the chosen script(s) in `profile.scripts`. Check: `script`.
+- **R-TERM-06** `term` uses only the chosen script(s) in `profile.scripts`. Standard slot markers in patterns are allowed in any script: `V`, `N`, `A`, `Adj`, `Adv`, `NP`, `VP`, `X`, `Y` (e.g. `V不了`, `N + を`). Check: `script`.
 - **R-TERM-07** One pattern, one entry: entries that would carry the same definition are merged, and the variants go in `example`.
 - **R-TERM-08** No linguistics jargon as the main list (`allophone`, `clitic climbing`) unless the domain is linguistics.
 

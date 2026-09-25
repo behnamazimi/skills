@@ -386,3 +386,16 @@ test('findings can target a relationship by index', () => {
   const bad = { findings: [{ term_id: 'relationships[5]', field: 'description', rule: 'R-REL-01', severity: 'must_fix', quote: 'x', problem: 'p' }] };
   assert.ok(has(validateFindings(bad, esDraft), 'R-FIND-01'));
 });
+
+test('B2+ skips required jobs; slot markers are not a script violation', () => {
+  const list = { main: [{ id: 't1', term: '把', job: 'j', slot: 'construction', level: 'B1' }], spares: [], sets: [] };
+  assert.ok(!has(validateList(list, fx('spec-zh.json')), 'R-SEL-12'), 'B2 ceiling: no job mapping required');
+  const patterns = { main: ['V不了', '非N不可'].map((t, i) => ({ id: `t${i}`, term: t, job: 'j', slot: 'construction', level: 'B1' })), spares: [], sets: [] };
+  assert.ok(!has(validateList(patterns, fx('spec-zh.json')), 'R-TERM-06', 'main[0]'));
+  assert.ok(!has(validateList(patterns, fx('spec-zh.json')), 'R-TERM-06', 'main[1]'));
+  const ja = { main: [{ id: 't1', term: 'Vてしまう', job: 'j', slot: 'construction', level: 'B1' }], spares: [], sets: [] };
+  const jaSpec = { ...fx('spec-zh.json'), profile: { ...fx('spec-zh.json').profile, locale: 'ja', scripts: ['Jpan'] } };
+  assert.ok(!has(validateList(ja, jaSpec), 'R-TERM-06'));
+  const romanized = { main: [{ id: 't1', term: 'bu liao', job: 'j', slot: 'construction', level: 'B1' }], spares: [], sets: [] };
+  assert.ok(has(validateList(romanized, fx('spec-zh.json')), 'R-TERM-06'), 'real Latin words still fail');
+});

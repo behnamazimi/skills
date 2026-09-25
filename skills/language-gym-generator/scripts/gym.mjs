@@ -70,8 +70,12 @@ function stripIpa(text) { return text.replace(IPA_TAIL, '').trim(); }
 
 function levelIndex(l) { return CEFR.indexOf(String(l || '').toUpperCase()); }
 
+// Standard slot markers in patterns (V不了, N + を, estar + gerundio) are not a script violation.
+const SLOT_MARKERS = /(?<!\p{Script=Latin})(?:V|N|A|X|Y|S|O|Adj|Adv|NP|VP)(?!\p{Script=Latin})/gu;
+
 function scriptsOf(text) {
   const found = new Set();
+  text = text.replace(SLOT_MARKERS, '');
   for (const ch of text) {
     if (!/\p{L}/u.test(ch)) continue;
     for (const sc of ['Latn', 'Cyrl', 'Grek', 'Arab', 'Hebr', 'Deva', 'Beng', 'Guru', 'Gujr', 'Taml', 'Telu', 'Knda', 'Mlym', 'Sinh', 'Thai', 'Lao', 'Khmr', 'Mymr', 'Tibt', 'Geor', 'Armn', 'Ethi', 'Hang', 'Hira', 'Kana', 'Hani', 'Bopo', 'Thaa', 'Syrc', 'Mong', 'Cher', 'Cans', 'Tfng']) {
@@ -284,7 +288,8 @@ export function requiredJobs(spec) {
 }
 
 function checkJobs(list, spec, exKeys, out) {
-  if (spec?.slice_type !== 'bare') return;
+  // Required jobs apply up to B1; at B2+ the basics are assumed and slots go to traps and register (R-SEL-06).
+  if (spec?.slice_type !== 'bare' || levelIndex(spec?.level?.ceiling) > levelIndex('B1')) return;
   const profile = spec.profile || {};
   const jobs = list.shape?.jobs;
   const required = requiredJobs(spec);
