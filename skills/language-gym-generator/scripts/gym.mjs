@@ -20,6 +20,7 @@
 //   emit               <draft.json>    --spec <spec.json> [--out <file>]
 //   rules              --step <NN> | <R-ID>…      (only those rule blocks)
 //   contract           <file name>…                (only those contract sections)
+//   step               start|end <state.json> <step> [--agent A] [--tokens N]   (stamps the real clock)
 //   help               [command]
 // Output: compact lines ("ok …" / findings / "FAIL …"); --json for full JSON. Data commands
 // (metrics, candidates, tokens, ipa, cost) write <name>.json next to their input unless --out is given.
@@ -895,6 +896,26 @@ function stepFile(step) {
   return join(dir, f);
 }
 
+// ---------- step log (real clock, so nobody types timestamps) ----------
+
+export function stepLog(state, action, step, { agent = null, tokens = null, now = new Date() } = {}) {
+  const s = structuredClone(state || {});
+  s.steps = Array.isArray(s.steps) ? s.steps : [];
+  const iso = now.toISOString().replace(/\.\d{3}Z$/, 'Z');
+  if (action === 'start') {
+    s.steps.push({ step, agent, started: iso, ended: null, seconds: null, tokens: null, retries: s.steps.filter((x) => x.step === step && x.agent === agent).length });
+    s.step = step;
+    return s;
+  }
+  const open = [...s.steps].reverse().find((x) => x.step === step && x.ended === null && (agent === null || x.agent === agent));
+  if (!open) throw new UsageError(`no started entry for step "${step}"${agent ? ` (${agent})` : ''}`);
+  open.ended = iso;
+  open.seconds = Math.max(0, Math.round((now - new Date(open.started)) / 1000));
+  open.tokens = Number.isFinite(tokens) ? tokens : null;
+  s.done = [...new Set([...(s.done || []), step])];
+  return s;
+}
+
 // ---------- output ----------
 
 let JSON_OUT = false;
@@ -928,6 +949,7 @@ const HELP = {
   emit: 'emit <draft.json> --spec S [--out <glossary.json>] — keeps only import fields, validates the output, prints the final JSON.',
   rules: 'rules --step <NN> | rules <R-ID> [R-ID…] — prints only those rule blocks from refs/rules.md, in full.',
   contract: 'contract <file name> [more…] — prints only those sections of refs/contract.md (e.g. contract list.json plan.json).',
+  step: 'step start <state.json> <step> [--agent A] | step end <state.json> <step> [--agent A] [--tokens N] — records a state.steps entry with the real clock. --tokens is the usage the agent tool reported; leave it out inline.',
   help: 'help [command] — this text. Never read the script source; everything you need is here.',
 };
 
@@ -999,6 +1021,15 @@ function main(argv) {
       if (missing.length) throw new UsageError(`no contract section for: ${missing.join(', ')}`);
       process.stdout.write(secs.join('\n').trimEnd() + '\n');
       return;
+    }
+    case 'step': {
+      const [, action, file, step] = pos;
+      if (!['start', 'end'].includes(action) || !file || !step) throw new UsageError('step start|end <state.json> <step> [--agent A] [--tokens N]');
+      const state = existsSync(file) ? readJson(file) : {};
+      const next = stepLog(state, action, step, { agent: flags.agent || null, tokens: flags.tokens !== undefined ? Number(flags.tokens) : null });
+      writeFileSync(file, JSON.stringify(next, null, 2) + '\n');
+      const e = next.steps[next.steps.length - 1];
+      return report([], {}, action === 'start' ? `step ${step} started` : `step ${step} ended`);
     }
     case 'help': case undefined: {
       const k = a && HELP[a] ? [a] : Object.keys(HELP);

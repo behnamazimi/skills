@@ -40,7 +40,7 @@ For each step, start a **new** subagent. Never continue an earlier one: fresh co
 
 After each step:
 - run the checks its file names, and update `state.json`;
-- append the step's cost to `state.steps`: start and end times, seconds, and the token usage the agent tool reported for that subagent (`null` inline). One entry per agent call, including batches, the two step 9 agents and retries (`GYM contract state.json`);
+- log it with the real clock: `GYM step start state.json <NN> --agent <role>` before the agent call, `GYM step end state.json <NN> --agent <role> --tokens <usage the agent tool reported>` after it. One pair per agent call, including batches, the two step 9 agents and retries. Never type times or durations by hand;
 - on errors, give the findings back to the same step as a **new** subagent, once, for the whole batch;
 - after that, follow the step file's fallback (swap in spares as a batch, drop, or continue shorter).
 
@@ -69,6 +69,6 @@ After the user confirms at parse time:
 
 ## 6. Fallbacks
 
-- **No subagents** (the harness has no agent tool): run the same step files yourself, in order, writing the same files and running the same checks, still batch by batch. Load each step's rules with `GYM rules --step NN` when you reach it, not all at once. For "fresh" review steps, re-read only that step's inputs before judging. After every step, append its `state.steps` entry with times (`tokens: null`). Mark `state.json` `inline: true`; the report says the independent reviews were done by the same agent.
+- **No subagents** (the harness has no agent tool): run the same step files yourself, in order, writing the same files and running the same checks, still batch by batch. Load each step's rules with `GYM rules --step NN` when you reach it, not all at once. For "fresh" review steps, re-read only that step's inputs before judging. Wrap every step in `GYM step start` / `GYM step end` (no `--tokens`). Mark `state.json` `inline: true`; the report says the independent reviews were done by the same agent.
 - **No Node:** do each `GYM` check by hand, following the rule it implements, and mark `state.json` `node: false`. Read `refs/rules.md` and `refs/contract.md` directly, only the sections a step needs. The report lists those checks as *unverified*.
 - **Interrupted run:** read `state.json` in the run folder and continue from `step`.

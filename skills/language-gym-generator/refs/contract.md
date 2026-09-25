@@ -38,7 +38,7 @@ Every step reads and writes files in the run folder. It never passes data only t
   "steps": [ { "step": "04-plan", "agent": "plan", "started": "2026-09-25T18:01:10Z", "ended": "2026-09-25T18:02:30Z", "seconds": 80, "tokens": 30000, "retries": 0 } ] }
 ```
 
-`steps` gets one entry per unit of work: every step, every parallel batch, every part of step 9, every fix round and every retry. `tokens` is the subagent's total token usage as reported by the agent tool when the step finished. It is `null` when the step ran inline or wasn't a subagent, because an agent can't see its own usage; never estimate it. `GYM cost state.json` sums the entries per step.
+`steps` gets one entry per unit of work: every step, every parallel batch, every part of step 9, every fix round and every retry. `tokens` is the subagent's total token usage as reported by the agent tool when the step finished. It is `null` when the step ran inline or wasn't a subagent, because an agent can't see its own usage; never estimate it. Entries are written only by `GYM step start` / `GYM step end`, which use the real clock. `GYM cost state.json` sums them per step.
 
 To resume a run, read `state.json` and continue from `step`. `inline: true` means the steps ran without subagents; `node: false` means the script checks were done by hand. Both go in the report.
 

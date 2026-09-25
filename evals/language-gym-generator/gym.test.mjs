@@ -538,3 +538,17 @@ test('punctuation inside quotes does not end a sentence', () => {
   d.terms[0].definition = 'Asks about a thing. Use it for objects. Not for people.';
   assert.ok(has(validateGlossary(d, esSpec), 'R-FLD-07', 'terms[0]'), 'three real sentences still fail');
 });
+
+test('step log stamps the real clock and never goes negative', async () => {
+  const { stepLog } = await import('../../skills/language-gym-generator/scripts/gym.mjs');
+  let s = stepLog({}, 'start', '04-plan', { agent: 'plan', now: new Date('2026-09-25T18:00:00Z') });
+  s = stepLog(s, 'end', '04-plan', { agent: 'plan', tokens: 30000, now: new Date('2026-09-25T18:01:20Z') });
+  assert.deepEqual([s.steps[0].seconds, s.steps[0].tokens, s.steps[0].ended], [80, 30000, '2026-09-25T18:01:20Z']);
+  assert.throws(() => stepLog(s, 'end', '05-write'), /no started entry/);
+  const tmp = join(here, 'fixtures', '.tmp-state.json');
+  run('step', 'start', tmp, '02-select', '--agent', 'select');
+  run('step', 'end', tmp, '02-select', '--agent', 'select');
+  const st = JSON.parse(readFileSync(tmp, 'utf8'));
+  (await import('node:fs')).unlinkSync(tmp);
+  assert.ok(st.steps[0].seconds >= 0 && st.steps[0].tokens === null);
+});
