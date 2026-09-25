@@ -551,7 +551,8 @@ export function validateGlossary(draft, spec, { ex = null, style = null, partial
     for (const [f, max] of Object.entries(limits)) {
       if (typeof t[f] !== 'string' || !Number.isFinite(max)) continue;
       const loc = f === 'example' ? profile.locale : lp.locale;
-      const n = words(f === 'definition' ? def : t[f], loc).length;
+      // The example limit is for the target sentence; a learner-language gloss after the separator doesn't count.
+      const n = words(f === 'definition' ? def : f === 'example' ? targetPart('example', t[f], spec, style) : t[f], loc).length;
       if (n > max * 1.25) out.push(finding('R-FLD-06', `${p}.${f}`, `${n} words; style limit is ${max}`));
     }
     // Banned phrases.

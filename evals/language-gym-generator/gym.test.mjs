@@ -460,3 +460,11 @@ test('normalize keeps the space French puts before ? ! : ;', () => {
   assert.equal(n.terms[0].definition, 'Vous me conseillez ? Oui !');
   assert.equal(n.terms[0].example, 'Deux choses : le plat et le vin ; merci.');
 });
+
+test('example length limit ignores the learner-language gloss', () => {
+  const d = structuredClone(esDraft);
+  d.terms[0].example = 'Estoy en casa. — I am at home right now because it is late and raining hard outside.';
+  assert.ok(!has(validateGlossary(d, esSpec, { style: { limits: { example: 5 } } }), 'R-FLD-06', 'terms[0]'));
+  d.terms[0].example = 'Estoy en casa con mi madre y mi hermano esta tarde.';
+  assert.ok(has(validateGlossary(d, esSpec, { style: { limits: { example: 5 } } }), 'R-FLD-06', 'terms[0]'));
+});
