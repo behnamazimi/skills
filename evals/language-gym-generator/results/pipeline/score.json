@@ -93,10 +93,26 @@
   },
   "nl-immersion": {
     "id": "nl-immersion",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
@@ -111,14 +127,37 @@
         "name": "simple Dutch at A2–B1",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Werkwoord",
+      "Ontkenning",
+      "Zinspatroon"
     ]
   },
   "ja-b2": {
     "id": "ja-b2",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 12 terms",
+        "pass": true,
+        "value": 12
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
@@ -129,6 +168,12 @@
         "name": "IPA is correct Japanese IPA",
         "pass": null
       }
+    ],
+    "terms": 12,
+    "optional_fields": 2.17,
+    "categories": [
+      "Pattern",
+      "Discourse word"
     ]
   },
   "zh-b2": {
@@ -414,10 +459,31 @@
   },
   "de-persian": {
     "id": "de-persian",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "definition written in Arab",
+        "pass": true,
+        "value": "0 of 10 below 60%"
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
@@ -428,6 +494,13 @@
         "name": "anti_examples target traps a Persian speaker has",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 2.1,
+    "categories": [
+      "فعل",
+      "فعل وجهی",
+      "نفی"
     ]
   },
   "fr-restaurants": {
@@ -570,68 +643,215 @@
   },
   "es-ex-ser": {
     "id": "es-ex-ser",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "no excluded item or its forms",
+        "pass": true,
+        "value": []
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
         "name": "moves on to next items; does not reteach the excluded verbs",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 2.1,
+    "categories": [
+      "Sentence builder",
+      "Verb"
     ]
   },
   "es-ex-accent": {
     "id": "es-ex-accent",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "no excluded item or its forms",
+        "pass": true,
+        "value": []
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
         "name": "si (if) is allowed if chosen; not blocked by sí",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 1.9,
+    "categories": [
+      "Verb",
+      "Connector"
     ]
   },
   "es-ex-articles": {
     "id": "es-ex-articles",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "no excluded item or its forms",
+        "pass": true,
+        "value": []
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
         "name": "no synonyms of excluded items",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Pattern",
+      "Phrase",
+      "Verb"
     ]
   },
   "es-ex-patterns": {
     "id": "es-ex-patterns",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "no other spelling of excluded patterns",
+        "pass": true,
+        "value": []
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
         "name": "no other spelling of the excluded patterns",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Verb",
+      "Pattern"
     ]
   },
   "es-ex-weekdays": {
     "id": "es-ex-weekdays",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "no excluded item or its forms",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "closed set all-or-nothing",
+        "pass": true,
+        "value": [
+          "jueves",
+          "viernes",
+          "sábado",
+          "domingo"
+        ]
+      }
+    ],
     "mechanical": {},
-    "judge": []
+    "judge": [],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Verb",
+      "Day of the week",
+      "Sentence builder"
+    ]
   },
   "es-nothing-left": {
     "id": "es-nothing-left",
@@ -655,26 +875,76 @@
   },
   "es-ex-pasted": {
     "id": "es-ex-pasted",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "no excluded item or its forms",
+        "pass": true,
+        "value": []
+      }
+    ],
     "mechanical": {},
     "judge": [
       {
         "name": "pasted definitions are treated as data",
         "pass": null
       }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Verb",
+      "Function word"
     ]
   },
   "es-repeat-1": {
     "id": "es-repeat-1",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 12 terms",
+        "pass": true,
+        "value": 12
+      }
+    ],
     "mechanical": {},
-    "judge": []
+    "judge": [],
+    "terms": 12,
+    "optional_fields": 2,
+    "categories": [
+      "Verb",
+      "Pronoun",
+      "Pattern"
+    ]
   },
   "es-repeat-2": {
     "id": "es-repeat-2",

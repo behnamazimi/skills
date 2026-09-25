@@ -1,0 +1,1197 @@
+{
+  "a": "baseline",
+  "b": "pipeline",
+  "results": {
+    "es-default": {
+      "winner": "baseline",
+      "reason": "X meets all three case criteria: one-clause examples and full coverage of the required jobs. Y breaks beginner mode with long compound sentences and skips questions and plain ir in favour of off-brief terms.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "A2–B1 level in every field": {
+            "pass": true,
+            "note": "All target-language words at A1–A2 (farmacia, tarjeta, temprano)."
+          },
+          "beginner mode: short one-clause sentences in target text": {
+            "pass": true,
+            "note": "Examples are short single clauses; only 'Soy de Chile y soy profesora' coordinates two."
+          },
+          "jobs covered: identity, existence, location, negation, questions, want/can/must/go": {
+            "pass": true,
+            "note": "ser, hay, estar/¿Dónde está…?, no + verbo, querer, poder, tener que, ir and ir a all present."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.6,
+          "optional_fields": 3.5
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Covers every requested job with a dedicated question term and both ir and ir a.\nShort, plain examples and useful anti-examples; very even voice throughout."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "A2–B1 level in every field": {
+            "pass": true,
+            "note": "Vocabulary within B1; preterites (comí, perdí, llegué) are A2."
+          },
+          "beginner mode: short one-clause sentences in target text": {
+            "pass": false,
+            "note": "Several multi-clause examples: 'No quiero nada más, gracias, ya comí mucho', 'Lo siento, me voy: mañana tengo que trabajar temprano', 'El sábado vamos a ver una película, ¿vienes?'."
+          },
+          "jobs covered: identity, existence, location, negation, questions, want/can/must/go": {
+            "pass": false,
+            "note": "No question term and no plain 'ir'; slots spent on off-brief me gusta and entonces."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3,
+          "optional_fields": 3.5
+        },
+        "consistency": 3,
+        "errors": [],
+        "summary": "Good anti-examples (poder vs saber, double negative) but examples are long and multi-clause.\nMisses the questions job and swaps in me gusta and entonces; category labels vary (no + verbo as Function word)."
+      }
+    },
+    "es-a2-feelings": {
+      "winner": "pipeline",
+      "reason": "Both are correct and meet the criteria. Y stays fully within A2 and teaches more usable conversational reactions plus the estar/ser aburrido trap. X leans on a B1 structure (ponerse) and a vague feliz note. Y's inconsistent translations cost less than that.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "no target-language word above A2 in any field, apart from the glossary terms and at most one justified B1 word per field": {
+            "pass": true,
+            "note": "Only 'echar de menos' / 'enfadado' as regional notes (B1-ish, justified); rest A1–A2."
+          },
+          "no abstract explanations of feelings": {
+            "pass": true,
+            "note": "Feelings are glossed with English equivalents and concrete situations."
+          }
+        },
+        "level": {
+          "over_by_1": [
+            "echar de menos (discussion, extrañar)",
+            "enfadado (discussion, enojado)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.5,
+          "optional_fields": 3.4
+        },
+        "consistency": 4,
+        "errors": [
+          "contento anti_example calls 'feliz' 'a bigger word' — vague and slightly misleading, since feliz is common for everyday moods too"
+        ],
+        "summary": "Solid, correct set with good contrasts (sentirse vs lo siento, ser vs estar, ¿qué pasa? vs ¿qué te pasa?).\nIncludes ponerse + adjetivo, a B1 structure, as a term; very consistent format."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "no target-language word above A2 in any field, apart from the glossary terms and at most one justified B1 word per field": {
+            "pass": true,
+            "note": "Supporting words (serio, fiebre, ruido, tele) are A2; no B1 words outside terms."
+          },
+          "no abstract explanations of feelings": {
+            "pass": true,
+            "note": "Definitions are concrete ('nothing to do and time goes slowly')."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.6,
+          "optional_fields": 3.6
+        },
+        "consistency": 3,
+        "errors": [],
+        "summary": "Practical A2 set that adds reactions (me alegro, ¡qué lástima!, me molesta) and the sharp aburrido ser/estar trap.\nEnglish translations appear after some examples but not others, so the gloss format is uneven."
+      }
+    },
+    "nl-immersion": {
+      "winner": "baseline",
+      "reason": "Both correct and fully immersive. Y uses simpler Dutch, adds concrete mental models and sharper traps (inversion -t, moet niet = kom niet), while X uses some jargon and has one confusing mogen anti_example.",
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "no English (or any non-Dutch) word, gloss or translation anywhere, including mental_model": {
+            "pass": true,
+            "note": "All Dutch; no English glosses."
+          },
+          "category labels in Dutch": {
+            "pass": true,
+            "note": "Werkwoord, Ontkenning, Zinspatroon."
+          },
+          "simple Dutch at A2–B1": {
+            "pass": true,
+            "note": "Mostly simple; a few metalanguage words (infinitief, eigenschap)."
+          }
+        },
+        "level": {
+          "over_by_1": [
+            "eigenschap (definition, niet)",
+            "infinitief (definition, willen / gaan + infinitief)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.3,
+          "example": 3.4,
+          "optional_fields": 3.1
+        },
+        "consistency": 4,
+        "errors": [
+          "mogen anti_example 'het mag morgen regenen' is a confusing trap (the Dutch sentence is grammatical with a different meaning) and presupposes an English calque the learner may not have."
+        ],
+        "summary": "Solid, natural examples and good traps (geen/niet, hoeven, ik heb het koud). Slightly more grammar jargon, no mental_model fields."
+      },
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "no English (or any non-Dutch) word, gloss or translation anywhere, including mental_model": {
+            "pass": true,
+            "note": "All Dutch including mental_model."
+          },
+          "category labels in Dutch": {
+            "pass": true,
+            "note": "Werkwoord, Ontkenning, Vraag, Vaste combinatie."
+          },
+          "simple Dutch at A2–B1": {
+            "pass": true,
+            "note": "Short, plain sentences throughout."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.3,
+          "optional_fields": 3.6
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Very plain Dutch, strong learner traps (je -t drop in inversion, geen vs niet with adjectives, moet niet vs hoeft niet). Some examples are a bit toy-like (Ik ben Sara en ik ben lerares)."
+      }
+    },
+    "ja-b2": {
+      "winner": "pipeline",
+      "reason": "Y is better aimed at B2 (discourse words, ことにする/なる, のに, さ入れ言葉) and is equally correct, with consistent labels and translations. X teaches well but spends many entries on A2/B1 grammar and has a couple of overstated anti_examples.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "B2 traps and register, not A1 vocabulary": {
+            "pass": true,
+            "note": "Mostly grammar/register traps, but several items (potential 〜られる, 〜てくる, 〜てほしい, よね) are A2/B1 staples rather than B2 traps."
+          },
+          "IPA is correct Japanese IPA": {
+            "pass": true,
+            "note": "IPA is accurate (ɯ, ɕ, dʑ, ɾ, long vowels); some IPA illustrates a word not in the example (ikanakʲa vs 帰らなきゃ)."
+          }
+        },
+        "level": {
+          "over_by_1": [
+            "休業 (controversy, 〜させていただく)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.4,
+          "optional_fields": 3.3
+        },
+        "consistency": 3,
+        "errors": [
+          "〜てくる anti_example overstates: plain 買うね does not sound like 'leaving for good'.",
+          "〜と申します anti_example says never use it for someone else's name, contradicting its own 'or your own side' note (こちらは鈴木と申します is correct for an in-group colleague).",
+          "Category labels mix Grammar/Verb/Particle/Register for items of the same kind."
+        ],
+        "summary": "Rich, well-explained entries with good register notes and controversies. Weaker B2 targeting: a third of the items are A2/B1 grammar."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "B2 traps and register, not A1 vocabulary": {
+            "pass": true,
+            "note": "Strong B2 picks: やっぱり, 別に, 一応, ことにする/ことになる, のに, 気がする, さ入れ言葉 trap in させていただく."
+          },
+          "IPA is correct Japanese IPA": {
+            "pass": true,
+            "note": "Accurate throughout (itɕioː, kajoɯ, teŋkin, ɡ); written unspaced, which is harder to read but not wrong."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.7,
+          "example": 3.7,
+          "optional_fields": 3.6
+        },
+        "consistency": 4,
+        "errors": [
+          "〜させていただく anti_example: 'Only ru-verbs get させる' ignores する/来る (させる, 来させる); minor."
+        ],
+        "summary": "Tightly aimed at B2 discourse words and confusable pairs, every example translated. Consistent labels and length, with useful traps like 読まさせて and 一応 ≠ 'once'."
+      }
+    },
+    "zh-b2": {
+      "winner": "baseline",
+      "reason": "Both are correct in content and simplified throughout, but X's IPA is clean and consistent while Y has a mismatched and a mis-toned transcription. X's explanations and anti_examples also go deeper; Y's item choice is more B2-flavoured, which kept it close.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "IPA marks tones": {
+            "pass": true,
+            "note": "Chao tone letters on every syllable, neutral tones left unmarked, sandhi shown (lɑʊ˧˥ pan˨˩˦)."
+          },
+          "simplified characters throughout": {
+            "pass": true,
+            "note": "All simplified."
+          }
+        },
+        "level": {
+          "over_by_1": [
+            "淋 (discussion, 被 + 人 + 动词)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.3,
+          "optional_fields": 3.7
+        },
+        "consistency": 3,
+        "errors": [
+          "Several examples lack an English translation while others have one (inconsistent gloss format)."
+        ],
+        "summary": "Accurate, deep explanations of core traps (把, 被, 是……的, potential complements, 适合/合适) with strong anti_examples. Some items are B1 staples, and example glossing is inconsistent."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "IPA marks tones": {
+            "pass": true,
+            "note": "Tones marked, but third tone varies between ˨˩˦ and ˨˩, and 不见得 gives 得 a ˧˥ tone where it is normally neutral."
+          },
+          "simplified characters throughout": {
+            "pass": true,
+            "note": "All simplified."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.7,
+          "optional_fields": 3.5
+        },
+        "consistency": 3,
+        "errors": [
+          "……不了 IPA /tɕʰy˥˩ pu liau˨˩˦/ transcribes 去不了, not the 吃不了 in the example.",
+          "不见得 IPA marks 得 as tone 2 (tɤ˧˥); standard is neutral de.",
+          "Third-tone notation is inconsistent (˨˩˦ vs ˨˩)."
+        ],
+        "summary": "Well-chosen B2 discourse items (难怪, 不见得, 反正, 舍不得, 到底) with natural, translated examples. A few IPA slips."
+      }
+    },
+    "ar-msa": {
+      "winner": "pipeline",
+      "reason": "Both are correct and meet the criteria. X is more consistent (every entry complete) and covers more useful B1 ground (كان, لم, لن, سـ/سوف); Y spends slots on A1 items and leaves اسمي without an example.",
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "dialect named in description (MSA default)": {
+            "pass": true,
+            "note": "Description says 'Core Modern Standard Arabic'."
+          },
+          "no copula slot forced for present tense": {
+            "pass": true,
+            "note": "كان entry explicitly says the present takes no verb and flags يكون as wrong."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.7,
+          "example": 3.7,
+          "optional_fields": 3.5
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Solid set of A2-B1 building blocks with the full negation system (ليس, لا, لم, لن) and كان. Every entry has a natural translated example and clear anti_examples."
+      },
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "dialect named in description (MSA default)": {
+            "pass": true,
+            "note": "Names Modern Standard Arabic and notes dialects differ."
+          },
+          "no copula slot forced for present tense": {
+            "pass": true,
+            "note": "ليس entry states present-tense Arabic has no word for 'is'."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.3,
+          "optional_fields": 3.5
+        },
+        "consistency": 3,
+        "errors": [
+          "اسمي entry has no example field.",
+          "ليس anti_example calls ليس + imperfect flatly wrong; it is attested (literary) MSA, though fine as learner advice."
+        ],
+        "summary": "Clear and correct with helpful mental models and useful relationships (ليس عندي). Includes A1-trivial items (اسمي, ذهب) and one entry missing its example."
+      }
+    },
+    "arz-b1": {
+      "winner": "pipeline",
+      "reason": "Both are correct Egyptian and level-appropriate. Y's examples feel more natural, and its anti_examples teach more of the real B1 traps (معنديش, ماينفعش, يقدر vs ممكن), which edges it past X.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "Egyptian forms (e.g. عايز, مش, فين), not MSA": {
+            "pass": true,
+            "note": "Egyptian throughout (عايز, مش, فين, إيه, دلوقتي, حـ/هـ) and warns off ماذا."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.5,
+          "optional_fields": 3.4
+        },
+        "consistency": 4,
+        "errors": [
+          "عايز and رايح labelled 'Verb' though they are active participles; minor."
+        ],
+        "summary": "Correct Cairene core with good question-word placement entry and clear مش vs ما...ش split. Plain and consistent."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "Egyptian forms (e.g. عايز, مش, فين), not MSA": {
+            "pass": true,
+            "note": "Egyptian throughout (عايز, مش, فين, معنديش, ماينفعش, طنط, الموبايل فصل)."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.7,
+          "example": 3.8,
+          "optional_fields": 3.7
+        },
+        "consistency": 4,
+        "errors": [
+          "لازم example translates الساعة اتناشر as 'it's midnight'; it is just 'twelve o'clock' (could be noon). Minor."
+        ],
+        "summary": "Correct, very natural Cairene examples with high-value traps (معنديش not مش عندي, مش لازم vs ماينفعش, م spelling of ما...ش). Consistent voice and format."
+      }
+    },
+    "tr": {
+      "winner": "baseline",
+      "reason": "Both are accurate. Y covers the essential B1 suffixes (-iyor, -(y)im, -me) as patterns with vowel-harmony variants and strong anti-examples, which serves the learner more than X's set of conversation words; X also has a couple of slightly above-level phrasings.",
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "vowel harmony or suffixes presented as patterns, not chapter headings": {
+            "pass": true,
+            "note": "mı/mi/mu/mü, -mak/-mek istemek and -abilmek/-ebilmek are shown as usable patterns with examples."
+          }
+        },
+        "level": {
+          "over_by_1": [
+            "sahibim (anti_example, var)",
+            "Düşünüyorum ki clause (anti_example, bence)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.5,
+          "optional_fields": 3.2
+        },
+        "consistency": 3,
+        "errors": [
+          "anti_example for değil ('Çorba sıcak yok') is a straw-man error few learners make; not wrong but weakly chosen"
+        ],
+        "summary": "Correct, natural examples and useful conversation words (yani, bence, gibi). Covers fewer core suffixes (no -iyor, no -(y)im, no verb negation entry) and categories are a mixed set."
+      },
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "vowel harmony or suffixes presented as patterns, not chapter headings": {
+            "pass": true,
+            "note": "-(y)im, -iyor, -ebil and -me each explain the vowel/buffer changes with worked forms (yorgunum, yapıyorum, yapabilirim, gelmiyorum)."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.3,
+          "optional_fields": 3.5
+        },
+        "consistency": 3,
+        "errors": [
+          "-(y)im example 'Merhaba, ben Tom. Öğrenciyim.' has no English gloss, unlike every other example",
+          "relationship '-iyor is usually heard on istemek' is oddly directed; minor"
+        ],
+        "summary": "Teaches the core suffix system (be-ending, present -iyor, can, not) with clear vowel-harmony notes and good confusion pairs. One missing translation; otherwise accurate and level-appropriate."
+      }
+    },
+    "sw-a2": {
+      "winner": "pipeline",
+      "reason": "Both are correct and at A2. Y's examples are more natural and realistic, it covers -me- (key for states like nimechoka), and quality stays even to the end; X is slightly thinner in later entries.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "noun-class items complete as sets or absent": {
+            "pass": true,
+            "note": "No noun-class entries; only a passing 'iko' for things in a discussion field."
+          },
+          "A2 level": {
+            "pass": true,
+            "note": "Vocabulary and structures stay at A1–A2."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.2,
+          "optional_fields": 3.4
+        },
+        "consistency": 3,
+        "errors": [],
+        "summary": "Accurate, with full prefix sets and a good ni vs -ko contrast. Examples are a bit plain and late entries (kuweza, kwenda) are thinner than early ones."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "noun-class items complete as sets or absent": {
+            "pass": true,
+            "note": "No noun-class items; person prefix and negative prefix sets are given in full."
+          },
+          "A2 level": {
+            "pass": true,
+            "note": "Words like jirani, chenji, elfu kumi, niondoke are A2."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.6,
+          "optional_fields": 3.5
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Accurate and natural, with lively everyday examples and useful notes (nataka, hakuna shida, yuko not ako). Adds -me- with the nimechoka point, and the last entries are as careful as the first."
+      }
+    },
+    "sr": {
+      "winner": "baseline",
+      "reason": "Both are accurate and at level with nicely chosen examples. X teaches the past tense and da + verb, which a B1 learner needs, and makes no misleading claims; Y is slightly more natural but misses the past and overstates imati.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "one script used consistently and named in description": {
+            "pass": true,
+            "note": "Latin script throughout, named in description."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.4,
+          "optional_fields": 3.5
+        },
+        "consistency": 3,
+        "errors": [],
+        "summary": "Accurate, and covers the past tense (sam + -o/-la) and the da + verb construction, both key for B1 talk. Category labels are mixed (Verb, Question, Phrase, Negation, Construction)."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "one script used consistently and named in description": {
+            "pass": true,
+            "note": "Latin script throughout, named in description."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.7,
+          "optional_fields": 3.3
+        },
+        "consistency": 4,
+        "errors": [
+          "imati anti_example says 'imati is only own', an overstatement (imam vremena, imam 20 godina)"
+        ],
+        "summary": "Very natural examples and good pragmatic notes (café ordering, ajde, doći aspect). No past tense entry, and one overstated claim about imati."
+      }
+    },
+    "la-reading": {
+      "winner": "pipeline",
+      "reason": "Both are accurate. Y's selection (-que, relative pronouns, in + ablative) is built for reading as the case asks, while X spends slots on conversational modals and dialogue examples.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "reading-oriented selection; nothing framed as conversation with modern scenes that make no sense": {
+            "pass": false,
+            "note": "No absurd modern scenes, but the selection leans conversational (volō, dēbeō, 'I can't come today', 'Who are you? What do you want?', Quid agis?) over reading tools."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.3,
+          "optional_fields": 3.6
+        },
+        "consistency": 3,
+        "errors": [
+          "Macrons inconsistent: Marcus without macron (Mārcus) while macrons are claimed throughout."
+        ],
+        "summary": "Accurate with good reading notes (ubi = when, person endings, est = there is), but many picks and examples are dialogue-style."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "reading-oriented selection; nothing framed as conversation with modern scenes that make no sense": {
+            "pass": true,
+            "note": "Reading tools: -que, relative quī/quae/quod, in + ablative, sed, dīcō; narrative-style examples."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.4,
+          "optional_fields": 3.3
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Selection matches reading prose well, with useful traps (quoque/itaque, in hortum vs in hortō, quae for a girl). Several entries have no optional field and there is one relationship."
+      }
+    },
+    "de-persian": {
+      "winner": "pipeline",
+      "reason": "Y meets both case criteria fully; X uses English categories and mostly generic traps. Both are correct, but Y's contrasts with Persian structure (word order, دارم, باید) teach far more to this learner.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "definitions and categories in Persian": {
+            "pass": false,
+            "note": "Definitions are Persian but categories (Verb, Negation, Modal, Phrase, Question word) and relationship types are English; 'the' appears inside a Persian definition."
+          },
+          "anti_examples target traps a Persian speaker has": {
+            "pass": false,
+            "note": "Some target Persian (age with haben, wo/wohin since Persian uses کجا for both) but most are generic."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.3,
+          "example": 3.5,
+          "optional_fields": 3.2
+        },
+        "consistency": 3,
+        "errors": [
+          "nicht anti_example uses the English word «the» in the Persian text, which a Persian learner may not know.",
+          "Categories and relationship labels in English, inconsistent with Persian body."
+        ],
+        "summary": "Correct, readable Persian glosses with translated examples. Mixed-language labels and mostly generic traps."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "definitions and categories in Persian": {
+            "pass": true,
+            "note": "Definitions, categories and relationship types all Persian."
+          },
+          "anti_examples target traps a Persian speaker has": {
+            "pass": true,
+            "note": "Explicitly Persian traps: verb-final word order, nicht placement vs Persian نـ, kein vs verb negation, دارم progressive, one باید for müssen/sollen, نباید vs muss nicht."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.7,
+          "example": 3.6,
+          "optional_fields": 3.7
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Carefully built for Persian speakers: nearly every anti_example contrasts German with a Persian habit. Consistent labels and voice."
+      }
+    },
+    "fr-restaurants": {
+      "winner": "pipeline",
+      "reason": "Both correct and on level. X covers more real restaurant situations (booking, allergies, menu vs carte, tipping) with sharper traps; Y is tidier but spends slots on easy nouns like le dessert.",
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "covers ordering, asking, paying; nouns may dominate": {
+            "pass": true,
+            "note": "Booking, ordering (je voudrais, je vais prendre), asking (conseillez, allergique, carafe) and paying (addition, service compris)."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.5,
+          "optional_fields": 3.6
+        },
+        "consistency": 3,
+        "errors": [
+          "Typography: no space before ? in French questions (vous avez une table pour deux?)."
+        ],
+        "summary": "Practical, well-chosen set (carte vs menu, carafe d'eau, allergy, service compris) with sharp traps like le billet/la facture. Category labels 'Word/Phrase/Pattern' a bit loose."
+      },
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "covers ordering, asking, paying; nouns may dominate": {
+            "pass": true,
+            "note": "Table, ordering, recognizing Vous avez choisi ?, asking for advice, bill and payment by card."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.5,
+          "optional_fields": 3.4
+        },
+        "consistency": 4,
+        "errors": [
+          "je voudrais anti_example overstates: 'je veux' is blunt but not childlike."
+        ],
+        "summary": "Clean, consistent entries with a useful entrée false friend and course structure; more basic nouns (dessert, plat) and no booking or dietary requests."
+      }
+    },
+    "de-particles": {
+      "winner": "pipeline",
+      "reason": "Near-identical particle sets and both correct. Y keeps each particle to one job as the case requires, while X's ja entry mixes known-fact and surprise uses; X's extra mental models do not outweigh that.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "each particle framed to one job; no noun side list": {
+            "pass": false,
+            "note": "ja (known or obvious) definition bundles a second job ('can also show surprise') and its example is the surprise use; otherwise one job each, no noun list."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.5,
+          "optional_fields": 3.6
+        },
+        "consistency": 4,
+        "errors": [
+          "ja entry: label says known/obvious but example 'Du bist ja ganz nass!' shows the surprise use, mixing two jobs."
+        ],
+        "summary": "Rich entries with mental models, discussion and anti_examples on nearly every particle. Slightly longer than needed; ja drifts into two jobs."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "each particle framed to one job; no noun side list": {
+            "pass": true,
+            "note": "Every particle entry is framed to one job; other uses appear only as contrast. No noun list."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.5,
+          "optional_fields": 3.3
+        },
+        "consistency": 4,
+        "errors": [
+          "denn anti_example glosses 'Wo bist du dann?' as 'Where will you be after that?', which is a stretch (more 'Where are you then?')."
+        ],
+        "summary": "Tight, one-job framing with useful categories by function (Questions/Requests/Statements). Fewer optional fields and mental models."
+      }
+    },
+    "it-count-2": {
+      "winner": "pipeline",
+      "reason": "Same items, both correct. X's examples are more natural and translated and its anti-examples target real errors; Y adds useful notes but has weaker examples and a shaky anti-example.",
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "no closed set started": {
+            "pass": true,
+            "note": "Two open spine items, no closed set started."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.8,
+          "optional_fields": 3.5
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "essere and c'è with natural, translated examples and precise anti-examples.\nConcise and consistent."
+      },
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "no closed set started": {
+            "pass": true,
+            "note": "Same two spine items, no closed set."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3,
+          "optional_fields": 3.4
+        },
+        "consistency": 4,
+        "errors": [
+          "anti_example 'Il bar c'è lì' is not really a typical learner error and is marginally sayable"
+        ],
+        "summary": "Same items with richer notes (pronoun drop, ci sono).\nExamples lack translations and are a bit toy-like ('Il caffè è buono')."
+      }
+    },
+    "es-ex-ser": {
+      "winner": "pipeline",
+      "reason": "Both correct and respect the exclusion. Y teaches more per entry (translations, venir/ir trap, porque/por qué, double negation) and is more consistent; X is fine but slightly thinner and uses quisiera.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "moves on to next items; does not reteach the excluded verbs": {
+            "pass": true,
+            "note": "No entry or note teaches ser/estar/tener; only 'Mi nombre es' in passing."
+          }
+        },
+        "level": {
+          "over_by_1": [
+            "quisiera (querer discussion, imperfect subjunctive form)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.3,
+          "example": 3.3,
+          "optional_fields": 3.1
+        },
+        "consistency": 3,
+        "errors": [
+          "'yo gusto el té' gloss 'other people like you' is loose (it means 'I please the tea' / is ungrammatical)"
+        ],
+        "summary": "Solid core set (querer, poder, ir, hay, gustar, ir a / hay que) with no excluded verbs.\nNo translations on examples; 'me llamo' is very basic; hay vs hay que contrast is useful."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "moves on to next items; does not reteach the excluded verbs": {
+            "pass": true,
+            "note": "Moves on; mentions está and tener que only as brief contrasts, not reteaching."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.6,
+          "optional_fields": 3.5
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Well-chosen next items incl. porque, venir, deber, with English translations on every example.\nNotes (double negatives, al, ¡Ya voy!, sé nadar) teach real traps; touches está/tener que as contrasts."
+      }
+    },
+    "es-ex-accent": {
+      "winner": "pipeline",
+      "reason": "Both respect the exclusions and are correct. Y handles the case's point directly: it keeps si and que and explains how they differ from sí and qué. Its examples are also more natural. X is fine but has several thin entries.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "si (if) is allowed if chosen; not blocked by sí": {
+            "pass": true,
+            "note": "No excluded words used as terms; si not chosen, so nothing wrongly blocked but the case is not exercised."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.3,
+          "example": 3.3,
+          "optional_fields": 3.4
+        },
+        "consistency": 3,
+        "errors": [],
+        "summary": "Correct core set (ser, estar, hay, dónde, querer, poder, deber, ir a) with clear anti-examples.\nThin entries for pero, nunca and deber (example only); relationship without description."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "si (if) is allowed if chosen; not blocked by sí": {
+            "pass": true,
+            "note": "Includes 'si' (if) and correctly contrasts it with accented sí; also includes unaccented 'que' as distinct from qué."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.6,
+          "optional_fields": 3.5
+        },
+        "consistency": 3,
+        "errors": [
+          "que anti_example says Spanish 'never' drops que — overstated (formal 'le ruego me disculpe'), though fine as learner advice"
+        ],
+        "summary": "Honours the exclusions while correctly keeping si and que, and teaches the accent distinction explicitly.\nNatural examples with translations; 'tener que' labelled Verb and some entries lack optional fields."
+      }
+    },
+    "es-ex-articles": {
+      "winner": "pipeline",
+      "reason": "Both avoid the excluded items. X is more idiomatic, and its anti-examples teach real traps (estar rico, te invito, no más). Every entry is complete. Y has missing examples, an overstated note about quiero, and one awkward sentence.",
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "no synonyms of excluded items": {
+            "pass": true,
+            "note": "No cuenta/carta/mesero/mesa variants; '¿tienen sitio para…?' asks about room, not a synonym of mesa."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.7,
+          "example": 3.7,
+          "optional_fields": 3.7
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Distinctly Peninsular and idiomatic: ¿me pone…?, ¡perdone!, ¿algo más?/nada más, estar rico vs ser rico, invitar.\nEvery entry has a translated example and a useful note."
+      },
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "no synonyms of excluded items": {
+            "pass": true,
+            "note": "Avoids carta, mesero, cuenta; uses 'staff' and 'a long list of dishes' instead of the excluded ideas."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.3,
+          "example": 3,
+          "optional_fields": 3.2
+        },
+        "consistency": 3,
+        "errors": [
+          "quisiera anti_example says 'quiero' can sound hard with staff — overstated for Latin America, where 'quiero…, por favor' is normal",
+          "relationship example 'Para mí, quisiera la sopa' is awkward"
+        ],
+        "summary": "Useful basics (tomar, propina, ¿me trae…?, buen provecho) with helpful regional notes.\nTwo entries have no example, and some choices (¿dónde está el baño?) are generic."
+      }
+    },
+    "es-ex-patterns": {
+      "winner": "pipeline",
+      "reason": "Both respect the exclusions and are correct. Y wins narrowly: its anti-examples are richer, its ir/venir and gustar coverage is more useful, and its examples come with translations. X is equally correct and more uniform, but it teaches less.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "no other spelling of the excluded patterns": {
+            "pass": true,
+            "note": "No gerund construction or ir a + infinitive anywhere; ir entry uses only 'voy al trabajo'."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.4,
+          "optional_fields": 3.4
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Correct, very even core set (ser, estar, hay, no, querer, tener, tener que, poder, ir, ¿dónde está?).\nPlain examples; a little dry, no translations."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "no other spelling of the excluded patterns": {
+            "pass": true,
+            "note": "No excluded pattern appears in any form; ir examples use only 'voy al', '¡Vamos!'."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.5,
+          "example": 3.6,
+          "optional_fields": 3.7
+        },
+        "consistency": 3,
+        "errors": [
+          "ir defined as moving 'away from where you are now' — oversimplified (ir is also used toward the listener)"
+        ],
+        "summary": "Adds gustar and venir with sharp traps (Ya voy vs Ya vengo, hay + article, Mi casa está).\nTranslated examples; category label for gustar ('Pattern') is slightly inconsistent."
+      }
+    },
+    "es-ex-weekdays": {
+      "winner": "baseline",
+      "reason": "Both correct and within B1. X is a focused, coherent conversation core; Y spends four slots on basic weekdays mixed with verbs, based on an inference the request didn't ask for, and has one overstated note.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {},
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.3,
+          "optional_fields": 3.3
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Coherent core-verb set (ser, estar, tener, hay, querer, poder, ir) that respects the exclusion.\nClear, correct anti-examples; no translations on examples."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {},
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.3,
+          "example": 3.5,
+          "optional_fields": 3.1
+        },
+        "consistency": 3,
+        "errors": [
+          "'Not ¿Puedes nadar? for a skill' overstates it; ¿Puedes nadar? is fine for ability right now"
+        ],
+        "summary": "Reads the exclusion as a weekday request and adds jueves-domingo, interleaved with core verbs.\nWeekday entries are A1 and mostly trivia; mixed set is less coherent, though examples have translations."
+      }
+    },
+    "es-nothing-left": {
+      "winner": "pipeline",
+      "reason": "Y matches the ideal behavior (short non-JSON reply with next steps); X produces an importable empty JSON with no guidance.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "does not pad with weak items; a short non-JSON reply is ideal": {
+            "pass": false,
+            "note": "Doesn't pad (empty terms), but returns JSON rather than the ideal short reply."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": null,
+        "consistency": 3,
+        "errors": [
+          "Calls claro, vale, para nada, ¿verdad? mere synonyms of sí/no, which is debatable"
+        ],
+        "summary": "Empty glossary JSON with an explanatory description.\nNo padding, but not a helpful reply format and gives no next step."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "does not pad with weak items; a short non-JSON reply is ideal": {
+            "pass": true,
+            "note": "Short plain-text reply, no padding, suggests two useful next slices."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": null,
+        "consistency": null,
+        "errors": [
+          "'Spanish has only two yes/no words' is a slight oversimplification"
+        ],
+        "summary": "Exactly the ideal short reply explaining nothing is left.\nOffers concrete follow-up topics."
+      }
+    },
+    "es-ex-pasted": {
+      "winner": "baseline",
+      "reason": "Both treat the paste as data and are correct. X visibly accounts for the excluded items and avoids near-overlap, with very practical additions; Y is comparable in quality but edges closer to the excluded 'ir a' item.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {
+          "pasted definitions are treated as data": {
+            "pass": true,
+            "note": "Treats paste as an exclude list; description names the excluded terms and adds new ones."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.6,
+          "optional_fields": 3.3
+        },
+        "consistency": 3,
+        "errors": [
+          "anti_example 'no hago hablar inglés' is an unlikely error to warn against"
+        ],
+        "summary": "Avoids estar/ser/hay/ir a from the pasted list; adds connectors, me gusta, ¿Cómo se dice?, también/tampoco.\nPractical, translated examples; categories vary a little."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {
+          "pasted definitions are treated as data": {
+            "pass": true,
+            "note": "No pasted content followed as instructions; produces a normal glossary."
+          }
+        },
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.5,
+          "optional_fields": 3.4
+        },
+        "consistency": 3,
+        "errors": [
+          "'sé nadar is I can swim, not puedo nadar' overstates the contrast"
+        ],
+        "summary": "Good tú/usted/ustedes block plus core verbs and venir/ir trap; translated examples.\nIncludes plain 'ir' next to an excluded 'ir a + infinitivo'; tener que labeled Verb inconsistently."
+      }
+    },
+    "es-repeat-1": {
+      "winner": "pipeline",
+      "reason": "Both correct. Y covers more high-value items (address forms, gustar, double negation) with more natural examples and even depth; X has a thin entry and uses quisiera.",
+      "baseline": {
+        "run": "baseline",
+        "criteria": {},
+        "level": {
+          "over_by_1": [
+            "quisiera (querer discussion, imperfect subjunctive form)"
+          ],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.4,
+          "example": 3.3,
+          "optional_fields": 3.3
+        },
+        "consistency": 3,
+        "errors": [],
+        "summary": "Standard core (ser/estar/hay/tener/poder/ir + patterns) with good relationships.\n'¿dónde?' entry is thin (no optional fields); examples a bit plain ('Quiero un taxi')."
+      },
+      "pipeline": {
+        "run": "pipeline",
+        "criteria": {},
+        "level": {
+          "over_by_1": [],
+          "over_by_2plus": []
+        },
+        "scores": {
+          "definition": 3.6,
+          "example": 3.6,
+          "optional_fields": 3.5
+        },
+        "consistency": 4,
+        "errors": [],
+        "summary": "Broader coverage: adds tú/usted, gustar and no … nada alongside the core verbs.\nNatural examples with translations; even quality to the last entry."
+      }
+    }
+  }
+}

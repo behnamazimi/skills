@@ -15,7 +15,7 @@
 | fr-restaurants | json | ok | 3/3 | 0 | — | 12 | 2.08 |
 | de-particles | json | ok | 3/3 | 0 | — | 8 | 3.5 |
 | it-count-2 | json | ok | 4/4 | 0 | — | 2 | 3.5 |
-| pt-150 | not run |  |  |  |  |  |  |
+| pt-150 | got question,json | FAIL | 3/6 | R-SEL-09×1 R-FLD-07×7 | — | 148 | 1.61 |
 | es-ex-ser | json | ok | 4/4 | 0 | — | 10 | 3 |
 | es-ex-accent | json | ok | 4/4 | R-FLD-04×1 | — | 10 | 1.8 |
 | es-ex-articles | json | ok | 4/4 | 0 | — | 10 | 2.3 |
@@ -28,7 +28,10 @@
 | reject-sentence | text | — | 1/1 | 0 | — |  |  |
 | ask-conflict | question | — | 1/1 | 0 | — |  |  |
 
-**Totals:** 25/27 cases ran · schema 22/23 · hard properties 82/83 · mechanical violations 4 · judged 0/0
+**Totals:** 26/27 cases ran · schema 22/24 · hard properties 85/89 · mechanical violations 12 · judged 0/0
 
 **Failed hard properties:**
+- pt-150: 2 parts → 1
+- pt-150: matches import schema → ["R-OUT-04 terms: has 148 terms; max 100 per glossary"]
+- pt-150: each part ≤ 100
 - es-nothing-left: matches import schema → ["R-OUT-04 terms: must contain at least one term"]

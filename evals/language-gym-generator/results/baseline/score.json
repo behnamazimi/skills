@@ -636,16 +636,71 @@
   },
   "pt-150": {
     "id": "pt-150",
-    "ran": false,
-    "reply": null,
-    "schema": null,
-    "hard": [],
-    "mechanical": {},
+    "ran": true,
+    "reply": "got question,json",
+    "schema": false,
+    "hard": [
+      {
+        "name": "asks before generating > 100",
+        "pass": true
+      },
+      {
+        "name": "2 parts",
+        "pass": false,
+        "value": 1
+      },
+      {
+        "name": "matches import schema",
+        "pass": false,
+        "value": [
+          "R-OUT-04 terms: has 148 terms; max 100 per glossary"
+        ]
+      },
+      {
+        "name": "≤ 150 terms in total",
+        "pass": true,
+        "value": 148
+      },
+      {
+        "name": "each part ≤ 100",
+        "pass": false
+      },
+      {
+        "name": "no term repeated across parts",
+        "pass": true,
+        "value": 0
+      }
+    ],
+    "mechanical": {
+      "R-SEL-09": 1,
+      "R-FLD-07": 7
+    },
     "judge": [
       {
         "name": "parts read as one set (same labels, voice, dialect)",
         "pass": null
       }
+    ],
+    "terms": 148,
+    "optional_fields": 1.61,
+    "categories": [
+      "Verb",
+      "Pronoun",
+      "Negation",
+      "Pattern",
+      "Connector",
+      "Time",
+      "Question",
+      "Possessive",
+      "Place",
+      "Demonstrative",
+      "Article",
+      "Adjective",
+      "Preposition",
+      "Adverb",
+      "Phrase",
+      "Particle",
+      "Noun"
     ]
   },
   "es-ex-ser": {
