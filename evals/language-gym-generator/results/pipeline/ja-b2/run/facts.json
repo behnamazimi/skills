@@ -1,0 +1,124 @@
+{
+  "answers": [
+    {
+      "term_id": "t01",
+      "question": "IPA of 止まってたんです?",
+      "answer": "/tomattetandesɯ/",
+      "writer_claim": "/tomattetandesɯ/",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t08",
+      "question": "Meaning of やっぱり in 「あ、やっぱり紅茶で」?",
+      "answer": "on second thought",
+      "writer_claim": "on second thought",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t03",
+      "question": "Does 〜わけではない deny the fact or the inference?",
+      "answer": "the inference",
+      "writer_claim": "the inference",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t03",
+      "question": "Meaning of 彼が来るわけがない?",
+      "answer": "there's no way he's coming",
+      "writer_claim": "there's no way he's coming",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t04",
+      "question": "Who decides in 〜ことにした?",
+      "answer": "the speaker",
+      "writer_claim": "the speaker",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t10",
+      "question": "IPA of 別に?",
+      "answer": "/betsɯni/",
+      "writer_claim": "/betsɯni/",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t05",
+      "question": "Back-translate 来年から大阪に転勤することになりました.",
+      "answer": "I'm being transferred to Osaka from next year.",
+      "writer_claim": "I'm being transferred to Osaka from next year.",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t05",
+      "question": "Is 結婚することになりました used modestly for your own news?",
+      "answer": "yes",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t06",
+      "question": "Casual contraction of 〜てしまう / 〜でしまう?",
+      "answer": "〜ちゃう / 〜じゃう",
+      "writer_claim": "ちゃう / じゃう",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t12",
+      "question": "Reading and IPA of 一応?",
+      "answer": "いちおう /itɕioː/",
+      "writer_claim": "/itɕioː/",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t07",
+      "question": "Does のに carry annoyance or disappointment compared with けど?",
+      "answer": "yes",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t09",
+      "question": "Can はずだ give advice like English should?",
+      "answer": "no; use ほうがいい",
+      "writer_claim": "no; 休んだほうがいい",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t11",
+      "question": "Is 〜気がする softer than と思う?",
+      "answer": "yes, more of a hunch",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t02",
+      "question": "Causative of 読む?",
+      "answer": "読ませる",
+      "writer_claim": "読ませる",
+      "agree": true,
+      "unsure": false
+    },
+    {
+      "term_id": "t02",
+      "question": "Is the さ-inserted form (読まさせて) criticised as non-standard?",
+      "answer": "yes",
+      "writer_claim": "yes",
+      "agree": true,
+      "unsure": false
+    }
+  ]
+}

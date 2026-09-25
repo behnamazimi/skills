@@ -1,0 +1,781 @@
+{
+  "rater": 1,
+  "ratings": [
+    {
+      "token": "すみません",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "電車",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "止",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ま",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t05",
+          "field": "example"
+        },
+        {
+          "term_id": "t12",
+          "field": "example"
+        },
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "って",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        },
+        {
+          "term_id": "t12",
+          "field": "example"
+        },
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "たん",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t01",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "コーヒー",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "にし",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ます",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "あ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        },
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "紅茶",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "で",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t08",
+          "field": "example"
+        },
+        {
+          "term_id": "t04",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "お",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "酒",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "嫌い",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "な",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "じゃ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "けど",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "今日",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "は",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        },
+        {
+          "term_id": "t09",
+          "field": "example"
+        },
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "車",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "なん",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t03",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "来月",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "から",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        },
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "自転車",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "会社",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "通う",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "しま",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "した",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t04",
+          "field": "example"
+        },
+        {
+          "term_id": "t05",
+          "field": "example"
+        },
+        {
+          "term_id": "t12",
+          "field": "example"
+        },
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "何",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "か",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "あっ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "た",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t10",
+          "field": "example"
+        },
+        {
+          "term_id": "t06",
+          "field": "example"
+        },
+        {
+          "term_id": "t07",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "来年",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "大阪",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "転勤",
+      "level": "B2",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "なり",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t05",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "傘",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "を",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        },
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "忘れ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ちゃ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "っ",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t06",
+          "field": "example"
+        },
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "明日",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "会議",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "資料",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "送",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "おき",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t12",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ちゃんと",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "予約",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "席",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "言",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "われ",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t07",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "荷物",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "午後",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "届く",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t09",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "あの",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "人",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "前",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "どこか",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "会",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t11",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "本日",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "体調",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "不良",
+      "level": "B2",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "ため",
+      "level": "B1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "休",
+      "level": "A1",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    },
+    {
+      "token": "いただきます",
+      "level": "A2",
+      "occurrences": [
+        {
+          "term_id": "t02",
+          "field": "example"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "term_id": "t07",
+      "field": "example",
+      "structure": "passive 言われた (was told)",
+      "level": "B1"
+    },
+    {
+      "term_id": "t12",
+      "field": "example",
+      "structure": "〜ておく (do in advance)",
+      "level": "A2"
+    },
+    {
+      "term_id": "t02",
+      "field": "example",
+      "structure": "causative + いただく humble request",
+      "level": "B2"
+    },
+    {
+      "term_id": "t03",
+      "field": "example",
+      "structure": "な-adjective + わけじゃない + けど",
+      "level": "B2"
+    },
+    {
+      "term_id": "t01",
+      "field": "example",
+      "structure": "ている contracted to てた",
+      "level": "B1"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{ "answers": [
+  { "term_id": "t01", "question": "Staat na 'willen' de infinitief aan het eind van de zin?", "answer": "ja", "writer_claim": "ja", "agree": true, "unsure": false },
+  { "term_id": "t02", "question": "Is 'ik niet kom' goed Nederlands in een hoofdzin?", "answer": "nee, 'ik kom niet'", "writer_claim": "nee", "agree": true, "unsure": false },
+  { "term_id": "t03", "question": "Is 'Kunt u me even helpen?' beleefd?", "answer": "ja", "writer_claim": "ja", "agree": true, "unsure": false },
+  { "term_id": "t04", "question": "Zeg je 'het is een bakker hier' voor het bestaan van een bakker?", "answer": "nee, 'er is hier een bakker'", "writer_claim": "nee", "agree": true, "unsure": false },
+  { "term_id": "t05", "question": "Wat is de ontkenning van 'je moet komen' als het niet nodig is?", "answer": "je hoeft niet te komen", "writer_claim": "je hoeft niet te komen", "agree": true, "unsure": false },
+  { "term_id": "t06", "question": "Wordt 'niet een' + naamwoord normaal 'geen'?", "answer": "ja", "writer_claim": "ja", "agree": true, "unsure": false },
+  { "term_id": "t07", "question": "Betekent 'het mag regenen' dat regen een kans is?", "answer": "nee; daarvoor 'misschien regent het' of 'het kan regenen'", "writer_claim": "nee", "agree": true, "unsure": false },
+  { "term_id": "t10", "question": "Is 'gaan + infinitief' in spreektaal vaker dan 'zullen' voor de toekomst?", "answer": "ja", "writer_claim": "ja", "agree": true, "unsure": false },
+  { "term_id": "s02", "question": "Wat zegt een Nederlander als hij het koud heeft?", "answer": "ik heb het koud", "writer_claim": "ik heb het koud", "agree": true, "unsure": false },
+  { "term_id": "t09", "question": "Is 'Zullen we …?' een voorstel, en 'ik zal' vaak een belofte?", "answer": "ja", "writer_claim": "ja", "agree": true, "unsure": false }
+] }

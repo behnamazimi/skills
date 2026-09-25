@@ -1,0 +1,206 @@
+{
+  "results": [
+    {
+      "id": "t01",
+      "learner_test": {
+        "pass": true,
+        "sentence": "実は、明日引っ越すんです。",
+        "question": "A friend turns up with her arm in a cast. Do you ask どうしましたか or どうしたんですか, and why?",
+        "answer": "どうしたんですか: you're asking about what's behind something you noticed.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t08",
+      "learner_test": {
+        "pass": true,
+        "sentence": "やっぱり雨になったね。",
+        "question": "In a meeting with your boss, which form would you choose: やっぱ, やっぱり or やはり?",
+        "answer": "やはり (or やっぱり); やっぱ is too casual.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "discussion": 3
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t03",
+      "learner_test": {
+        "pass": true,
+        "sentence": "仕事が嫌なわけじゃないけど、少し疲れた。",
+        "question": "Does 高いわけではない mean the thing is cheap?",
+        "answer": "No; it only denies that 'expensive' is the right conclusion.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t04",
+      "learner_test": {
+        "pass": true,
+        "sentence": "今年は毎朝走ることにした。",
+        "question": "You chose to move to Kyoto yourself. 京都に引っ越すことにした or ことになった?",
+        "answer": "ことにした.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t10",
+      "learner_test": {
+        "pass": true,
+        "sentence": "「どうしたの？」「別に。ちょっと眠いだけ。」",
+        "question": "Your teacher asks if you have questions. Is a bare 「別に。」 a good answer?",
+        "answer": "No; it can sound curt. Add something like 別に大丈夫です.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 3,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t05",
+      "learner_test": {
+        "pass": true,
+        "sentence": "会議は来週に延びることになった。",
+        "question": "Your company moves you to Fukuoka. Which ending fits: 行くことにしました or 行くことになりました?",
+        "answer": "行くことになりました.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t06",
+      "learner_test": {
+        "pass": true,
+        "sentence": "ケーキを全部食べちゃった。",
+        "question": "What does 飲んじゃった add compared with 飲んだ?",
+        "answer": "That it's done and there's an 'oops' or regret about it.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "discussion": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t12",
+      "learner_test": {
+        "pass": true,
+        "sentence": "一応、パスポートのコピーも持ってきた。",
+        "question": "Does 一応確認しました mean you checked once?",
+        "answer": "No; it means you checked, just to be safe / more or less.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t07",
+      "learner_test": {
+        "pass": true,
+        "sentence": "日曜日なのに、会社に行かなきゃいけない。",
+        "question": "Which sounds annoyed: 勉強したけど、落ちた or 勉強したのに、落ちた?",
+        "answer": "勉強したのに、落ちた.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 3,
+        "example": 4,
+        "anti_example": 3,
+        "discussion": 3
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t09",
+      "learner_test": {
+        "pass": true,
+        "sentence": "彼はもう駅に着いているはずだ。",
+        "question": "How do you say 'You should see a doctor' as advice: 医者に行くはずだ or 医者に行ったほうがいい?",
+        "answer": "医者に行ったほうがいい.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 4
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t11",
+      "learner_test": {
+        "pass": true,
+        "sentence": "今日は何かいいことがある気がする。",
+        "question": "Which is more of a hunch: 雨が降ると思う or 雨が降る気がする?",
+        "answer": "雨が降る気がする.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "mental_model": 3
+      },
+      "action": "keep"
+    },
+    {
+      "id": "t02",
+      "learner_test": {
+        "pass": true,
+        "sentence": "それでは、始めさせていただきます。",
+        "question": "Is 読まさせていただきます the standard form?",
+        "answer": "No; standard is 読ませていただきます.",
+        "unknown_words": []
+      },
+      "scores": {
+        "definition": 4,
+        "example": 4,
+        "anti_example": 2,
+        "controversy": 4
+      },
+      "action": "rewrite",
+      "rewrite": {
+        "field": "anti_example",
+        "text": "Not 読まさせていただきます, though you'll hear it: u-verbs take -aseru (読ませる), so it's 読ませていただきます. Only ru-verbs get させる: 食べさせていただく."
+      },
+      "judge": {
+        "winner": "rewrite",
+        "reason": "Original says 'verbs ending in -u', which also covers ru-verbs like 食べる and would mislead; rewrite states the u-verb/ru-verb split correctly."
+      }
+    }
+  ]
+}

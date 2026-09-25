@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t08", "field": "term", "rule": "R-SEL-05", "severity": "must_fix", "quote": "hebben + voltooid deelwoord", "problem": "A construction-slot item is claimed while the spine job 'identity/location' (zijn) is still uncovered and nothing known covers it; building blocks come first even at A2–B1 (R-SEL-06).", "fix": "Promote spare s02 'zijn' into main and move 'hebben + voltooid deelwoord' to spares." }
+] }

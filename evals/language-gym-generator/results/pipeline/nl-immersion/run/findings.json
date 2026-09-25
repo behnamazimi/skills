@@ -1,0 +1,3 @@
+{ "findings": [
+  { "term_id": "t03", "field": "definition", "rule": "R-LVL-04", "severity": "should_fix", "quote": "Vertelt dat iets mogelijk is, of dat iemand iets goed kan.", "problem": "Beginner mode under immersion: two subordinate dat-clauses where one-clause sentences work.", "fix": "Split into short main clauses, e.g. 'Zegt: iets is mogelijk. Of: iemand is ergens goed in.'", "source": "rules" }
+] }

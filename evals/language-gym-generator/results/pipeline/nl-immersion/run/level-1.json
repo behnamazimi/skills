@@ -1,0 +1,2623 @@
+{
+ "rater": 1,
+ "ratings": [
+  {
+   "token": "zegt",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "wat",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "je",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t05",
+     "field": "definition"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t06",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "wens",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "iets",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t03",
+     "field": "definition"
+    },
+    {
+     "term_id": "t03",
+     "field": "definition"
+    },
+    {
+     "term_id": "t05",
+     "field": "definition"
+    },
+    {
+     "term_id": "t07",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    },
+    {
+     "term_id": "s02",
+     "field": "definition"
+    },
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "hebben",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "of",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t03",
+     "field": "definition"
+    },
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t05",
+     "field": "definition"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    },
+    {
+     "term_id": "t07",
+     "field": "definition"
+    },
+    {
+     "term_id": "t07",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "definition"
+    },
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "doen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "een",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    },
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t09",
+     "field": "definition"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "staat",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "dan",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "aan",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "het",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t03",
+     "field": "example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "eind",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "ik",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t05",
+     "field": "example"
+    },
+    {
+     "term_id": "t06",
+     "field": "example"
+    },
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "wil",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "vanavond",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "pizza",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "eten",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "jij",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    },
+    {
+     "term_id": "t03",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "ook",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "example"
+    },
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "in",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    },
+    {
+     "term_id": "s02",
+     "field": "example"
+    },
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "winkel",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "klinkt",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "beetje",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "kort",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "zeg",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "liever",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "graag",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "mag",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t01",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t07",
+     "field": "example"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "vaak",
+   "level": "A1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "term_id": "t10",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    }
+   ]
+  },
+  {
+   "token": "verward",
+   "level": "B1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    }
+   ]
+  },
+  {
+   "token": "met",
+   "level": "A1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "relationship_type"
+    }
+   ]
+  },
+  {
+   "token": "allebei",
+   "level": "A2",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "zeggen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "nee",
+   "level": "A1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t06",
+     "field": "example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "woord",
+   "level": "A1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "erna",
+   "level": "B1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "bepaalt",
+   "level": "B1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "de",
+   "level": "A1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t07",
+     "field": "definition"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "term_id": "t09",
+     "field": "definition"
+    },
+    {
+     "term_id": "t09",
+     "field": "example"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "keuze",
+   "level": "B1",
+   "occurrences": [
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    },
+    {
+     "relationship": "niet → geen",
+     "field": "description"
+    }
+   ]
+  },
+  {
+   "token": "maakt",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "werkwoord",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "definition"
+    },
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "eigenschap",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "negatief",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "sorry",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "kom",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "morgen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "t03",
+     "field": "example"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "ben",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "ziek",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "maar",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t04",
+     "field": "example"
+    },
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "komt",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "eerst",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "vertelt",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "dat",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "definition"
+    },
+    {
+     "term_id": "t03",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "mogelijk",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "iemand",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "definition"
+    },
+    {
+     "term_id": "t07",
+     "field": "definition"
+    },
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "goed",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "kan",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "kun",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "om",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    },
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "acht",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "uur",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    },
+    {
+     "term_id": "t05",
+     "field": "example"
+    },
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "bij",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    },
+    {
+     "term_id": "t04",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "station",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "handig",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "voor",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    },
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t10",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "beleefde",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "vraag",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    },
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "kunt",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "u",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "me",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "even",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "helpen",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t03",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "noemt",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "ergens",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "bestaat",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "meer",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "één",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "ding",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "definition"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "melk",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "nog",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "eieren",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "bakker",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "hier",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t04",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "betekent",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "definition"
+    },
+    {
+     "term_id": "t06",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "nodig",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "definition"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "verplicht",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "hebt",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "keus",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "moet",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "negen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "op",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "mijn",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    },
+    {
+     "term_id": "t07",
+     "field": "example"
+    },
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "werk",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "komen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "hoeft",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "te",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t05",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "zonder",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "en",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "definition"
+    },
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "nul",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "dank",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "drink",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "koffie",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "na",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "vier",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "heb",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "fiets",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t06",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "t07",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "vraagt",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "geeft",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "toestemming",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "oké",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "volgens",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "definition"
+    },
+    {
+     "term_id": "t07",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "regels",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "zetten",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "regenen",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "kans",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "misschien",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "regent",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t07",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "van",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "plan",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "bent",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "straks",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "definition"
+    },
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "binnenkort",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "ga",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "boodschappen",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "gesprekken",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "hoor",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "dit",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "veel",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "vaker",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "toekomst",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t10",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "beschrijft",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "wie",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "waar",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "hoe",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "broer",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "kok",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "nu",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "hij",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "spanje",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "koud",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    },
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "gevoel",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "s02",
+     "field": "anti_example"
+    }
+   ]
+  },
+  {
+   "token": "doet",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "voorstel",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "anderen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "vooral",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "definition"
+    }
+   ]
+  },
+  {
+   "token": "we",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "definition"
+    },
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "zaterdag",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "samen",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "naar",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "markt",
+   "level": "A2",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "example"
+    }
+   ]
+  },
+  {
+   "token": "belofte",
+   "level": "B1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "zal",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  },
+  {
+   "token": "bellen",
+   "level": "A1",
+   "occurrences": [
+    {
+     "term_id": "t09",
+     "field": "discussion"
+    }
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "term_id": "t03",
+   "field": "definition",
+   "structure": "two coordinated dat-clauses",
+   "level": "B1"
+  },
+  {
+   "term_id": "s02",
+   "field": "definition",
+   "structure": "indirect questions (wie/waar/hoe … is)",
+   "level": "B1"
+  },
+  {
+   "term_id": "t04",
+   "field": "definition",
+   "structure": "inversion after fronted phrase (Bij … zeg je)",
+   "level": "A2"
+  },
+  {
+   "term_id": "t10",
+   "field": "example",
+   "structure": "gaan + infinitief with inversion",
+   "level": "A2"
+  },
+  {
+   "term_id": "t05",
+   "field": "anti_example",
+   "structure": "hoeven + te + infinitief",
+   "level": "A2"
+  }
+ ]
+}

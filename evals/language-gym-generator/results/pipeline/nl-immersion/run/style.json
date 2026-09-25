@@ -1,0 +1,13 @@
+{
+  "voice": "tweede persoon (je), tegenwoordige tijd, kort en direct, alles in eenvoudig Nederlands",
+  "categories": ["Werkwoord", "Ontkenning", "Zinspatroon"],
+  "gloss_separator": " — ",
+  "limits": { "definition": 18, "example": 12, "mental_model": 16, "discussion": 22, "anti_example": 18, "controversy": 14 },
+  "opening_moves": ["actiewerkwoord: 'Zegt…', 'Maakt…', 'Vraagt…'", "'Noemt…' / 'Beschrijft…'", "'Betekent: …'", "'Staat voor…'", "'Doet een…'"],
+  "banned_phrases": ["het is belangrijk om te vermelden", "in de snelle wereld van vandaag", "naadloos", "baanbrekend", "duik in", "ontgrendel"],
+  "confusion_types": ["vaak verward met"],
+  "scenes_by_batch": { "1": ["avondeten plannen met vrienden", "appje aan collega: ziek", "afspraak bij het station", "koelkast thuis", "begin van de werkdag", "koffie op kantoor 's middags", "fiets zetten bij een winkel", "appje aan huisgenoot: boodschappen", "over familie praten", "weekend plannen met een vriend"] },
+  "ceiling": "B1",
+  "ipa_format": "geen uitspraak (pronunciation = none)",
+  "notes": "Immersie: elk veld in het Nederlands, geen woord uit een andere taal. Beginnersmodus: definitie 1–2 korte zinnen, één zin per gedachte, alleen tegenwoordige tijd en o.v.t. buiten het eigen patroon. Geen scheidbare werkwoorden in uitleg (dus niet 'aangeven', 'uitdrukken'). Voorbeeldwoorden tussen enkele aanhalingstekens. Anti-example: 'Niet …, maar …'. Patronen met een open plek: vul de plek altijd in in het voorbeeld."
+}

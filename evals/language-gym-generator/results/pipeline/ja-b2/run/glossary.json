@@ -1,0 +1,100 @@
+{
+  "domain": "Japanese",
+  "description": "Japanese at B2: the constructions, polite register and discourse words that still block fluent listening, in Standard (Tokyo) Japanese.",
+  "terms": [
+    {
+      "term": "〜んです",
+      "category": "Pattern",
+      "definition": "Frames what you say as background or explanation, like 'the thing is…'; in a question, it asks what's behind something you've noticed. /tomattetandesɯ/",
+      "example": "すみません、電車が止まってたんです。 — Sorry, the thing is, the train was stopped.",
+      "anti_example": "Seeing a coworker rush out, 「どこに行きますか」 sounds like a survey question; 「どこに行くんですか」 shows you noticed and want the story."
+    },
+    {
+      "term": "やっぱり",
+      "category": "Discourse word",
+      "definition": "Signals that things turned out as you expected, or that you're going back on a choice: 'I knew it', 'actually, on second thought'. /jappaɾi/",
+      "example": "コーヒーにします。あ、やっぱり紅茶で。 — I'll have coffee. Oh, actually, make it tea.",
+      "discussion": "やはり is the careful version for work and writing; やっぱ is very casual. The middle form やっぱり fits almost any chat."
+    },
+    {
+      "term": "〜わけではない",
+      "category": "Pattern",
+      "definition": "Denies a conclusion the listener might draw, not the fact itself: 'it's not that…'. Great for softening a refusal. /kiɾainawakedewanai/",
+      "example": "お酒が嫌いなわけじゃないけど、今日は車なんです。 — Not that I dislike drinking; I'm driving.",
+      "anti_example": "Not 〜わけがない, which is the opposite in force: 彼が来るわけがない means 'there's no way he's coming'."
+    },
+    {
+      "term": "〜ことにする",
+      "category": "Pattern",
+      "definition": "Announces a choice you made yourself: 'I've decided to…'. Usually past tense, ことにした, once the decision is made. /kajoɯkotoniɕita/",
+      "example": "来月から自転車で会社に通うことにしました。 — I've decided to cycle to work from next month.",
+      "anti_example": "Not ことになった for your own choice: 大阪に行くことになった sounds like your company sent you, not like you picked Osaka."
+    },
+    {
+      "term": "別に",
+      "category": "Discourse word",
+      "definition": "Shrugs off a question: 'not really', 'nothing in particular', usually without inviting a follow-up. /betsɯni/",
+      "example": "「何かあった？」「別に。」 — \"Something up?\" \"Nope.\"",
+      "discussion": "Said alone it can sound sulky or rude, so add something friendly (別に大丈夫だよ). Before a negative, 別に嫌いじゃない, it's just 'not particularly'."
+    },
+    {
+      "term": "〜ことになる",
+      "category": "Pattern",
+      "definition": "Reports something settled by others or by circumstances: 'it's been decided that…', 'I'll end up…'. /teŋkinsɯɾɯkotoninatta/",
+      "example": "来年から大阪に転勤することになりました。 — I'm being transferred to Osaka from next year.",
+      "discussion": "People also use it for their own big news to sound modest: 結婚することになりました avoids sounding like you're bragging about a choice."
+    },
+    {
+      "term": "〜てしまう",
+      "category": "Pattern",
+      "definition": "Marks an action as done and over, usually with an 'oops' or regret, sometimes just 'completely'. /wasɯɾeteɕimatta/",
+      "example": "あ、傘を電車に忘れちゃった。 — Oh no, I left my umbrella on the train.",
+      "discussion": "In speech you'll hear ちゃう and じゃう (忘れちゃった, 飲んじゃった) far more than the full form; keep てしまう for writing and polite talk."
+    },
+    {
+      "term": "一応",
+      "category": "Discourse word",
+      "definition": "Hedges an action or claim as 'just in case' or 'more or less, for now': it's done, but you're not promising much. /itɕioː/",
+      "example": "一応、明日の会議の資料を送っておきました。 — I've sent tomorrow's meeting materials, just in case.",
+      "anti_example": "Not 'once' because of 一: 一応やってみた means 'I gave it a go, sort of'; 'I tried it once' is 一回やってみた."
+    },
+    {
+      "term": "〜のに、〜",
+      "category": "Pattern",
+      "definition": "Links two facts where the second goes against what the first promised, with annoyance or disappointment built in: 'even though…'. /jojakɯɕitanoni/",
+      "example": "ちゃんと予約したのに、席がないって言われた。 — I booked properly, and they still said there's no table.",
+      "discussion": "Ending on のに (言ってくれればよかったのに) is pure complaint. Before 便利 or 必要 it means 'for', a separate job.",
+      "anti_example": "Not a neutral 'although': in a news-style report, 雨だったけど、試合は行われた is right; 雨だったのに sounds like you resent the game happening."
+    },
+    {
+      "term": "〜はずだ",
+      "category": "Pattern",
+      "definition": "States what you expect from facts or plans you know about: 'should be', 'is supposed to'. /todokɯhazɯda/",
+      "example": "荷物は今日の午後に届くはずです。 — The package should arrive this afternoon.",
+      "anti_example": "Not for advice: 'you should rest' is 休んだほうがいい, never 休むはずだ, which means 'you're expected to be resting'."
+    },
+    {
+      "term": "〜気がする",
+      "category": "Pattern",
+      "definition": "Offers an impression you can't back up: 'I have a feeling that…'. Softer and more personal than と思う. /attakiɡasɯɾɯ/",
+      "example": "あの人、前にどこかで会った気がする。 — I feel like I've met that guy somewhere before.",
+      "mental_model": "Think 'my gut says…' rather than 'I think…': you're reporting a hunch, so nobody can really argue with it."
+    },
+    {
+      "term": "〜させていただく",
+      "category": "Pattern",
+      "definition": "Humbly says you'll do something, as if the other side kindly allowed it; standard in work emails, shop notices and announcements. /jasɯmaseteitadakimasɯ/",
+      "example": "本日は体調不良のため、休ませていただきます。 — I'll be taking today off, as I'm unwell.",
+      "anti_example": "Not 読まさせていただきます, though you'll hear it: u-verbs take -aseru (読ませる), so it's 読ませていただきます. Only ru-verbs get させる: 食べさせていただく.",
+      "controversy": "Style guides and many older speakers say it's overused where no permission is involved; in business Japanese it's still the safe default."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "〜ことにする",
+      "target": "〜ことになる",
+      "relationship_type": "often confused with",
+      "description": "Same frame, different decider: する means you chose, なる means it was settled for you."
+    }
+  ]
+}
