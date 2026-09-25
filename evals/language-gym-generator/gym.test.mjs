@@ -530,3 +530,11 @@ test('a missing --exclude file means no exclusions', () => {
   const r = run('validate', 'glossary', join(here, 'fixtures/glossary-es.json'), '--spec', join(here, 'fixtures/spec-es.json'), '--exclude', '/nonexistent/exclude.json');
   assert.equal(r.code, 0, r.err);
 });
+
+test('punctuation inside quotes does not end a sentence', () => {
+  const d = structuredClone(esDraft);
+  d.terms[0].definition = "Asks 'what?' about a thing. Use it for objects.";
+  assert.ok(!has(validateGlossary(d, esSpec), 'R-FLD-07', 'terms[0]'));
+  d.terms[0].definition = 'Asks about a thing. Use it for objects. Not for people.';
+  assert.ok(has(validateGlossary(d, esSpec), 'R-FLD-07', 'terms[0]'), 'three real sentences still fail');
+});

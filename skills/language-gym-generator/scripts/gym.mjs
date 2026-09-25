@@ -72,7 +72,11 @@ export function words(text, locale) {
 
 export function sentences(text, locale) {
   const seg = segmenter(locale, 'sentence');
-  return [...seg.segment(text)].map((s) => s.segment.trim()).filter(Boolean);
+  // Punctuation inside quotes ('what?', «¿qué?») doesn't end the surrounding sentence.
+  const masked = text.replace(/“[^”]*”|"[^"]*"|«[^»]*»|„[^“”]*[“”]|「[^」]*」|『[^』]*』|‘[^’]*’|(?<!\p{L})'[^']*'(?!\p{L})/gu, (q) => q.replace(/[.!?。！？]/gu, ' '));
+  const out = []; let pos = 0;
+  for (const s of seg.segment(masked)) { out.push(text.slice(pos, pos + s.segment.length).trim()); pos += s.segment.length; }
+  return out.filter(Boolean);
 }
 
 function stripIpa(text) { return text.replace(IPA_TAIL, '').trim(); }
