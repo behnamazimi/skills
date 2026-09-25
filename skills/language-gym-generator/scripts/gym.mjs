@@ -885,8 +885,10 @@ export function sliceRules(markdown, ids) {
 }
 
 export function contractSections(markdown, names) {
-  const parts = markdown.split(/^(?=## )/m);
-  return names.map((n) => parts.find((p) => p.split('\n')[0].includes(n)) || null);
+  const parts = markdown.split(/^(?=## )/m).filter((p) => p.startsWith('## ') && !p.startsWith('## Run folder'));
+  // A file is documented under its own header, or inside another section (list-findings.json → findings.json).
+  const alias = { 'list-findings.json': 'findings.json' };
+  return names.map((n) => parts.find((p) => p.split('\n')[0].includes(alias[n] || n)) || parts.find((p) => p.includes('`' + n + '`')) || null);
 }
 
 function stepFile(step) {

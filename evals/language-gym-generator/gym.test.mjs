@@ -552,3 +552,11 @@ test('step log stamps the real clock and never goes negative', async () => {
   (await import('node:fs')).unlinkSync(tmp);
   assert.ok(st.steps[0].seconds >= 0 && st.steps[0].tokens === null);
 });
+
+test('contract finds files documented inside another section', () => {
+  const md = readFileSync(join(skillDir, 'refs/contract.md'), 'utf8');
+  const [lf, ipa, batch] = contractSections(md, ['list-findings.json', 'ipa-check.json', 'batch-N.json']);
+  assert.ok(lf.startsWith('## `findings.json`'));
+  assert.ok(ipa.includes('ipa-check.json') && ipa.startsWith('## `level.json`'));
+  assert.ok(batch.startsWith('## Draft entries'));
+});
