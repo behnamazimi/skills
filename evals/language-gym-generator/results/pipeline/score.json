@@ -1,0 +1,723 @@
+{
+  "es-default": {
+    "id": "es-default",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "≥ 8 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "A2–B1 level in every field",
+        "pass": null
+      },
+      {
+        "name": "beginner mode: short one-clause sentences in target text",
+        "pass": null
+      },
+      {
+        "name": "jobs covered: identity, existence, location, negation, questions, want/can/must/go",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 2.2,
+    "categories": [
+      "Verb",
+      "Function word",
+      "Pattern"
+    ]
+  },
+  "es-a2-feelings": {
+    "id": "es-a2-feelings",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "no target-language word above A2 in any field, apart from the glossary terms and at most one justified B1 word per field",
+        "pass": null
+      },
+      {
+        "name": "no abstract explanations of feelings",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Pattern",
+      "Phrase",
+      "Verb",
+      "Adjective"
+    ]
+  },
+  "nl-immersion": {
+    "id": "nl-immersion",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "no English (or any non-Dutch) word, gloss or translation anywhere, including mental_model",
+        "pass": null
+      },
+      {
+        "name": "category labels in Dutch",
+        "pass": null
+      },
+      {
+        "name": "simple Dutch at A2–B1",
+        "pass": null
+      }
+    ]
+  },
+  "ja-b2": {
+    "id": "ja-b2",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "B2 traps and register, not A1 vocabulary",
+        "pass": null
+      },
+      {
+        "name": "IPA is correct Japanese IPA",
+        "pass": null
+      }
+    ]
+  },
+  "zh-b2": {
+    "id": "zh-b2",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "IPA marks tones",
+        "pass": null
+      },
+      {
+        "name": "simplified characters throughout",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Pattern",
+      "Discourse marker",
+      "Adverb",
+      "Expression"
+    ]
+  },
+  "ar-msa": {
+    "id": "ar-msa",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "dialect named in description (MSA default)",
+        "pass": null
+      },
+      {
+        "name": "no copula slot forced for present tense",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 2.1,
+    "categories": [
+      "Negator",
+      "Building block",
+      "Verb",
+      "Particle"
+    ]
+  },
+  "arz-b1": {
+    "id": "arz-b1",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "Egyptian forms (e.g. عايز, مش, فين), not MSA",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Particle",
+      "Modal",
+      "Pattern"
+    ]
+  },
+  "tr": {
+    "id": "tr",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "vowel harmony or suffixes presented as patterns, not chapter headings",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 2,
+    "categories": [
+      "Building block",
+      "Particle",
+      "Pattern",
+      "Conversation word"
+    ]
+  },
+  "sw-a2": {
+    "id": "sw-a2",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 12 terms",
+        "pass": true,
+        "value": 12
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "noun-class items complete as sets or absent",
+        "pass": null
+      },
+      {
+        "name": "A2 level",
+        "pass": null
+      }
+    ],
+    "terms": 12,
+    "optional_fields": 1.83,
+    "categories": [
+      "Key word",
+      "Verb pattern",
+      "Verb"
+    ]
+  },
+  "sr": {
+    "id": "sr",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      },
+      {
+        "name": "terms use one script",
+        "pass": true,
+        "value": [
+          "Latin"
+        ]
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "one script used consistently and named in description",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 1.9,
+    "categories": [
+      "Verb",
+      "Sentence builder"
+    ]
+  },
+  "la-reading": {
+    "id": "la-reading",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 10 terms",
+        "pass": true,
+        "value": 10
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "reading-oriented selection; nothing framed as conversation with modern scenes that make no sense",
+        "pass": null
+      }
+    ],
+    "terms": 10,
+    "optional_fields": 1.6,
+    "categories": [
+      "Verb",
+      "Function word",
+      "Pronoun",
+      "Connector"
+    ]
+  },
+  "de-persian": {
+    "id": "de-persian",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "definitions and categories in Persian",
+        "pass": null
+      },
+      {
+        "name": "anti_examples target traps a Persian speaker has",
+        "pass": null
+      }
+    ]
+  },
+  "fr-restaurants": {
+    "id": "fr-restaurants",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 12 terms",
+        "pass": true,
+        "value": 12
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "covers ordering, asking, paying; nouns may dominate",
+        "pass": null
+      }
+    ],
+    "terms": 12,
+    "optional_fields": 2,
+    "categories": [
+      "Word",
+      "Phrase",
+      "Pattern"
+    ]
+  },
+  "de-particles": {
+    "id": "de-particles",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 8 terms",
+        "pass": true,
+        "value": 8
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "each particle framed to one job; no noun side list",
+        "pass": null
+      }
+    ],
+    "terms": 8,
+    "optional_fields": 2.13,
+    "categories": [
+      "Questions",
+      "Statements",
+      "Requests"
+    ]
+  },
+  "it-count-2": {
+    "id": "it-count-2",
+    "ran": true,
+    "reply": "json",
+    "schema": true,
+    "hard": [
+      {
+        "name": "reply is json",
+        "pass": true,
+        "value": "json"
+      },
+      {
+        "name": "matches import schema",
+        "pass": true,
+        "value": []
+      },
+      {
+        "name": "≤ 2 terms",
+        "pass": true,
+        "value": 2
+      },
+      {
+        "name": "≥ 1 terms",
+        "pass": true,
+        "value": 2
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "no closed set started",
+        "pass": null
+      }
+    ],
+    "terms": 2,
+    "optional_fields": 2,
+    "categories": [
+      "Verb"
+    ]
+  },
+  "pt-150": {
+    "id": "pt-150",
+    "ran": true,
+    "reply": "got question",
+    "schema": null,
+    "hard": [
+      {
+        "name": "asks before generating > 100",
+        "pass": true
+      },
+      {
+        "name": "2 parts",
+        "pass": false,
+        "value": 0
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "parts read as one set (same labels, voice, dialect)",
+        "pass": null
+      }
+    ]
+  },
+  "es-ex-ser": {
+    "id": "es-ex-ser",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "moves on to next items; does not reteach the excluded verbs",
+        "pass": null
+      }
+    ]
+  },
+  "es-ex-accent": {
+    "id": "es-ex-accent",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "si (if) is allowed if chosen; not blocked by sí",
+        "pass": null
+      }
+    ]
+  },
+  "es-ex-articles": {
+    "id": "es-ex-articles",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "no synonyms of excluded items",
+        "pass": null
+      }
+    ]
+  },
+  "es-ex-patterns": {
+    "id": "es-ex-patterns",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "no other spelling of the excluded patterns",
+        "pass": null
+      }
+    ]
+  },
+  "es-ex-weekdays": {
+    "id": "es-ex-weekdays",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": []
+  },
+  "es-nothing-left": {
+    "id": "es-nothing-left",
+    "ran": true,
+    "reply": "text",
+    "schema": null,
+    "hard": [
+      {
+        "name": "reply is nothing_left | reject | json",
+        "pass": true,
+        "value": "text"
+      }
+    ],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "does not pad with weak items; a short non-JSON reply is ideal",
+        "pass": null
+      }
+    ]
+  },
+  "es-ex-pasted": {
+    "id": "es-ex-pasted",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "pasted definitions are treated as data",
+        "pass": null
+      }
+    ]
+  },
+  "es-repeat-1": {
+    "id": "es-repeat-1",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": []
+  },
+  "es-repeat-2": {
+    "id": "es-repeat-2",
+    "ran": false,
+    "reply": null,
+    "schema": null,
+    "hard": [],
+    "mechanical": {},
+    "judge": [
+      {
+        "name": "moves forward (next most useful items), same dialect and noun format as run 1",
+        "pass": null
+      }
+    ]
+  },
+  "reject-sentence": {
+    "id": "reject-sentence",
+    "ran": true,
+    "reply": "text",
+    "schema": null,
+    "hard": [
+      {
+        "name": "reply is reject",
+        "pass": true,
+        "value": "text"
+      }
+    ],
+    "mechanical": {},
+    "judge": []
+  },
+  "ask-conflict": {
+    "id": "ask-conflict",
+    "ran": true,
+    "reply": "question",
+    "schema": null,
+    "hard": [
+      {
+        "name": "reply is question",
+        "pass": true,
+        "value": "question"
+      }
+    ],
+    "mechanical": {},
+    "judge": []
+  }
+}
