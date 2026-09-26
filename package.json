@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/behnamazimi/skills"
   },
+  "scripts": {
+    "zipit": "rm -rf skills.zip && node -e \"const fs=require('fs');const p='.claude-plugin/plugin.json';const j=JSON.parse(fs.readFileSync(p,'utf8'));const v=j.version.split('.');v[2]=String(+v[2]+1);j.version=v.join('.');fs.writeFileSync(p,JSON.stringify(j,null,2)+'\\n');console.log('version',j.version)\" && zip -r skills.zip . -x '.git/*'"
+  },
   "keywords": [],
   "author": "Behnam Azimi",
   "license": "MIT"

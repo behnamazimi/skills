@@ -56,7 +56,8 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
       "mental_model": "Optional — a comparison or analogy that makes the term click; omit if the definition is already intuitive",
       "discussion": "Optional — in practice: tradeoffs, conventions, when you'd reach for it, common misuse",
       "anti_example": "Optional — a near-miss: something that looks like this term but isn't, only when there's real risk of confusing the two",
-      "controversy": "Optional — debated: only when practitioners genuinely disagree on meaning or scope"
+      "controversy": "Optional — debated: only when practitioners genuinely disagree on meaning or scope",
+      "note": "Optional — freeform text for something that does not belong in the other fields; omit when unused"
     }
   ],
   "relationships": [
@@ -79,12 +80,13 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
   - Don't repeat the same sentence structure or opening word across terms — that repetition makes a whole glossary read robotic.
   - Don't explain jargon with more jargon. If a plainer everyday comparison helps the idea click, use one.
   - Keep sentences short and concrete. If a definition needs two clauses, split it — don't chain qualifiers into one long sentence.
-- `example`, `mental_model`, `discussion`, `anti_example`, and `controversy` are all optional. Omit each one individually when it wouldn't add real value — empty optional fields mean "not needed," not TODO. Do not fill every field on every term.
+- `example`, `mental_model`, `discussion`, `anti_example`, `controversy`, and `note` are all optional. Omit each one individually when it wouldn't add real value — empty optional fields mean "not needed," not TODO. Do not fill every field on every term.
 - **`example`:** add when the definition alone wouldn't let someone use the word in conversation. Use a concrete scene (where it applies in real work) or a natural sentence (the word used in speech) — whichever makes the term click; one is enough.
 - **`mental_model`:** add when a comparison or analogy would make the term click faster than the definition alone — a memorable "think of it like X" framing. Skip it when the definition is already intuitive on its own.
 - **`discussion`:** tradeoffs, team conventions, when you'd reach for the word, or common misuse — usage nuance that isn't obvious from the definition and example. Do not restate the definition. When included, make it actionable nuance, a tradeoff, or a common misuse — not filler.
 - **`anti_example`:** only when there's a real near-miss — something people commonly mistake for this term or confuse it with — worth naming to sharpen the boundary. Skip when there's no genuine risk of confusion.
 - **`controversy`:** before finalizing, scan the full term list once specifically looking for terms where practitioners genuinely dispute meaning or scope — not loose usage, not a caution about overuse. Expect this to be rare, but confirm that by checking each term against the trigger, not by skipping the field by default. Most terms should NOT have this field, but "most" is not "none" — a glossary that comes out with zero `controversy` fields is a sign the scan wasn't done.
+- **`note`:** freeform text for something that does not belong in the other fields. The collection decides what it holds. There is no fixed job. Omit it when unused. Do not fill it on every term, and do not use it as a second definition, example, or mental model.
 - **`relationships`:** the array as a whole is optional. Add a relationship when two terms have any real connection worth naming — prerequisite of, subtype of, contrasts with, synonym of, depends on, builds on, often confused with, etc. Most terms won't need one, and that's expected. `relationship_type` should read naturally in a sentence; don't default to "often confused with" for every pair — pick whichever type actually describes the connection. `source`/`target` must match term names exactly. Cap: 100.
   - Cross-check against `anti_example`: if a relationship is "often confused with" (or similar near-miss framing), at least one of the two terms' own `anti_example` should capture that same confusion. Don't let a relationship name a mix-up that neither term's entry reflects.
 - A term is complete when someone could use the word correctly in conversation — not when every optional field is filled.
@@ -122,7 +124,8 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
       "definition": "The degree to which one component depends on another's internals — the tighter the coupling, the more a change on one side risks breaking the other.",
       "example": "Billing code that directly reads fields from the user-profile table breaks if that table changes.",
       "mental_model": "Think of it like two people sharing a single house key — convenient until one of them changes the lock.",
-      "discussion": "Teams usually reduce coupling by communicating through a stable API or event contract instead of reaching into another service's internal data model directly."
+      "discussion": "Teams usually reduce coupling by communicating through a stable API or event contract instead of reaching into another service's internal data model directly.",
+      "note": "The word is borrowed from physics, where coupling is how strongly two systems influence each other."
     },
     {
       "term": "Cohesion",

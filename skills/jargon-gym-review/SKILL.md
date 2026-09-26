@@ -24,7 +24,7 @@ If the user wants a brand-new glossary for a domain they don't have yet, use `ja
   "domain": "...",
   "description": "...",
   "terms": [
-    { "term": "...", "category": "...", "definition": "...", "example": "...", "mental_model": "...", "discussion": "...", "anti_example": "...", "controversy": "..." }
+    { "term": "...", "category": "...", "definition": "...", "example": "...", "mental_model": "...", "discussion": "...", "anti_example": "...", "controversy": "...", "note": "..." }
   ],
   "relationships": [
     { "source": "...", "target": "...", "relationship_type": "...", "description": "..." }
@@ -61,10 +61,11 @@ Audit against the Jargon Gym glossary rules below (same field/tone/selection rul
 - `controversy` used for loose usage, overuse caution, or misuse rather than genuine disagreement on meaning or scope → `misplaced_content` (most terms should omit this field).
 - `anti_example` that isn't a real near-miss people commonly confuse with this term → `misplaced_content` or `unnecessary_field`.
 - `mental_model` that isn't a comparison/analogy ("think of it like X") — e.g. just restates the definition → `misplaced_content` or `unnecessary_field`.
+- `note` is freeform text for something that does not belong in the other fields. Do not grade it against a job. Do not flag it as `misplaced_content`, `missing_field`, or `unnecessary_field`.
 
 ### 3. Optional-field judgment
 
-Required fields stay `term`, `category`, `definition`. `example`, `mental_model`, `discussion`, `anti_example`, `controversy`, and the `relationships` array as a whole are optional. Omit each when it wouldn't add real value — absence means "not needed," not TODO. Do not flag sparse terms that already clear the completeness bar.
+Required fields stay `term`, `category`, `definition`. `example`, `mental_model`, `discussion`, `anti_example`, `controversy`, `note`, and the `relationships` array as a whole are optional. Omit each when it wouldn't add real value — absence means "not needed," not TODO. Do not flag sparse terms that already clear the completeness bar. A missing `note` is always fine.
 
 - **Missing is fine** when the term is already usable from what is there (definition alone is enough to use the word; definition already intuitive → no `mental_model`; no real near-miss → no `anti_example`; no genuine disagreement → no `controversy`; no usage nuance beyond definition/example → no `discussion`). Do not flag those gaps.
 - **`missing_field`:** flag only when adding that field would clearly help learning. Match the original add-when rules:
@@ -74,7 +75,7 @@ Required fields stay `term`, `category`, `definition`. `example`, `mental_model`
   - `anti_example` — real risk of confusing this term with a near-miss.
   - `controversy` — practitioners genuinely disagree on meaning or scope (rare).
   In the overview, name the term, the missing field, and why adding it adds value; include paste-ready text for Step 2.
-- **`unnecessary_field`:** present optional field adds nothing or hurts (example that only rewords the definition or is neither a concrete scene nor natural speech; mental model for an already-intuitive term; discussion that restates the definition; controversy that isn't one; empty filler). Flag to remove or rewrite.
+- **`unnecessary_field`:** present optional field adds nothing or hurts (example that only rewords the definition or is neither a concrete scene nor natural speech; mental model for an already-intuitive term; discussion that restates the definition; controversy that isn't one; empty filler). Flag to remove or rewrite. Do not apply this to `note`.
 
 ### 4. Tone (`tone_violation` / `cliche_filler`)
 - Voice target: sharp senior practitioner to a smart colleague over Slack — direct, slightly opinionated, including the annoying caveat. Textbook, dictionary, or corporate-blog tone → `tone_violation` / `should_fix`.
