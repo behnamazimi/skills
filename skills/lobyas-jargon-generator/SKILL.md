@@ -1,14 +1,14 @@
 ---
-name: jargon-gym-generator
-description: Generate a jargon glossary as JSON for a domain the user names. Use when the user asks for a glossary, vocabulary list, or term list for a field (e.g. "make me a glossary for X", "I need to learn the vocabulary of X"). Not for reviewing an existing glossary — that is jargon-gym-review.
-argument-hint: "[domain] | [count=10] | [exclude: term, ...]"
+name: lobyas-jargon-generator
+description: Generate a jargon glossary as JSON for a collection the user names. Use when the user asks for a glossary, vocabulary list, or term list for a field (e.g. "make me a glossary for X", "I need to learn the vocabulary of X").
+argument-hint: "[collection] | [count=10] | [exclude: term, ...]"
 ---
 
 ## Input
 
 `$ARGUMENTS` carries up to three parts. Parse in order (whitespace- and `|`-flexible):
 
-1. **domain** (required) — short field/topic label (e.g. `Software Engineering`, `Kubernetes`, `Wine Tasting`)
+1. **collection** (required) — short field/topic label (e.g. `Software Engineering`, `Kubernetes`, `Wine Tasting`)
 2. **count** (optional) — how many terms to generate; default **10** when omitted or blank. Integer from 1–100.
 3. **exclude** (optional) — preexisting jargon, or terms that must not appear in `terms[]` (comma-separated; optional `exclude:` prefix)
 
@@ -28,14 +28,12 @@ When the user states count or exclusions in the surrounding message (not only in
 - If exclusions shrink the must-know pool below `count`, return fewer terms — never pad with banned or weak terms.
 
 Reject — reply briefly with the expected argument shape and 1–2 examples, then stop — when:
-- **domain** is missing, empty, a full sentence/instruction/prompt, pasted JSON/glossary/file path, or longer than a short phrase
+- **collection** is missing, empty, a full sentence/instruction/prompt, pasted JSON/glossary/file path, or longer than a short phrase
 - **count** is present but not an integer in 1–100
-
-If the user already has glossary JSON and wants it checked or audited, use `jargon-gym-review` instead of generating.
 
 ## Task
 
-After valid input is accepted, generate a glossary JSON for **domain** (target length **count**, minus hard exclusions) for paste into Jargon Gym.
+After valid input is accepted, generate a glossary JSON for **collection** (target length **count**, minus hard exclusions) for paste into Jargon Gym.
 
 **Success output:** respond with only the final JSON object — no markdown fences, no preamble, no explanation. Rejection replies above are the exception.
 
@@ -45,8 +43,8 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 
 ```json
 {
-  "domain": "<domain>",
-  "description": "One-line summary of this domain",
+  "collection": "<collection>",
+  "description": "One-line summary of this collection",
   "terms": [
     {
       "term": "Term name",
@@ -105,17 +103,17 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 
 ## Selection
 
-- Include up to **count** must-know terms for **domain** (default 10; max 100). **100 is the ceiling, not a target.** Only include terms a newcomer absolutely must know to follow a conversation in this field — core, high-frequency terms that come up constantly in real work.
-- Skip niche, rarely used, obscure, or "nice to know" terms, even if they're technically part of the domain. If unsure whether a term is common enough, leave it out. Prefer fewer terms over padding with weaker ones just to approach **count** or the cap.
+- Include up to **count** must-know terms for **collection** (default 10; max 100). **100 is the ceiling, not a target.** Only include terms a newcomer absolutely must know to follow a conversation in this field — core, high-frequency terms that come up constantly in real work.
+- Skip niche, rarely used, obscure, or "nice to know" terms, even if they're technically part of the collection. If unsure whether a term is common enough, leave it out. Prefer fewer terms over padding with weaker ones just to approach **count** or the cap.
 - Apply the **Hard rule — exclusions** before finalizing the list; re-check the finished `terms[]` against `exclude` and drop any accidental hits.
 - Term names must be unique within the import.
 - Write for someone learning the field, not for experts skimming acronyms.
 
-## Example (valid format, domain: Software Engineering, count: 3)
+## Example (valid format, collection: Software Engineering, count: 3)
 
 ```json
 {
-  "domain": "Software Engineering",
+  "collection": "Software Engineering",
   "description": "Core vocabulary for software architecture, design, and delivery.",
   "terms": [
     {
@@ -157,7 +155,7 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 
 Before responding, walk through the checklist below against the drafted JSON — don't treat it as background spec, actually verify each line.
 
-- Input parsed (domain valid; count defaulted to 10 if omitted; exclude list applied) — or rejection already returned.
+- Input parsed (collection valid; count defaulted to 10 if omitted; exclude list applied) — or rejection already returned.
 - Success response is only the JSON object matching the structure above.
 - `terms.length` is ≤ **count**, and equals **count** when enough must-know terms remain after exclusions — never pad with niche or weak terms.
 - No term (nor synonym/abbreviation/near-duplicate) from **exclude** appears in `terms[]` or as a relationship endpoint.

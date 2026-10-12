@@ -15,8 +15,7 @@
     "./skills/skill-context-audit",
     "./skills/frontend-audit",
     "./skills/reinvented-wheel-audit",
-    "./skills/jargon-gym-review",
-    "./skills/jargon-gym-generator",
-    "./skills/language-gym-generator"
+    "./skills/lobyas-jargon-generator",
+    "./skills/lobyas-voc-generator"
   ]
 }

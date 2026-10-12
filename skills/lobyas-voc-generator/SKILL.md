@@ -1,6 +1,6 @@
 ---
-name: language-gym-generator
-description: Generate a language-learning glossary as JSON for a language or slice the user names. Use when the user asks for vocabulary, phrases, grammar constructions, or a term list to learn a language (e.g. "make me a Spanish glossary", "French A2 restaurant vocab", "German modal particles"). Same import shape as jargon-gym-generator; not a conversational tutor (that is language-learning) and not for reviewing existing glossary JSON (pair with jargon-gym-review or a language-gym-review sibling).
+name: lobyas-voc-generator
+description: Generate a language-learning glossary as JSON for a language or slice the user names. Use when the user asks for vocabulary, phrases, grammar constructions, or a term list to learn a language (e.g. "make me a Spanish glossary", "French A2 restaurant vocab", "German modal particles"). Not a conversational tutor (that is language-learning) and not for reviewing existing glossary JSON.
 argument-hint: "[language or slice] | [count=10] | [exclude: term, ...] | [learner=English] | [level] | [immersion] | [pronunciation=ipa|spoken|none] | [terms_to_generate: term, ...] | [meaning_in=language]"
 ---
 
@@ -8,14 +8,14 @@ argument-hint: "[language or slice] | [count=10] | [exclude: term, ...] | [learn
 
 `$ARGUMENTS` carries positional parts first, then optional named flags. Parse in order (whitespace- and `|`-flexible):
 
-1. **domain** (required) — language, optionally plus a slice (e.g. `Spanish`, `Spanish A2`, `French restaurants`, `German modal particles`, `Japanese keigo`)
+1. **collection** (required) — language, optionally plus a slice (e.g. `Spanish`, `Spanish A2`, `French restaurants`, `German modal particles`, `Japanese keigo`)
 2. **count** (optional) — how many terms to generate; default **10** when omitted or blank. 1–100 runs straight through; a larger number needs one confirmation first (see **Counts above 100**). Ignored completely when **terms_to_generate** is set: it is not a length target, the default of 10 does not apply, and do not pad up to it or trim the list down to it.
 3. **exclude** (optional) — preexisting items, or terms that must not appear in `terms[]` (comma-separated; optional `exclude:` prefix)
 
 Named flags (anywhere in `$ARGUMENTS` or the surrounding message):
 
-4. **learner** — language of definitions, mental models, discussion, controversy, and any gloss except the **meaning_in** gloss in `note`. Tokens: `learner=Dutch`, `learner: French`, or a bare language name after the positional parts. Default **English**. `learner=target` (or learner language = the domain's language) is immersion.
-5. **level** — CEFR band or plain label (`A2`, `A2–B1`, `beginner`, `B2`). Also honor a level already in **domain** (`French A2`). Default when omitted: core high-frequency items a motivated beginner-to-intermediate learner must know for that slice — treat that default as **A2–B1 scaffolding** unless the user named a higher band (`B2`, `C1`, `advanced`).
+4. **learner** — language of definitions, mental models, discussion, controversy, and any gloss except the **meaning_in** gloss in `note`. Tokens: `learner=Dutch`, `learner: French`, or a bare language name after the positional parts. Default **English**. `learner=target` (or learner language = the collection's language) is immersion.
+5. **level** — CEFR band or plain label (`A2`, `A2–B1`, `beginner`, `B2`). Also honor a level already in **collection** (`French A2`). Default when omitted: core high-frequency items a motivated beginner-to-intermediate learner must know for that slice — treat that default as **A2–B1 scaffolding** unless the user named a higher band (`B2`, `C1`, `advanced`).
 6. **immersion** — flag (`immersion`, `immersive`, `full immersion`). Forces learner language = the target language. No L1 words, glosses, or translations anywhere, except `note` when **meaning_in** is set.
 7. **pronunciation** — `ipa` | `spoken` | `none`. Default **`ipa`**, except when **beginner scaffolding** is on, default **`none`**. `spoken` = a simple spoken-style hint only if genuinely useful (e.g. `zeg: ge-ZEL-lig`); don't default to including it.
 8. **terms_to_generate** — the exact terms to write. Named flag only, so a bare third positional stays **exclude**. Tokens: `terms_to_generate: quedar, usted, ser` or `terms_to_generate=quedar, usted`. Split on commas, trim each token, and drop empties (`a,, b` is `a` and `b`). Spaces inside a token stay (`il y a`, `estar + gerundio`). When this flag is present, **count is ignored** (including the default of 10 and **Counts above 100**). `terms[]` is exactly this list: one entry per name, the user's spelling and order, trimmed only. Nothing else is generated.
@@ -46,7 +46,7 @@ If the user asks for “all” / “full” / “complete” vocabulary, a CEFR 
 When **terms_to_generate** is set, emit every listed string. The synonym, inflection, and near-duplicate ban does not delete a listed name (`exclude: ser` does not drop listed `soy`). A listed name that is also in `exclude` under the same case-insensitive accent/script folding is a reject before generation — exact overlap only, not `soy` versus `ser`. Do not backfill, and do not return fewer terms because exclusions shrank a pool. Length is the list. `relationships[].source` / `target` may only use those listed spellings exactly.
 
 Reject — reply briefly with the expected argument shape and 1–2 examples, then stop — when:
-- **domain** is missing, empty, a full sentence/instruction/prompt, pasted JSON/glossary/file path, or not a language / language+slice
+- **collection** is missing, empty, a full sentence/instruction/prompt, pasted JSON/glossary/file path, or not a language / language+slice
 - **count** is present but not a positive integer. When **terms_to_generate** is set, a valid count is ignored for length; a non-integer count is still a reject.
 - **pronunciation** is present but not one of `ipa`, `spoken`, `none`
 - **terms_to_generate** is present but nothing remains after trim, or the list contains a duplicate name under the same folding as exclusions (do not silently dedupe)
@@ -61,7 +61,7 @@ Apply the matching blocks. Unmentioned modes stay off.
 
 **Beginner scaffolding** is on when **level** is A1, A2, B1, `A2–B1`, `beginner`, `lower-intermediate`, or the omitted default. Off when the user named B2, C1, C2, or `advanced`.
 
-**Immersion** is on when the **immersion** flag is set, or **learner** is `target` / the same language as **domain**.
+**Immersion** is on when the **immersion** flag is set, or **learner** is `target` / the same language as **collection**.
 
 ### Immersion — target language only
 
@@ -114,15 +114,15 @@ Keep the same JSON keys as Jargon Gym. A `term` is **one thing the learner must 
 
 **Fixed term list.** When **terms_to_generate** is set, each listed string is `term` as written (trimmed only). Do not rewrite, split, merge, inflect, or re-cite it. The spoken-form test, citation consistency, framed-function-word rewrite, and one-pattern-one-entry merge below do not change `term`. Put framing or citation teaching in `definition` or `discussion` if it is still useful. Unit lock still applies: every field teaches the job of that string. The rest of this section applies only when **terms_to_generate** is absent.
 
-**Spoken-form test (hard):** `term` must be a string the learner will **say, hear, or read as language**, or a **productive pattern with a slot** written in the target language (`estar + gerundio`, `avoir/être + participe passé`, `〜てしまう`). If the English gloss of the term is a pedagogy heading — inversion, the comparative, the diminutive, separable verbs, subordinate clause, adjective agreement, “the perfect tense” as a title — it is **not** a term unless **domain** is explicitly that grammar slice (or linguistics). Rewrite it as the form used in speech, or drop it.
+**Spoken-form test (hard):** `term` must be a string the learner will **say, hear, or read as language**, or a **productive pattern with a slot** written in the target language (`estar + gerundio`, `avoir/être + participe passé`, `〜てしまう`). If the English gloss of the term is a pedagogy heading — inversion, the comparative, the diminutive, separable verbs, subordinate clause, adjective agreement, “the perfect tense” as a title — it is **not** a term unless **collection** is explicitly that grammar slice (or linguistics). Rewrite it as the form used in speech, or drop it.
 
-Pick the mix from the domain, in this order of preference:
+Pick the mix from the collection, in this order of preference:
 
 1. **Word or fixed phrase** in the target language — the default for a language or usage slice (`la cuenta`, `en plus`, `doch`, `お疲れ様です`)
-2. **Pattern-as-unit** when the item is used as a construction (`estar + gerundio`, `ser`, `〜てしまう`). A school name (`passé composé`) is allowed only when the domain is a grammar slice; on a conversation/language slice prefer the pattern speakers produce.
-3. **Learner-facing contrast label** only when the contrast *is* the thing people study (`ser vs estar` is two terms plus a relationship, not one mega-term — unless the domain is explicitly the contrast)
+2. **Pattern-as-unit** when the item is used as a construction (`estar + gerundio`, `ser`, `〜てしまう`). A school name (`passé composé`) is allowed only when the collection is a grammar slice; on a conversation/language slice prefer the pattern speakers produce.
+3. **Learner-facing contrast label** only when the contrast *is* the thing people study (`ser vs estar` is two terms plus a relationship, not one mega-term — unless the collection is explicitly the contrast)
 
-Do not mix professional jargon-of-linguistics as the main list (`allophone`, `clitic climbing`) unless the domain is linguistics. Write for someone learning to speak and understand, not for a syntax seminar. Do not use the target language’s classroom names for chapters as `term` either (`inversie`, `la proposition subordonnée`, `el pretérito` as a heading) on a non-grammar slice — same ban, any language.
+Do not mix professional jargon-of-linguistics as the main list (`allophone`, `clitic climbing`) unless the collection is linguistics. Write for someone learning to speak and understand, not for a syntax seminar. Do not use the target language’s classroom names for chapters as `term` either (`inversie`, `la proposition subordonnée`, `el pretérito` as a heading) on a non-grammar slice — same ban, any language.
 
 Write `term` as learners actually meet it: dictionary lemma or the frozen phrase, in the target script. Do not make separate terms for routine inflections of the same lemma.
 
@@ -134,7 +134,7 @@ Write `term` as learners actually meet it: dictionary lemma or the frozen phrase
 
 ## Task
 
-After valid input is accepted, generate a glossary JSON for **domain** for paste into Jargon Gym. When **terms_to_generate** is set, the target length is that list and **count** is unused. Otherwise the target length is **count**, minus hard exclusions.
+After valid input is accepted, generate a glossary JSON for **collection** for paste into Jargon Gym. When **terms_to_generate** is set, the target length is that list and **count** is unused. Otherwise the target length is **count**, minus hard exclusions.
 
 **Success output:** respond with only the final JSON object — no markdown fences, no preamble, no explanation. Rejection replies above are the exception.
 
@@ -144,7 +144,7 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 
 ```json
 {
-  "domain": "<domain>",
+  "collection": "<collection>",
   "description": "One-line summary of this language slice (include dialect default if relevant)",
   "terms": [
     {
@@ -214,7 +214,7 @@ The field shape below is this skill's import contract for Jargon Gym. If the use
 
 When **terms_to_generate** is set, skip this section, including the procedure below, closed sets, the shape check, and the cut order. The user already chose the terms. **Count is ignored completely:** do not pad up to count or the default of 10, do not trim the list because count is smaller, and do not treat any ceiling here as a target. `Spanish | 25 | terms_to_generate: quedar, usted` emits exactly `quedar` and `usted`. The bullets and procedure below apply only when **terms_to_generate** is absent.
 
-- Include up to **count** must-know items for **domain** (default 10; past 100 only after the user confirmed). Only include items a learner absolutely must know to follow or join a conversation in this slice — high-frequency words, phrases, and constructions that come up constantly.
+- Include up to **count** must-know items for **collection** (default 10; past 100 only after the user confirmed). Only include items a learner absolutely must know to follow or join a conversation in this slice — high-frequency words, phrases, and constructions that come up constantly.
 - **Every number here is a ceiling, not a target.** Landing exactly on one — the term count, the noun share in step 5, the relationship cap — is evidence you filled to the line instead of earning each slot. Cut.
 - Skip rare, literary-only, exam-trivia, or "nice to know" items, even if they're technically in the language. If unsure whether an item is common enough for this slice, leave it out. Prefer fewer terms over padding with weaker ones just to approach **count** or the cap.
 - Apply the **Hard rule — exclusions** before finalizing the list; re-check the finished `terms[]` against `exclude` and drop any accidental hits.
@@ -285,13 +285,13 @@ Re-read `terms[]` once against steps 3–5: spoken-form, consistent noun citatio
 
 Fix a failure by cutting and backfilling from step 2, or by rewriting the offending field. Never by adding topic nouns to look balanced, and never by turning a `term` back into a chapter title.
 
-## Example (valid format, domain: Spanish, count: 3)
+## Example (valid format, collection: Spanish, count: 3)
 
 Default modes for this sample: learner=English, pronunciation=ipa, beginner scaffolding off (so IPA and a controversy field are allowed), no **terms_to_generate**, no **meaning_in**. Under `Dutch | immersion | level: A2–B1 | pronunciation: none`, every learner-facing string would be simple Dutch, IPA would be absent, and `controversy` would be omitted or one flat sentence. This sample has no `note`. With `meaning_in=Persian`, each term would add `note` as a short Persian gloss of that term's job and nothing else. With `terms_to_generate: quedar, usted`, the glossary would be those two strings in that order, and `ser` would not be added to complete a pair.
 
 ```json
 {
-  "domain": "Spanish",
+  "collection": "Spanish",
   "description": "Core items for following everyday conversation in broadly Latin American Spanish.",
   "terms": [
     {
@@ -336,7 +336,7 @@ Default modes for this sample: learner=English, pronunciation=ipa, beginner scaf
 
 Before responding, walk through the checklist below against the drafted JSON — don't treat it as background spec, actually verify each line.
 
-- Input parsed (domain valid; count defaulted to 10 if omitted and **terms_to_generate** is absent; exclude list applied; learner / level / immersion / pronunciation / **terms_to_generate** / **meaning_in** resolved) — or rejection already returned. A count above 100 was confirmed with the user before generating, unless **terms_to_generate** is set, in which case count was unused and the confirmation did not run.
+- Input parsed (collection valid; count defaulted to 10 if omitted and **terms_to_generate** is absent; exclude list applied; learner / level / immersion / pronunciation / **terms_to_generate** / **meaning_in** resolved) — or rejection already returned. A count above 100 was confirmed with the user before generating, unless **terms_to_generate** is set, in which case count was unused and the confirmation did not run.
 - Success response is only the JSON object matching the structure above.
 - When **terms_to_generate** is absent: `terms.length` is ≤ **count**, and equals **count** when enough must-know terms remain after exclusions — never pad with niche or weak terms. When it is set: `terms.length` equals that list, same strings and order, and count was not used to add or drop terms.
 - When **terms_to_generate** is absent: no term (nor synonym/inflection/near-duplicate) from **exclude** appears in `terms[]` or as a relationship endpoint. When it is set: every listed string is present, including a near-duplicate of an exclusion (`soy` stays if `ser` is excluded), and the only exclusion failure is the pre-generation exact-overlap reject.
